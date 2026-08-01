@@ -1,0 +1,664 @@
+# Copyright (C) 2026 bPlugins
+# This file is distributed under the GPLv3 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Awesome FAQ – Modern Accordion, Tabs, Responsive & Super Fast FAQ Builder 2.3.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/faq-and-answers\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-06-21T05:03:58+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: faq-and-answers\n"
+
+#. Plugin Name of the plugin
+#: faq-and-answers.php
+msgid "Awesome FAQ – Modern Accordion, Tabs, Responsive & Super Fast FAQ Builder"
+msgstr ""
+
+#. Description of the plugin
+#: faq-and-answers.php
+msgid "Create responsive, customizable FAQ sections with ready-made templates.Perfect for boosting clarity, trust, and user experience on any page."
+msgstr ""
+
+#. Author of the plugin
+#: faq-and-answers.php
+msgid "bPlugins"
+msgstr ""
+
+#. Author URI of the plugin
+#: faq-and-answers.php
+msgid "https://bplugins.com"
+msgstr ""
+
+#: faq-and-answers-block.php:51
+#: woocommerce/class-afaq-wc-ai-connector.php:50
+msgid "WordPress AI Client is not available."
+msgstr ""
+
+#: includes/ai/class-afaq-block-ai.php:28
+msgid "Awesome FAQ AI"
+msgstr ""
+
+#: includes/ai/class-afaq-block-ai.php:29
+msgid "AI connector for Awesome FAQ block"
+msgstr ""
+
+#: includes/ai/class-afaq-block-ai.php:88
+#: woocommerce/class-afaq-wc-rest-api.php:90
+msgid "You do not have permission to use this endpoint."
+msgstr ""
+
+#: includes/ai/class-afaq-block-ai.php:102
+#: woocommerce/class-afaq-wc-rest-api.php:107
+msgid "Prompt is required."
+msgstr ""
+
+#: includes/ai/class-afaq-block-ai.php:277
+msgid "WordPress AI Client is not available in this version of WordPress."
+msgstr ""
+
+#: includes/ai/class-afaq-block-ai.php:356
+#: woocommerce/class-afaq-wc-ai-connector.php:203
+msgid "Could not parse AI response. Please try again."
+msgstr ""
+
+#: includes/class-faa-freeAnalytics.php:38
+msgid "Analytics is a Premium Feature"
+msgstr ""
+
+#: includes/class-faa-freeAnalytics.php:40
+msgid "Unlock detailed insights into how your users interact with your FAQs. Track clicks, most popular questions, and export reports."
+msgstr ""
+
+#: includes/class-faa-freeAnalytics.php:44
+msgid "Upgrade to Pro"
+msgstr ""
+
+#: includes/class_faaAdmin.php:18
+msgid "Awesome FAQ"
+msgstr ""
+
+#: includes/class_faaAdmin.php:19
+#: woocommerce/class-afaq-wc-display.php:254
+msgid "FAQ"
+msgstr ""
+
+#: includes/class_faaAdmin.php:20
+msgid "Add New "
+msgstr ""
+
+#: includes/class_faaAdmin.php:21
+msgid "Add New FAQ"
+msgstr ""
+
+#: includes/class_faaAdmin.php:22
+msgid "Edit FAQ"
+msgstr ""
+
+#: includes/class_faaAdmin.php:23
+msgid "New FAQ"
+msgstr ""
+
+#: includes/class_faaAdmin.php:24
+msgid "View FAQ"
+msgstr ""
+
+#: includes/class_faaAdmin.php:25
+msgid "Search FAQ"
+msgstr ""
+
+#: includes/class_faaAdmin.php:26
+msgid "Sorry, we couldn't find the ShortCode you are looking for."
+msgstr ""
+
+#: includes/class_faaAnalysis.php:158
+msgid "Others"
+msgstr ""
+
+#: includes/class_faaAnalysis.php:233
+msgid "FAQ Click Analytics"
+msgstr ""
+
+#: includes/class_faaAnalysis.php:242
+msgid "Analytics data has been cleared successfully."
+msgstr ""
+
+#: includes/class_faaAnalysis.php:251
+msgid "Retention settings saved."
+msgstr ""
+
+#: includes/class_faaAnalysis.php:259
+msgid "Currently Filtering:"
+msgstr ""
+
+#: includes/class_faaAnalysis.php:263
+msgid "Showing analytics data exclusively for this FAQ post."
+msgstr ""
+
+#: includes/class_faaAnalysis.php:267
+#: includes/class_faaAnalysis.php:273
+msgid "Clear Filter"
+msgstr ""
+
+#: includes/class_faaAnalysis.php:297
+msgid "Total Clicks"
+msgstr ""
+
+#: includes/class_faaAnalysis.php:303
+msgid "Today's Performance"
+msgstr ""
+
+#: includes/class_faaAnalysis.php:307
+msgid "Clicks Today"
+msgstr ""
+
+#: includes/class_faaAnalysis.php:311
+msgid "Most Popular FAQ"
+msgstr ""
+
+#: includes/class_faaAnalysis.php:325
+msgid "Auto Data Retention"
+msgstr ""
+
+#: includes/class_faaAnalysis.php:334
+msgid "Never delete"
+msgstr ""
+
+#: includes/class_faaAnalysis.php:337
+msgid "7 Days"
+msgstr ""
+
+#: includes/class_faaAnalysis.php:340
+msgid "15 Days"
+msgstr ""
+
+#: includes/class_faaAnalysis.php:343
+msgid "30 Days"
+msgstr ""
+
+#: includes/class_faaAnalysis.php:346
+msgid "Update"
+msgstr ""
+
+#: includes/class_faaAnalysis.php:350
+msgid "Automatically cleans up records older than the selected timeframe."
+msgstr ""
+
+#: includes/class_faaAnalysis.php:361
+msgid "Analytics Overview"
+msgstr ""
+
+#: includes/class_faaAnalysis.php:366
+msgid "Avg Clicks per FAQ"
+msgstr ""
+
+#: includes/class_faaAnalysis.php:372
+msgid "Tracking Items"
+msgstr ""
+
+#: includes/class_faaAnalysis.php:380
+msgid "Track user engagement in real-time. Use the data above to optimize your most clicked FAQ content and improve user satisfaction."
+msgstr ""
+
+#: includes/class_faaAnalysis.php:423
+msgid "Search..."
+msgstr ""
+
+#: includes/class_faaAnalysis.php:427
+msgid "Top Clicks"
+msgstr ""
+
+#: includes/class_faaAnalysis.php:430
+msgid "Recent Clicks"
+msgstr ""
+
+#: includes/class_faaAnalysis.php:433
+msgid "By Question"
+msgstr ""
+
+#: includes/class_faaAnalysis.php:436
+msgid "By Title"
+msgstr ""
+
+#: includes/class_faaAnalysis.php:439
+msgid "Filter"
+msgstr ""
+
+#: includes/class_faaAnalysis.php:442
+msgid "Clear"
+msgstr ""
+
+#: includes/class_faaAnalysis.php:449
+msgid "Download CSV"
+msgstr ""
+
+#: includes/class_faaAnalysis.php:453
+msgid "Are you sure you want to clear all analytics data? This action cannot be undone."
+msgstr ""
+
+#: includes/class_faaAnalysis.php:455
+msgid "Clear Data"
+msgstr ""
+
+#: includes/class_faaAnalysis.php:464
+msgid "Question"
+msgstr ""
+
+#: includes/class_faaAnalysis.php:467
+msgid "Source Page Link"
+msgstr ""
+
+#: includes/class_faaAnalysis.php:470
+msgid "Click Count"
+msgstr ""
+
+#: includes/class_faaAnalysis.php:473
+msgid "Last Clicked"
+msgstr ""
+
+#: includes/class_faaAnalysis.php:480
+msgid "No click data available yet."
+msgstr ""
+
+#: includes/class_faaAnalysis.php:497
+msgid "No URL"
+msgstr ""
+
+#: includes/class_faaAnalysis.php:517
+msgid "&laquo; Previous"
+msgstr ""
+
+#: includes/class_faaAnalysis.php:518
+msgid "Next &raquo;"
+msgstr ""
+
+#. translators: %s: number of items
+#: includes/class_faaAnalysis.php:523
+#, php-format
+msgid "%s item"
+msgid_plural "%s items"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/class_faaAnalysis.php:537
+#: includes/class_faaAnalysis.php:600
+#: includes/class_faaAnalysis.php:615
+msgid "Unauthorized"
+msgstr ""
+
+#: woocommerce/class-afaq-wc-ai-connector.php:26
+msgid "Awesome FAQ — WooCommerce AI"
+msgstr ""
+
+#: woocommerce/class-afaq-wc-ai-connector.php:27
+msgid "AI connector for auto-generating WooCommerce product FAQs"
+msgstr ""
+
+#: woocommerce/class-afaq-wc-ai-connector.php:87
+msgid "Please set an AI API Key in WooCommerce › Settings › FAQ AI Settings."
+msgstr ""
+
+#: woocommerce/class-afaq-wc-ai-connector.php:220
+msgid "AI could not generate any FAQs. Try changing your prompt and try again."
+msgstr ""
+
+#: woocommerce/class-afaq-wc-meta-box.php:20
+msgid "Product FAQ — Awesome FAQ"
+msgstr ""
+
+#: woocommerce/class-afaq-wc-rest-api.php:150
+msgid "Product not found."
+msgstr ""
+
+#: woocommerce/class-afaq-wc-rest-api.php:155
+msgid "Permission denied."
+msgstr ""
+
+#: woocommerce/class-afaq-wc-rest-api.php:187
+msgid "This product has no description. Please add product description first, then try Auto-Generate."
+msgstr ""
+
+#: woocommerce/class-afaq-wc-settings.php:20
+msgid "FAQ AI Settings"
+msgstr ""
+
+#: woocommerce/class-afaq-wc-settings.php:43
+msgid "WordPress 7.0 detected! AI works automatically. You do not need to enter an API key below unless you want to override it."
+msgstr ""
+
+#: woocommerce/class-afaq-wc-settings.php:45
+msgid "API Key configured. AI FAQ generation is active."
+msgstr ""
+
+#: woocommerce/class-afaq-wc-settings.php:47
+msgid "API Key not configured. Enter an API key below to enable AI FAQ generation."
+msgstr ""
+
+#: woocommerce/class-afaq-wc-settings.php:53
+msgid "WooCommerce FAQ — AI Settings"
+msgstr ""
+
+#: woocommerce/class-afaq-wc-settings.php:61
+msgid "AI Provider"
+msgstr ""
+
+#: woocommerce/class-afaq-wc-settings.php:65
+msgid "Choose which AI provider to use for FAQ generation."
+msgstr ""
+
+#: woocommerce/class-afaq-wc-settings.php:74
+msgid "API Key"
+msgstr ""
+
+#. translators: 1: OpenAI link, 2: Anthropic link
+#: woocommerce/class-afaq-wc-settings.php:79
+#, php-format
+msgid "Enter your <a href=\"%1$s\" target=\"_blank\">OpenAI</a> or <a href=\"%2$s\" target=\"_blank\">Anthropic</a> API key."
+msgstr ""
+
+#: woocommerce/class-afaq-wc-settings.php:89
+msgid "Default FAQ Count"
+msgstr ""
+
+#: woocommerce/class-afaq-wc-settings.php:93
+msgid "Default number of FAQs to generate (1–15)."
+msgstr ""
+
+#: woocommerce/class-afaq-wc-settings.php:103
+msgid "FAQ Display Position"
+msgstr ""
+
+#: woocommerce/class-afaq-wc-settings.php:107
+msgid "Show FAQ in a separate product tab instead of below the product summary"
+msgstr ""
+
+#: woocommerce/class-afaq-wc-settings.php:108
+msgid "When unchecked, FAQs appear below the product description area."
+msgstr ""
+
+#: woocommerce/class-afaq-wc-settings.php:119
+msgid "Quick Help"
+msgstr ""
+
+#: woocommerce/class-afaq-wc-settings.php:140
+msgid "How to use the WooCommerce FAQ Add-on:"
+msgstr ""
+
+#: woocommerce/class-afaq-wc-settings.php:142
+msgid "Edit any WooCommerce product."
+msgstr ""
+
+#: woocommerce/class-afaq-wc-settings.php:143
+msgid "Find the \"Product FAQ — Awesome FAQ\" panel below the product description."
+msgstr ""
+
+#: woocommerce/class-afaq-wc-settings.php:144
+msgid "Choose a mode: Write Manually, Generate with Prompt, or Auto-Generate."
+msgstr ""
+
+#: woocommerce/class-afaq-wc-settings.php:145
+msgid "Select your preferred FAQ theme from the dropdown."
+msgstr ""
+
+#: woocommerce/class-afaq-wc-settings.php:146
+msgid "Check \"Show FAQ Section on This Product\" and save the product."
+msgstr ""
+
+#: woocommerce/class-afaq-wc-settings.php:149
+msgid "AI Modes require:"
+msgstr ""
+
+#: woocommerce/class-afaq-wc-settings.php:150
+msgid "Either WordPress 7.0+ AI Client, OR an API key entered above."
+msgstr ""
+
+#: woocommerce/class-afaq-woocommerce.php:94
+msgid "Add FAQ Item"
+msgstr ""
+
+#: woocommerce/class-afaq-woocommerce.php:95
+msgid "Write your question..."
+msgstr ""
+
+#: woocommerce/class-afaq-woocommerce.php:96
+msgid "Write your answer..."
+msgstr ""
+
+#: woocommerce/class-afaq-woocommerce.php:97
+msgid "AI is generating FAQs..."
+msgstr ""
+
+#: woocommerce/class-afaq-woocommerce.php:98
+msgid "FAQs generated! Edit if needed."
+msgstr ""
+
+#: woocommerce/class-afaq-woocommerce.php:99
+msgid "An error occurred. Please try again."
+msgstr ""
+
+#: woocommerce/class-afaq-woocommerce.php:100
+msgid "E.g. Create 5 FAQs about shipping and return policy for this product"
+msgstr ""
+
+#: woocommerce/class-afaq-woocommerce.php:101
+msgid "✨ Auto-Generate from Product"
+msgstr ""
+
+#: woocommerce/class-afaq-woocommerce.php:102
+msgid "Delete this FAQ item?"
+msgstr ""
+
+#: woocommerce/class-afaq-woocommerce.php:103
+msgid "Please enter a prompt first."
+msgstr ""
+
+#: woocommerce/class-afaq-woocommerce.php:115
+msgid "Default"
+msgstr ""
+
+#: woocommerce/class-afaq-woocommerce.php:116
+msgid "Theme One"
+msgstr ""
+
+#: woocommerce/class-afaq-woocommerce.php:117
+msgid "Theme Two"
+msgstr ""
+
+#: woocommerce/class-afaq-woocommerce.php:118
+msgid "Theme Three"
+msgstr ""
+
+#: build/admin-dashboard.js:1
+msgid "Advanced FAQ Categories & Filtering."
+msgstr ""
+
+#: build/admin-dashboard.js:1
+msgid "More premium FAQ templates."
+msgstr ""
+
+#: build/admin-dashboard.js:1
+msgid "Advanced FAQ Search Options."
+msgstr ""
+
+#: build/admin-dashboard.js:1
+msgid "FAQ Schema Rich Results – Improve SEO & Search Visibility."
+msgstr ""
+
+#: build/admin-dashboard.js:1
+msgid "Shortcode Support – Display FAQs Anywhere."
+msgstr ""
+
+#: build/admin-dashboard.js:1
+msgid "Multi-Column FAQ Layout Support."
+msgstr ""
+
+#: build/admin-dashboard.js:1
+msgid "Advanced Design Controls – Colors, Icons, Spacing & Typography."
+msgstr ""
+
+#: build/admin-dashboard.js:1
+msgid "Additional layouts & animation effects."
+msgstr ""
+
+#: build/admin-dashboard.js:1
+msgid "Analytics dashboard to track user interactions and popular questions."
+msgstr ""
+
+#: build/admin-dashboard.js:1
+msgid "Advanced Classic Editor Support."
+msgstr ""
+
+#: build/admin-dashboard.js:1
+msgid "WooCommerce Product FAQ Integration."
+msgstr ""
+
+#: build/admin-dashboard.js:1
+msgid "AI-Powered WooCommerce Product FAQ Builder."
+msgstr ""
+
+#: build/admin-dashboard.js:1
+msgid "WooCommerce Settings Panel."
+msgstr ""
+
+#: build/admin-dashboard.js:1
+msgid "AI-Powered Gutenberg FAQ Builder (generate Q&A content and dynamically customize layout designs, colors, and backgrounds using custom prompts)."
+msgstr ""
+
+#: build/block.json
+msgctxt "block title"
+msgid "Awesome FAQ"
+msgstr ""
+
+#: build/block.json
+msgctxt "block description"
+msgid "Create responsive, customizable FAQ sections with ready-made templates. Enhance trust with automatic FAQPage JSON-LD schema for SEO and Google rich results."
+msgstr ""
+
+#: build/block.json
+msgctxt "block keyword"
+msgid "FAQ And Answers"
+msgstr ""
+
+#: build/block.json
+msgctxt "block keyword"
+msgid "faq"
+msgstr ""
+
+#: build/block.json
+msgctxt "block keyword"
+msgid "Simple FAQ Plugin"
+msgstr ""
+
+#: build/block.json
+msgctxt "block keyword"
+msgid "Responsive Accordion Toggle"
+msgstr ""
+
+#: build/block.json
+msgctxt "block keyword"
+msgid "SEO Friendly FAQ Schema"
+msgstr ""
+
+#: build/block.json
+msgctxt "block keyword"
+msgid "Awesome FAQ"
+msgstr ""
+
+#: build/block.json
+msgctxt "block keyword"
+msgid "gutenberg block"
+msgstr ""
+
+#: build/block.json
+msgctxt "block keyword"
+msgid "simple faq"
+msgstr ""
+
+#: build/block.json
+msgctxt "block keyword"
+msgid "faq schema"
+msgstr ""
+
+#: build/block.json
+msgctxt "block keyword"
+msgid "accordion"
+msgstr ""
+
+#: build/block.json
+msgctxt "block keyword"
+msgid "toggle"
+msgstr ""
+
+#: build/block.json
+msgctxt "block keyword"
+msgid "block"
+msgstr ""
+
+#: build/block.json
+msgctxt "block keyword"
+msgid "WordPress FAQ Block"
+msgstr ""
+
+#: build/block.json
+msgctxt "block keyword"
+msgid "expand-collapse"
+msgstr ""
+
+#: build/block.json
+msgctxt "block keyword"
+msgid "JSON-LD Schema Support"
+msgstr ""
+
+#: build/block.json
+msgctxt "block keyword"
+msgid "custom-block"
+msgstr ""
+
+#: build/block.json
+msgctxt "block keyword"
+msgid "responsive-faq"
+msgstr ""
+
+#: build/block.json
+msgctxt "block keyword"
+msgid "easy-to-use"
+msgstr ""
+
+#: build/block.json
+msgctxt "block keyword"
+msgid "rich snippet"
+msgstr ""
+
+#: build/block.json
+msgctxt "block keyword"
+msgid "ai faqs"
+msgstr ""
+
+#: build/block.json
+msgctxt "block keyword"
+msgid "ai faqs block"
+msgstr ""
+
+#: build/block.json
+msgctxt "block keyword"
+msgid "ai generated faq"
+msgstr ""
+
+#: build/block.json
+msgctxt "block keyword"
+msgid "woocommerce faq tabs"
+msgstr ""
+
+#: build/block.json
+msgctxt "block keyword"
+msgid "woocommerce ai faqs generated"
+msgstr ""
+
+#: build/block.json
+msgctxt "block keyword"
+msgid "faq plugin for woocommerce"
+msgstr ""
