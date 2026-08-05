@@ -55,6 +55,59 @@ Upgrade to [**Awesome FAQ Pro**](https://bplugins.com/products/faq-and-answers/p
 - **Global Settings Panel:** Configure AI models, API keys, and display options under **WooCommerce → Settings → FAQ AI Settings**.
 - **Analytics Dashboard:** Track user interactions, views, and clicks to optimize your questions and answers.
 
+
+### AI-Powered FAQ Builder
+
+Awesome FAQ Pro includes AI-powered tools for creating FAQ content.
+
+You can generate Q&A content directly inside the Gutenberg editor using custom prompts.
+
+For WooCommerce products, the AI FAQ builder can generate product-specific questions and answers using supported AI providers.
+
+Supported AI providers include:
+
+- OpenAI (GPT-4o)
+- Anthropic (Claude Sonnet)
+- Native WordPress 7.0 Connectors API
+
+The AI features are designed to help you create FAQ content faster while still allowing you to review and edit the generated content before publishing.
+
+### WooCommerce Product FAQs
+
+With Awesome FAQ Pro, you can add FAQs directly to WooCommerce product pages.
+
+Choose where your FAQ section appears:
+
+- In a dedicated product tab
+- Below the product summary
+
+You can write product FAQs manually or use the AI-powered product FAQ generator to create an initial set of questions and answers.
+
+This is useful for:
+
+- Product specifications
+- Shipping questions
+- Return policies
+- Product usage
+- Compatibility questions
+- Warranty information
+- Customer support questions
+
+### FAQ Analytics
+
+Awesome FAQ Pro includes an analytics dashboard that helps you understand how visitors interact with your FAQ content.
+
+Track:
+
+- FAQ views
+- Question clicks
+- User interactions
+- Popular questions
+- Engagement
+
+Use these insights to identify the questions visitors care about most and improve your FAQ content.
+
+
 ### How to Use Awesome FAQ – Quick Start
 
 **Using the Gutenberg Block:**
@@ -80,10 +133,17 @@ Upgrade to [**Awesome FAQ Pro**](https://bplugins.com/products/faq-and-answers/p
 
 ### Use Cases
 
-- **Online Shops:** Answer product questions up front and cut down support tickets.
-- **Business & Service Sites:** Explain pricing, policies, and processes clearly.
-- **Blogs & Portfolios:** Add elegant Q&A sections to any page.
-- **Documentation & Help Centers:** Organize common questions into searchable, filterable groups (Pro).
+Awesome FAQ can help solve common content and customer-support needs.
+
+- **Product FAQs** – Answer common product questions before customers contact support.
+- **Service FAQs** – Explain services, pricing, policies, and processes.
+- **SaaS FAQs** – Answer questions about software features, plans, integrations, and onboarding.
+- **WooCommerce FAQs** – Provide product-specific information directly on product pages.
+- **Support FAQs** – Reduce repetitive questions by making common answers easy to find.
+- **Documentation FAQs** – Organize common questions for documentation and help centers.
+- **Blog FAQs** – Add useful Q&A sections to blog posts and articles.
+- **Agency FAQs** – Explain services, workflows, pricing, and project processes.
+- **Portfolio FAQs** – Answer questions about services, experience, projects, and availability.
 
 Love the plugin? Want new features? Need support? **[Send your feedback](https://bplugins.com/support/ "Send feedback")**
 
