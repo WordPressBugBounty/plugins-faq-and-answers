@@ -17,6 +17,8 @@ if (!class_exists('FaaPlugin')) {
             require_once AFAQ_DIR_PATH . 'includes/function.php';
             require_once AFAQ_DIR_PATH . 'faq-and-answers-block.php';
             require_once AFAQ_DIR_PATH . 'includes/class_faaAdmin.php';
+            require_once AFAQ_DIR_PATH . 'includes/class_faaAjax.php';
+            new FaaAjax();
             if (faa_is_premium() && AFAQ_HAS_PRO) {
                 if (file_exists(AFAQ_DIR_PATH . 'includes/class_faaAnalysis.php')) {
                     require_once AFAQ_DIR_PATH . 'includes/class_faaAnalysis.php';
@@ -25,9 +27,25 @@ if (!class_exists('FaaPlugin')) {
                     require_once AFAQ_DIR_PATH . 'includes/ai/class-afaq-block-ai.php';
                     new AFAQ_Block_AI();
                 }
+                if (file_exists(AFAQ_DIR_PATH . 'includes/ai/class-afaq-ask-ai.php')) {
+                    require_once AFAQ_DIR_PATH . 'includes/ai/class-afaq-ask-ai.php';
+                    new AFAQ_Ask_AI();
+
+                    if (is_admin() && file_exists(AFAQ_DIR_PATH . 'includes/ai/class-afaq-ask-ai-admin.php')) {
+                        require_once AFAQ_DIR_PATH . 'includes/ai/class-afaq-ask-ai-icons.php';
+                        require_once AFAQ_DIR_PATH . 'includes/ai/class-afaq-ask-ai-admin.php';
+                        new AFAQ_Ask_AI_Admin();
+                    }
+                }
             } else {
                 if (file_exists(AFAQ_DIR_PATH . 'includes/class-faa-freeAnalytics.php')) {
                     require_once AFAQ_DIR_PATH . 'includes/class-faa-freeAnalytics.php';
+                }
+                // Keeps the Ask AI menu item present on the free build, at the
+                // slug the premium screen uses, so the feature can be looked at
+                // before it is bought.
+                if (is_admin() && file_exists(AFAQ_DIR_PATH . 'includes/class-faa-freeAskAi.php')) {
+                    require_once AFAQ_DIR_PATH . 'includes/class-faa-freeAskAi.php';
                 }
             }
 
@@ -52,28 +70,36 @@ if (!class_exists('FaaPlugin')) {
         {
 
             if (isset($atts['id'])) {
-                $post = get_post($atts['id']);
+                $faq_id = absint($atts['id']);
+                $post = $faq_id ? get_post($faq_id) : null;
 
-                $post_meta = get_post_meta($atts['id'], "ba_re_", true);
-                $font_color = get_post_meta($atts['id'], 'ba_quest_font_color', true);
-                $font_size = get_post_meta($atts['id'], 'ba_quest_font_size', true);
-                $ans_font_size = get_post_meta($atts['id'], 'ba_ans_font_size', true);
-                $ans_font_color = get_post_meta($atts['id'], 'ba_ans_font_color', true);
+                if ($post) {
+                    $post_meta = get_post_meta($faq_id, "ba_re_", true);
+                    $font_color = get_post_meta($faq_id, 'ba_quest_font_color', true);
+                    $font_size = get_post_meta($faq_id, 'ba_quest_font_size', true);
+                    $ans_font_size = get_post_meta($faq_id, 'ba_ans_font_size', true);
+                    $ans_font_color = get_post_meta($faq_id, 'ba_ans_font_color', true);
 
+                    $blocks = array_filter(
+                        parse_blocks($post->post_content),
+                        function ($block) {
+                            return !empty($block['blockName']);
+                        }
+                    );
 
-                if ($post || $post_meta) {
-                    $blocks = parse_blocks($post->post_content);
                     if ($blocks) {
+                        $output = '';
                         foreach ($blocks as $block) {
-                            if (isset($block['blockName']) && $block['blockName'] === 'faa/faq-and-answers') {
+                            if ($block['blockName'] === 'faa/faq-and-answers') {
                                 if (!isset($block['attrs'])) {
                                     $block['attrs'] = [];
                                 }
                                 $block['attrs']['faqTitle'] = $post->post_title;
                                 $block['attrs']['faqId'] = $post->ID;
                             }
-                            return render_block($block);
+                            $output .= render_block($block);
                         }
+                        return $output;
                     } else {
                         $block_type = get_block_type('faa/faq-and-answers');
                         $default_attrs = [];
@@ -123,7 +149,16 @@ if (!class_exists('FaaPlugin')) {
                         return render_block($render_block);
                     }
                 } else {
-                    return '<p>Error: Awesome FAQ block with ID ' . esc_html($atts['id']) . ' not found.</p>';
+                    // Show the notice to editors only, never to site visitors.
+                    if (current_user_can('edit_posts')) {
+                        return '<p>' . sprintf(
+                            /* translators: %s: FAQ post ID used in the shortcode. */
+                            esc_html__('Error: Awesome FAQ with ID %s not found.', 'faq-and-answers'),
+                            esc_html((string) $atts['id'])
+                        ) . '</p>';
+                    }
+
+                    return '';
                 }
             }
         }

@@ -1,0 +1,2370 @@
+/**
+ * Ask AI dashboard.
+ *
+ * Loaded only on Awesome FAQ › Ask AI. The screen is its own little app: a
+ * branded bar, a sidebar of sections and a content area — rather than a stack
+ * of default WordPress tables. Everything is driven by the tokens on .afaq-app.
+ */
+
+/* WordPress prints its own heading and padding around the page; we replace it. */
+.afaq-page.wrap {
+	margin: 10px 20px 40px 0;
+	padding: 0;
+	max-width: none;
+}
+
+.afaq-page > h1:first-child {
+	display: none;
+}
+
+.afaq-app {
+	/* The brand blue. Every accented thing on this screen — the mark, the
+	   active nav item, the links, the primary buttons — resolves to this one
+	   token, so the colour is changed in a single place. */
+	--afaq-accent: #0f5fdb;
+	--afaq-accent-dark: #0c4cae;
+	--afaq-accent-soft: #e9f1fd;
+	--afaq-accent-shadow: rgba(15, 95, 219, 0.28);
+	--afaq-ok: #15803d;
+	--afaq-ok-soft: #e7f8ee;
+	--afaq-warn: #b45309;
+	--afaq-warn-soft: #fff4e5;
+	--afaq-bad: #b91c1c;
+	--afaq-bad-soft: #fdeced;
+	--afaq-info-soft: #eaf2fd;
+	--afaq-surface: #fff;
+	--afaq-canvas: #f7f7f9;
+	--afaq-border: #e6e7eb;
+	--afaq-border-soft: #f0f0f3;
+	--afaq-text: #16181d;
+	--afaq-muted: #6b7280;
+	/* Square corners throughout — see the flat-corners block at the end of
+	   this file, which is the single place to change it back. */
+	--afaq-radius: 0;
+	--afaq-ease: cubic-bezier(0.22, 1, 0.36, 1);
+
+	border: 1px solid var(--afaq-border);
+	border-radius: 14px;
+	background: var(--afaq-surface);
+	box-shadow: 0 1px 2px rgba(16, 18, 26, 0.04);
+	overflow: hidden;
+	color: var(--afaq-text);
+}
+
+.afaq-app *,
+.afaq-app *::before,
+.afaq-app *::after {
+	box-sizing: border-box;
+}
+
+/* ── Branded top bar ───────────────────────────────────────────────────── */
+.afaq-app-bar {
+	display: flex;
+	align-items: center;
+	gap: 14px;
+	padding: 18px 24px;
+	border-bottom: 1px solid var(--afaq-border);
+}
+
+.afaq-brand-mark {
+	flex: 0 0 auto;
+	display: grid;
+	place-items: center;
+	width: 42px;
+	height: 42px;
+	border-radius: 11px;
+	background: linear-gradient(135deg, #2b7cf0, var(--afaq-accent));
+	color: #fff;
+	box-shadow: 0 4px 12px var(--afaq-accent-shadow);
+}
+
+.afaq-brand-text {
+	flex: 1 1 auto;
+	min-width: 0;
+}
+
+.afaq-brand-title {
+	display: flex;
+	align-items: center;
+	gap: 9px;
+	margin: 0;
+	padding: 0;
+	font-size: 17px;
+	font-weight: 600;
+	line-height: 1.3;
+	color: var(--afaq-text);
+}
+
+.afaq-version {
+	padding: 2px 8px;
+	border-radius: 999px;
+	background: var(--afaq-accent-soft);
+	color: var(--afaq-accent);
+	font-size: 11px;
+	font-weight: 600;
+}
+
+.afaq-brand-sub {
+	margin: 2px 0 0;
+	color: var(--afaq-muted);
+	font-size: 12.5px;
+	line-height: 1.5;
+}
+
+.afaq-app-bar-link {
+	display: inline-flex;
+	align-items: center;
+	gap: 7px;
+	color: var(--afaq-muted);
+	font-size: 13px;
+	font-weight: 500;
+	text-decoration: none;
+	white-space: nowrap;
+}
+
+.afaq-app-bar-link:hover {
+	color: var(--afaq-accent);
+}
+
+/* ── Shell ─────────────────────────────────────────────────────────────── */
+.afaq-app-body {
+	display: grid;
+	grid-template-columns: 232px minmax(0, 1fr);
+	align-items: stretch;
+}
+
+.afaq-side {
+	padding: 18px 14px 24px;
+	border-right: 1px solid var(--afaq-border);
+	background: var(--afaq-surface);
+}
+
+.afaq-side-group {
+	margin: 0 0 6px;
+	padding: 0 10px;
+	color: #9298a4;
+	font-size: 10.5px;
+	font-weight: 700;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+}
+
+.afaq-side-group:not(:first-child) {
+	margin-top: 22px;
+}
+
+.afaq-nav-item {
+	display: flex;
+	align-items: center;
+	gap: 11px;
+	padding: 9px 11px;
+	margin-bottom: 2px;
+	border-radius: 9px;
+	color: #3c414b;
+	font-size: 13.5px;
+	font-weight: 500;
+	text-decoration: none;
+	transition: background 0.15s var(--afaq-ease), color 0.15s var(--afaq-ease);
+}
+
+.afaq-nav-item svg {
+	flex: 0 0 auto;
+	opacity: 0.75;
+}
+
+.afaq-nav-item:hover {
+	background: var(--afaq-canvas);
+	color: var(--afaq-text);
+}
+
+.afaq-nav-item.is-active {
+	background: var(--afaq-accent);
+	color: #fff;
+	font-weight: 600;
+	box-shadow: 0 2px 8px var(--afaq-accent-shadow);
+}
+
+.afaq-nav-item.is-active svg {
+	opacity: 1;
+}
+
+.afaq-nav-count {
+	margin-inline-start: auto;
+	padding: 1px 7px;
+	border-radius: 999px;
+	background: var(--afaq-accent-soft);
+	color: var(--afaq-accent);
+	font-size: 11px;
+	font-weight: 700;
+}
+
+.afaq-nav-item.is-active .afaq-nav-count {
+	background: rgba(255, 255, 255, 0.22);
+	color: #fff;
+}
+
+.afaq-main {
+	padding: 26px 28px 34px;
+	min-width: 0;
+	background: var(--afaq-surface);
+}
+
+/* ── Page head ─────────────────────────────────────────────────────────── */
+.afaq-head {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	gap: 20px;
+	flex-wrap: wrap;
+	margin-bottom: 20px;
+}
+
+.afaq-head h2 {
+	margin: 0;
+	padding: 0;
+	font-size: 21px;
+	font-weight: 600;
+	line-height: 1.3;
+}
+
+.afaq-head p {
+	margin: 3px 0 0;
+	max-width: 70ch;
+	color: var(--afaq-muted);
+	font-size: 13px;
+}
+
+/* ── Status strip ──────────────────────────────────────────────────────── */
+.afaq-strip {
+	display: flex;
+	align-items: center;
+	gap: 0;
+	flex-wrap: wrap;
+	margin-bottom: 20px;
+	border: 1px solid var(--afaq-border);
+	border-radius: var(--afaq-radius);
+	background: var(--afaq-surface);
+	overflow: hidden;
+}
+
+.afaq-strip-state {
+	display: flex;
+	align-items: center;
+	gap: 9px;
+	padding: 13px 16px;
+	font-size: 13px;
+	font-weight: 600;
+	white-space: nowrap;
+}
+
+.afaq-dot {
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: var(--afaq-muted);
+	flex: 0 0 auto;
+}
+
+.afaq-strip.is-ready .afaq-dot {
+	background: #22c55e;
+	box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.18);
+}
+
+.afaq-strip.is-off .afaq-dot {
+	background: #f59e0b;
+	box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.18);
+}
+
+.afaq-strip-value {
+	flex: 1 1 320px;
+	min-width: 0;
+	padding: 12px 14px;
+	border-inline-start: 1px solid var(--afaq-border);
+	background: var(--afaq-canvas);
+	font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+	font-size: 12px;
+	color: #4b5563;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.afaq-strip-copy {
+	display: inline-flex;
+	align-items: center;
+	gap: 7px;
+	padding: 12px 15px;
+	border: 0;
+	border-inline-start: 1px solid var(--afaq-border);
+	background: var(--afaq-surface);
+	color: #3c414b;
+	font: inherit;
+	font-size: 12.5px;
+	font-weight: 500;
+	cursor: pointer;
+	transition: background 0.15s var(--afaq-ease), color 0.15s var(--afaq-ease);
+}
+
+.afaq-strip-copy:hover {
+	background: var(--afaq-canvas);
+	color: var(--afaq-accent);
+}
+
+.afaq-strip-meta {
+	margin-inline-start: auto;
+	padding: 13px 16px;
+	border-inline-start: 1px solid var(--afaq-border);
+	color: var(--afaq-muted);
+	font-size: 12px;
+	white-space: nowrap;
+}
+
+/* ── Stat cards ────────────────────────────────────────────────────────── */
+.afaq-stats {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(196px, 1fr));
+	gap: 16px;
+	margin-bottom: 20px;
+}
+
+.afaq-stat {
+	padding: 18px;
+	border-radius: var(--afaq-radius);
+	border: 1px solid transparent;
+	transition: transform 0.2s var(--afaq-ease), box-shadow 0.2s var(--afaq-ease);
+}
+
+.afaq-stat:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 6px 18px rgba(16, 18, 26, 0.07);
+}
+
+/* Each card gets its own tint so the row reads as a set, not a table. */
+.afaq-stat.tint-violet { background: #f4f1fe; }
+.afaq-stat.tint-mint { background: #eafaf1; }
+.afaq-stat.tint-blue { background: #ecf3fd; }
+.afaq-stat.tint-peach { background: #fff5e9; }
+.afaq-stat.tint-rose { background: #fdeef0; }
+
+.afaq-stat-top {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	margin-bottom: 14px;
+}
+
+.afaq-stat-icon {
+	display: grid;
+	place-items: center;
+	width: 34px;
+	height: 34px;
+	border-radius: 10px;
+	background: rgba(255, 255, 255, 0.85);
+	color: var(--afaq-accent);
+	flex: 0 0 auto;
+}
+
+.tint-mint .afaq-stat-icon { color: var(--afaq-ok); }
+.tint-blue .afaq-stat-icon { color: #1d63c4; }
+.tint-peach .afaq-stat-icon { color: var(--afaq-warn); }
+.tint-rose .afaq-stat-icon { color: var(--afaq-bad); }
+
+.afaq-stat-value {
+	display: block;
+	font-size: 30px;
+	font-weight: 600;
+	line-height: 1.1;
+	letter-spacing: -0.02em;
+}
+
+.afaq-stat-label {
+	display: block;
+	margin-top: 4px;
+	font-size: 13px;
+	font-weight: 500;
+}
+
+.afaq-stat-hint {
+	display: block;
+	margin-top: 5px;
+	color: var(--afaq-muted);
+	font-size: 11.5px;
+}
+
+/* ── Trend pills ───────────────────────────────────────────────────────── */
+.afaq-trend {
+	display: inline-flex;
+	align-items: center;
+	gap: 3px;
+	padding: 3px 9px;
+	border-radius: 999px;
+	background: rgba(255, 255, 255, 0.85);
+	font-size: 11px;
+	font-weight: 600;
+	white-space: nowrap;
+}
+
+.afaq-trend.is-good { color: var(--afaq-ok); }
+.afaq-trend.is-bad { color: var(--afaq-bad); }
+
+.afaq-trend.is-flat {
+	color: var(--afaq-muted);
+	font-weight: 500;
+}
+
+/* ── Panels ────────────────────────────────────────────────────────────── */
+.afaq-grid {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr);
+	gap: 16px;
+	align-items: start;
+}
+
+@media (min-width: 1340px) {
+	.afaq-grid {
+		grid-template-columns: minmax(0, 1.9fr) minmax(320px, 1fr);
+	}
+}
+
+.afaq-col {
+	display: grid;
+	gap: 16px;
+	align-items: start;
+	min-width: 0;
+}
+
+.afaq-panel {
+	padding: 20px;
+	border: 1px solid var(--afaq-border);
+	border-radius: var(--afaq-radius);
+	background: var(--afaq-surface);
+}
+
+.afaq-panel + .afaq-panel {
+	margin-top: 16px;
+}
+
+.afaq-col .afaq-panel + .afaq-panel {
+	margin-top: 0;
+}
+
+.afaq-panel-head {
+	display: flex;
+	align-items: baseline;
+	justify-content: space-between;
+	gap: 12px;
+	flex-wrap: wrap;
+}
+
+.afaq-panel-head h3 {
+	margin: 0;
+	padding: 0;
+	font-size: 14.5px;
+	font-weight: 600;
+	line-height: 1.4;
+}
+
+.afaq-panel-aside {
+	display: inline-flex;
+	align-items: center;
+	gap: 7px;
+	color: var(--afaq-muted);
+	font-size: 12px;
+}
+
+.afaq-panel-link {
+	color: var(--afaq-accent);
+	font-size: 12px;
+	font-weight: 600;
+	text-decoration: none;
+	white-space: nowrap;
+}
+
+.afaq-panel-link:hover {
+	text-decoration: underline;
+}
+
+.afaq-panel-sub {
+	margin: 6px 0 16px;
+	color: var(--afaq-muted);
+	font-size: 12.5px;
+	line-height: 1.6;
+}
+
+.afaq-panel-sub:last-child {
+	margin-bottom: 0;
+}
+
+/* ── Budget meter ──────────────────────────────────────────────────────── */
+.afaq-meter-value {
+	font-size: 30px;
+	font-weight: 600;
+	line-height: 1.1;
+	letter-spacing: -0.02em;
+	margin-bottom: 10px;
+}
+
+.afaq-meter-value small {
+	font-size: 13px;
+	font-weight: 400;
+	color: var(--afaq-muted);
+	letter-spacing: 0;
+}
+
+.afaq-meter-pct {
+	padding: 3px 10px;
+	border-radius: 999px;
+	font-size: 12px;
+	font-weight: 600;
+}
+
+.afaq-meter-track {
+	height: 9px;
+	border-radius: 999px;
+	background: #eceef2;
+	overflow: hidden;
+}
+
+.afaq-meter-fill {
+	height: 100%;
+	border-radius: 999px;
+	transition: width 0.6s var(--afaq-ease);
+}
+
+.tone-ok .afaq-meter-fill { background: #22c55e; }
+.tone-warn .afaq-meter-fill { background: #f59e0b; }
+.tone-bad .afaq-meter-fill { background: #ef4444; }
+
+.tone-ok .afaq-meter-pct { background: var(--afaq-ok-soft); color: var(--afaq-ok); }
+.tone-warn .afaq-meter-pct { background: var(--afaq-warn-soft); color: var(--afaq-warn); }
+.tone-bad .afaq-meter-pct { background: var(--afaq-bad-soft); color: var(--afaq-bad); }
+
+/* ── Split bar + legend ────────────────────────────────────────────────── */
+.afaq-split {
+	display: flex;
+	height: 11px;
+	border-radius: 999px;
+	overflow: hidden;
+	background: #eceef2;
+}
+
+.afaq-split span {
+	display: block;
+	transition: width 0.6s var(--afaq-ease);
+}
+
+.afaq-split-cache { background: #3b82f6; }
+.afaq-split-direct { background: #22c55e; }
+.afaq-split-ai { background: #8b5cf6; }
+
+.afaq-legend {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 6px 18px;
+	margin-top: 12px;
+}
+
+.afaq-legend-item {
+	display: inline-flex;
+	align-items: center;
+	gap: 7px;
+	font-size: 12.5px;
+	color: var(--afaq-muted);
+}
+
+.afaq-legend-item strong {
+	color: var(--afaq-text);
+	font-weight: 600;
+}
+
+.afaq-dot-sm {
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	flex: 0 0 auto;
+}
+
+/* ── 14 day column chart ───────────────────────────────────────────────── */
+.afaq-chart {
+	display: flex;
+	align-items: flex-end;
+	gap: 7px;
+	height: 138px;
+	padding: 4px 0;
+}
+
+.afaq-chart-col {
+	flex: 1 1 0;
+	min-width: 0;
+	max-width: 72px;
+	height: 100%;
+	display: flex;
+	align-items: flex-end;
+	cursor: default;
+}
+
+/* Stacked bottom-up: cached, then FAQ, then AI on top. */
+.afaq-chart-bar {
+	display: flex;
+	flex-direction: column-reverse;
+	width: 100%;
+	min-height: 3px;
+	border-radius: 5px;
+	background: #eceef2;
+	overflow: hidden;
+	transition: opacity 0.15s var(--afaq-ease);
+}
+
+.afaq-chart-bar > span {
+	display: block;
+	width: 100%;
+}
+
+.afaq-chart-col:hover .afaq-chart-bar {
+	opacity: 0.75;
+}
+
+.afaq-chart-axis {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 7px;
+	color: var(--afaq-muted);
+	font-size: 11px;
+}
+
+/* ── Rows ──────────────────────────────────────────────────────────────── */
+.afaq-rows {
+	margin-top: 12px;
+	border: 1px solid var(--afaq-border);
+	border-radius: var(--afaq-radius);
+	overflow: hidden;
+}
+
+.afaq-row {
+	display: flex;
+	/* Top aligned, not centred: the row grows when its actions open on hover,
+	   and the count badge must not slide down as that happens. */
+	align-items: flex-start;
+	gap: 14px;
+	padding: 12px 15px;
+	transition: background 0.15s var(--afaq-ease);
+}
+
+.afaq-row + .afaq-row {
+	border-top: 1px solid var(--afaq-border-soft);
+}
+
+.afaq-row:hover {
+	background: #fbfbfc;
+}
+
+.afaq-row-count {
+	flex: 0 0 auto;
+	display: grid;
+	place-items: center;
+	width: 34px;
+	height: 34px;
+	border-radius: 10px;
+	background: var(--afaq-accent-soft);
+	color: var(--afaq-accent);
+	font-size: 13px;
+	font-weight: 700;
+}
+
+.afaq-row-main {
+	flex: 1 1 auto;
+	min-width: 0;
+}
+
+.afaq-row-q {
+	display: block;
+	font-size: 13px;
+	font-weight: 600;
+	line-height: 1.45;
+	overflow-wrap: break-word;
+}
+
+.afaq-row-meta {
+	display: block;
+	margin-top: 2px;
+	color: var(--afaq-muted);
+	font-size: 11.5px;
+}
+
+/**
+ * The actions sit under the "last asked …" line and unfold on hover, so a long
+ * list reads as calm text until you reach for a row. Collapsed with max-height
+ * rather than display:none so the reveal can be animated.
+ */
+.afaq-row-actions {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 6px;
+	margin-top: 0;
+	max-height: 0;
+	opacity: 0;
+	overflow: hidden;
+	transition:
+		max-height 0.15s var(--afaq-ease),
+		margin-top 0.15s var(--afaq-ease),
+		opacity 0.15s var(--afaq-ease);
+}
+
+/* focus-within keeps it reachable by keyboard, where there is no hover. */
+.afaq-row:hover .afaq-row-actions,
+.afaq-row:focus-within .afaq-row-actions {
+	margin-top: 8px;
+	max-height: 80px;
+	opacity: 1;
+}
+
+.afaq-row-actions form {
+	display: inline-flex;
+	margin: 0;
+}
+
+/* Touch screens have no hover to give, so the actions stay out. */
+@media (hover: none) {
+	.afaq-row-actions {
+		margin-top: 8px;
+		max-height: none;
+		opacity: 1;
+	}
+}
+
+/* ── Pager ───────────────────────────────────────────────────────────────── */
+
+.afaq-pager {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 10px;
+	margin-top: 14px;
+}
+
+.afaq-pager-range {
+	color: var(--afaq-muted);
+	font-size: 12px;
+}
+
+.afaq-pager-links {
+	display: flex;
+	align-items: center;
+	gap: 4px;
+}
+
+.afaq-pager-link,
+.afaq-pager-num {
+	display: inline-grid;
+	place-items: center;
+	min-width: 30px;
+	height: 30px;
+	padding: 0 9px;
+	border: 1px solid var(--afaq-border);
+	border-radius: var(--afaq-radius);
+	background: #fff;
+	color: inherit;
+	font-size: 12.5px;
+	line-height: 1;
+	text-decoration: none;
+	transition:
+		background 0.15s var(--afaq-ease),
+		border-color 0.15s var(--afaq-ease),
+		color 0.15s var(--afaq-ease);
+}
+
+.afaq-pager-link:hover,
+.afaq-pager-num:hover {
+	border-color: var(--afaq-accent);
+	background: var(--afaq-accent-soft);
+	color: var(--afaq-accent);
+}
+
+.afaq-pager-num.is-current {
+	border-color: var(--afaq-accent);
+	background: var(--afaq-accent);
+	color: #fff;
+	font-weight: 700;
+}
+
+.afaq-pager-link.is-disabled,
+.afaq-pager-link.is-disabled:hover {
+	border-color: var(--afaq-border);
+	background: #fff;
+	color: var(--afaq-muted);
+	opacity: 0.5;
+	cursor: default;
+}
+
+.afaq-votes {
+	flex: 0 0 auto;
+	display: flex;
+	gap: 10px;
+	font-size: 12.5px;
+}
+
+.afaq-vote-up { color: var(--afaq-ok); }
+.afaq-vote-down { color: var(--afaq-bad); }
+
+/* ── Answers & feedback ────────────────────────────────────────────────── */
+.afaq-answers {
+	margin-top: 12px;
+	border: 1px solid var(--afaq-border);
+	border-radius: var(--afaq-radius);
+	overflow: hidden;
+}
+
+/* Native <details>, so reading an answer needs no JavaScript. */
+.afaq-answer + .afaq-answer {
+	border-top: 1px solid var(--afaq-border-soft);
+}
+
+.afaq-answer > summary {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	padding: 12px 15px;
+	cursor: pointer;
+	list-style: none;
+	transition: background 0.15s var(--afaq-ease);
+}
+
+.afaq-answer > summary::-webkit-details-marker {
+	display: none;
+}
+
+.afaq-answer > summary:hover {
+	background: #fbfbfc;
+}
+
+.afaq-answer > summary:focus-visible {
+	outline: 2px solid var(--afaq-accent);
+	outline-offset: -2px;
+}
+
+/* A left edge marks the rows whose wording is not working. */
+.afaq-answer.is-poor > summary {
+	box-shadow: inset 3px 0 0 #ef4444;
+}
+
+.afaq-answer-q {
+	flex: 1 1 auto;
+	min-width: 0;
+	font-size: 13px;
+	font-weight: 600;
+	line-height: 1.45;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.afaq-answer[open] .afaq-answer-q {
+	white-space: normal;
+}
+
+.afaq-src {
+	flex: 0 0 auto;
+	padding: 2px 8px;
+	border-radius: 999px;
+	font-size: 10.5px;
+	font-weight: 700;
+	letter-spacing: 0.02em;
+}
+
+.afaq-src.is-ai { background: #f1ecfe; color: #6d3bef; }
+.afaq-src.is-faq { background: var(--afaq-ok-soft); color: var(--afaq-ok); }
+.afaq-src.is-cache { background: var(--afaq-info-soft); color: #1d63c4; }
+
+.afaq-answer-votes {
+	flex: 0 0 auto;
+	display: flex;
+	gap: 10px;
+	font-size: 12px;
+	font-weight: 600;
+}
+
+.afaq-answer-votes .afaq-vote-up,
+.afaq-answer-votes .afaq-vote-down {
+	display: inline-flex;
+	align-items: center;
+	gap: 4px;
+}
+
+/* One thumb icon, flipped for the down vote. */
+.afaq-answer-votes .afaq-vote-down svg {
+	transform: rotate(180deg);
+}
+
+.afaq-answer-asked {
+	flex: 0 0 auto;
+	min-width: 62px;
+	text-align: end;
+	color: var(--afaq-muted);
+	font-size: 11.5px;
+}
+
+.afaq-answer-body {
+	padding: 0 15px 14px 15px;
+	border-top: 1px dashed var(--afaq-border);
+	margin-top: -1px;
+}
+
+.afaq-answer-body p {
+	margin: 12px 0 0;
+	color: #3c414b;
+	font-size: 12.5px;
+	line-height: 1.65;
+}
+
+.afaq-answer-tip {
+	padding: 9px 11px;
+	border-radius: 8px;
+	background: var(--afaq-bad-soft);
+	color: #7f1d1d !important;
+	font-size: 12px !important;
+}
+
+/* ── Compact list ──────────────────────────────────────────────────────── */
+.afaq-mini {
+	display: grid;
+	gap: 2px;
+	margin-top: 10px;
+}
+
+.afaq-mini-item {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	padding: 9px 10px;
+	border-radius: 9px;
+	transition: background 0.15s var(--afaq-ease);
+}
+
+.afaq-mini-item:hover {
+	background: var(--afaq-canvas);
+}
+
+.afaq-mini-count {
+	flex: 0 0 auto;
+	display: grid;
+	place-items: center;
+	width: 28px;
+	height: 28px;
+	border-radius: 8px;
+	background: var(--afaq-accent-soft);
+	color: var(--afaq-accent);
+	font-size: 12px;
+	font-weight: 700;
+}
+
+.afaq-mini-q {
+	flex: 1 1 auto;
+	min-width: 0;
+	font-size: 12.5px;
+	line-height: 1.45;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+/* ── Knowledge base card ───────────────────────────────────────────────── */
+.afaq-kb {
+	display: flex;
+	align-items: center;
+	gap: 14px;
+	margin-top: 12px;
+}
+
+.afaq-kb-value {
+	font-size: 30px;
+	font-weight: 600;
+	line-height: 1;
+	letter-spacing: -0.02em;
+}
+
+.afaq-kb-text {
+	flex: 1 1 auto;
+	color: var(--afaq-muted);
+	font-size: 12px;
+	line-height: 1.5;
+}
+
+.afaq-kb-actions {
+	margin-top: 14px;
+	padding-top: 14px;
+	border-top: 1px solid var(--afaq-border-soft);
+}
+
+/* ── Empty state ───────────────────────────────────────────────────────── */
+.afaq-empty {
+	padding: 34px 24px;
+	text-align: center;
+}
+
+.afaq-empty-icon {
+	display: grid;
+	place-items: center;
+	width: 54px;
+	height: 54px;
+	margin: 0 auto 14px;
+	border-radius: 50%;
+	background: var(--afaq-accent-soft);
+	color: var(--afaq-accent);
+	font-size: 22px;
+}
+
+.afaq-empty h4 {
+	margin: 0 0 6px;
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.afaq-empty p {
+	margin: 0 auto;
+	max-width: 44ch;
+	color: var(--afaq-muted);
+	font-size: 12.5px;
+	line-height: 1.6;
+}
+
+/* ── Settings ──────────────────────────────────────────────────────────── */
+.afaq-field {
+	display: grid;
+	grid-template-columns: minmax(190px, 250px) minmax(0, 1fr);
+	gap: 6px 26px;
+	padding: 16px 0;
+	align-items: start;
+}
+
+.afaq-field + .afaq-field {
+	border-top: 1px solid var(--afaq-border-soft);
+}
+
+.afaq-field-label {
+	font-size: 13px;
+	font-weight: 600;
+	padding-top: 4px;
+}
+
+.afaq-field-help {
+	margin: 7px 0 0;
+	color: var(--afaq-muted);
+	font-size: 12px;
+	line-height: 1.6;
+	max-width: 64ch;
+}
+
+.afaq-app input[type='number'] {
+	width: 88px;
+}
+
+.afaq-inline-inputs {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 14px;
+}
+
+.afaq-inline-inputs label {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	font-size: 12.5px;
+	color: var(--afaq-muted);
+}
+
+.afaq-suffix {
+	color: var(--afaq-muted);
+	font-size: 12.5px;
+	margin-inline-start: 6px;
+}
+
+.afaq-savebar {
+	position: sticky;
+	bottom: 0;
+	z-index: 10;
+	display: flex;
+	align-items: center;
+	gap: 14px;
+	margin-top: 16px;
+	padding: 14px 20px;
+	border: 1px solid var(--afaq-border);
+	border-radius: var(--afaq-radius);
+	background: rgba(255, 255, 255, 0.94);
+	backdrop-filter: blur(8px);
+	box-shadow: 0 -2px 14px rgba(16, 18, 26, 0.06);
+}
+
+.afaq-savebar p {
+	margin: 0;
+	color: var(--afaq-muted);
+	font-size: 11.5px;
+}
+
+/* ── How it works ──────────────────────────────────────────────────────── */
+.afaq-steps {
+	display: grid;
+	gap: 12px;
+	margin-top: 14px;
+	counter-reset: afaq-step;
+}
+
+.afaq-step {
+	display: flex;
+	gap: 14px;
+	padding: 15px 16px;
+	border: 1px solid var(--afaq-border);
+	border-radius: var(--afaq-radius);
+}
+
+.afaq-step-num {
+	flex: 0 0 auto;
+	display: grid;
+	place-items: center;
+	width: 26px;
+	height: 26px;
+	border-radius: 8px;
+	background: var(--afaq-accent-soft);
+	color: var(--afaq-accent);
+	font-size: 12px;
+	font-weight: 700;
+}
+
+.afaq-step h4 {
+	margin: 0 0 3px;
+	font-size: 13.5px;
+	font-weight: 600;
+}
+
+.afaq-step p {
+	margin: 0;
+	color: var(--afaq-muted);
+	font-size: 12.5px;
+	line-height: 1.6;
+}
+
+.afaq-step-free {
+	margin-inline-start: auto;
+	flex: 0 0 auto;
+	align-self: flex-start;
+	padding: 2px 9px;
+	border-radius: 999px;
+	background: var(--afaq-ok-soft);
+	color: var(--afaq-ok);
+	font-size: 10.5px;
+	font-weight: 700;
+	white-space: nowrap;
+}
+
+.afaq-step-paid {
+	background: var(--afaq-accent-soft);
+	color: var(--afaq-accent);
+}
+
+/* ── Filters ───────────────────────────────────────────────────────────── */
+.afaq-filters {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 8px 12px;
+	margin: 0 0 4px;
+	padding: 10px 12px;
+	border: 1px solid var(--afaq-border);
+	border-radius: var(--afaq-radius);
+	background: var(--afaq-canvas);
+}
+
+.afaq-filter {
+	display: inline-flex;
+	align-items: center;
+	gap: 7px;
+	margin: 0;
+	font-size: 12.5px;
+	color: var(--afaq-muted);
+}
+
+.afaq-filter-label {
+	font-size: 12px;
+	font-weight: 500;
+	color: var(--afaq-muted);
+	white-space: nowrap;
+}
+
+.afaq-filters select {
+	font-size: 12.5px;
+	line-height: 1.6;
+	min-height: 30px;
+}
+
+.afaq-filter-check {
+	white-space: nowrap;
+}
+
+.afaq-filter-clear {
+	font-size: 12px;
+	color: var(--afaq-muted);
+	text-decoration: none;
+}
+
+.afaq-filter-clear:hover {
+	color: var(--afaq-accent);
+}
+
+/* With scripting the controls apply themselves, so the button is redundant —
+   without it, the button is the only way to submit, so it stays. */
+.afaq-filters.is-live .afaq-filter-apply {
+	display: none;
+}
+
+.afaq-empty-action {
+	margin: -6px 0 4px;
+	text-align: center;
+}
+
+/* ── AI Knowledge ──────────────────────────────────────────────────────── */
+.afaq-kb-summary {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+	gap: 12px;
+	margin-bottom: 14px;
+}
+
+.afaq-kb-card {
+	padding: 14px 16px;
+	border: 1px solid var(--afaq-border);
+	border-radius: var(--afaq-radius);
+	background: var(--afaq-surface);
+}
+
+.afaq-kb-card-label {
+	display: block;
+	font-size: 11.5px;
+	font-weight: 500;
+	color: var(--afaq-muted);
+}
+
+.afaq-kb-card-value {
+	display: block;
+	font-size: 26px;
+	font-weight: 650;
+	line-height: 1.2;
+	letter-spacing: -0.01em;
+}
+
+.afaq-kb-card-note {
+	display: block;
+	font-size: 11px;
+	color: var(--afaq-muted);
+}
+
+.afaq-kb-rows {
+	margin-top: 4px;
+}
+
+/**
+ * Where answers come from.
+ *
+ * Two options laid out together rather than a button that switches one off. The
+ * count and the consequence sit inside each option, so what the other state
+ * looks like is read rather than imagined — and the choice reads as a choice,
+ * not as a destructive action to be nervous about.
+ */
+/* The panel around it supplies the frame, so the form is only a wrapper. */
+.afaq-source {
+	margin: 0;
+}
+
+.afaq-source-option {
+	display: flex;
+	align-items: flex-start;
+	gap: 11px;
+	padding: 11px 13px;
+	border: 1px solid var(--afaq-border);
+	border-radius: var(--afaq-radius);
+	background: var(--afaq-surface);
+	cursor: pointer;
+	transition: border-color 0.15s var(--afaq-ease), box-shadow 0.15s var(--afaq-ease);
+}
+
+.afaq-source-option + .afaq-source-option {
+	margin-top: 8px;
+}
+
+.afaq-source-option:hover {
+	border-color: var(--afaq-accent);
+}
+
+.afaq-source-option.is-chosen {
+	border-color: var(--afaq-accent);
+	box-shadow: inset 0 0 0 1px var(--afaq-accent);
+}
+
+.afaq-source-option input[type='radio'] {
+	margin: 2px 0 0;
+	flex: 0 0 auto;
+}
+
+.afaq-source-body {
+	flex: 1 1 auto;
+	min-width: 0;
+}
+
+.afaq-source-name {
+	display: block;
+	font-size: 13px;
+	font-weight: 600;
+	line-height: 1.4;
+}
+
+.afaq-source-pill {
+	display: inline-block;
+	margin-inline-start: 7px;
+	padding: 1px 7px;
+	border-radius: var(--afaq-radius);
+	background: var(--afaq-ok-soft);
+	font-size: 10.5px;
+	font-weight: 600;
+	color: var(--afaq-ok);
+	vertical-align: middle;
+}
+
+.afaq-source-note {
+	display: block;
+	margin-top: 3px;
+	max-width: 72ch;
+	font-size: 11.5px;
+	line-height: 1.6;
+	color: var(--afaq-muted);
+}
+
+/* The number each option leaves the assistant with — the whole point of showing
+   both at once. */
+.afaq-source-count {
+	flex: 0 0 auto;
+	text-align: end;
+	font-size: 11px;
+	color: var(--afaq-muted);
+	line-height: 1.3;
+}
+
+.afaq-source-count strong {
+	display: block;
+	font-size: 19px;
+	font-weight: 650;
+	color: var(--afaq-text);
+}
+
+.afaq-source-apply {
+	margin-top: 10px;
+}
+
+/* Choosing an option applies it where scripting is available. */
+.afaq-source.is-live .afaq-source-apply {
+	display: none;
+}
+
+/* A switched-off source panel stays fully readable — the questions are still on
+   the site, and hiding them would read as "my FAQs are gone". */
+.afaq-panel.is-off {
+	background: var(--afaq-canvas);
+}
+
+.afaq-kb-aside {
+	margin-top: 18px;
+	padding-top: 14px;
+	border-top: 1px solid var(--afaq-border);
+}
+
+.afaq-kb-aside h4 {
+	margin: 0 0 2px;
+	padding: 0;
+	font-size: 12.5px;
+	font-weight: 600;
+}
+
+.afaq-kb-row {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	gap: 16px;
+	padding: 12px 0;
+	border-top: 1px solid var(--afaq-border-soft);
+}
+
+.afaq-kb-row:first-child {
+	border-top: 0;
+}
+
+/**
+ * Button tooltips.
+ *
+ * Its own element rather than a title attribute, because a native tooltip is
+ * drawn by the browser: it cannot be given a width, cannot be told to wrap, and
+ * on a narrow screen it stretches off as a single line. This one is anchored to
+ * the button's right edge so it grows inwards, wraps at a readable width, and
+ * opens upwards — .afaq-app clips its children, and there is always panel above
+ * a row but not always below it.
+ */
+.afaq-tip {
+	display: inline-flex;
+}
+
+/**
+ * The tooltip is positioned against the row, not against the button.
+ *
+ * Anchoring it to the button meant it had no idea how much room was left: at
+ * 360px it was still 252px wide and ran off the left of the panel. Measured
+ * against the row, "max-width: 100%" is the row's width, so it can never be
+ * wider than the space it has, at any screen size.
+ */
+.afaq-kb-row {
+	position: relative;
+}
+
+.afaq-tip-text {
+	position: absolute;
+	right: 0;
+	bottom: calc(100% + 6px);
+	z-index: 30;
+	width: max-content;
+	/* 320px keeps it to a readable line on a wide screen; the 100% takes over on
+	   a narrow one, where the row is all the room there is. */
+	max-width: min(320px, 100%);
+	padding: 7px 10px;
+	border-radius: var(--afaq-radius);
+	background: #16181d;
+	color: #fff;
+	font-size: 11.5px;
+	font-weight: 400;
+	line-height: 1.5;
+	text-align: left;
+	white-space: normal;
+	box-shadow: 0 4px 14px rgba(16, 18, 26, 0.22);
+	/* Hidden with opacity rather than visibility or display, so it stays in the
+	   accessibility tree for the aria-describedby that points at it. */
+	opacity: 0;
+	pointer-events: none;
+	transition: opacity 0.12s var(--afaq-ease);
+}
+
+.afaq-tip:hover .afaq-tip-text,
+.afaq-tip:focus-within .afaq-tip-text {
+	opacity: 1;
+}
+
+/* A paused entry is still readable, just visibly out of service. */
+.afaq-kb-row.is-paused .afaq-kb-q,
+.afaq-kb-row.is-paused .afaq-kb-a {
+	opacity: 0.55;
+}
+
+.afaq-kb-row-main {
+	min-width: 0;
+	flex: 1 1 auto;
+}
+
+.afaq-kb-q {
+	display: block;
+	font-size: 13px;
+	font-weight: 600;
+	line-height: 1.45;
+}
+
+.afaq-kb-a {
+	display: block;
+	margin-top: 3px;
+	font-size: 12px;
+	line-height: 1.6;
+	color: var(--afaq-muted);
+}
+
+.afaq-kb-row-side {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 6px;
+	justify-content: flex-start;
+	margin-top: 0;
+	max-height: 0;
+	opacity: 0;
+	overflow: hidden;
+	transition:
+		max-height 0.15s var(--afaq-ease),
+		margin-top 0.15s var(--afaq-ease),
+		opacity 0.15s var(--afaq-ease);
+}
+
+.afaq-kb-row:hover .afaq-kb-row-side,
+.afaq-kb-row:focus-within .afaq-kb-row-side {
+	margin-top: 8px;
+	max-height: 80px;
+	opacity: 1;
+	overflow: visible;
+}
+
+.afaq-kb-row-side form {
+	display: inline-flex;
+	margin: 0;
+}
+
+@media (hover: none) {
+	.afaq-kb-row-side {
+		margin-top: 8px;
+		max-height: none;
+		opacity: 1;
+		overflow: visible;
+	}
+}
+
+.afaq-kb-origin {
+	max-width: 190px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	font-size: 11.5px;
+	color: var(--afaq-muted);
+}
+
+.afaq-kb-tag {
+	display: inline-block;
+	margin-inline-start: 7px;
+	padding: 1px 7px;
+	border-radius: 999px;
+	background: var(--afaq-warn-soft);
+	font-size: 10.5px;
+	font-weight: 600;
+	color: var(--afaq-warn);
+	vertical-align: middle;
+}
+
+.afaq-kb-tag.is-alt {
+	background: var(--afaq-info-soft);
+	color: #1d4ed8;
+}
+
+.afaq-kb-cancel {
+	font-size: 12px;
+	color: var(--afaq-muted);
+	text-decoration: none;
+}
+
+.afaq-kb-cancel:hover {
+	color: var(--afaq-accent);
+}
+
+/* The knowledge form stacks: the boxes are wide, so a label column beside
+   them would leave every field cramped. */
+.afaq-kb-form .afaq-field {
+	display: block;
+	padding: 14px 0;
+}
+
+.afaq-kb-form .afaq-field-label {
+	display: block;
+	margin-bottom: 6px;
+	padding-top: 0;
+}
+
+.afaq-kb-form .afaq-field-help {
+	max-width: 76ch;
+}
+
+.afaq-kb-input,
+.afaq-kb-textarea {
+	width: 100%;
+}
+
+.afaq-kb-textarea {
+	line-height: 1.6;
+	font-family: inherit;
+	resize: vertical;
+}
+
+/* Two fields side by side, collapsing to one column when there is no room for
+   both — a half width textarea is worse than a stacked full width one. */
+.afaq-field-row {
+	display: grid;
+	/* min() so the minimum can never exceed the space available — without it the
+	   pair overflows the panel instead of stacking on a narrow screen. */
+	grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+	gap: 0 26px;
+}
+
+/* Inside a row the divider belongs above the row, not between its columns. */
+.afaq-field-row .afaq-field + .afaq-field {
+	border-top: 0;
+}
+
+.afaq-kb-form .afaq-field-row + .afaq-field-row,
+.afaq-kb-form .afaq-field-row + .afaq-field {
+	border-top: 1px solid var(--afaq-border-soft);
+}
+
+/* The help text under paired fields sits at the bottom of each column, so the
+   inputs themselves stay on one line. */
+.afaq-field-row .afaq-field {
+	display: flex;
+	flex-direction: column;
+}
+
+.afaq-field-row .afaq-field .afaq-field-help {
+	margin-top: auto;
+	padding-top: 7px;
+}
+
+.afaq-check {
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	font-size: 12.5px;
+	color: var(--afaq-muted);
+}
+
+.afaq-form-actions {
+	display: flex;
+	align-items: center;
+	gap: 14px;
+	flex-wrap: wrap;
+	margin-top: 16px;
+	padding-top: 14px;
+	border-top: 1px solid var(--afaq-border-soft);
+}
+
+.afaq-form-actions p {
+	margin: 0;
+	font-size: 11.5px;
+	color: var(--afaq-muted);
+}
+
+/* The counter turns amber as the limit approaches, so a long answer being
+   trimmed is never a surprise. */
+.afaq-count-warn {
+	color: var(--afaq-warn);
+	font-weight: 600;
+}
+
+.afaq-count-full {
+	color: var(--afaq-bad);
+	font-weight: 600;
+}
+
+/**
+ * Not-connected banner.
+ *
+ * Only drawn while there is no AI provider, and it leads the Dashboard because
+ * every figure under it reads zero until the key is in. Deliberately explanatory
+ * rather than a one-line warning: the reader has usually just installed this and
+ * does not yet know what the assistant does, let alone what a connector is.
+ */
+.afaq-setup-banner {
+	margin-bottom: 14px;
+	padding: 18px 20px;
+	border: 1px solid #f0dcb8;
+	border-inline-start: 3px solid var(--afaq-warn);
+	border-radius: var(--afaq-radius);
+	background: var(--afaq-warn-soft);
+}
+
+.afaq-setup-banner-head {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	gap: 20px;
+	flex-wrap: wrap;
+	padding-bottom: 14px;
+	margin-bottom: 14px;
+	border-bottom: 1px solid #f0dcb8;
+}
+
+.afaq-setup-banner h3 {
+	margin: 0 0 2px;
+	padding: 0;
+	font-size: 14.5px;
+	font-weight: 650;
+	color: #8a5410;
+}
+
+.afaq-setup-banner p {
+	margin: 0;
+	font-size: 12.5px;
+	line-height: 1.6;
+	color: #5c4a2e;
+}
+
+/* Three short answers to the three questions somebody new actually has: what is
+   this, how does it answer, and what happens until I connect it. */
+.afaq-setup-banner-cols {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(min(230px, 100%), 1fr));
+	gap: 16px 26px;
+}
+
+/* 2-Column Comparison Section (Before API Key vs After API Key) */
+.afaq-compare-grid {
+	display: flex !important;
+	gap: 0 !important;
+	align-items: stretch !important;
+	margin-top: 14px;
+}
+
+.afaq-compare-col {
+	flex: 1;
+	padding: 0 24px;
+	border-right: 1px solid #ebd4ab;
+}
+
+.afaq-compare-col:first-child {
+	padding-left: 0;
+}
+
+.afaq-compare-col:last-child {
+	padding-right: 0;
+	border-right: none;
+}
+
+.afaq-compare-title {
+	margin: 0 0 2px !important;
+	padding: 0;
+	font-size: 14px !important;
+	font-weight: 700 !important;
+	color: #8a5410 !important;
+}
+
+.afaq-compare-sub {
+	margin: 0 0 8px !important;
+	font-size: 12px !important;
+	font-weight: 600 !important;
+	color: #8a6a3a !important;
+}
+
+.afaq-compare-desc {
+	margin: 0 !important;
+	font-size: 12.5px !important;
+	line-height: 1.6 !important;
+	color: #5c4a2e !important;
+}
+
+@media (max-width: 768px) {
+	.afaq-compare-grid {
+		flex-direction: column !important;
+		gap: 16px !important;
+	}
+
+	.afaq-compare-col {
+		padding: 0 0 16px 0 !important;
+		border-right: none !important;
+		border-bottom: 1px solid #ebd4ab !important;
+	}
+
+	.afaq-compare-col:last-child {
+		padding-bottom: 0 !important;
+		border-bottom: none !important;
+	}
+}
+
+.afaq-setup-banner-side {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 4px;
+	flex: 0 0 auto;
+}
+
+/* The destination, demoted under the button that names the task. */
+.afaq-setup-banner-where {
+	font-size: 11px;
+	color: #8a6a3a;
+}
+
+.afaq-setup-banner-link {
+	display: inline-block;
+	margin-top: 14px;
+	font-size: 12px;
+	font-weight: 500;
+	color: #8a5410;
+	text-decoration: none;
+}
+
+.afaq-setup-banner-link:hover {
+	text-decoration: underline;
+	color: #8a5410;
+}
+
+/* ── How it works ──────────────────────────────────────────────────────── */
+
+/**
+ * The setup list is a sequence, not four unrelated cards: each step is only
+ * useful once the one above it is done.
+ *
+ * The cards stay — they are what the rest of this screen uses — and a short
+ * connector is drawn in the gap between them instead, joining one number to the
+ * next. The numbers are filled so the eye lands on the order first.
+ */
+.afaq-steps.is-setup .afaq-step {
+	position: relative;
+	align-items: flex-start;
+}
+
+.afaq-steps.is-setup .afaq-step:not(:last-child)::after {
+	content: '';
+	position: absolute;
+	/* Card padding (16px) plus half a 26px number, so it lines up under it. */
+	left: 29px;
+	top: 100%;
+	/* Exactly the grid gap, so it meets the next card without overshooting. */
+	height: 12px;
+	width: 2px;
+	background: var(--afaq-border);
+}
+
+.afaq-steps.is-setup .afaq-step-num {
+	width: 26px;
+	height: 26px;
+	background: var(--afaq-accent);
+	color: #fff;
+	font-size: 12px;
+	font-weight: 700;
+}
+
+.afaq-steps.is-setup .afaq-step h4 {
+	font-size: 13.5px;
+	margin-bottom: 4px;
+}
+
+.afaq-step-links {
+	margin: 6px 0 0 !important;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 4px 16px;
+}
+
+.afaq-step-links a {
+	font-size: 12px;
+	font-weight: 500;
+	text-decoration: none;
+}
+
+/* A setup step that has not been done yet, so the list doubles as a checklist
+   rather than only as prose. */
+.afaq-step-free.afaq-step-todo {
+	background: var(--afaq-warn-soft);
+	color: var(--afaq-warn);
+}
+
+/**
+ * Four screens, so a wider minimum keeps it 2×2 rather than leaving one
+ * stranded on a row of its own.
+ *
+ * The min() matters: a bare 320px minimum cannot shrink below itself, so on a
+ * narrow screen the track is wider than the panel and the text runs off the
+ * side. Capping the minimum at the available width lets it collapse instead.
+ */
+.afaq-guide {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr));
+	gap: 16px 24px;
+}
+
+.afaq-guide-item h4 {
+	margin: 0 0 3px;
+	padding: 0;
+	font-size: 12.5px;
+	font-weight: 600;
+}
+
+.afaq-guide-item p {
+	margin: 0;
+	font-size: 12px;
+	line-height: 1.6;
+	color: var(--afaq-muted);
+}
+
+/* ── Misc ──────────────────────────────────────────────────────────────── */
+.afaq-badge-pill {
+	display: inline-block;
+	padding: 2px 9px;
+	border-radius: 999px;
+	background: var(--afaq-accent-soft);
+	color: var(--afaq-accent);
+	font-size: 11px;
+	font-weight: 600;
+}
+
+.afaq-app .afaq-danger {
+	color: var(--afaq-bad);
+	box-shadow: inset 0 0 0 1px currentColor;
+	background: transparent;
+	border-color: transparent;
+}
+
+.afaq-app .afaq-danger:hover {
+	background: var(--afaq-bad-soft);
+	color: var(--afaq-bad);
+	border-color: transparent;
+}
+
+.afaq-copied {
+	color: var(--afaq-ok) !important;
+}
+
+.afaq-notice {
+	display: flex;
+	align-items: flex-start;
+	gap: 10px;
+	margin-bottom: 18px;
+	padding: 12px 15px;
+	border-radius: var(--afaq-radius);
+	font-size: 13px;
+	line-height: 1.55;
+}
+
+.afaq-notice.is-success {
+	background: var(--afaq-ok-soft);
+	color: #14532d;
+}
+
+.afaq-notice.is-warning {
+	background: var(--afaq-warn-soft);
+	color: #7c2d12;
+}
+
+/* ── Responsive ────────────────────────────────────────────────────────── */
+@media (max-width: 1100px) {
+	.afaq-app-body {
+		grid-template-columns: 1fr;
+	}
+
+	.afaq-side {
+		border-right: 0;
+		border-bottom: 1px solid var(--afaq-border);
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+		gap: 4px 8px;
+		padding: 14px;
+	}
+
+	/* Section labels only make sense in a vertical list. */
+	.afaq-side-group {
+		display: none;
+	}
+
+	.afaq-main {
+		padding: 20px 18px 28px;
+	}
+}
+
+@media (max-width: 782px) {
+	.afaq-page.wrap {
+		margin: 10px 10px 40px 0;
+	}
+
+	.afaq-field {
+		grid-template-columns: 1fr;
+		gap: 8px;
+	}
+
+	.afaq-row {
+		flex-wrap: wrap;
+	}
+
+	.afaq-row-actions {
+		margin-top: 8px;
+		max-height: none;
+		opacity: 1;
+	}
+
+	.afaq-pager {
+		justify-content: center;
+	}
+
+	.afaq-strip-meta {
+		margin-inline-start: 0;
+		border-inline-start: 0;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.afaq-app *,
+	.afaq-app *::before {
+		transition: none !important;
+	}
+
+	.afaq-stat:hover {
+		transform: none;
+	}
+}
+
+/**
+ * ── Buttons ──────────────────────────────────────────────────────────────
+ *
+ * The buttons here are WordPress's own, so they arrive in the admin's blue
+ * (#2271b1) rather than this plugin's. These rules retint them without
+ * rebuilding them — the sizing, spacing and disabled states stay core's.
+ *
+ * The selectors carry one class more than core's (.afaq-app .button.button-primary
+ * against .wp-core-ui .button-primary) so they win on specificity rather than on
+ * stylesheet order, which is not ours to rely on. No !important is needed.
+ *
+ * .afaq-danger is excluded by name: Delete and "Clear all collected questions"
+ * are red on purpose, and a blue delete button is a trap.
+ */
+.afaq-app .button.button-primary {
+	background: var(--afaq-accent);
+	border-color: var(--afaq-accent);
+	color: #fff;
+}
+
+.afaq-app .button.button-primary:hover,
+.afaq-app .button.button-primary:focus,
+.afaq-app .button.button-primary:active {
+	background: var(--afaq-accent-dark);
+	border-color: var(--afaq-accent-dark);
+	color: #fff;
+}
+
+.afaq-app .button.button-primary:focus {
+	box-shadow: 0 0 0 1px #fff, 0 0 0 3px var(--afaq-accent);
+}
+
+/* Secondary buttons keep their pale face — turning every small Edit, Copy and
+   Pause solid blue would leave nothing to mark the one button that matters on
+   the screen. Only their text and edge follow the accent. */
+.afaq-app .button:not(.button-primary):not(.afaq-danger) {
+	border-color: var(--afaq-accent);
+	color: var(--afaq-accent);
+}
+
+.afaq-app .button:not(.button-primary):not(.afaq-danger):hover,
+.afaq-app .button:not(.button-primary):not(.afaq-danger):focus {
+	border-color: var(--afaq-accent-dark);
+	background: var(--afaq-accent-soft);
+	color: var(--afaq-accent-dark);
+}
+
+.afaq-app .button:not(.button-primary):not(.afaq-danger):focus {
+	box-shadow: 0 0 0 1px var(--afaq-accent);
+}
+
+/**
+ * ── Flat corners ─────────────────────────────────────────────────────────
+ *
+ * Everything on this screen is square: the shell, the panels, the stat cards,
+ * the buttons, the form controls, the chips and the bars.
+ *
+ * Kept as one block at the end rather than spread through the file, so the
+ * whole decision is visible in one place — delete this block and the rounded
+ * design comes back untouched.
+ *
+ * The only exceptions are the small status dots, which are meant to read as
+ * dots rather than squares.
+ */
+.afaq-app,
+.afaq-app .afaq-brand-mark,
+.afaq-app .afaq-version,
+.afaq-app .afaq-nav-item,
+.afaq-app .afaq-nav-count,
+.afaq-app .afaq-stat,
+.afaq-app .afaq-stat-icon,
+.afaq-app .afaq-trend,
+.afaq-app .afaq-meter-track,
+.afaq-app .afaq-meter-fill,
+.afaq-app .afaq-meter-pct,
+.afaq-app .afaq-split,
+.afaq-app .afaq-chart-bar,
+.afaq-app .afaq-row-count,
+.afaq-app .afaq-mini-item,
+.afaq-app .afaq-mini-count,
+.afaq-app .afaq-empty-icon,
+.afaq-app .afaq-badge-pill,
+.afaq-app .afaq-kb-card,
+.afaq-app .afaq-kb-tag,
+.afaq-app .afaq-src,
+.afaq-app .afaq-answer-tip,
+.afaq-app .afaq-step-num,
+.afaq-app .afaq-step-free,
+.afaq-app .afaq-pager-link,
+.afaq-app .afaq-pager-num,
+.afaq-app .afaq-notice {
+	border-radius: 0;
+}
+
+/* WordPress gives its buttons and inputs a 3px radius of their own. */
+.afaq-app .button,
+.afaq-app .button-primary,
+.afaq-app .button-secondary,
+.afaq-app button,
+.afaq-app input[type='text'],
+.afaq-app input[type='email'],
+.afaq-app input[type='number'],
+.afaq-app input[type='url'],
+.afaq-app input[type='search'],
+.afaq-app select,
+.afaq-app textarea {
+	border-radius: 0;
+}
+
+/* Squares need a touch more room than circles did. */
+.afaq-app .afaq-empty-icon {
+	width: 48px;
+	height: 48px;
+}
+
+/* 3-Step Guide Banner (#0C4CAE) */
+.afaq-guide-banner {
+	position: relative;
+	background: #0C4CAE !important;
+	color: #ffffff !important;
+	border-radius: 0px !important;
+	padding: 24px 28px;
+	margin-bottom: 24px;
+	box-shadow: none !important;
+}
+
+.afaq-guide-close {
+	position: absolute;
+	top: 10px;
+	right: 14px;
+	background: transparent;
+	border: none;
+	color: rgba(255, 255, 255, 0.8) !important;
+	font-size: 24px;
+	line-height: 1;
+	cursor: pointer;
+	padding: 2px 8px;
+	border-radius: 0px !important;
+	transition: color 0.15s ease, background 0.15s ease;
+}
+
+.afaq-guide-close:hover {
+	color: #ffffff !important;
+	background: rgba(255, 255, 255, 0.2) !important;
+}
+
+.afaq-guide-steps {
+	display: flex;
+	gap: 0;
+	align-items: stretch;
+}
+
+.afaq-guide-step {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	text-align: left;
+	padding: 0 24px;
+	border-right: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.afaq-guide-step:first-child {
+	padding-left: 0;
+}
+
+.afaq-guide-step:last-child {
+	padding-right: 0;
+	border-right: none;
+}
+
+.afaq-guide-num {
+	font-size: 16px;
+	font-weight: 700;
+	color: #ffffff !important;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	line-height: 1.2;
+	margin-bottom: 8px;
+}
+
+.afaq-guide-desc {
+	font-size: 13px;
+	line-height: 1.5;
+	color: rgba(255, 255, 255, 0.95) !important;
+	margin: 0 0 16px 0;
+	min-height: 40px;
+}
+
+.afaq-guide-btn,
+.afaq-guide-box {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	height: 36px;
+	padding: 0 16px;
+	background: rgba(255, 255, 255, 0.1) !important;
+	border: 1.5px solid rgba(255, 255, 255, 0.65) !important;
+	border-radius: 0px !important;
+	color: #ffffff !important;
+	font-size: 12.5px;
+	font-weight: 600;
+	cursor: pointer;
+	text-decoration: none;
+	transition: all 0.15s ease;
+	width: auto;
+	max-width: none;
+}
+
+.afaq-guide-btn:hover {
+	background: #ffffff !important;
+	color: #0C4CAE !important;
+	border-color: #ffffff !important;
+}
+
+.afaq-guide-box code {
+	background: transparent !important;
+	color: #ffffff !important;
+	font-size: 12.5px;
+	font-weight: 600;
+	font-family: inherit;
+}
+
+@media (max-width: 768px) {
+	.afaq-guide-steps {
+		flex-direction: column;
+		gap: 20px;
+	}
+
+	.afaq-guide-step {
+		padding: 0 0 20px 0;
+		border-right: none;
+		border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+	}
+
+	.afaq-guide-step:last-child {
+		padding-bottom: 0;
+		border-bottom: none;
+	}
+}
+
+/* Custom Confirmation Modal */
+.afaq-modal-backdrop {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 999999;
+	background: rgba(15, 23, 42, 0.45);
+	backdrop-filter: blur(4px);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 20px;
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.2s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.afaq-modal-backdrop.is-active {
+	opacity: 1;
+	visibility: visible;
+}
+
+.afaq-modal-card {
+	position: relative;
+	background: #ffffff;
+	border-radius: 12px !important;
+	width: 100%;
+	max-width: 440px;
+	padding: 24px;
+	box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04), 0 0 0 1px rgba(0, 0, 0, 0.05);
+	transform: scale(0.95) translateY(10px);
+	transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.afaq-modal-backdrop.is-active .afaq-modal-card {
+	transform: scale(1) translateY(0);
+}
+
+.afaq-modal-close {
+	position: absolute;
+	top: 14px;
+	right: 14px;
+	background: transparent;
+	border: none;
+	color: #94a3b8;
+	font-size: 22px;
+	line-height: 1;
+	cursor: pointer;
+	padding: 4px;
+	border-radius: 6px !important;
+	transition: color 0.15s ease, background 0.15s ease;
+}
+
+.afaq-modal-close:hover {
+	color: #334155;
+	background: #f1f5f9;
+}
+
+.afaq-modal-body {
+	display: flex;
+	gap: 16px;
+	align-items: flex-start;
+}
+
+.afaq-modal-icon-wrap {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 44px;
+	height: 44px;
+	border-radius: 10px !important;
+	background: #fff7ed;
+	color: #d97706;
+	flex-shrink: 0;
+}
+
+.afaq-modal-content h4 {
+	margin: 0 0 6px 0 !important;
+	font-size: 16px !important;
+	font-weight: 650 !important;
+	color: #0f172a !important;
+}
+
+.afaq-modal-content p {
+	margin: 0 !important;
+	font-size: 13.5px !important;
+	line-height: 1.55 !important;
+	color: #475569 !important;
+}
+
+.afaq-modal-footer {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	gap: 10px;
+	margin-top: 22px;
+}
+
+.afaq-modal-btn {
+	height: 38px;
+	padding: 0 18px;
+	border-radius: 8px !important;
+	font-size: 13px;
+	font-weight: 600;
+	cursor: pointer;
+	transition: all 0.15s ease;
+}
+
+.afaq-modal-btn.is-cancel {
+	background: #f1f5f9;
+	color: #475569;
+	border: 1px solid #cbd5e1;
+}
+
+.afaq-modal-btn.is-cancel:hover {
+	background: #e2e8f0;
+	color: #1e293b;
+}
+
+.afaq-modal-btn.is-confirm {
+	background: #0f5fdb;
+	color: #ffffff;
+	border: 1px solid #0f5fdb;
+	box-shadow: 0 1px 2px rgba(15, 95, 219, 0.2);
+}
+
+.afaq-modal-btn.is-confirm:hover {
+	background: #0c4cae;
+	border-color: #0c4cae;
+}

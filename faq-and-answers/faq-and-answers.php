@@ -3,7 +3,7 @@
 /**
  * Plugin Name: Awesome FAQ – Modern Accordion, Tabs, Responsive & Super Fast FAQ Builder
  * Description: Create responsive, customizable FAQ sections with ready-made templates.Perfect for boosting clarity, trust, and user experience on any page. 
- * Version: 2.3.0
+ * Version: 2.4.0
  * Author: bPlugins
  * Author URI: https://bplugins.com 
  * License: GPLv3 or later
@@ -16,7 +16,7 @@ if ( !defined( 'ABSPATH' ) ) {
 if ( function_exists( 'faa_fs' ) ) {
     faa_fs()->set_basename( false, __FILE__ );
 } else {
-    define( 'AFAQ_VERSION', ( isset( $_SERVER['HTTP_HOST'] ) && 'localhost' === $_SERVER['HTTP_HOST'] ? time() : '2.3.0' ) );
+    define( 'AFAQ_VERSION', ( isset( $_SERVER['HTTP_HOST'] ) && 'localhost' === $_SERVER['HTTP_HOST'] ? time() : '2.4.0' ) );
     define( 'AFAQ_DIR_URL', plugin_dir_url( __FILE__ ) );
     define( 'AFAQ_DIR_PATH', plugin_dir_path( __FILE__ ) );
     define( 'AFAQ_HAS_PRO', file_exists( AFAQ_DIR_PATH . 'vendor/freemius/start.php' ) );
@@ -37,7 +37,7 @@ if ( function_exists( 'faa_fs' ) ) {
                     'premium_slug'        => 'faq-and-answers-pro',
                     'type'                => 'plugin',
                     'public_key'          => 'pk_2d82b77e5ff183b2a656c04d19840',
-                    'is_premium'          => false,
+                    'is_premium'          => free,
                     'premium_suffix'      => 'Pro',
                     'has_premium_version' => true,
                     'has_addons'          => false,

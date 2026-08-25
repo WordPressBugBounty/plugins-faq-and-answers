@@ -2,14 +2,14 @@
 # This file is distributed under the GPLv3 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Awesome FAQ – Modern Accordion, Tabs, Responsive & Super Fast FAQ Builder 2.3.0\n"
+"Project-Id-Version: Awesome FAQ – Modern Accordion, Tabs, Responsive & Super Fast FAQ Builder 2.4.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/faq-and-answers\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-06-21T05:03:58+00:00\n"
+"POT-Creation-Date: 2026-08-19T05:15:08+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: faq-and-answers\n"
@@ -34,35 +34,1506 @@ msgstr ""
 msgid "https://bplugins.com"
 msgstr ""
 
-#: faq-and-answers-block.php:51
-#: woocommerce/class-afaq-wc-ai-connector.php:50
+#: build/blocks/ask-ai/render.php:38
+#: build/blocks/ask-ai/index.js:1
+msgid "Ask"
+msgstr ""
+
+#: build/blocks/ask-ai/render.php:62
+#: build/blocks/ask-ai/index.js:1
+msgid "AI answer"
+msgstr ""
+
+#: build/blocks/ask-ai/render.php:66
+msgid "From our FAQ"
+msgstr ""
+
+#: build/blocks/ask-ai/render.php:72
+#: build/blocks/ask-ai/index.js:1
+msgid "Was this helpful?"
+msgstr ""
+
+#: build/blocks/ask-ai/render.php:104
+msgid "Please log in to ask a question."
+msgstr ""
+
+#: build/blocks/ask-ai/render.php:108
+msgid "Log in"
+msgstr ""
+
+#: build/blocks/ask-ai/render.php:120
+#: build/blocks/ask-ai/index.js:1
+msgid "Type your question…"
+msgstr ""
+
+#: build/blocks/ask-ai/render.php:152
+msgid "Looking through the FAQs…"
+msgstr ""
+
+#: build/blocks/ask-ai/render.php:153
+#: build/blocks/ask-ai/index.js:1
+msgid "Based on"
+msgstr ""
+
+#: build/blocks/ask-ai/render.php:155
+msgid "Thanks for the feedback!"
+msgstr ""
+
+#: build/blocks/ask-ai/render.php:156
+msgid "Something went wrong. Please try again."
+msgstr ""
+
+#: build/blocks/ask-ai/render.php:157
+msgid "Please type a question first."
+msgstr ""
+
+#: build/blocks/ask-ai/render.php:160
+#: includes/ai/class-afaq-ask-ai.php:1996
+msgid "I could not find an answer to that in our FAQs."
+msgstr ""
+
+#: build/blocks/ask-ai/render.php:161
+msgid "Contact us"
+msgstr ""
+
+#: build/blocks/ask-ai/render.php:187
+msgid "Ask a question"
+msgstr ""
+
+#: build/blocks/bento-faq/render.php:189
+#: build/blocks/bento-faq/index.js:1
+msgid "Read answer"
+msgstr ""
+
+#: faq-and-answers-block.php:49
+#: includes/class_faaAdmin.php:82
+#: build/blocks/faq-parent/index.js:1
+msgid "Awesome FAQ"
+msgstr ""
+
+#: faq-and-answers-block.php:119
+#: woocommerce/class-afaq-wc-ai-connector.php:34
 msgid "WordPress AI Client is not available."
 msgstr ""
 
-#: includes/ai/class-afaq-block-ai.php:28
-msgid "Awesome FAQ AI"
+#: includes/ai/class-afaq-ask-ai-admin.php:58
+#: includes/class-faa-freeAskAi.php:50
+msgctxt "admin menu badge"
+msgid "New"
 msgstr ""
 
-#: includes/ai/class-afaq-block-ai.php:29
-msgid "AI connector for Awesome FAQ block"
+#: includes/ai/class-afaq-ask-ai-admin.php:63
+#: includes/ai/class-afaq-ask-ai-admin.php:64
+#: includes/ai/class-afaq-ask-ai-admin.php:779
+#: includes/ai/class-afaq-ask-ai-admin.php:787
+#: includes/class-faa-freeAskAi.php:55
+#: includes/class-faa-freeAskAi.php:56
+#: includes/class-faa-freeAskAi.php:126
+#: build/ask-ai-promo/index.js:1
+#: build/blocks/faq-parent/index.js:1
+msgid "Ask AI"
 msgstr ""
 
-#: includes/ai/class-afaq-block-ai.php:88
+#. translators: 1: first row shown, 2: last row shown, 3: total rows.
+#: includes/ai/class-afaq-ask-ai-admin.php:193
+#, php-format
+msgid "Showing %1$s–%2$s of %3$s"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:204
+#: includes/ai/class-afaq-ask-ai-admin.php:207
+msgid "Previous"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:222
+#: includes/ai/class-afaq-ask-ai-admin.php:225
+msgid "Next"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:240
+msgid "You are not allowed to do this."
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:584
+msgid "no change"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:662
+msgid "Waiting for activity"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:663
+msgid "Each day gets its own bar here, so you can see whether questions are growing and how much of the load stays free."
+msgstr ""
+
+#. translators: 1: date, 2: total questions, 3: cached, 4: from FAQ, 5: AI.
+#: includes/ai/class-afaq-ask-ai-admin.php:678
+#, php-format
+msgid "%1$s — %2$s questions: %3$s cached, %4$s from FAQ, %5$s by AI"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:713
+msgid "today"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:721
+#: includes/ai/class-afaq-ask-ai-admin.php:1953
+#: build/ask-ai-promo/index.js:1
+msgid "Cached"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:722
+#: includes/ai/class-afaq-ask-ai-admin.php:1952
+msgid "From a FAQ"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:723
+msgid "Answered by AI"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:792
+#: build/ask-ai-promo/index.js:1
+msgid "An answer assistant for your visitors, built from your FAQs and the answers you write yourself."
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:797
+msgid "Help &amp; Support"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:809
+msgid "Settings saved."
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:815
+msgid "Settings saved. Because this changes how answers read, the cached ones were cleared — the next time each question is asked it will be answered fresh."
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:818
+msgid "Question removed from the list."
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:820
+msgid "Entry added — the assistant can answer with it right away."
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:822
+msgid "Entry saved."
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:824
+msgid "Entry deleted."
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:826
+msgid "An entry needs both a question and an answer — nothing was saved."
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:828
+msgid "That entry no longer exists."
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:830
+msgid "The entry could not be saved. Please try again."
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:832
+msgid "That FAQ is no longer used for answers. The FAQ itself is untouched."
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:834
+msgid "That FAQ is back in use for answers."
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:836
+msgid "Your published FAQs are feeding the assistant again."
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:838
+msgid "Your FAQs are no longer used. The assistant now answers only from the entries you wrote by hand."
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:844
+msgid "No FAQ content was found to search. Publish an FAQ post, or add an Awesome FAQ / Nested FAQ block to a page — until then the assistant cannot answer anything."
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:878
+msgid "Copied"
+msgstr ""
+
+#. translators: 1: number of characters used, 2: maximum allowed characters.
+#: includes/ai/class-afaq-ask-ai-admin.php:1071
+#, php-format
+msgid "%1$s of %2$s characters used"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:1115
+#: includes/ai/class-afaq-ask-ai-admin.php:1201
+#: includes/ai/class-afaq-ask-ai-admin.php:2977
+#: build/ask-ai-promo/index.js:1
+msgid "Dashboard"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:1116
+#: includes/ai/class-afaq-ask-ai-admin.php:1733
+#: includes/ai/class-afaq-ask-ai-admin.php:2981
+#: build/ask-ai-promo/index.js:1
+msgid "Asked Questions"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:1117
+#: includes/ai/class-afaq-ask-ai-admin.php:2182
+#: includes/ai/class-afaq-ask-ai-admin.php:2985
+#: includes/ai/class-afaq-ask-ai.php:127
+#: build/ask-ai-promo/index.js:1
+msgid "AI Knowledge"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:1118
+#: includes/ai/class-afaq-ask-ai-admin.php:2728
+#: includes/ai/class-afaq-ask-ai-admin.php:2989
+#: build/ask-ai-promo/index.js:1
+msgid "Settings"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:1121
+#: build/ask-ai-promo/index.js:1
+msgid "General"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:1136
+#: build/ask-ai-promo/index.js:1
+msgid "Support"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:1143
+#: includes/ai/class-afaq-ask-ai-admin.php:1194
+#: includes/ai/class-afaq-ask-ai-admin.php:2996
+#: build/ask-ai-promo/index.js:1
+msgid "How it works"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:1172
+msgid "vs last 7 days"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:1176
+msgid "Close guide"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:1180
+msgid "Step 1"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:1181
+msgid "Give Knowledge to your AI. Existing FAQ or Add new questions answer."
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:1182
+msgid "Manage Knowledge"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:1186
+msgid "Step 2"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:1187
+msgid "Add \"ASK AI\" block to any post or page. By searching \"ASK AI\"."
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:1188
+msgid "ASK AI"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:1192
+msgid "Step 3"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:1193
+msgid "Customize \"ASK AI\" block and publish. That's it, your AI is ready for answer."
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:1202
+msgid "At-a-glance usage, spend and the questions your FAQs do not cover yet."
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:1220
+msgid "Ask AI is not connected yet"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:1221
+msgid "A one minute job, and it only has to be done once."
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:1235
+msgid "Add your API key"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:1239
+msgid "in Settings › Connectors"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:1246
+msgid "Before API Key"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:1247
+msgid "AI only answers when the user's question closely matches an existing FAQ. If there's no match, it says it couldn't find an answer."
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:1251
+msgid "After API Key"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:1252
+msgid "AI understands visitors' questions in their own words, matches your existing FAQs & custom knowledge, and writes instant smart answers using only your website's content."
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:1270
+#: includes/ai/class-afaq-ask-ai-admin.php:1839
+#: build/ask-ai-promo/index.js:1
+msgid "Copy"
+msgstr ""
+
+#. translators: %s: number of failed questions.
+#: includes/ai/class-afaq-ask-ai-admin.php:1287
+#, php-format
+msgid "%s question could not be answered today because the AI provider returned an error. Visitors saw a \"try again\" message."
+msgid_plural "%s questions could not be answered today because the AI provider returned an error. Visitors saw a \"try again\" message."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:1304
+#: build/ask-ai-promo/index.js:1
+msgid "Questions today"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:1307
+msgid "since midnight UTC"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:1313
+#: build/ask-ai-promo/index.js:1
+msgid "Answered for free"
+msgstr ""
+
+#. translators: 1: free answers, 2: total questions.
+#: includes/ai/class-afaq-ask-ai-admin.php:1318
+#, php-format
+msgid "%1$s of %2$s cost nothing"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:1327
+msgid "AI calls today"
+msgstr ""
+
+#. translators: %s: daily limit.
+#: includes/ai/class-afaq-ask-ai-admin.php:1332
+#, php-format
+msgid "of %s allowed"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:1340
+msgid "Unanswered"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:1343
+msgid "no FAQ covered it"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:1353
+#: includes/ai/class-afaq-ask-ai-admin.php:2002
+msgid "Found helpful"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:1356
+msgid "no votes yet"
+msgstr ""
+
+#. translators: 1: thumbs up, 2: thumbs down.
+#: includes/ai/class-afaq-ask-ai-admin.php:1359
+#, php-format
+msgid "%1$s up · %2$s down"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:1371
+#: build/ask-ai-promo/index.js:1
+msgid "Last 14 days"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:1372
+#: build/ask-ai-promo/index.js:1
+msgid "questions per day"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:1376
+msgid "One bar per day. Hover a bar for the exact split — purple is what the AI was actually asked to answer."
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:1391
+#: build/ask-ai-promo/index.js:1
+msgid "Today's AI budget"
+msgstr ""
+
+#. translators: %s: daily limit.
+#: includes/ai/class-afaq-ask-ai-admin.php:1400
+#: build/ask-ai-promo/index.js:1
+#, php-format,js-format
+msgid "of %s calls"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:1411
+msgid "Cached answers and answers taken straight from a FAQ are free and never counted here. Resets at midnight UTC."
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:1417
+#: build/ask-ai-promo/index.js:1
+msgid "Knowledge base"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:1424
+msgid "question and answer pairs the assistant can draw from."
+msgstr ""
+
+#. translators: 1: entries collected from FAQs, 2: entries written by hand.
+#: includes/ai/class-afaq-ask-ai-admin.php:1444
+#, php-format
+msgid "%1$s from your FAQs, %2$s your own answers."
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:1452
+msgid "Kept in step on its own — editing an FAQ or changing how answers read refreshes this without being asked."
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:1458
+#: build/ask-ai-promo/index.js:1
+msgid "Today so far"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:1465
+msgid "No questions yet today"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:1466
+msgid "This bar shows how many answers came from the cache, from a FAQ directly, and how many needed the AI."
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:1471
+msgid "The more of this bar that is blue or green, the less the assistant costs you."
+msgstr ""
+
+#. translators: 1: cached, 2: from FAQ, 3: AI.
+#: includes/ai/class-afaq-ask-ai-admin.php:1477
+#, php-format
+msgid "%1$s cached, %2$s from FAQ, %3$s answered by AI"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:1509
+#: build/ask-ai-promo/index.js:1
+msgid "Top gaps to fill"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:1513
+msgid "View all questions"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:1522
+msgid "No gaps right now"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:1523
+msgid "Every question so far found an answer in your FAQs. Anything the assistant cannot answer will appear here."
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:1528
+msgid "Asked most often, answered by nothing in your FAQs yet."
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:1672
+msgid "Any time"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:1673
+msgid "Last 7 days"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:1674
+msgid "Last 30 days"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:1675
+msgid "Last 90 days"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:1679
+msgid "Most asked"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:1680
+msgid "Most recent"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:1681
+msgid "Oldest first"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:1691
+msgid "Last asked"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:1702
+msgid "Sort by"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:1714
+msgid "Only asked more than once"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:1717
+#: includes/ai/class-afaq-ask-ai-admin.php:2329
+msgid "Apply"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:1721
+#: includes/class_faaAnalysis.php:513
+msgid "Clear"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:1734
+#: build/ask-ai-promo/index.js:1
+msgid "What visitors asked in their own words. Every gap here is an answer worth writing — and once written, that question is answered for free from then on."
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:1748
+#: build/ask-ai-promo/index.js:1
+msgid "Questions with no answer"
+msgstr ""
+
+#. translators: 1: rows after filtering, 2: rows in total.
+#: includes/ai/class-afaq-ask-ai-admin.php:1758
+#, php-format
+msgid "%1$s of %2$s"
+msgstr ""
+
+#. translators: %s: number of questions.
+#: includes/ai/class-afaq-ask-ai-admin.php:1764
+#, php-format
+msgid "%s question"
+msgid_plural "%s questions"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:1780
+msgid "Nothing unanswered"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:1781
+msgid "Every question so far found an answer in your FAQs. Anything the assistant cannot answer will show up here."
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:1789
+msgid "Nothing matches these filters"
+msgstr ""
+
+#. translators: %s: total number of unanswered questions.
+#: includes/ai/class-afaq-ask-ai-admin.php:1792
+#, php-format
+msgid "There is still %s unanswered question — widen the filters to see it."
+msgid_plural "There are still %s unanswered questions — widen the filters to see them."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:1805
+msgid "Clear filters"
+msgstr ""
+
+#. translators: %s: human readable time difference.
+#: includes/ai/class-afaq-ask-ai-admin.php:1829
+#, php-format
+msgid "last asked %s ago"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:1854
+#: build/ask-ai-promo/index.js:1
+msgid "Answer it"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:1862
+#: build/ask-ai-promo/index.js:1
+msgid "Dismiss"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:1893
+msgid "Collected data"
+msgstr ""
+
+#. translators: %s: number of stored questions.
+#: includes/ai/class-afaq-ask-ai-admin.php:1900
+#, php-format
+msgid "%s questions are stored. Only the question text is kept — never the visitor."
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:1909
+msgid "Clear all collected questions"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:1951
+#: build/ask-ai-promo/index.js:1
+msgid "AI"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:1958
+msgid "Answers &amp; feedback"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:1962
+#: build/ask-ai-promo/index.js:1
+msgid "thumbs down first"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:1968
+msgid "What the assistant actually replied, and how visitors rated it. Open a row to read the answer that was given."
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:1975
+msgid "No answers recorded yet"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:1976
+msgid "Once the assistant answers a question, it appears here with the reply it gave and the votes it received."
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2007
+msgid "Not helpful"
+msgstr ""
+
+#. translators: %s: number of times asked.
+#: includes/ai/class-afaq-ask-ai-admin.php:2017
+#, php-format
+msgid "%s ask"
+msgid_plural "%s asks"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2030
+#: build/ask-ai-promo/index.js:1
+msgid "More people disliked this than liked it — edit the FAQ it came from so the answer covers what they are really asking."
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2142
+msgid "Answering now"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2144
+msgid "everything the assistant can draw from"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2150
+#: includes/ai/class-afaq-ask-ai-admin.php:2353
+#: build/ask-ai-promo/index.js:1
+msgid "From your FAQs"
+msgstr ""
+
+#. translators: %s: number of excluded FAQ entries.
+#: includes/ai/class-afaq-ask-ai-admin.php:2157
+#, php-format
+msgid "%s more is set aside"
+msgid_plural "%s more are set aside"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2160
+#: build/ask-ai-promo/index.js:1
+msgid "kept in step automatically"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2162
+msgid "switched off below"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2168
+#: includes/ai/class-afaq-ask-ai-admin.php:2617
+#: build/ask-ai-promo/index.js:1
+msgid "Your own answers"
+msgstr ""
+
+#. translators: %s: number of alternate phrasings.
+#: includes/ai/class-afaq-ask-ai-admin.php:2173
+#, php-format
+msgid "plus %s alternate wording"
+msgid_plural "plus %s alternate wordings"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2176
+msgid "answers with no FAQ behind them"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2183
+msgid "Everything the assistant is allowed to answer from. Your FAQs feed it on their own; add an entry by hand when the wording visitors use is not in any FAQ."
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2205
+msgid "The assistant has nothing to answer from yet. Publish an FAQ, or add an answer of your own below."
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2206
+msgid "Your FAQs are switched off and you have no answers of your own, so the assistant cannot answer anything at all."
+msgstr ""
+
+#. translators: %s: number of FAQ entries that would stop being used.
+#: includes/ai/class-afaq-ask-ai-admin.php:2238
+#, php-format
+msgid "%s answer from your FAQs will stop being used. Your FAQs are not changed, and you can switch this back on at any time. Continue?"
+msgid_plural "%s answers from your FAQs will stop being used. Your FAQs are not changed, and you can switch this back on at any time. Continue?"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2251
+msgid "AI Answer Sources"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2255
+msgid "Most sites leave this alone. Change it only if you want the assistant to use nothing but answers you have written and checked yourself."
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2283
+msgid "Your FAQs + your own answers"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2284
+msgid "recommended"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2287
+msgid "Both lists below are used for answers."
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2293
+#: includes/ai/class-afaq-ask-ai-admin.php:2324
+msgid "answer"
+msgid_plural "answers"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2302
+msgid "Your own answers only"
+msgstr ""
+
+#. translators: %s: number of FAQ answers that would drop out.
+#: includes/ai/class-afaq-ask-ai-admin.php:2309
+#, php-format
+msgid "Your %s FAQ answer drops out of AI Knowledge and is no longer used. The FAQ stays published on your site — the assistant simply stops reading it."
+msgid_plural "Your %s FAQ answers drop out of AI Knowledge and are no longer used. The FAQs stay published on your site — the assistant simply stops reading them."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2358
+msgid "not in use"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2365
+msgid "Collected from every published FAQ. Edit one where it lives and the change is picked up on the next question — there is nothing to sync by hand. Set one aside if you would rather the assistant never quoted it."
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2366
+msgid "Switched off. These questions are still on your site and still published — the assistant simply does not read them, and answers only from the entries you wrote by hand."
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2374
+msgid "No FAQ content yet"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2375
+msgid "Publish an FAQ post, or add an Awesome FAQ / Nested FAQ block to a page, and its questions appear here."
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2388
+msgid "Untitled"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2393
+#: includes/class_faaAdmin.php:86
+#: build/ask-ai-promo/index.js:1
+msgid "Edit FAQ"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2405
+msgid "Set aside"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2409
+msgid "The assistant stops answering with this one. Your FAQ is not changed and stays on your site."
+msgstr ""
+
+#. translators: %s: number of FAQ entries set aside.
+#: includes/ai/class-afaq-ask-ai-admin.php:2428
+#, php-format
+msgid "%s FAQ set aside"
+msgid_plural "%s FAQs set aside"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2435
+msgid "Still published on your site, just not used for answers."
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2453
+msgid "Use again"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2482
+msgid "Edit entry"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2483
+msgid "Add an answer"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2489
+msgid "Cancel"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2495
+msgid "For answers that belong nowhere else, or wording your FAQs do not cover. Nothing here is published on your site — only the assistant reads it."
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2504
+#: includes/class_faaAnalysis.php:535
+#: build/ask-ai-promo/index.js:1
+#: build/blocks/bento-faq/index.js:1
+#: build/blocks/faq-item/index.js:1
+#: build/blocks/nested-faq/index.js:1
+msgid "Question"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2511
+#: build/ask-ai-promo/index.js:1
+msgid "Do you ship to Canada?"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2514
+msgid "Write it the way a visitor would ask it, not the way you would file it."
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2518
+msgid "Read more link"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2527
+msgid "Optional. Shown under the answer for anyone who wants the whole story."
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2533
+#: build/blocks/ask-ai/index.js:1
+#: build/blocks/bento-faq/index.js:1
+#: build/blocks/nested-faq/index.js:1
+msgid "Answer"
+msgstr ""
+
+#. translators: %s: character limit.
+#: includes/ai/class-afaq-ask-ai-admin.php:2549
+#, php-format
+msgid "Up to %s characters."
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2554
+msgid "Plain text — formatting is stripped before the assistant reads it. Change the limit under Settings › Answers."
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2559
+msgid "Other ways people ask it"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2566
+msgid ""
+"Can I get my money back?\n"
+"How do refunds work?"
+msgstr ""
+
+#. translators: %s: maximum number of alternate phrasings.
+#: includes/ai/class-afaq-ask-ai-admin.php:2573
+#, php-format
+msgid "One per line, up to %s. Matching is done on words, so \"can I get my money back\" finds nothing under \"What is your refund policy?\" until you write it down here."
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2584
+msgid "Pause this entry — the assistant will not answer with it"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2592
+msgid "Save entry"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2593
+msgid "Add entry"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2596
+msgid "Saved entries answer immediately — the knowledge base and any cached answers are refreshed for you."
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2628
+msgid "Nothing added yet"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2629
+msgid "The quickest place to start is the Questions screen: every question your FAQs could not answer can be turned into an entry here in one click."
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2646
+msgid "Stops the assistant answering with this. Nothing is deleted — you can resume it at any time."
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2647
+msgid "Lets the assistant answer with this again."
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2657
+msgid "paused"
+msgstr ""
+
+#. translators: %s: number of alternate phrasings.
+#: includes/ai/class-afaq-ask-ai-admin.php:2665
+#, php-format
+msgid "+%s wording"
+msgid_plural "+%s wordings"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2677
+#: build/ask-ai-promo/index.js:1
+msgid "Edit"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2691
+msgid "Pause"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2692
+msgid "Resume"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2701
+msgid "Delete this entry? This cannot be undone."
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2704
+msgid "Delete"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2729
+#: build/ask-ai-promo/index.js:1
+msgid "Spending limits, abuse protection and how the answers read. Values outside the allowed range are clamped on save, so the guards can never be switched off by accident."
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2738
+#: build/ask-ai-promo/index.js:1
+msgid "Cost control"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2740
+#: build/ask-ai-promo/index.js:1
+msgid "These decide the most you can ever be charged in a day."
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2743
+#: build/ask-ai-promo/index.js:1
+msgid "Daily AI budget"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2747
+#: build/ask-ai-promo/index.js:1
+msgid "AI calls"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2748
+#: build/ask-ai-promo/index.js:1
+msgid "A hard ceiling for the whole site. Cached answers and answers taken straight from a FAQ do not count against it."
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2753
+#: build/ask-ai-promo/index.js:1
+msgid "Cache answers for"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2757
+#: build/ask-ai-promo/index.js:1
+msgid "hours"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2758
+#: build/ask-ai-promo/index.js:1
+msgid "Longer is cheaper — a repeated question then costs nothing. Set to 0 to disable caching, which is not recommended."
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2763
+#: build/ask-ai-promo/index.js:1
+msgid "Answer length"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2767
+#: build/ask-ai-promo/index.js:1
+msgid "words"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2768
+#: build/ask-ai-promo/index.js:1
+msgid "Output is the expensive half of an AI call, so shorter answers cost less. Between 70 and 90 reads well."
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2773
+msgid "How much of each answer is used"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2777
+#: build/ask-ai-promo/index.js:1
+msgid "characters"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2778
+msgid "Longer FAQ answers are cut to this before the assistant reads them, so anything past it is invisible to it. Raise it if your answers are detailed; every character can be sent as context, six entries at a time, so raising it costs a little more per AI call. Saving re-reads your FAQs straight away."
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2783
+#: build/ask-ai-promo/index.js:1
+msgid "Budget alert e-mail"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2788
+msgid "One notice a day when 80% of the budget is gone, so the bill never arrives as a surprise. Leave empty to use the site admin address."
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2795
+#: build/ask-ai-promo/index.js:1
+msgid "Abuse protection"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2797
+#: build/ask-ai-promo/index.js:1
+msgid "Only AI calls are counted, so a visitor reading cached or FAQ answers is never locked out. Logged-in editors are never limited."
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2800
+#: build/ask-ai-promo/index.js:1
+msgid "Per visitor limits"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2806
+#: build/ask-ai-promo/index.js:1
+msgid "per minute"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2812
+#: build/ask-ai-promo/index.js:1
+msgid "per hour"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2818
+#: build/ask-ai-promo/index.js:1
+msgid "per day"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2821
+#: build/ask-ai-promo/index.js:1
+msgid "The hourly limit is capped at the daily one automatically."
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2826
+#: build/ask-ai-promo/index.js:1
+msgid "Minimum time before sending"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2830
+#: build/ask-ai-promo/index.js:1
+msgid "seconds"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2831
+msgid "Nobody reads a page and types a question in under two seconds, so anything faster is treated as a script. Set to 0 to switch the check off."
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2836
+#: build/ask-ai-promo/index.js:1
+msgid "Access"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2840
+#: build/ask-ai-promo/index.js:1
+msgid "Only logged-in users can ask"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2843
+#: build/ask-ai-promo/index.js:1
+msgid "Signed-out visitors see a \"log in to ask\" prompt instead of the form, and a floating bubble is not shown at all."
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2845
+msgid "Using a page cache?"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2846
+msgid "Purge it after changing this — cached pages keep serving whichever version was stored."
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2854
+#: build/ask-ai-promo/index.js:1
+msgid "Answers"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2858
+#: build/ask-ai-promo/index.js:1
+msgid "Tone"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2862
+msgid "friendly and to the point"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2863
+#: build/ask-ai-promo/index.js:1
+msgid "Added to the instructions the assistant follows. Leave empty for a neutral support voice."
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2868
+#: build/ask-ai-promo/index.js:1
+msgid "Insights"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2872
+#: build/ask-ai-promo/index.js:1
+msgid "Record unanswered questions and feedback"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2874
+#: build/ask-ai-promo/index.js:1
+msgid "This is what fills the Questions section. Only the question text is stored — never the visitor."
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2880
+#: build/ask-ai-promo/index.js:1
+msgid "Save changes"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2881
+#: build/ask-ai-promo/index.js:1
+msgid "Limits are clamped to safe values on save."
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2902
+#: build/ask-ai-promo/index.js:1
+msgid "A visitor asks a question"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2903
+#: build/ask-ai-promo/index.js:1
+msgid "The block prints its form with the page, so nothing is requested and nothing is spent until somebody actually types something."
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2904
+#: includes/ai/class-afaq-ask-ai-admin.php:2909
+#: includes/ai/class-afaq-ask-ai-admin.php:2914
+#: includes/ai/class-afaq-ask-ai-admin.php:2919
+#: includes/ai/class-afaq-ask-ai-admin.php:2924
+#: includes/ai/class-afaq-ask-ai-admin.php:2929
+#: build/ask-ai-promo/index.js:1
+msgid "free"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2907
+#: build/ask-ai-promo/index.js:1
+msgid "Bot checks"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2908
+#: build/ask-ai-promo/index.js:1
+msgid "A hidden field no person can see must stay empty, the question has to be between 3 and 300 characters, and anything submitted in under two seconds is treated as a script."
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2912
+#: build/ask-ai-promo/index.js:1
+msgid "Cache lookup"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2913
+#: build/ask-ai-promo/index.js:1
+msgid "Questions are reduced to their meaningful words, so \"What is your refund policy?\" and \"refund policy???\" share one cached answer. A hit returns instantly and costs nothing."
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2917
+msgid "Your FAQs are searched"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2918
+msgid "Only your own FAQ content is searched, with word endings trimmed so \"service\" matches \"services\". If nothing is close enough, the visitor gets related questions instead of a made-up answer."
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2922
+#: build/ask-ai-promo/index.js:1
+msgid "An exact match answers directly"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2923
+#: build/ask-ai-promo/index.js:1
+msgid "If the question is essentially one you have already answered, your wording is served as it is. No model is involved, so it is instant and free."
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2927
+#: build/ask-ai-promo/index.js:1
+msgid "Limits are checked"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2928
+#: build/ask-ai-promo/index.js:1
+msgid "Only now do the per visitor limits and the daily site budget apply — so somebody reading cached or FAQ answers is never locked out."
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2932
+#: build/ask-ai-promo/index.js:1
+msgid "The AI writes an answer"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2933
+msgid "The model receives your matching FAQ snippets and nothing else, and is told to reply only from them. Its reply is stripped down to plain paragraphs and lists before it reaches the page."
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2934
+#: build/ask-ai-promo/index.js:1
+msgid "costs a call"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2952
+msgid "Connect an AI provider"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2953
+msgid "Done once under Settings › Connectors, and every plugin on the site shares it. Until then the assistant can still answer anything that matches one of your FAQs exactly — it just cannot write anything new."
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2954
+msgid "Open Settings › Connectors"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2958
+msgid "Give it something to answer from"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2959
+msgid "Publish an FAQ and every question and answer on it is read automatically — there is nothing to import. For wording no FAQ covers, write an answer by hand on AI Knowledge. Either is enough to start; most sites end up with both."
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2960
+msgid "Add an FAQ"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2961
+msgid "Open AI Knowledge"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2965
+msgid "Add the Ask AI block, then publish"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2966
+msgid "Edit the page where visitors look for help — usually the FAQ page itself — insert the Ask AI block from the Awesome FAQ category, and publish. Its heading, button wording and suggested questions are all editable in the block sidebar."
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2969
+msgid "Check the daily budget"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2970
+msgid "The defaults are already conservative, so this is a look rather than a chore: the most that can be spent in a day, and how often one visitor may ask."
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2971
+msgid "Open Settings"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2978
+msgid "What today cost and what was asked. The split between answers served free and answers the AI wrote is the number to watch — the more of it that is free, the less the assistant costs you."
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2982
+msgid "Everything visitors typed, and above all the ones nothing could answer. Each of those is a gap you can close in one click, and every gap closed is answered free from then on. The lower list shows what the assistant replied and how visitors rated it."
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2986
+msgid "Everything the assistant is allowed to answer from: your FAQs, which look after themselves, and answers you write by hand for wording no FAQ covers. This is also where you choose whether your FAQs are used at all, and set aside any single FAQ you would rather it never quoted."
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2990
+msgid "Spending limits, abuse protection and how the answers read. Everything here is clamped to safe values on save, so the guards cannot be switched off by accident."
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:2997
+msgid "Setting the assistant up, what happens when somebody asks a question, and what each screen is for."
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:3003
+msgid "Setting up"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:3004
+msgid "four steps, once"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:3008
+msgid "There is no import and no training step — the assistant reads the FAQ content you have already published."
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:3040
+msgid "done"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:3041
+msgid "to do"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:3052
+#: build/ask-ai-promo/index.js:1
+msgid "The journey of one question"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:3056
+msgid "Each step can end the request. Most questions never reach the last one."
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:3079
+msgid "What each screen is for"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:3083
+msgid "Four screens, and only one of them needs visiting regularly — Asked Questions, where the work is."
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:3098
+#: build/ask-ai-promo/index.js:1
+msgid "It cannot make things up"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:3102
+msgid "The model never sees your database, your pages or the open web. It receives the question plus the FAQ snippets that matched it, and is told to answer from those and nothing else. When nothing matches closely enough the visitor is offered related questions rather than a confident guess — and the question is recorded for you on Asked Questions."
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:3108
+#: build/ask-ai-promo/index.js:1
+msgid "Privacy"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai-admin.php:3112
+msgid "Visitors are counted by a one-way hash of their address, never by the address itself, and only question text is stored — no names, no addresses, no session data. The AI provider only ever receives the question and your own FAQ snippets."
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai.php:217
+#: includes/ai/class-afaq-ask-ai.php:229
+msgid "Assistant ready"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai.php:218
+msgid "WordPress AI Client"
+msgstr ""
+
+#. translators: %s: provider name.
+#: includes/ai/class-afaq-ask-ai.php:232
+#, php-format
+msgid "Direct API · %s"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai.php:240
+msgid "No AI provider"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai.php:241
+msgid "Add a key in Settings › Connectors"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai.php:375
+msgid "Please log in to use the AI assistant."
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai.php:471
+msgid "You are asking a bit fast — please wait a moment and try again."
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai.php:519
+msgid "The assistant has reached today's question limit. Please try again tomorrow."
+msgstr ""
+
+#. translators: %s: site name.
+#: includes/ai/class-afaq-ask-ai.php:698
+#, php-format
+msgid "[%s] Ask AI has used most of today's question budget"
+msgstr ""
+
+#. translators: 1: calls used, 2: daily limit, 3: settings page URL.
+#: includes/ai/class-afaq-ask-ai.php:704
+#, php-format
+msgid ""
+"Ask AI has answered %1$d of the %2$d questions allowed today.\n"
+"\n"
+"Once the limit is reached the assistant stops answering new questions until tomorrow.\n"
+"\n"
+"Review usage and limits here:\n"
+"%3$s"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai.php:947
+#: includes/ai/class-afaq-ask-ai.php:959
+msgid "Request rejected."
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai.php:968
+msgid "Please type a longer question."
+msgstr ""
+
+#. translators: %d: maximum number of characters.
+#: includes/ai/class-afaq-ask-ai.php:976
+#, php-format
+msgid "Please keep your question under %d characters."
+msgstr ""
+
+#. translators: %s: error message from the AI provider.
+#: includes/ai/class-afaq-ask-ai.php:1086
+#, php-format
+msgid "Only editors see this: the AI provider returned \"%s\". Check Settings › Connectors."
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai.php:1992
+msgid "I could not answer that just now. Please try again in a moment."
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai.php:1993
+msgid "I could not answer that just now — but these questions are close to what you asked:"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai.php:1997
+msgid "I could not find an answer to that in our FAQs — here is what I do know about:"
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai.php:2207
+msgid "The AI reply could not be read."
+msgstr ""
+
+#: includes/ai/class-afaq-ask-ai.php:2212
+msgid "No AI provider is configured. Add an API key in Settings › Connectors."
+msgstr ""
+
+#: includes/ai/class-afaq-block-ai.php:82
 #: woocommerce/class-afaq-wc-rest-api.php:90
 msgid "You do not have permission to use this endpoint."
 msgstr ""
 
-#: includes/ai/class-afaq-block-ai.php:102
+#: includes/ai/class-afaq-block-ai.php:96
 #: woocommerce/class-afaq-wc-rest-api.php:107
 msgid "Prompt is required."
 msgstr ""
 
-#: includes/ai/class-afaq-block-ai.php:277
+#: includes/ai/class-afaq-block-ai.php:271
 msgid "WordPress AI Client is not available in this version of WordPress."
 msgstr ""
 
-#: includes/ai/class-afaq-block-ai.php:356
-#: woocommerce/class-afaq-wc-ai-connector.php:203
+#: includes/ai/class-afaq-block-ai.php:350
+#: woocommerce/class-afaq-wc-ai-connector.php:187
 msgid "Could not parse AI response. Please try again."
 msgstr ""
 
@@ -75,234 +1546,236 @@ msgid "Unlock detailed insights into how your users interact with your FAQs. Tra
 msgstr ""
 
 #: includes/class-faa-freeAnalytics.php:44
+#: includes/class-faa-freeAskAi.php:135
+#: build/ask-ai-promo/index.js:1
 msgid "Upgrade to Pro"
 msgstr ""
 
-#: includes/class_faaAdmin.php:18
-msgid "Awesome FAQ"
+#: includes/class-faa-freeAskAi.php:131
+msgid "Ask AI is a Pro feature. It answers your visitors' questions from your own FAQ content, and shows you which questions your FAQs do not cover yet."
 msgstr ""
 
-#: includes/class_faaAdmin.php:19
+#: includes/class_faaAdmin.php:83
 #: woocommerce/class-afaq-wc-display.php:254
 msgid "FAQ"
 msgstr ""
 
-#: includes/class_faaAdmin.php:20
+#: includes/class_faaAdmin.php:84
 msgid "Add New "
 msgstr ""
 
-#: includes/class_faaAdmin.php:21
+#: includes/class_faaAdmin.php:85
 msgid "Add New FAQ"
 msgstr ""
 
-#: includes/class_faaAdmin.php:22
-msgid "Edit FAQ"
-msgstr ""
-
-#: includes/class_faaAdmin.php:23
+#: includes/class_faaAdmin.php:87
 msgid "New FAQ"
 msgstr ""
 
-#: includes/class_faaAdmin.php:24
+#: includes/class_faaAdmin.php:88
 msgid "View FAQ"
 msgstr ""
 
-#: includes/class_faaAdmin.php:25
+#: includes/class_faaAdmin.php:89
 msgid "Search FAQ"
 msgstr ""
 
-#: includes/class_faaAdmin.php:26
+#: includes/class_faaAdmin.php:90
 msgid "Sorry, we couldn't find the ShortCode you are looking for."
 msgstr ""
 
-#: includes/class_faaAnalysis.php:158
+#: includes/class_faaAdmin.php:112
+#: includes/class_faaAdmin.php:116
+msgid "Demo & Help"
+msgstr ""
+
+#: includes/class_faaAdmin.php:148
+msgid "Upgrade"
+msgstr ""
+
+#: includes/class_faaAnalysis.php:160
 msgid "Others"
 msgstr ""
 
-#: includes/class_faaAnalysis.php:233
-msgid "FAQ Click Analytics"
-msgstr ""
-
-#: includes/class_faaAnalysis.php:242
-msgid "Analytics data has been cleared successfully."
-msgstr ""
-
-#: includes/class_faaAnalysis.php:251
-msgid "Retention settings saved."
-msgstr ""
-
-#: includes/class_faaAnalysis.php:259
-msgid "Currently Filtering:"
-msgstr ""
-
-#: includes/class_faaAnalysis.php:263
-msgid "Showing analytics data exclusively for this FAQ post."
-msgstr ""
-
-#: includes/class_faaAnalysis.php:267
-#: includes/class_faaAnalysis.php:273
-msgid "Clear Filter"
-msgstr ""
-
-#: includes/class_faaAnalysis.php:297
+#: includes/class_faaAnalysis.php:166
+#: includes/class_faaAnalysis.php:309
 msgid "Total Clicks"
 msgstr ""
 
-#: includes/class_faaAnalysis.php:303
+#: includes/class_faaAnalysis.php:169
+msgid "No Data"
+msgstr ""
+
+#: includes/class_faaAnalysis.php:245
+msgid "FAQ Click Analytics"
+msgstr ""
+
+#: includes/class_faaAnalysis.php:254
+msgid "Analytics data has been cleared successfully."
+msgstr ""
+
+#: includes/class_faaAnalysis.php:263
+msgid "Retention settings saved."
+msgstr ""
+
+#: includes/class_faaAnalysis.php:271
+msgid "Currently Filtering:"
+msgstr ""
+
+#: includes/class_faaAnalysis.php:275
+msgid "Showing analytics data exclusively for this FAQ post."
+msgstr ""
+
+#: includes/class_faaAnalysis.php:279
+#: includes/class_faaAnalysis.php:285
+msgid "Clear Filter"
+msgstr ""
+
+#: includes/class_faaAnalysis.php:315
 msgid "Today's Performance"
 msgstr ""
 
-#: includes/class_faaAnalysis.php:307
+#: includes/class_faaAnalysis.php:319
 msgid "Clicks Today"
 msgstr ""
 
-#: includes/class_faaAnalysis.php:311
+#: includes/class_faaAnalysis.php:323
 msgid "Most Popular FAQ"
 msgstr ""
 
-#: includes/class_faaAnalysis.php:325
+#: includes/class_faaAnalysis.php:337
 msgid "Auto Data Retention"
 msgstr ""
 
-#: includes/class_faaAnalysis.php:334
+#: includes/class_faaAnalysis.php:346
 msgid "Never delete"
 msgstr ""
 
-#: includes/class_faaAnalysis.php:337
+#: includes/class_faaAnalysis.php:349
 msgid "7 Days"
 msgstr ""
 
-#: includes/class_faaAnalysis.php:340
+#: includes/class_faaAnalysis.php:352
 msgid "15 Days"
 msgstr ""
 
-#: includes/class_faaAnalysis.php:343
+#: includes/class_faaAnalysis.php:355
 msgid "30 Days"
 msgstr ""
 
-#: includes/class_faaAnalysis.php:346
+#: includes/class_faaAnalysis.php:358
 msgid "Update"
 msgstr ""
 
-#: includes/class_faaAnalysis.php:350
+#: includes/class_faaAnalysis.php:362
 msgid "Automatically cleans up records older than the selected timeframe."
 msgstr ""
 
-#: includes/class_faaAnalysis.php:361
+#: includes/class_faaAnalysis.php:373
 msgid "Analytics Overview"
 msgstr ""
 
-#: includes/class_faaAnalysis.php:366
+#: includes/class_faaAnalysis.php:378
 msgid "Avg Clicks per FAQ"
 msgstr ""
 
-#: includes/class_faaAnalysis.php:372
+#: includes/class_faaAnalysis.php:384
 msgid "Tracking Items"
 msgstr ""
 
-#: includes/class_faaAnalysis.php:380
+#: includes/class_faaAnalysis.php:392
 msgid "Track user engagement in real-time. Use the data above to optimize your most clicked FAQ content and improve user satisfaction."
 msgstr ""
 
-#: includes/class_faaAnalysis.php:423
+#: includes/class_faaAnalysis.php:494
 msgid "Search..."
 msgstr ""
 
-#: includes/class_faaAnalysis.php:427
+#: includes/class_faaAnalysis.php:498
 msgid "Top Clicks"
 msgstr ""
 
-#: includes/class_faaAnalysis.php:430
+#: includes/class_faaAnalysis.php:501
 msgid "Recent Clicks"
 msgstr ""
 
-#: includes/class_faaAnalysis.php:433
+#: includes/class_faaAnalysis.php:504
 msgid "By Question"
 msgstr ""
 
-#: includes/class_faaAnalysis.php:436
+#: includes/class_faaAnalysis.php:507
 msgid "By Title"
 msgstr ""
 
-#: includes/class_faaAnalysis.php:439
+#: includes/class_faaAnalysis.php:510
 msgid "Filter"
 msgstr ""
 
-#: includes/class_faaAnalysis.php:442
-msgid "Clear"
-msgstr ""
-
-#: includes/class_faaAnalysis.php:449
+#: includes/class_faaAnalysis.php:520
 msgid "Download CSV"
 msgstr ""
 
-#: includes/class_faaAnalysis.php:453
+#: includes/class_faaAnalysis.php:524
 msgid "Are you sure you want to clear all analytics data? This action cannot be undone."
 msgstr ""
 
-#: includes/class_faaAnalysis.php:455
+#: includes/class_faaAnalysis.php:526
 msgid "Clear Data"
 msgstr ""
 
-#: includes/class_faaAnalysis.php:464
-msgid "Question"
-msgstr ""
-
-#: includes/class_faaAnalysis.php:467
+#: includes/class_faaAnalysis.php:538
 msgid "Source Page Link"
 msgstr ""
 
-#: includes/class_faaAnalysis.php:470
+#: includes/class_faaAnalysis.php:541
 msgid "Click Count"
 msgstr ""
 
-#: includes/class_faaAnalysis.php:473
+#: includes/class_faaAnalysis.php:544
 msgid "Last Clicked"
 msgstr ""
 
-#: includes/class_faaAnalysis.php:480
+#: includes/class_faaAnalysis.php:551
 msgid "No click data available yet."
 msgstr ""
 
-#: includes/class_faaAnalysis.php:497
+#: includes/class_faaAnalysis.php:568
 msgid "No URL"
 msgstr ""
 
-#: includes/class_faaAnalysis.php:517
+#: includes/class_faaAnalysis.php:588
 msgid "&laquo; Previous"
 msgstr ""
 
-#: includes/class_faaAnalysis.php:518
+#: includes/class_faaAnalysis.php:589
 msgid "Next &raquo;"
 msgstr ""
 
 #. translators: %s: number of items
-#: includes/class_faaAnalysis.php:523
+#: includes/class_faaAnalysis.php:594
 #, php-format
 msgid "%s item"
 msgid_plural "%s items"
 msgstr[0] ""
 msgstr[1] ""
 
-#: includes/class_faaAnalysis.php:537
-#: includes/class_faaAnalysis.php:600
-#: includes/class_faaAnalysis.php:615
+#: includes/class_faaAnalysis.php:608
+#: includes/class_faaAnalysis.php:671
+#: includes/class_faaAnalysis.php:686
 msgid "Unauthorized"
 msgstr ""
 
-#: woocommerce/class-afaq-wc-ai-connector.php:26
-msgid "Awesome FAQ — WooCommerce AI"
+#. translators: %s: FAQ post ID used in the shortcode.
+#: includes/class_faaPlugin.php:156
+#, php-format
+msgid "Error: Awesome FAQ with ID %s not found."
 msgstr ""
 
-#: woocommerce/class-afaq-wc-ai-connector.php:27
-msgid "AI connector for auto-generating WooCommerce product FAQs"
-msgstr ""
-
-#: woocommerce/class-afaq-wc-ai-connector.php:87
+#: woocommerce/class-afaq-wc-ai-connector.php:71
 msgid "Please set an AI API Key in WooCommerce › Settings › FAQ AI Settings."
 msgstr ""
 
-#: woocommerce/class-afaq-wc-ai-connector.php:220
+#: woocommerce/class-afaq-wc-ai-connector.php:204
 msgid "AI could not generate any FAQs. Try changing your prompt and try again."
 msgstr ""
 
@@ -416,59 +1889,61 @@ msgstr ""
 msgid "Either WordPress 7.0+ AI Client, OR an API key entered above."
 msgstr ""
 
-#: woocommerce/class-afaq-woocommerce.php:94
+#: woocommerce/class-afaq-woocommerce.php:93
 msgid "Add FAQ Item"
 msgstr ""
 
-#: woocommerce/class-afaq-woocommerce.php:95
+#: woocommerce/class-afaq-woocommerce.php:94
 msgid "Write your question..."
 msgstr ""
 
-#: woocommerce/class-afaq-woocommerce.php:96
+#: woocommerce/class-afaq-woocommerce.php:95
 msgid "Write your answer..."
 msgstr ""
 
-#: woocommerce/class-afaq-woocommerce.php:97
+#: woocommerce/class-afaq-woocommerce.php:96
 msgid "AI is generating FAQs..."
 msgstr ""
 
-#: woocommerce/class-afaq-woocommerce.php:98
+#: woocommerce/class-afaq-woocommerce.php:97
 msgid "FAQs generated! Edit if needed."
 msgstr ""
 
-#: woocommerce/class-afaq-woocommerce.php:99
+#: woocommerce/class-afaq-woocommerce.php:98
 msgid "An error occurred. Please try again."
 msgstr ""
 
-#: woocommerce/class-afaq-woocommerce.php:100
+#: woocommerce/class-afaq-woocommerce.php:99
 msgid "E.g. Create 5 FAQs about shipping and return policy for this product"
 msgstr ""
 
-#: woocommerce/class-afaq-woocommerce.php:101
+#: woocommerce/class-afaq-woocommerce.php:100
 msgid "✨ Auto-Generate from Product"
 msgstr ""
 
-#: woocommerce/class-afaq-woocommerce.php:102
+#: woocommerce/class-afaq-woocommerce.php:101
 msgid "Delete this FAQ item?"
 msgstr ""
 
-#: woocommerce/class-afaq-woocommerce.php:103
+#: woocommerce/class-afaq-woocommerce.php:102
 msgid "Please enter a prompt first."
 msgstr ""
 
-#: woocommerce/class-afaq-woocommerce.php:115
+#: woocommerce/class-afaq-woocommerce.php:114
+#: build/blocks/faq-item/index.js:1
+#: build/blocks/nested-faq/index.js:1
 msgid "Default"
 msgstr ""
 
-#: woocommerce/class-afaq-woocommerce.php:116
+#: woocommerce/class-afaq-woocommerce.php:115
 msgid "Theme One"
 msgstr ""
 
-#: woocommerce/class-afaq-woocommerce.php:117
+#: woocommerce/class-afaq-woocommerce.php:116
 msgid "Theme Two"
 msgstr ""
 
-#: woocommerce/class-afaq-woocommerce.php:118
+#: woocommerce/class-afaq-woocommerce.php:117
 msgid "Theme Three"
 msgstr ""
 
@@ -509,7 +1984,7 @@ msgid "Analytics dashboard to track user interactions and popular questions."
 msgstr ""
 
 #: build/admin-dashboard.js:1
-msgid "Advanced Classic Editor Support."
+msgid "Advanced Classic Editor Support for Answers."
 msgstr ""
 
 #: build/admin-dashboard.js:1
@@ -525,7 +2000,1390 @@ msgid "WooCommerce Settings Panel."
 msgstr ""
 
 #: build/admin-dashboard.js:1
+msgid "Ask AI Block & Ask AI Dashboard."
+msgstr ""
+
+#: build/admin-dashboard.js:1
+msgid "Nested FAQ Block & Advanced Settings Panel."
+msgstr ""
+
+#: build/admin-dashboard.js:1
 msgid "AI-Powered Gutenberg FAQ Builder (generate Q&A content and dynamically customize layout designs, colors, and backgrounds using custom prompts)."
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "Pro dashboard"
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "Turn your FAQs into an answer assistant"
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "Ask AI ships with Awesome FAQ Pro, together with every other premium block and the analytics dashboard — one licence, no separate AI subscription to manage."
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "See it on a live site"
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "Do you ship to Canada, and how long does it take?"
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "Can I pay monthly instead of yearly?"
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "Is there a discount for non-profits?"
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "What happens to my data if I cancel?"
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "Does the licence cover my client sites?"
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "How long is the refund window?"
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "You can request a full refund within 14 days of purchase — just reply to your order e-mail and we will process it, no questions asked."
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "Can I move my licence to another domain?"
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "Yes. Deactivate the licence on the old site from the plugin's Activation screen, then activate it on the new one. Your remaining term carries over."
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "Which payment methods do you take?"
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "All major cards and PayPal. Bank transfer is available on annual plans over five sites."
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "Do you offer phone support?"
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "Support runs over e-mail and the plugin forum so every reply is written down and searchable."
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "From your FAQ"
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "AI wrote it"
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "1 call"
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "Direct answers to visitor questions"
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "Visitors type what they need and get instant answers based only on your FAQs. It never makes up wrong information."
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "See missing questions automatically"
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "Tracks unanswered questions and ranks them by popularity, showing you exactly what new FAQs to write."
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "Strict daily spending limits"
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "Set a maximum daily limit so you never spend more than planned. Get email warnings before reaching the cap."
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "Most answers are completely free"
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "Saved answers and repeat questions are shown instantly without using AI credits, keeping costs very low."
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "Built-in protection from abuse"
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "Automatic limits per visitor and smart bot protection stop spammers from draining your budget."
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "Spot unclear answers fast"
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "Visitor ratings highlight answers with thumbs-down feedback so you can quickly improve them."
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "Complete visitor privacy"
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "Only question text is saved. No names, personal details, or visitor tracking are ever collected."
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "Easy control over your content"
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "Updates automatically whenever you edit your FAQs. Easily add or change custom answers anytime with zero setup."
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+#: build/blocks/ask-ai/index.js:1
+msgid "What is your refund policy?"
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "FAQ: Billing"
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "How long does delivery take?"
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "FAQ: Shipping"
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "Do you offer student pricing?"
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "Pricing page"
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "added from a gap"
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "added by hand"
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "A question box, answered in seconds"
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "Clickable suggested questions"
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "Rotating hints in the empty field"
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "Sources under every answer"
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "AI answers labelled as AI"
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "A 👍 / 👎 on each answer"
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "A \"still need help?\" fallback link"
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "Your colours, fonts and spacing"
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "Questions your FAQs miss, ranked"
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "One click from a gap to an answer"
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "Write answers no FAQ has to carry"
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "Extra wordings for the same answer"
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "Answer from your FAQs, or only yours"
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "Pause an entry without deleting it"
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "A daily budget nothing can exceed"
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "Per-visitor rate limits"
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "14 days of usage at a glance"
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "Rated answers, worst first"
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "Your knowledge is searched"
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "Only what you have given the assistant is searched — your published FAQs and the answers you wrote yourself — with word endings trimmed so \"service\" matches \"services\". If nothing is close enough, the visitor gets related questions instead of a made-up answer."
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "The model receives your matching entries and nothing else, and is told to reply only from them. Its reply is stripped down to plain paragraphs and lists before it reaches the page."
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "One notice a day when 80% of the budget is gone, so the bill never arrives as a surprise."
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "Nobody reads a page and types a question in under two seconds, so anything faster is treated as a script."
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "How the assistant reads, and what it remembers."
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "Friendly and brief, like a helpful shop assistant"
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "Most an entry may carry"
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "How much of a long FAQ or a hand-written answer reaches the assistant. Raise it if your answers are being cut short."
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "Ask AI Block"
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "Ask AI Admin Dashboard"
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "asked by visitors"
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+#, js-format
+msgid "%s%% of everything asked"
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "AI calls used"
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+#, js-format
+msgid "of a %s call budget"
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "Gaps found"
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "FAQs worth writing next"
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "One bar per day. The blue part is what the AI was actually asked to answer — everything below it cost nothing."
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "AI answered"
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "cached or straight from a FAQ"
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "A ceiling you set, that nothing can push past. Cached answers and answers taken straight from a FAQ are free and never counted here."
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "question and answer pairs"
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "112 from your FAQs, 16 your own answers."
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "Assembled from your published FAQs and kept in step on its own — editing an FAQ or changing how answers read refreshes it without being asked."
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "from a FAQ"
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "cached"
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "Straight from a FAQ"
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "Written by the AI"
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "The more of this bar that is green or blue, the less the assistant costs you."
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "Turn Your FAQs & Custom Answers into an Instant AI Answers Assistant."
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "Ask AI puts a question box on your site and answers only from what you have given it: your published FAQs, plus any answers you write yourself on the AI Knowledge screen. Nothing else — so it cannot invent a policy you do not have. Every question it could not answer is written down for you, which quietly turns into the best content plan you will ever get: the questions your customers are actually asking."
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "What the Pro dashboard shows you"
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "These are the real panels, with sample figures in place of your own. Upgrading fills them in at this very same address — there is no new screen to learn."
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "The panel worth the licence on its own"
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "See the whole list"
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "Asked most often, answered by nothing in your FAQs yet. Write one of these up and it is answered instantly and for free from then on."
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "Write FAQ"
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "What you get"
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "Key features included with your license, built to save time and keep costs low."
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "What happens between a visitor pressing Ask and an answer appearing — and which of those steps costs anything."
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "Each step can end the request. Most questions never reach the last one — which is exactly why running this is cheaper than people expect."
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "The model never sees your database, your pages or the open web. It receives the visitor's question plus the entries that matched it — your FAQs and your own written answers, nothing else — and is instructed to answer from those alone. When nothing matches closely enough, the visitor is shown related questions rather than a confident guess, and you get told about it on the Asked Questions page."
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "Visitors are counted by a one-way hash of their address, never by the address itself, and only question text is stored — no names, no addresses, no session data. The AI provider only ever receives the question and the entries of your own that matched it."
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "What it takes to switch on"
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "There is no training step, no data export and nothing to upload."
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "Activate the Pro licence — the Ask AI screen at this same address fills in with live data."
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "Add an AI provider key under Settings › Connectors. One key, used by every plugin that asks."
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "Open AI Knowledge. Your published FAQs are already listed; write in anything they do not cover yet."
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "Add the Ask AI block to a page and publish — the top of your FAQ page is the obvious spot."
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "Set a daily budget you are comfortable with. The defaults are already conservative."
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "Come back in a week and read the gap list. That is the part that keeps paying."
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "good to know"
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "Your FAQ content stays exactly where it is. Deactivating the licence leaves every FAQ, block and shortcode working — only the assistant stops."
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "Live demo site"
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "Free versus Pro, side by side"
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "Ask us a question first"
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "Everything the assistant is allowed to answer from. Your FAQs feed it on their own; you add an entry by hand when the wording visitors use is not in any FAQ."
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "Pro feature"
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "Nothing is hidden, and nothing needs syncing"
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "Every published FAQ becomes an entry the moment you save it — there is no import step and no training. Edit an FAQ where it lives and the assistant picks up the new wording on the next question. What you cannot do from an FAQ page is answer a question you have not written up yet, and that is what the second half of this screen is for."
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "Collected from every published FAQ, with a link straight to the one an entry came from."
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "For answers that belong nowhere else. Nothing here is published on your site — only the assistant reads it."
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "wordings"
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "Why the extra wordings matter"
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "The one thing worth knowing before you use this screen."
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "Matching is done on words, not meaning"
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "“Can I get my money back?” and “What is your refund policy?” mean the same thing to a person and nothing to a keyword search. So every entry can carry a list of the other ways people ask it, and each one is matched against on its own while pointing at the same answer. It is the cheapest way to make the assistant feel like it understands your visitors — and it costs nothing per question, because a match this good never needs the AI at all."
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "Answer the questions your FAQs miss"
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "Ask AI ships with Awesome FAQ Pro, together with every premium block and the analytics dashboard."
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "This is the page people renew for"
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "Analytics tells you which of your FAQs got read. This tells you what people wanted to read and could not find — in their own words, ranked by how many asked. You are no longer guessing which FAQ to write next; the list writes itself, and every entry you clear is one less support e-mail forever."
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "Each row can be copied, turned straight into a new FAQ, or dismissed if it is not worth answering."
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "Asked"
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "Only the text of a question is stored — never the visitor. One button clears everything collected."
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "Answers & feedback"
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "What the assistant actually replied, and how visitors rated it. A row with more thumbs down than up is pointing at a FAQ whose wording is missing the real question."
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "Start collecting your own list"
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "The moment the licence is active the assistant begins recording, and the first gaps usually show up the same day."
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "You decide the worst case before it happens"
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "Most people hesitate over an AI feature for one reason: an unpredictable bill. So the first thing on this screen is a hard daily ceiling, and it is a real ceiling — once the day's budget is gone, no further call is made by anyone. Add caching, per-visitor limits and an alert at 80%, and the most it can cost you is a number you chose yourself."
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "The real Settings screen, shown read-only"
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "Set your own ceiling"
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "Activate the licence and these controls become yours — with the defaults above already in place, so it is safe from the first question."
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+#: build/blocks/faq-parent/index.js:1
+#: build/blocks/nested-faq/index.js:1
+msgid "Pro"
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "On the free plan"
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "You have the FAQ blocks and the shortcode. Ask AI, the gap report and the premium blocks come with Pro."
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "See the plans"
+msgstr ""
+
+#: build/ask-ai-promo/index.js:1
+msgid "Compare free and Pro"
+msgstr ""
+
+#: build/blocks/ask-ai/index.js:1
+#: build/blocks/faq-item/index.js:1
+#: build/blocks/nested-faq/index.js:1
+msgid "Left"
+msgstr ""
+
+#: build/blocks/ask-ai/index.js:1
+msgid "Center"
+msgstr ""
+
+#: build/blocks/ask-ai/index.js:1
+#: build/blocks/faq-item/index.js:1
+#: build/blocks/nested-faq/index.js:1
+msgid "Right"
+msgstr ""
+
+#: build/blocks/ask-ai/index.js:1
+msgid "Remove"
+msgstr ""
+
+#: build/blocks/ask-ai/index.js:1
+msgid "Add"
+msgstr ""
+
+#: build/blocks/ask-ai/index.js:1
+msgid "Header"
+msgstr ""
+
+#: build/blocks/ask-ai/index.js:1
+msgid "Show title"
+msgstr ""
+
+#: build/blocks/ask-ai/index.js:1
+msgid "The title and subtitle are written on the block itself. Switch one off to drop it from the page without losing the words."
+msgstr ""
+
+#: build/blocks/ask-ai/index.js:1
+msgid "Show subtitle"
+msgstr ""
+
+#: build/blocks/ask-ai/index.js:1
+msgid "Questions"
+msgstr ""
+
+#: build/blocks/ask-ai/index.js:1
+msgid "Button text"
+msgstr ""
+
+#: build/blocks/ask-ai/index.js:1
+msgid "Leave empty for the default."
+msgstr ""
+
+#: build/blocks/ask-ai/index.js:1
+msgid "Rotating placeholders"
+msgstr ""
+
+#: build/blocks/ask-ai/index.js:1
+msgid "Shown one after another in the empty field — a strong hint that the box is worth using. The first one is the text visitors see before it starts cycling, so set just one to keep it still."
+msgstr ""
+
+#: build/blocks/ask-ai/index.js:1
+msgid "How long does shipping take?"
+msgstr ""
+
+#: build/blocks/ask-ai/index.js:1
+msgid "Suggested questions"
+msgstr ""
+
+#: build/blocks/ask-ai/index.js:1
+msgid "Clickable chips under the field. Ask one and the answer appears instantly."
+msgstr ""
+
+#: build/blocks/ask-ai/index.js:1
+msgid "AI answer label"
+msgstr ""
+
+#: build/blocks/ask-ai/index.js:1
+msgid "Shown above an answer the AI wrote. Leave empty for the default."
+msgstr ""
+
+#: build/blocks/ask-ai/index.js:1
+msgid "FAQ answer label"
+msgstr ""
+
+#: build/blocks/ask-ai/index.js:1
+msgid "Shown when the answer came straight from one of your FAQs."
+msgstr ""
+
+#: build/blocks/ask-ai/index.js:1
+msgid "Show sources"
+msgstr ""
+
+#: build/blocks/ask-ai/index.js:1
+msgid "Lists the FAQ entries the answer was built from — this is what makes visitors trust it."
+msgstr ""
+
+#: build/blocks/ask-ai/index.js:1
+msgid "Ask for feedback"
+msgstr ""
+
+#: build/blocks/ask-ai/index.js:1
+msgid "Collects 👍/👎 so you can see which answers miss."
+msgstr ""
+
+#: build/blocks/ask-ai/index.js:1
+msgid "Feedback question"
+msgstr ""
+
+#: build/blocks/ask-ai/index.js:1
+msgid "Asked next to the 👍/👎 buttons. Leave empty for the default."
+msgstr ""
+
+#: build/blocks/ask-ai/index.js:1
+msgid "Fallback link text"
+msgstr ""
+
+#: build/blocks/ask-ai/index.js:1
+msgid "Fallback link URL"
+msgstr ""
+
+#: build/blocks/ask-ai/index.js:1
+msgid "Where to send someone the assistant could not help — your contact or support page."
+msgstr ""
+
+#: build/blocks/ask-ai/index.js:1
+msgid "Disclaimer"
+msgstr ""
+
+#: build/blocks/ask-ai/index.js:1
+#: build/blocks/bento-faq/index.js:1
+msgid "Colors"
+msgstr ""
+
+#: build/blocks/ask-ai/index.js:1
+#: build/blocks/bento-faq/index.js:1
+msgid "Accent"
+msgstr ""
+
+#: build/blocks/ask-ai/index.js:1
+msgid "Text"
+msgstr ""
+
+#: build/blocks/ask-ai/index.js:1
+msgid "Muted text"
+msgstr ""
+
+#: build/blocks/ask-ai/index.js:1
+msgid "Box background"
+msgstr ""
+
+#: build/blocks/ask-ai/index.js:1
+#: build/blocks/bento-faq/index.js:1
+#: build/blocks/nested-faq/index.js:1
+msgid "Typography"
+msgstr ""
+
+#: build/blocks/ask-ai/index.js:1
+msgid "Heading"
+msgstr ""
+
+#: build/blocks/ask-ai/index.js:1
+msgid "Heading align"
+msgstr ""
+
+#: build/blocks/ask-ai/index.js:1
+msgid "Body"
+msgstr ""
+
+#: build/blocks/ask-ai/index.js:1
+msgid "Subtitle align"
+msgstr ""
+
+#: build/blocks/ask-ai/index.js:1
+msgid "Input field"
+msgstr ""
+
+#: build/blocks/ask-ai/index.js:1
+#: build/blocks/nested-faq/index.js:1
+msgid "Background"
+msgstr ""
+
+#: build/blocks/ask-ai/index.js:1
+msgid "Typed text"
+msgstr ""
+
+#: build/blocks/ask-ai/index.js:1
+msgid "Placeholder"
+msgstr ""
+
+#: build/blocks/ask-ai/index.js:1
+#: build/blocks/nested-faq/index.js:1
+msgid "Border"
+msgstr ""
+
+#: build/blocks/ask-ai/index.js:1
+msgid "Text on hover"
+msgstr ""
+
+#: build/blocks/ask-ai/index.js:1
+msgid "AI answer box"
+msgstr ""
+
+#: build/blocks/ask-ai/index.js:1
+msgid "Label"
+msgstr ""
+
+#: build/blocks/ask-ai/index.js:1
+msgid "Sources"
+msgstr ""
+
+#: build/blocks/ask-ai/index.js:1
+msgid "\"Based on\" text"
+msgstr ""
+
+#: build/blocks/ask-ai/index.js:1
+msgid "Source link"
+msgstr ""
+
+#: build/blocks/ask-ai/index.js:1
+msgid "Feedback"
+msgstr ""
+
+#: build/blocks/ask-ai/index.js:1
+msgid "\"Was this helpful?\" text"
+msgstr ""
+
+#: build/blocks/ask-ai/index.js:1
+msgid "Suggestion box"
+msgstr ""
+
+#: build/blocks/ask-ai/index.js:1
+msgid "Box text"
+msgstr ""
+
+#: build/blocks/ask-ai/index.js:1
+msgid "Message text"
+msgstr ""
+
+#: build/blocks/ask-ai/index.js:1
+msgid "Box"
+msgstr ""
+
+#: build/blocks/ask-ai/index.js:1
+#: build/blocks/bento-faq/index.js:1
+#: build/blocks/nested-faq/index.js:1
+msgid "Padding"
+msgstr ""
+
+#: build/blocks/ask-ai/index.js:1
+msgid "Radius"
+msgstr ""
+
+#: build/blocks/ask-ai/index.js:1
+#: build/blocks/bento-faq/index.js:1
+#: build/blocks/faq-parent/index.js:1
+#: build/blocks/nested-faq/index.js:1
+msgid "Copied Successfully!"
+msgstr ""
+
+#: build/blocks/ask-ai/index.js:1
+#: build/blocks/bento-faq/index.js:1
+#: build/blocks/faq-parent/index.js:1
+#: build/blocks/nested-faq/index.js:1
+msgid "Copy To Clipboard"
+msgstr ""
+
+#: build/blocks/ask-ai/index.js:1
+#: build/blocks/bento-faq/index.js:1
+#: build/blocks/faq-parent/index.js:1
+#: build/blocks/nested-faq/index.js:1
+msgid "Copy the shortcode and use it anywhere."
+msgstr ""
+
+#: build/blocks/ask-ai/index.js:1
+msgid "No AI provider is connected"
+msgstr ""
+
+#: build/blocks/ask-ai/index.js:1
+msgid "Visitors can still be served answers that match one of your FAQs exactly, but anything else needs an AI provider — until a key is added, those questions get no answer."
+msgstr ""
+
+#: build/blocks/ask-ai/index.js:1
+msgid "Connect an API key in Settings › Connectors"
+msgstr ""
+
+#: build/blocks/ask-ai/index.js:1
+msgid "Ask us anything"
+msgstr ""
+
+#: build/blocks/ask-ai/index.js:1
+msgid "Add a short subtitle…"
+msgstr ""
+
+#: build/blocks/ask-ai/index.js:1
+msgid "Answers are generated from your own FAQ content when a visitor asks. Nothing is requested until then."
+msgstr ""
+
+#: build/blocks/ask-ai/index.js:1
+msgid "Matching FAQ entries"
+msgstr ""
+
+#: build/blocks/bento-faq/index.js:1
+#: build/blocks/bento-faq/view.js:1
+msgid "Small"
+msgstr ""
+
+#: build/blocks/bento-faq/index.js:1
+#: build/blocks/bento-faq/view.js:1
+msgid "Wide"
+msgstr ""
+
+#: build/blocks/bento-faq/index.js:1
+#: build/blocks/bento-faq/view.js:1
+msgid "Tall"
+msgstr ""
+
+#: build/blocks/bento-faq/index.js:1
+#: build/blocks/bento-faq/view.js:1
+msgid "Large"
+msgstr ""
+
+#: build/blocks/bento-faq/index.js:1
+#: build/blocks/bento-faq/view.js:1
+msgid "Modal"
+msgstr ""
+
+#: build/blocks/bento-faq/index.js:1
+#: build/blocks/bento-faq/view.js:1
+msgid "Expand"
+msgstr ""
+
+#: build/blocks/bento-faq/index.js:1
+#: build/blocks/bento-faq/view.js:1
+msgid "Auto"
+msgstr ""
+
+#: build/blocks/bento-faq/index.js:1
+#: build/blocks/bento-faq/view.js:1
+msgid "Light"
+msgstr ""
+
+#: build/blocks/bento-faq/index.js:1
+#: build/blocks/bento-faq/view.js:1
+msgid "Dark"
+msgstr ""
+
+#: build/blocks/bento-faq/index.js:1
+msgid "New question"
+msgstr ""
+
+#: build/blocks/bento-faq/index.js:1
+msgid "Card size"
+msgstr ""
+
+#: build/blocks/bento-faq/index.js:1
+msgid "Mix sizes to get the bento look. Everything becomes full width on mobile."
+msgstr ""
+
+#: build/blocks/bento-faq/index.js:1
+#: build/blocks/nested-faq/index.js:1
+msgid "Icon"
+msgstr ""
+
+#: build/blocks/bento-faq/index.js:1
+msgid "Emoji"
+msgstr ""
+
+#: build/blocks/bento-faq/index.js:1
+msgid "Used when no icon is picked above — 💡 ⚡ 🔒 💳"
+msgstr ""
+
+#: build/blocks/bento-faq/index.js:1
+msgid "Badge"
+msgstr ""
+
+#: build/blocks/bento-faq/index.js:1
+msgid "Optional pill in the corner, e.g. \"Popular\"."
+msgstr ""
+
+#: build/blocks/bento-faq/index.js:1
+#: build/blocks/nested-faq/index.js:1
+msgid "Generate FAQs with AI"
+msgstr ""
+
+#: build/blocks/bento-faq/index.js:1
+#: build/blocks/nested-faq/index.js:1
+msgid "AI Generator"
+msgstr ""
+
+#: build/blocks/bento-faq/index.js:1
+msgid "Cards"
+msgstr ""
+
+#: build/blocks/bento-faq/index.js:1
+#: build/blocks/faq-item/index.js:1
+#: build/blocks/nested-faq/index.js:1
+msgid "Card"
+msgstr ""
+
+#: build/blocks/bento-faq/index.js:1
+msgid "Layout"
+msgstr ""
+
+#: build/blocks/bento-faq/index.js:1
+msgid "Columns"
+msgstr ""
+
+#: build/blocks/bento-faq/index.js:1
+msgid "Switch the device icons above to set columns for tablet and mobile separately."
+msgstr ""
+
+#: build/blocks/bento-faq/index.js:1
+msgid "Row gap"
+msgstr ""
+
+#: build/blocks/bento-faq/index.js:1
+msgid "Column gap"
+msgstr ""
+
+#: build/blocks/bento-faq/index.js:1
+msgid "Vertical and horizontal spacing are set separately, per device."
+msgstr ""
+
+#: build/blocks/bento-faq/index.js:1
+msgid "Row height"
+msgstr ""
+
+#: build/blocks/bento-faq/index.js:1
+msgid "The minimum height of one grid row. Tall and large cards take two."
+msgstr ""
+
+#: build/blocks/bento-faq/index.js:1
+#: build/blocks/nested-faq/index.js:1
+msgid "Behaviour"
+msgstr ""
+
+#: build/blocks/bento-faq/index.js:1
+msgid "Open answer in"
+msgstr ""
+
+#: build/blocks/bento-faq/index.js:1
+msgid "Modal opens a focused dialog with previous / next. Expand grows the card in place."
+msgstr ""
+
+#: build/blocks/bento-faq/index.js:1
+msgid "Color scheme"
+msgstr ""
+
+#: build/blocks/bento-faq/index.js:1
+msgid "Auto follows the visitor's system setting."
+msgstr ""
+
+#: build/blocks/bento-faq/index.js:1
+msgid "Show icons"
+msgstr ""
+
+#: build/blocks/bento-faq/index.js:1
+msgid "Show \"Read answer\" link"
+msgstr ""
+
+#: build/blocks/bento-faq/index.js:1
+msgid "Reveal cards on scroll"
+msgstr ""
+
+#: build/blocks/bento-faq/index.js:1
+msgid "Staggered fade in. Skipped for visitors who prefer reduced motion."
+msgstr ""
+
+#: build/blocks/bento-faq/index.js:1
+#: build/blocks/nested-faq/index.js:1
+msgid "Output FAQPage schema"
+msgstr ""
+
+#: build/blocks/bento-faq/index.js:1
+msgid "Prints JSON-LD so search and AI answer engines can read the Q&A."
+msgstr ""
+
+#: build/blocks/bento-faq/index.js:1
+msgid "Drives the badge, the hover border, the glow and the link colour at once."
+msgstr ""
+
+#: build/blocks/bento-faq/index.js:1
+msgid "Card background"
+msgstr ""
+
+#: build/blocks/bento-faq/index.js:1
+msgid "Card border"
+msgstr ""
+
+#: build/blocks/bento-faq/index.js:1
+msgid "Question text"
+msgstr ""
+
+#: build/blocks/bento-faq/index.js:1
+msgid "Answer text"
+msgstr ""
+
+#: build/blocks/bento-faq/index.js:1
+msgid "Leave the colours empty to let the block follow light and dark mode on its own."
+msgstr ""
+
+#: build/blocks/bento-faq/index.js:1
+msgid "Size"
+msgstr ""
+
+#: build/blocks/bento-faq/index.js:1
+#: build/blocks/nested-faq/index.js:1
+msgid "Color"
+msgstr ""
+
+#: build/blocks/bento-faq/index.js:1
+msgid "Leave empty and picked icons take the accent colour."
+msgstr ""
+
+#: build/blocks/bento-faq/index.js:1
+msgid "Corner radius"
+msgstr ""
+
+#: build/blocks/bento-faq/index.js:1
+msgid "Remove card"
+msgstr ""
+
+#: build/blocks/bento-faq/index.js:1
+msgid "Question…"
+msgstr ""
+
+#: build/blocks/bento-faq/index.js:1
+msgid "Write the answer…"
+msgstr ""
+
+#: build/blocks/bento-faq/index.js:1
+msgid "Add card"
+msgstr ""
+
+#: build/blocks/bento-faq/index.js:1
+msgid "FAQPage schema is turned off for this block."
+msgstr ""
+
+#: build/blocks/faq-item/index.js:1
+#: build/blocks/nested-faq/index.js:1
+msgid "Filled"
+msgstr ""
+
+#: build/blocks/faq-item/index.js:1
+#: build/blocks/nested-faq/index.js:1
+msgid "Minimal"
+msgstr ""
+
+#: build/blocks/faq-item/index.js:1
+#: build/blocks/nested-faq/index.js:1
+msgid "Outline"
+msgstr ""
+
+#: build/blocks/faq-item/index.js:1
+#: build/blocks/nested-faq/index.js:1
+msgid "Gradient"
+msgstr ""
+
+#: build/blocks/faq-item/index.js:1
+#: build/blocks/nested-faq/index.js:1
+msgid "Chevron"
+msgstr ""
+
+#: build/blocks/faq-item/index.js:1
+#: build/blocks/nested-faq/index.js:1
+msgid "Plus / Minus"
+msgstr ""
+
+#: build/blocks/faq-item/index.js:1
+#: build/blocks/nested-faq/index.js:1
+msgid "Arrow"
+msgstr ""
+
+#: build/blocks/faq-item/index.js:1
+#: build/blocks/nested-faq/index.js:1
+msgid "None"
+msgstr ""
+
+#: build/blocks/faq-item/index.js:1
+msgid "Write the answer — or add any block…"
+msgstr ""
+
+#: build/blocks/faq-item/index.js:1
+msgid "Collapse answer"
+msgstr ""
+
+#: build/blocks/faq-item/index.js:1
+msgid "Expand answer"
+msgstr ""
+
+#: build/blocks/faq-item/index.js:1
+msgid "Add sub question"
+msgstr ""
+
+#: build/blocks/faq-item/index.js:1
+msgid "Open by default"
+msgstr ""
+
+#: build/blocks/faq-item/index.js:1
+msgid "This question starts expanded on the frontend."
+msgstr ""
+
+#: build/blocks/faq-item/index.js:1
+msgid "The answer accepts any block — headings, images, video, columns, groups and more FAQ items."
+msgstr ""
+
+#: build/blocks/faq-item/index.js:1
+#, js-format
+msgid "Nesting limit reached (%d level). Upgrade to Pro for deeper nesting."
+msgstr ""
+
+#: build/blocks/faq-item/index.js:1
+msgid "Write a question…"
+msgstr ""
+
+#: build/blocks/faq-parent/index.js:1
+msgid "Classic accordion with themes, search and categories."
+msgstr ""
+
+#: build/blocks/faq-parent/index.js:1
+msgid "Nested FAQ"
+msgstr ""
+
+#: build/blocks/faq-parent/index.js:1
+msgid "Multi level accordion — sub questions inside a question."
+msgstr ""
+
+#: build/blocks/faq-parent/index.js:1
+msgid "Bento FAQ"
+msgstr ""
+
+#: build/blocks/faq-parent/index.js:1
+msgid "Bento grid of cards — each answer opens in a focused dialog."
+msgstr ""
+
+#: build/blocks/faq-parent/index.js:1
+msgid "Answer assistant — visitors ask, it replies from your FAQs."
+msgstr ""
+
+#: build/blocks/faq-parent/index.js:1
+msgid "Choose FAQ Template"
+msgstr ""
+
+#: build/blocks/faq-parent/index.js:1
+msgid "Pick a block to build — the shortcode is generated once you save."
+msgstr ""
+
+#: build/blocks/nested-faq/index.js:1
+msgid "Template"
+msgstr ""
+
+#: build/blocks/nested-faq/index.js:1
+msgid "Allow multiple open at once"
+msgstr ""
+
+#: build/blocks/nested-faq/index.js:1
+msgid "Off keeps it as a classic accordion — opening one closes its siblings."
+msgstr ""
+
+#: build/blocks/nested-faq/index.js:1
+msgid "Prints JSON-LD in the page source so search engines and AI answer engines can read the Q&A."
+msgstr ""
+
+#: build/blocks/nested-faq/index.js:1
+msgid "Nesting depth"
+msgstr ""
+
+#: build/blocks/nested-faq/index.js:1
+#, js-format
+msgid "Pro: up to %d nested levels. Each answer accepts any block."
+msgstr ""
+
+#: build/blocks/nested-faq/index.js:1
+#, js-format
+msgid "Free: %d nested level. Upgrade for 3 levels."
+msgstr ""
+
+#: build/blocks/nested-faq/index.js:1
+msgid "Position"
+msgstr ""
+
+#: build/blocks/nested-faq/index.js:1
+msgid "Icon Color"
+msgstr ""
+
+#: build/blocks/nested-faq/index.js:1
+msgid "Icon Size"
+msgstr ""
+
+#: build/blocks/nested-faq/index.js:1
+msgid "Open Color"
+msgstr ""
+
+#: build/blocks/nested-faq/index.js:1
+msgid "Open Background"
+msgstr ""
+
+#: build/blocks/nested-faq/index.js:1
+msgid "Nested Questions"
+msgstr ""
+
+#: build/blocks/nested-faq/index.js:1
+msgid "Indent"
+msgstr ""
+
+#: build/blocks/nested-faq/index.js:1
+msgid "Gap"
+msgstr ""
+
+#: build/blocks/nested-faq/index.js:1
+msgid "Item"
+msgstr ""
+
+#: build/blocks/nested-faq/index.js:1
+msgid "Unlock all Nested FAQ templates"
+msgstr ""
+
+#: build/blocks/nested-faq/index.js:1
+msgid "The Default template is free. Pro adds five ready-made looks and deeper nesting."
+msgstr ""
+
+#: build/blocks/nested-faq/index.js:1
+msgid "Filled, Card, Minimal, Outline and Gradient templates"
+msgstr ""
+
+#: build/blocks/nested-faq/index.js:1
+msgid "Up to 3 levels of nested questions"
+msgstr ""
+
+#: build/blocks/nested-faq/index.js:1
+msgid "All premium FAQ themes and layouts"
+msgstr ""
+
+#: build/blocks/nested-faq/index.js:1
+msgid "AI powered FAQ generation"
+msgstr ""
+
+#: build/blocks/nested-faq/index.js:1
+msgid "Analytics dashboard and WooCommerce product FAQs"
+msgstr ""
+
+#: build/blocks/nested-faq/index.js:1
+msgid "What is included in the plan?"
+msgstr ""
+
+#: build/blocks/nested-faq/index.js:1
+msgid "Every plan ships with the full block library, unlimited FAQ items and free updates."
+msgstr ""
+
+#: build/blocks/nested-faq/index.js:1
+msgid "Included features"
+msgstr ""
+
+#: build/blocks/nested-faq/index.js:1
+msgid "Usage limits"
+msgstr ""
+
+#: build/blocks/nested-faq/index.js:1
+msgid "How does billing work?"
+msgstr ""
+
+#: build/blocks/nested-faq/index.js:1
+msgid "Do you offer support?"
+msgstr ""
+
+#: build/blocks/nested-faq/index.js:1
+#, js-format
+msgid "Free plan: %d nested level and the Default template. Upgrade for deeper nesting and all templates."
 msgstr ""
 
 #: build/block.json
@@ -544,6 +3402,9 @@ msgid "FAQ And Answers"
 msgstr ""
 
 #: build/block.json
+#: build/blocks/faq-item/block.json
+#: build/blocks/faq-parent/block.json
+#: build/blocks/nested-faq/block.json
 msgctxt "block keyword"
 msgid "faq"
 msgstr ""
@@ -584,11 +3445,13 @@ msgid "faq schema"
 msgstr ""
 
 #: build/block.json
+#: build/blocks/nested-faq/block.json
 msgctxt "block keyword"
 msgid "accordion"
 msgstr ""
 
 #: build/block.json
+#: build/blocks/nested-faq/block.json
 msgctxt "block keyword"
 msgid "toggle"
 msgstr ""
@@ -616,6 +3479,21 @@ msgstr ""
 #: build/block.json
 msgctxt "block keyword"
 msgid "custom-block"
+msgstr ""
+
+#: build/block.json
+msgctxt "block keyword"
+msgid "ai-ask-block"
+msgstr ""
+
+#: build/block.json
+msgctxt "block keyword"
+msgid "nested-faq-block"
+msgstr ""
+
+#: build/block.json
+msgctxt "block keyword"
+msgid "bento-faq-block"
 msgstr ""
 
 #: build/block.json
@@ -661,4 +3539,169 @@ msgstr ""
 #: build/block.json
 msgctxt "block keyword"
 msgid "faq plugin for woocommerce"
+msgstr ""
+
+#: build/blocks/ask-ai/block.json
+msgctxt "block title"
+msgid "Ask AI"
+msgstr ""
+
+#: build/blocks/ask-ai/block.json
+msgctxt "block description"
+msgid "An AI answer assistant that replies to visitor questions using your own FAQ content — with sources, feedback and abuse protection."
+msgstr ""
+
+#: build/blocks/ask-ai/block.json
+msgctxt "block keyword"
+msgid "ask ai"
+msgstr ""
+
+#: build/blocks/ask-ai/block.json
+msgctxt "block keyword"
+msgid "ai assistant"
+msgstr ""
+
+#: build/blocks/ask-ai/block.json
+msgctxt "block keyword"
+msgid "faq chatbot"
+msgstr ""
+
+#: build/blocks/ask-ai/block.json
+msgctxt "block keyword"
+msgid "answer engine"
+msgstr ""
+
+#: build/blocks/ask-ai/block.json
+msgctxt "block keyword"
+msgid "support"
+msgstr ""
+
+#: build/blocks/ask-ai/block.json
+msgctxt "block keyword"
+msgid "search"
+msgstr ""
+
+#: build/blocks/bento-faq/block.json
+msgctxt "block title"
+msgid "Bento FAQ"
+msgstr ""
+
+#: build/blocks/bento-faq/block.json
+msgctxt "block description"
+msgid "A modern bento grid of FAQ cards — asymmetric layout, hover depth and a focused modal for each answer."
+msgstr ""
+
+#: build/blocks/bento-faq/block.json
+msgctxt "block keyword"
+msgid "bento"
+msgstr ""
+
+#: build/blocks/bento-faq/block.json
+msgctxt "block keyword"
+msgid "faq grid"
+msgstr ""
+
+#: build/blocks/bento-faq/block.json
+msgctxt "block keyword"
+msgid "cards"
+msgstr ""
+
+#: build/blocks/bento-faq/block.json
+msgctxt "block keyword"
+msgid "modern faq"
+msgstr ""
+
+#: build/blocks/bento-faq/block.json
+msgctxt "block keyword"
+msgid "saas"
+msgstr ""
+
+#: build/blocks/bento-faq/block.json
+msgctxt "block keyword"
+msgid "grid"
+msgstr ""
+
+#: build/blocks/bento-faq/block.json
+msgctxt "block keyword"
+msgid "masonry"
+msgstr ""
+
+#: build/blocks/faq-item/block.json
+msgctxt "block title"
+msgid "FAQ Item"
+msgstr ""
+
+#: build/blocks/faq-item/block.json
+msgctxt "block description"
+msgid "A single question. The answer accepts any blocks — headings, paragraphs, images, video, columns, groups and even more FAQ items."
+msgstr ""
+
+#: build/blocks/faq-item/block.json
+msgctxt "block keyword"
+msgid "question"
+msgstr ""
+
+#: build/blocks/faq-item/block.json
+msgctxt "block keyword"
+msgid "answer"
+msgstr ""
+
+#: build/blocks/faq-item/block.json
+msgctxt "block keyword"
+msgid "accordion item"
+msgstr ""
+
+#: build/blocks/faq-parent/block.json
+msgctxt "block title"
+msgid "FAQ Builder"
+msgstr ""
+
+#: build/blocks/faq-parent/block.json
+msgctxt "block description"
+msgid "Choose which Awesome FAQ block or template to build, then copy the generated shortcode."
+msgstr ""
+
+#: build/blocks/faq-parent/block.json
+msgctxt "block keyword"
+msgid "faq builder"
+msgstr ""
+
+#: build/blocks/faq-parent/block.json
+msgctxt "block keyword"
+msgid "faq template"
+msgstr ""
+
+#: build/blocks/faq-parent/block.json
+msgctxt "block keyword"
+msgid "shortcode"
+msgstr ""
+
+#: build/blocks/nested-faq/block.json
+msgctxt "block title"
+msgid "Nested FAQ"
+msgstr ""
+
+#: build/blocks/nested-faq/block.json
+msgctxt "block description"
+msgid "Multi-level FAQ accordion — place sub questions inside a question. Server rendered with FAQPage schema."
+msgstr ""
+
+#: build/blocks/nested-faq/block.json
+msgctxt "block keyword"
+msgid "nested faq"
+msgstr ""
+
+#: build/blocks/nested-faq/block.json
+msgctxt "block keyword"
+msgid "multi level faq"
+msgstr ""
+
+#: build/blocks/nested-faq/block.json
+msgctxt "block keyword"
+msgid "sub faq"
+msgstr ""
+
+#: build/blocks/nested-faq/block.json
+msgctxt "block keyword"
+msgid "schema"
 msgstr ""

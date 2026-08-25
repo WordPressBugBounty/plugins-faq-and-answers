@@ -2,17 +2,55 @@
 // phpcs:disable
 
 if (!defined('ABSPATH')) {
-    exit;
+    exit; 
 }
 if (!class_exists('FAQBlock')) {
     class FAQBlock
     {
+        /**
+         * Blocks that live in build/blocks/*. The folder name is also the key
+         * used in the afaq_disabled_blocks option and on the dashboard.
+         */
+        private $child_blocks = ['nested-faq', 'faq-item', 'faq-parent', 'ask-ai', 'bento-faq'];
+
+        /**
+         * Blocks in build/blocks/* that only register for premium users.
+         * Their render.php enforces the same rule.
+         *
+         * These folders are stripped from the free build by the
+         * @fs_premium_only header in faq-and-answers.php, so on a free install
+         * the glob below never sees them. The check stays for the pro build
+         * running without an active license.
+         */
+        private $premium_blocks = ['ask-ai', 'bento-faq', 'nested-faq', 'faq-parent', 'faq-item'];
+
         public function __construct()
         {
             add_action('init', [$this, 'onInit']);
             add_action('after_setup_theme', [$this, 'setupThemeSupports']);
             add_action('enqueue_block_editor_assets', [$this, "scbEnqueueEditorAssets"]);
             add_action('enqueue_block_assets', [$this, "scbEnqueueFrontendAssets"]);
+            add_filter('block_categories_all', [$this, 'registerBlockCategory'], 10, 1);
+        }
+
+        /**
+         * One inserter category that holds every block this plugin ships.
+         */
+        public function registerBlockCategory($categories)
+        {
+            foreach ($categories as $category) {
+                if (isset($category['slug']) && 'awesome-faq' === $category['slug']) {
+                    return $categories;
+                }
+            }
+
+            array_unshift($categories, [
+                'slug'  => 'awesome-faq',
+                'title' => __('Awesome FAQ', 'faq-and-answers'),
+                'icon'  => 'feedback',
+            ]);
+
+            return $categories;
         }
         public function setupThemeSupports()
         {
@@ -20,7 +58,37 @@ if (!class_exists('FAQBlock')) {
         }
         public function onInit()
         {
-            register_block_type(__DIR__ . '/build');
+            $disabled_blocks = (array) get_option('afaq_disabled_blocks', []);
+
+            // Main FAQ block — compiled to /build.
+            if (!in_array('faq-and-answers', $disabled_blocks, true)) {
+                register_block_type(__DIR__ . '/build');
+            }
+
+            // Child blocks — compiled to /build/blocks/*. Every child block is
+            // premium, so nothing here registers on a free install; the FAQ
+            // Builder picker is only placed into the CPT for premium users
+            // (see FaaAdmin::afaq_create_post_type).
+            $blocks_path = AFAQ_DIR_PATH . 'build/blocks/';
+
+            if (is_dir($blocks_path)) {
+                foreach ((array) glob($blocks_path . '*', GLOB_ONLYDIR) as $block_path) {
+                    $block_name = basename($block_path);
+
+                    if (in_array($block_name, $disabled_blocks, true)) {
+                        continue;
+                    }
+
+                    if (in_array($block_name, $this->premium_blocks, true) && !faa_is_premium()) {
+                        continue;
+                    }
+
+                    register_block_type($block_path);
+                }
+            }
+
+            wp_set_script_translations('faa-faq-and-answers-editor-script', 'faq-and-answers', AFAQ_DIR_PATH . 'languages');
+
             add_action('rest_api_init', [$this, 'registerRestRoutes']);
         }
         public function registerRestRoutes()
@@ -74,11 +142,13 @@ if (!class_exists('FAQBlock')) {
 
         public function scbEnqueueEditorAssets()
         {
-            wp_add_inline_script(
-                'faa-faq-and-answers-editor-script',
-                'const scdIsPipeChecker = ' . wp_json_encode(faa_is_premium()) . ';',
-                'before'
-            );
+            $flag = 'const scdIsPipeChecker = ' . wp_json_encode(faa_is_premium()) . ';';
+
+            wp_add_inline_script('faa-faq-and-answers-editor-script', $flag, 'before');
+
+            foreach ($this->child_blocks as $slug) {
+                wp_add_inline_script("faa-{$slug}-editor-script", $flag, 'before');
+            }
 
             global $wp_version;
             $is_wp7 = version_compare($wp_version, '7.0', '>=');
@@ -112,19 +182,28 @@ if (!class_exists('FAQBlock')) {
         }
         public function scbEnqueueFrontendAssets()
         {
-            wp_add_inline_script(
-                'faa-faq-and-answers-view-script',
-                'const scdIsPipeChecker = ' . wp_json_encode(faa_is_premium()) . ';',
-                'before'
+            $handles = array_merge(
+                ['faa-faq-and-answers-view-script'],
+                array_map(function ($slug) {
+                    return "faa-{$slug}-view-script";
+                }, $this->child_blocks)
             );
-            wp_add_inline_script(
-                'faa-faq-and-answers-view-script',
-                'window.faaAnalytics = ' . wp_json_encode([
-                    'ajax_url' => admin_url('admin-ajax.php'),
-                    'nonce' => wp_create_nonce('faa_analytics_nonce')
-                ]) . ';',
-                'before'
-            );
+
+            foreach ($handles as $handle) {
+                wp_add_inline_script(
+                    $handle,
+                    'const scdIsPipeChecker = ' . wp_json_encode(faa_is_premium()) . ';',
+                    'before'
+                );
+                wp_add_inline_script(
+                    $handle,
+                    'window.faaAnalytics = ' . wp_json_encode([
+                        'ajax_url' => admin_url('admin-ajax.php'),
+                        'nonce' => wp_create_nonce('faa_analytics_nonce')
+                    ]) . ';',
+                    'before'
+                );
+            }
         }
     }
     new FAQBlock();

@@ -1,0 +1,150 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 900 600' width='100%' style="display:block" aria-hidden='true'>
+		<defs>
+			<linearGradient id='tBg' x1='0%' y1='0%' x2='100%' y2='100%'>
+				<stop offset='0%' stop-color='#0B1340' />
+				<stop offset='100%' stop-color='#1A0840' />
+			</linearGradient>
+			<linearGradient id='tAccent' x1='0%' y1='0%' x2='100%' y2='0%'>
+				<stop offset='0%' stop-color='#4F8EF7' />
+				<stop offset='100%' stop-color='#9C6CE8' />
+			</linearGradient>
+			<linearGradient id='tOpenRow' x1='0%' y1='0%' x2='100%' y2='0%'>
+				<stop offset='0%' stop-color='#4F8EF7' stop-opacity='0.18' />
+				<stop offset='100%' stop-color='#9C6CE8' stop-opacity='0.06' />
+			</linearGradient>
+			<linearGradient id='tBar1' x1='0%' y1='0%' x2='0%' y2='100%'>
+				<stop offset='0%' stop-color='#4F8EF7' />
+				<stop offset='100%' stop-color='#4F8EF7' stop-opacity='0.5' />
+			</linearGradient>
+		</defs>
+
+		<rect width='900' height='600' fill='url(#tBg)' />
+		<circle cx='130' cy='130' r='220' fill='rgba(79,142,247,0.04)' />
+		<circle cx='800' cy='500' r='260' fill='rgba(156,108,232,0.05)' />
+
+		<rect x='52' y='52' width='44' height='28' rx='7' fill='white' opacity='0.92' />
+		<path d='M62 80 L57 91 L72 80 Z' fill='white' opacity='0.92' />
+		<text x='74' y='71' text-anchor='middle' font-family='Arial,sans-serif' font-weight='900' font-size='13' fill='#1e1b4b'>FAQ</text>
+
+		<text x='52' y='140' font-family='Arial,sans-serif' font-weight='800' font-size='40' fill='white'>Awesome FAQ</text>
+		<text x='52' y='170' font-family='Arial,sans-serif' font-size='15' fill='rgba(255,255,255,0.55)'>Modern · Responsive · Super Fast</text>
+		<rect x='52' y='182' width='210' height='3' rx='2' fill='url(#tAccent)' />
+
+		<rect x='52' y='206' width='138' height='30' rx='15' fill='rgba(79,142,247,0.18)' stroke='#4F8EF7' stroke-width='1' />
+		<text x='121' y='225' text-anchor='middle' font-family='Arial,sans-serif' font-size='12' font-weight='700' fill='#7AADFF'>⚡ AI Powered</text>
+
+		<rect x='200' y='206' width='148' height='30' rx='15' fill='rgba(156,108,232,0.18)' stroke='#9C6CE8' stroke-width='1' />
+		<text x='274' y='225' text-anchor='middle' font-family='Arial,sans-serif' font-size='12' font-weight='700' fill='#BEA0FF'>🛒 WooCommerce</text>
+
+		<rect x='52' y='248' width='126' height='30' rx='15' fill='rgba(0,188,212,0.18)' stroke='#00BCD4' stroke-width='1' />
+		<text x='115' y='267' text-anchor='middle' font-family='Arial,sans-serif' font-size='12' font-weight='700' fill='#4DD6E8'>📊 Analytics</text>
+
+		<rect x='190' y='248' width='130' height='30' rx='15' fill='rgba(233,30,140,0.18)' stroke='#E91E8C' stroke-width='1' />
+		<text x='255' y='267' text-anchor='middle' font-family='Arial,sans-serif' font-size='12' font-weight='700' fill='#FF6EC7'>🔍 SEO Schema</text>
+
+		<rect x='52' y='290' width='118' height='30' rx='15' fill='rgba(76,175,80,0.18)' stroke='#4CAF50' stroke-width='1' />
+		<text x='111' y='309' text-anchor='middle' font-family='Arial,sans-serif' font-size='12' font-weight='700' fill='#7CDA80'>14 Themes</text>
+
+		<rect x='182' y='290' width='140' height='30' rx='15' fill='rgba(255,152,0,0.18)' stroke='#FF9800' stroke-width='1' />
+		<text x='252' y='309' text-anchor='middle' font-family='Arial,sans-serif' font-size='12' font-weight='700' fill='#FFB74D'>Classic Editor</text>
+
+		<text x='52' y='378' font-family='Arial,sans-serif' font-weight='800' font-size='30' fill='white'>12+</text>
+		<text x='52' y='398' font-family='Arial,sans-serif' font-size='11' fill='rgba(255,255,255,0.5)'>Beautiful Themes</text>
+
+		<line x1='148' y1='360' x2='148' y2='405' stroke='rgba(255,255,255,0.12)' stroke-width='1' />
+
+		<text x='162' y='378' font-family='Arial,sans-serif' font-weight='800' font-size='30' fill='white'>3</text>
+		<text x='162' y='398' font-family='Arial,sans-serif' font-size='11' fill='rgba(255,255,255,0.5)'>AI Providers</text>
+
+		<line x1='230' y1='360' x2='230' y2='405' stroke='rgba(255,255,255,0.12)' stroke-width='1' />
+
+		<text x='244' y='378' font-family='Arial,sans-serif' font-weight='800' font-size='30' fill='white'>100%</text>
+		<text x='244' y='398' font-family='Arial,sans-serif' font-size='11' fill='rgba(255,255,255,0.5)'>Responsive</text>
+
+		<rect x='52' y='422' width='118' height='26' rx='7' fill='rgba(255,255,255,0.08)' />
+		<text x='111' y='439' text-anchor='middle' font-family='Arial,sans-serif' font-size='11' font-weight='600' fill='rgba(255,255,255,0.75)'>Gutenberg Block</text>
+
+		<rect x='180' y='422' width='90' height='26' rx='7' fill='rgba(255,255,255,0.08)' />
+		<text x='225' y='439' text-anchor='middle' font-family='Arial,sans-serif' font-size='11' font-weight='600' fill='rgba(255,255,255,0.75)'>Shortcode</text>
+
+		<text x='52' y='484' font-family='Arial,sans-serif' font-size='11' fill='rgba(255,255,255,0.4)'>Analytics Dashboard</text>
+		<rect x='52' y='494' width='16' height='42' rx='3' fill='url(#tBar1)' opacity='0.7' />
+		<rect x='74' y='506' width='16' height='30' rx='3' fill='url(#tBar1)' opacity='0.55' />
+		<rect x='96' y='498' width='16' height='38' rx='3' fill='url(#tBar1)' opacity='0.7' />
+		<rect x='118' y='502' width='16' height='34' rx='3' fill='url(#tBar1)' opacity='0.6' />
+		<rect x='140' y='490' width='16' height='46' rx='3' fill='url(#tBar1)' opacity='0.9' />
+		<rect x='162' y='500' width='16' height='36' rx='3' fill='url(#tBar1)' opacity='0.65' />
+		<line x1='52' y1='537' x2='350' y2='537' stroke='rgba(255,255,255,0.08)' stroke-width='1' />
+
+		<line x1='390' y1='40' x2='390' y2='560' stroke='rgba(255,255,255,0.07)' stroke-width='1' />
+
+		<rect x='418' y='40' width='448' height='520' rx='14' fill='rgba(255,255,255,0.04)' stroke='rgba(255,255,255,0.09)' stroke-width='1' />
+
+		<rect x='418' y='40' width='448' height='42' rx='14' fill='rgba(255,255,255,0.07)' />
+		<rect x='418' y='68' width='448' height='14' fill='rgba(255,255,255,0.07)' />
+		<circle cx='444' cy='61' r='5.5' fill='#F44336' opacity='0.85' />
+		<circle cx='462' cy='61' r='5.5' fill='#FF9800' opacity='0.85' />
+		<circle cx='480' cy='61' r='5.5' fill='#4CAF50' opacity='0.85' />
+		<rect x='500' y='52' width='240' height='18' rx='9' fill='rgba(255,255,255,0.08)' />
+		<text x='620' y='65' text-anchor='middle' font-family='Arial,sans-serif' font-size='11' fill='rgba(255,255,255,0.35)'>yoursite.com/faq</text>
+
+		<rect x='434' y='102' width='416' height='86' rx='10' fill='url(#tOpenRow)' stroke='rgba(79,142,247,0.3)' stroke-width='1' />
+		<rect x='434' y='102' width='4' height='86' rx='2' fill='url(#tAccent)' />
+		<text x='452' y='124' font-family='Arial,sans-serif' font-weight='700' font-size='13' fill='white'>How do I add a FAQ block in Gutenberg?</text>
+		
+		<path d='M824 118 L834 118 L829 128 Z' fill='#4F8EF7' />
+		<rect x='452' y='134' width='290' height='7' rx='3' fill='rgba(255,255,255,0.28)' />
+		<rect x='452' y='147' width='220' height='7' rx='3' fill='rgba(255,255,255,0.18)' />
+		<rect x='452' y='160' width='160' height='7' rx='3' fill='rgba(255,255,255,0.12)' />
+
+		<rect x='434' y='200' width='416' height='44' rx='10' fill='rgba(255,255,255,0.03)' stroke='rgba(255,255,255,0.08)' stroke-width='1' />
+		<text x='452' y='226' font-family='Arial,sans-serif' font-weight='600' font-size='13' fill='rgba(255,255,255,0.72)'>Can I use AI to generate FAQs automatically?</text>
+		<path d='M830 215 L830 229 L840 222 Z' fill='rgba(255,255,255,0.35)' />
+		<rect x='728' y='214' width='56' height='18' rx='9' fill='rgba(79,142,247,0.28)' />
+		<text x='756' y='226' text-anchor='middle' font-family='Arial,sans-serif' font-size='10' font-weight='700' fill='#7AADFF'>⚡ AI</text>
+
+		<rect x='434' y='256' width='416' height='44' rx='10' fill='rgba(255,255,255,0.03)' stroke='rgba(255,255,255,0.08)' stroke-width='1' />
+		<text x='452' y='282' font-family='Arial,sans-serif' font-weight='600' font-size='13' fill='rgba(255,255,255,0.72)'>Does it work with WooCommerce products?</text>
+		<path d='M830 271 L830 285 L840 278 Z' fill='rgba(255,255,255,0.35)' />
+		<rect x='710' y='270' width='76' height='18' rx='9' fill='rgba(156,108,232,0.28)' />
+		<text x='748' y='282' text-anchor='middle' font-family='Arial,sans-serif' font-size='10' font-weight='700' fill='#BEA0FF'>WooCommerce</text>
+
+		<rect x='434' y='312' width='416' height='44' rx='10' fill='rgba(255,255,255,0.03)' stroke='rgba(255,255,255,0.08)' stroke-width='1' />
+		<text x='452' y='338' font-family='Arial,sans-serif' font-weight='600' font-size='13' fill='rgba(255,255,255,0.72)'>Is JSON-LD FAQ Schema included for SEO?</text>
+		<path d='M830 327 L830 341 L840 334 Z' fill='rgba(255,255,255,0.35)' />
+		<rect x='722' y='326' width='64' height='18' rx='9' fill='rgba(233,30,140,0.28)' />
+		<text x='754' y='338' text-anchor='middle' font-family='Arial,sans-serif' font-size='10' font-weight='700' fill='#FF6EC7'>Schema</text>
+
+		<text x='434' y='380' font-family='Arial,sans-serif' font-size='11' fill='rgba(255,255,255,0.4)'>12 Beautiful Themes</text>
+		<rect x='434' y='390' width='64' height='36' rx='7' fill='#4F8EF7' />
+		<rect x='434' y='394' width='64' height='7' rx='3' fill='rgba(255,255,255,0.45)' />
+		<rect x='434' y='406' width='46' height='6' rx='3' fill='rgba(255,255,255,0.25)' />
+		<rect x='506' y='390' width='64' height='36' rx='7' fill='#E91E8C' />
+		<rect x='506' y='394' width='64' height='7' rx='3' fill='rgba(255,255,255,0.45)' />
+		<rect x='506' y='406' width='46' height='6' rx='3' fill='rgba(255,255,255,0.25)' />
+		<rect x='578' y='390' width='64' height='36' rx='7' fill='#00BCD4' />
+		<rect x='578' y='394' width='64' height='7' rx='3' fill='rgba(255,255,255,0.45)' />
+		<rect x='578' y='406' width='46' height='6' rx='3' fill='rgba(255,255,255,0.25)' />
+		<rect x='650' y='390' width='64' height='36' rx='7' fill='#4CAF50' />
+		<rect x='650' y='394' width='64' height='7' rx='3' fill='rgba(255,255,255,0.45)' />
+		<rect x='650' y='406' width='46' height='6' rx='3' fill='rgba(255,255,255,0.25)' />
+		<rect x='722' y='390' width='64' height='36' rx='7' fill='#FF9800' />
+		<rect x='722' y='394' width='64' height='7' rx='3' fill='rgba(255,255,255,0.45)' />
+		<rect x='722' y='406' width='46' height='6' rx='3' fill='rgba(255,255,255,0.25)' />
+		<rect x='794' y='390' width='56' height='36' rx='7' fill='#9C6CE8' />
+		<rect x='794' y='394' width='56' height='7' rx='3' fill='rgba(255,255,255,0.45)' />
+		<rect x='794' y='406' width='40' height='6' rx='3' fill='rgba(255,255,255,0.25)' />
+
+		<rect x='434' y='442' width='200' height='44' rx='9' fill='rgba(79,142,247,0.12)' stroke='rgba(79,142,247,0.3)' stroke-width='1' />
+		<text x='534' y='461' text-anchor='middle' font-family='Arial,sans-serif' font-size='12' font-weight='700' fill='#7AADFF'>⚡ AI-Powered FAQs</text>
+		<text x='534' y='477' text-anchor='middle' font-family='Arial,sans-serif' font-size='10' fill='rgba(122,173,255,0.65)'>OpenAI · Anthropic · Groq</text>
+
+		<rect x='646' y='442' width='218' height='44' rx='9' fill='rgba(0,188,212,0.12)' stroke='rgba(0,188,212,0.3)' stroke-width='1' />
+		<text x='755' y='461' text-anchor='middle' font-family='Arial,sans-serif' font-size='12' font-weight='700' fill='#4DD6E8'>📊 Analytics Tracking</text>
+		<text x='755' y='477' text-anchor='middle' font-family='Arial,sans-serif' font-size='10' fill='rgba(77,214,232,0.65)'>User interactions · Popular Q&amp;A</text>
+
+		<rect x='434' y='500' width='416' height='44' rx='9' fill='rgba(255,255,255,0.04)' stroke='rgba(255,255,255,0.07)' stroke-width='1' />
+		<text x='490' y='524' font-family='Arial,sans-serif' font-size='11' fill='rgba(255,255,255,0.5)'>✅ Gutenberg Block</text>
+		<text x='618' y='524' font-family='Arial,sans-serif' font-size='11' fill='rgba(255,255,255,0.5)'>✅ Shortcode</text>
+		<text x='718' y='524' font-family='Arial,sans-serif' font-size='11' fill='rgba(255,255,255,0.5)'>✅ Classic Editor</text>
+	</svg>

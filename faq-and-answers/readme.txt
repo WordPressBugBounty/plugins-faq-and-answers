@@ -2,7 +2,7 @@
 Contributors: bplugins, shehabulislam, abuhayat, prosanta10, freemius
 Tags: faq block, accordion, faq schema, responsive faq, block
 Tested up to: 7.0
-Stable tag: 2.3.0
+Stable tag: 2.4.0
 Requires PHP: 7.4
 Requires at least: 6.5
 Donate link: https://www.buymeacoffee.com/abuhayat
@@ -54,6 +54,10 @@ Upgrade to [**Awesome FAQ Pro**](https://bplugins.com/products/faq-and-answers/p
 - **Block Editor AI Builder:** Auto-generate Q&A content and dynamically customize layout designs, colors, and backgrounds in Gutenberg using custom prompts.
 - **Global Settings Panel:** Configure AI models, API keys, and display options under **WooCommerce → Settings → FAQ AI Settings**.
 - **Analytics Dashboard:** Track user interactions, views, and clicks to optimize your questions and answers.
+- **New: Ask AI Block** - Interactive AI answer assistant that answers visitor questions instantly using your FAQ content, complete with source citations and user feedback.
+- **New: Bento FAQ Block** - Modern asymmetric bento grid layout for FAQ cards with interactive focused modal previews, custom card sizing, and scroll animations.
+- **New: Nested FAQ Block** - Multi-level accordion structure allowing sub-questions and multi-tier Q&A hierarchy with separate parent/child design controls.
+- **New: Ask AI Dashboard** - Centralized admin dashboard for managing AI provider settings, custom system prompts, real-time query logs, token usage, and visitor feedback analytics.
 
 
 ### AI-Powered FAQ Builder
@@ -106,6 +110,32 @@ Track:
 - Engagement
 
 Use these insights to identify the questions visitors care about most and improve your FAQ content.
+
+### Ask AI block features (Pro)
+
+- **Answers from your own content only** – the model receives your matching FAQ snippets and is told to reply from them, so it cannot invent an answer.
+- **Source citations** – every answer can list the FAQ entries it was built from, which is what makes visitors trust it.
+- **Rotating placeholders** – example questions cycle through the empty field so visitors know the box is worth using.
+- **Suggested question chips** – clickable questions under the field that answer instantly.
+- **Visitor feedback** – a customisable question with 👍/👎 buttons, so you can see which answers miss.
+- **Fallback link** – send anyone the assistant could not help to your contact or support page.
+- **Disclaimer line** – editable AI notice under the box.
+- **No answer, no guess** – when nothing is close enough, the visitor gets related questions instead of a made-up answer.
+- **Full design control** – colors for every part (heading, input, chips, answer box, labels, sources, feedback text), typography, background, borders, padding, and alignment.
+
+
+### Ask AI Dashboard (Pro)
+
+Everything the assistant does is reported under **Awesome FAQ → Ask AI**, built around the two questions a site owner actually has: what is this costing me, and what are people asking that I have not answered yet.
+
+**Dashboard Features:**
+
+- **Questions today** with a trend against the previous 7 days.
+- **Answered for free** – how many replies came from the cache or straight from a FAQ, so cost nothing.
+- **AI calls today** against your daily allowance.
+- **Unanswered** – questions no FAQ covered.
+- **Found helpful** – 👍 and 👎 totals from visitors.
+- A daily bar chart splitting every answer into cached, from a FAQ, and answered by AI, so you can see whether questions are growing and how much of the load stays free.
 
 
 ### How to Use Awesome FAQ – Quick Start
@@ -197,6 +227,8 @@ The Pro AI builder supports OpenAI (GPT-4o), Anthropic (Claude Sonnet), and the 
 = Where do I report security bugs found in this plugin? =
 Please report security bugs found in the source code of the Awesome FAQ plugin through the Patchstack Vulnerability Disclosure Program. The Patchstack team will assist you with verification, CVE assignment, and notify the developers of this plugin.
 
+
+
 == Screenshots ==
 
 1. FAQ Admin Dashboard
@@ -213,19 +245,28 @@ Please report security bugs found in the source code of the Awesome FAQ plugin t
 
 == Changelog ==
 
-= 2.3.0 - 2026-06-21 =
+= 2.4.0 - 2026-08-19  =
+* New: Ask AI Block - Interactive AI answer assistant that answers visitor questions instantly using your FAQ content, complete with source citations and user feedback.
+* New: Bento FAQ Block - Modern asymmetric bento grid layout for FAQ cards with interactive focused modal previews, custom card sizing, and scroll animations.
+* New: Nested FAQ Block - Multi-level accordion structure allowing sub-questions and multi-tier Q&A hierarchy with separate parent/child design controls.
+* New: Ask AI Dashboard - Centralized admin dashboard for managing AI provider settings, custom system prompts, real-time query logs, token usage, and visitor feedback analytics.
+* Improve: Advanced IP rate limiting, abuse protection, and custom fallback support link options for Ask AI interactions.
+
+
+= 2.3.0 - 2026-06-21 = 
 * New: WooCommerce Product FAQ Integration with flexible placement (Product Tab vs. Below Summary).
 * New: AI-Powered WooCommerce Product FAQ Generator supporting OpenAI (GPT-4o), Anthropic (Claude Sonnet), and native WordPress 7.0 Connectors.
 * New: WooCommerce Settings Panel for global AI provider selection, API key configuration, and default display options.
 * New: AI-Powered Gutenberg FAQ Builder allowing users to generate Q&A content and dynamically customize layout designs, colors, and backgrounds using custom prompts.
-* Improve: Auto-retries and exponential backoffs for AI client requests to ensure stable connections.
+* Improve: Auto-retries and exponential backoffs for AI client requests to ensure stable connections. 
 
+ 
 = 2.2.0 - 2026-04-25 =
 * New: AI-powered answer generation for FAQs.
 * New: Analytics dashboard to track user interactions and popular questions.
 * New: Advanced Classic Editor Support and New One Premium Theme.
 
-= 2.1.0 - 2026-04-04 =
+= 2.1.0 - 2026-04-04 = 
 * Add new two theme.
 
 = 2.0.5 - 2026-03-03 =
@@ -236,7 +277,7 @@ Please report security bugs found in the source code of the Awesome FAQ plugin t
 * Fully compatible with Google Rich Results (FAQ rich snippet).
 
 = 2.0.3 - 2025-12-23 =
-* Add new template.
+* Add new template. 
 
 = 2.0.2 - 2025-12-03 =
 * Reduced PHP code.
@@ -257,6 +298,8 @@ Please report security bugs found in the source code of the Awesome FAQ plugin t
 
 = 1.0 =
 * Initial Release
+
+
 
 == Upgrade Notice ==
 
