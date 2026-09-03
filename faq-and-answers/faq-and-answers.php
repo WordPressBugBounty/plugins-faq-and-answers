@@ -37,7 +37,7 @@ if ( function_exists( 'faa_fs' ) ) {
                     'premium_slug'        => 'faq-and-answers-pro',
                     'type'                => 'plugin',
                     'public_key'          => 'pk_2d82b77e5ff183b2a656c04d19840',
-                    'is_premium'          => free,
+                    'is_premium'          => 'free',
                     'premium_suffix'      => 'Pro',
                     'has_premium_version' => true,
                     'has_addons'          => false,
