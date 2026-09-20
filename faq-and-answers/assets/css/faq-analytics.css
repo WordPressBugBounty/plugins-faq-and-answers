@@ -1,0 +1,904 @@
+/**
+ * FAQ Analytics screen.
+ *
+ * Every corner is square on purpose: nothing here uses border-radius, so a
+ * rounded box anywhere on this screen is a bug, not a style choice.
+ *
+ * Colour, spacing and borders live here rather than in style attributes on the
+ * markup, so the screen can be restyled without touching the PHP that works
+ * out the numbers.
+ */
+
+.afaqAnWrap {
+	--afaqAn-line: #dcdcde;
+	--afaqAn-line-soft: #eceded;
+	--afaqAn-ink: #0f172a;
+	--afaqAn-muted: #64748b;
+	--afaqAn-faint: #94a3b8;
+	--afaqAn-blue: #2563eb;
+	--afaqAn-orange: #ea580c;
+	--afaqAn-green: #15803d;
+	--afaqAn-slate: #475569;
+	--afaqAn-red: #b91c1c;
+
+	max-width: 96%;
+	margin-right: 20px;
+	color: var(--afaqAn-ink);
+}
+
+.afaqAnWrap *,
+.afaqAnWrap *::before,
+.afaqAnWrap *::after {
+	box-sizing: border-box;
+}
+
+/* The screen is square. Anything the admin theme rounds gets flattened. */
+.afaqAnWrap input,
+.afaqAnWrap select,
+.afaqAnWrap textarea,
+.afaqAnWrap .button,
+.afaqAnWrap .afaqAnCard,
+.afaqAnWrap .afaqAnPanel,
+.afaqAnWrap .afaqAnBadge,
+.afaqAnWrap .afaqAnPager a,
+.afaqAnWrap .afaqAnPager span {
+	border-radius: 0;
+}
+
+/* ------------------------------------------------------------------ header */
+
+.afaqAnHead {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	justify-content: space-between;
+	gap: 16px;
+	padding: 4px 0 18px;
+}
+
+.afaqAnHead h1 {
+	margin: 0;
+	padding: 0;
+	font-size: 23px;
+	font-weight: 700;
+	line-height: 1.2;
+}
+
+.afaqAnSub {
+	margin: 6px 0 0;
+	color: var(--afaqAn-muted);
+	font-size: 13px;
+}
+
+.afaqAnTools {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 10px;
+}
+
+.afaqAnTools select {
+	min-width: 220px;
+	max-width: 320px;
+	height: 34px;
+	border-color: var(--afaqAn-line);
+}
+
+/* The range switch reads as one control, so the buttons share their borders
+   rather than each carrying a full box. */
+.afaqAnRange {
+	display: flex;
+	border: 1px solid var(--afaqAn-line);
+	background: #fff;
+}
+
+.afaqAnRange a {
+	padding: 0 16px;
+	border-left: 1px solid var(--afaqAn-line);
+	color: var(--afaqAn-ink);
+	font-size: 13px;
+	line-height: 32px;
+	text-decoration: none;
+	white-space: nowrap;
+}
+
+.afaqAnRange a:first-child {
+	border-left: 0;
+}
+
+.afaqAnRange a:hover {
+	background: #f1f5f9;
+}
+
+.afaqAnRange a.isOn,
+.afaqAnRange a.isOn:hover {
+	background: var(--afaqAn-blue);
+	color: #fff;
+	font-weight: 600;
+}
+
+.afaqAnRange a:focus-visible {
+	outline: 2px solid var(--afaqAn-blue);
+	outline-offset: -2px;
+	box-shadow: none;
+}
+
+.afaqAnExport {
+	display: inline-block;
+	padding: 0 16px;
+	border: 1px solid var(--afaqAn-blue);
+	background: #fff;
+	color: var(--afaqAn-blue);
+	font-size: 13px;
+	font-weight: 600;
+	line-height: 32px;
+	text-decoration: none;
+}
+
+.afaqAnExport:hover {
+	background: var(--afaqAn-blue);
+	color: #fff;
+}
+
+/* ------------------------------------------------------------------- cards */
+
+.afaqAnCards {
+	display: grid;
+	grid-template-columns: repeat(4, minmax(0, 1fr));
+	gap: 16px;
+}
+
+.afaqAnCard {
+	padding: 16px 18px 18px;
+	border: 1px solid var(--afaqAn-line);
+	/* The colour bar along the top is the border itself — one element, and it
+	   can never drift out of line with the box it belongs to. */
+	border-top: 3px solid var(--afaqAn-slate);
+	background: #fff;
+}
+
+.afaqAnCard.tone-blue {
+	border-top-color: var(--afaqAn-blue);
+}
+
+.afaqAnCard.tone-orange {
+	border-top-color: var(--afaqAn-orange);
+}
+
+.afaqAnCard.tone-green {
+	border-top-color: var(--afaqAn-green);
+}
+
+.afaqAnCardLabel {
+	margin: 0 0 8px;
+	color: var(--afaqAn-muted);
+	font-size: 11px;
+	font-weight: 600;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+}
+
+.afaqAnCardValue {
+	display: block;
+	font-size: 32px;
+	font-weight: 700;
+	line-height: 1.1;
+	overflow-wrap: anywhere;
+}
+
+.afaqAnCardValue.isDate {
+	font-size: 22px;
+}
+
+.afaqAnCardFoot {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 8px;
+	margin: 12px 0 0;
+	color: var(--afaqAn-muted);
+	font-size: 12px;
+}
+
+.afaqAnDelta {
+	padding: 2px 7px;
+	font-size: 11px;
+	font-weight: 700;
+	white-space: nowrap;
+}
+
+.afaqAnDelta.isUp {
+	background: #dcfce7;
+	color: #14532d;
+}
+
+.afaqAnDelta.isDown {
+	background: #fee2e2;
+	color: #7f1d1d;
+}
+
+.afaqAnDelta.isFlat {
+	background: #f1f5f9;
+	color: var(--afaqAn-slate);
+}
+
+/* ------------------------------------------------------------------- chart */
+
+.afaqAnPanel {
+	margin-top: 16px;
+	border: 1px solid var(--afaqAn-line);
+	background: #fff;
+}
+
+/* The chart and the top three, side by side. The chart takes twice the width:
+   it is a time series that needs the room, and the list beside it is three
+   short rows that does not. */
+.afaqAnSplit {
+	display: grid;
+	grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+	gap: 16px;
+	margin-top: 16px;
+	align-items: start;
+}
+
+.afaqAnSplit .afaqAnPanel {
+	margin-top: 0;
+	min-width: 0;
+}
+
+.afaqAnPanelNote {
+	color: var(--afaqAn-muted);
+	font-size: 12px;
+}
+
+/* ---------------------------------------------------------- top clicked */
+
+.afaqAnTopList {
+	margin: 0;
+	padding: 6px 0;
+	list-style: none;
+	counter-reset: none;
+}
+
+.afaqAnTopItem {
+	display: flex;
+	align-items: flex-start;
+	gap: 12px;
+	margin: 0;
+	padding: 12px 20px;
+}
+
+.afaqAnTopItem + .afaqAnTopItem {
+	border-top: 1px solid var(--afaqAn-line-soft);
+}
+
+.afaqAnTopRank {
+	display: flex;
+	width: 22px;
+	height: 22px;
+	flex-shrink: 0;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	background: #eef2ff;
+	color: #3730a3;
+	font-size: 11px;
+	font-weight: 700;
+	line-height: 1;
+}
+
+.afaqAnTopBody {
+	display: block;
+	flex: 1;
+	min-width: 0;
+}
+
+.afaqAnTopQuestion {
+	display: -webkit-box;
+	overflow: hidden;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	font-size: 13px;
+	font-weight: 600;
+	line-height: 1.4;
+}
+
+.afaqAnTopMeta {
+	display: block;
+	overflow: hidden;
+	margin-top: 2px;
+	color: var(--afaqAn-muted);
+	font-size: 11px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.afaqAnTopBar {
+	display: block;
+	overflow: hidden;
+	height: 4px;
+	margin-top: 8px;
+	border-radius: 2px;
+	background: var(--afaqAn-line-soft);
+}
+
+.afaqAnTopBar i {
+	display: block;
+	height: 100%;
+	border-radius: 2px;
+	background: var(--afaqAn-blue);
+}
+
+.afaqAnTopCount {
+	flex-shrink: 0;
+	color: var(--afaqAn-ink);
+	font-size: 15px;
+	font-weight: 700;
+	line-height: 1.2;
+	text-align: right;
+}
+
+.afaqAnTopCount em {
+	display: block;
+	color: var(--afaqAn-muted);
+	font-size: 11px;
+	font-style: normal;
+	font-weight: 500;
+}
+
+.afaqAnTopEmpty {
+	padding: 24px 20px;
+	color: var(--afaqAn-muted);
+	font-size: 13px;
+}
+
+.afaqAnPanelHead {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	gap: 12px;
+	padding: 16px 20px;
+	border-bottom: 1px solid var(--afaqAn-line-soft);
+}
+
+.afaqAnPanelHead h2 {
+	margin: 0;
+	padding: 0;
+	font-size: 15px;
+	font-weight: 700;
+}
+
+.afaqAnLegend {
+	display: flex;
+	gap: 18px;
+	color: var(--afaqAn-muted);
+	font-size: 12px;
+}
+
+.afaqAnLegend span {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+}
+
+.afaqAnLegend i {
+	width: 10px;
+	height: 10px;
+	background: currentColor;
+}
+
+.afaqAnLegend .tone-blue {
+	color: var(--afaqAn-blue);
+}
+
+.afaqAnLegend .tone-orange {
+	color: var(--afaqAn-orange);
+}
+
+.afaqAnChart {
+	position: relative;
+	padding: 20px 20px 8px;
+}
+
+.afaqAnChartGrid {
+	display: flex;
+	gap: 10px;
+}
+
+/* The y axis is HTML, not part of the SVG: the plot is stretched to whatever
+   width the screen gives it, and stretched text is unreadable. */
+.afaqAnYAxis {
+	display: flex;
+	width: 44px;
+	flex-direction: column;
+	justify-content: space-between;
+	flex-shrink: 0;
+	color: var(--afaqAn-faint);
+	font-size: 11px;
+	text-align: right;
+}
+
+.afaqAnYAxis span {
+	line-height: 1;
+	transform: translateY(-50%);
+}
+
+.afaqAnYAxis span:first-child {
+	transform: none;
+}
+
+.afaqAnYAxis span:last-child {
+	transform: translateY(-100%);
+}
+
+.afaqAnPlot {
+	position: relative;
+	flex: 1;
+	min-width: 0;
+	height: 260px;
+	border-left: 1px solid var(--afaqAn-line-soft);
+	border-bottom: 1px solid var(--afaqAn-line);
+}
+
+.afaqAnPlot svg {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.afaqAnRule {
+	position: absolute;
+	left: 0;
+	right: 0;
+	border-top: 1px dashed var(--afaqAn-line-soft);
+	pointer-events: none;
+}
+
+.afaqAnXAxis {
+	display: flex;
+	justify-content: space-between;
+	margin: 8px 0 0 54px;
+	color: var(--afaqAn-faint);
+	font-size: 11px;
+}
+
+/* Sits over the plot and turns a mouse position into a day. */
+.afaqAnHit {
+	position: absolute;
+	inset: 0;
+	cursor: crosshair;
+}
+
+.afaqAnCursor {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 1px;
+	background: var(--afaqAn-faint);
+	pointer-events: none;
+}
+
+.afaqAnTip {
+	position: absolute;
+	z-index: 5;
+	min-width: 150px;
+	padding: 8px 10px;
+	border: 1px solid var(--afaqAn-ink);
+	background: #fff;
+	box-shadow: 0 2px 8px rgba(15, 23, 42, 0.14);
+	font-size: 12px;
+	line-height: 1.5;
+	pointer-events: none;
+	transform: translate(-50%, -100%);
+}
+
+.afaqAnTip strong {
+	display: block;
+	margin-bottom: 4px;
+	font-size: 12px;
+}
+
+.afaqAnTipRow {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	color: var(--afaqAn-muted);
+}
+
+.afaqAnTip em {
+	width: 8px;
+	height: 8px;
+	flex-shrink: 0;
+	background: currentColor;
+}
+
+.afaqAnTipRow.tone-blue {
+	color: var(--afaqAn-blue);
+}
+
+.afaqAnTipRow.tone-orange {
+	color: var(--afaqAn-orange);
+}
+
+/* Pushed to the right edge so the two numbers line up under each other. */
+.afaqAnTipRow b {
+	margin-left: auto;
+	padding-left: 12px;
+	color: var(--afaqAn-ink);
+	font-variant-numeric: tabular-nums;
+}
+
+/* ------------------------------------------------------------------- table */
+
+.afaqAnTableTop {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	gap: 12px;
+	padding: 14px 20px;
+	border-bottom: 1px solid var(--afaqAn-line-soft);
+}
+
+.afaqAnFilters {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 8px;
+}
+
+.afaqAnFilters input[type='search'] {
+	width: 240px;
+	height: 32px;
+	border-color: var(--afaqAn-line);
+}
+
+.afaqAnFilters select {
+	height: 32px;
+	border-color: var(--afaqAn-line);
+}
+
+.afaqAnDanger {
+	border-color: var(--afaqAn-red) !important;
+	background: #fff !important;
+	color: var(--afaqAn-red) !important;
+}
+
+.afaqAnDanger:hover {
+	background: var(--afaqAn-red) !important;
+	color: #fff !important;
+}
+
+.afaqAnTable {
+	width: 100%;
+	border-collapse: collapse;
+	font-size: 13px;
+}
+
+.afaqAnTable th,
+.afaqAnTable td {
+	padding: 12px 20px;
+	border-bottom: 1px solid var(--afaqAn-line-soft);
+	text-align: left;
+	vertical-align: middle;
+}
+
+.afaqAnTable thead th {
+	border-bottom: 1px solid var(--afaqAn-line);
+	background: #f8fafc;
+	color: var(--afaqAn-muted);
+	font-size: 11px;
+	font-weight: 700;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	white-space: nowrap;
+}
+
+.afaqAnTable thead th a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.afaqAnTable thead th a:hover,
+.afaqAnTable thead th a.isOn {
+	color: var(--afaqAn-blue);
+}
+
+.afaqAnTable tbody tr:hover {
+	background: #f8fafc;
+}
+
+.afaqAnTable tbody tr:last-child td {
+	border-bottom: 0;
+}
+
+.afaqAnQ {
+	font-weight: 600;
+	overflow-wrap: anywhere;
+}
+
+.afaqAnQ small {
+	display: block;
+	margin-top: 3px;
+	color: var(--afaqAn-faint);
+	font-size: 11px;
+	font-weight: 400;
+}
+
+.afaqAnNum {
+	font-variant-numeric: tabular-nums;
+	text-align: right;
+	white-space: nowrap;
+}
+
+.afaqAnTable th.afaqAnNum {
+	text-align: right;
+}
+
+.afaqAnLink {
+	display: inline-block;
+	max-width: 280px;
+	overflow: hidden;
+	color: var(--afaqAn-blue);
+	font-size: 12px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	vertical-align: bottom;
+}
+
+.afaqAnNone {
+	color: var(--afaqAn-faint);
+	font-size: 12px;
+	font-style: italic;
+}
+
+.afaqAnBadge {
+	display: inline-block;
+	padding: 3px 9px;
+	border: 1px solid transparent;
+	font-size: 11px;
+	font-weight: 700;
+	white-space: nowrap;
+}
+
+/* Which block the clicks came from. A question can appear in more than one
+   block on the same site, so this is a list rather than a single value, and
+   the count beside each name is what makes two entries readable. */
+.afaqAnBlocks {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 4px;
+}
+
+.afaqAnBlock {
+	display: inline-flex;
+	align-items: center;
+	gap: 5px;
+	padding: 2px 8px;
+	border: 1px solid var(--afaqAn-line-soft);
+	background: #f8fafc;
+	color: var(--afaqAn-muted);
+	font-size: 11px;
+	white-space: nowrap;
+}
+
+.afaqAnBlock b {
+	color: var(--afaqAn-ink);
+	font-variant-numeric: tabular-nums;
+}
+
+.afaqAnBadge.isHigh {
+	border-color: #fecaca;
+	background: #fef2f2;
+	color: #b91c1c;
+}
+
+.afaqAnBadge.isTrending {
+	border-color: #fed7aa;
+	background: #fff7ed;
+	color: #c2410c;
+}
+
+.afaqAnBadge.isActive {
+	border-color: #bfdbfe;
+	background: #eff6ff;
+	color: #1d4ed8;
+}
+
+.afaqAnBadge.isIdle {
+	border-color: var(--afaqAn-line);
+	background: #f8fafc;
+	color: var(--afaqAn-faint);
+}
+
+.afaqAnEmpty {
+	padding: 48px 20px;
+	color: var(--afaqAn-muted);
+	text-align: center;
+}
+
+.afaqAnEmpty strong {
+	display: block;
+	margin-bottom: 6px;
+	color: var(--afaqAn-ink);
+	font-size: 14px;
+}
+
+/* Why the table is empty for the one person most likely to be looking at it. */
+.afaqAnEmptyWhy {
+	display: block;
+	max-width: 62ch;
+	margin: 12px auto 0;
+	padding: 10px 14px;
+	border-left: 3px solid var(--afaqAn-orange);
+	background: #fff7ed;
+	color: var(--afaqAn-ink);
+	font-size: 13px;
+	line-height: 1.55;
+	text-align: left;
+}
+
+/* Shown while the site's own clicks are being counted, so nobody reads the
+   numbers as visitor behaviour without knowing what is in them. */
+.afaqAnWarn {
+	margin: 8px 0 0;
+	padding: 8px 12px;
+	border-left: 3px solid var(--afaqAn-orange);
+	background: #fff7ed;
+	color: var(--afaqAn-ink);
+	font-size: 12px;
+	line-height: 1.5;
+}
+
+.afaqAnHint {
+	flex-basis: 100%;
+	margin: 0;
+	color: var(--afaqAn-muted);
+	font-size: 12px;
+	line-height: 1.5;
+}
+
+.afaqAnPager {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 12px;
+	padding: 12px 20px;
+	border-top: 1px solid var(--afaqAn-line-soft);
+	color: var(--afaqAn-muted);
+	font-size: 12px;
+}
+
+.afaqAnPager .page-numbers {
+	display: inline-block;
+	min-width: 30px;
+	padding: 0 8px;
+	border: 1px solid var(--afaqAn-line);
+	margin-left: -1px;
+	background: #fff;
+	color: var(--afaqAn-ink);
+	line-height: 28px;
+	text-align: center;
+	text-decoration: none;
+}
+
+.afaqAnPager .page-numbers.current {
+	background: var(--afaqAn-blue);
+	border-color: var(--afaqAn-blue);
+	color: #fff;
+	font-weight: 600;
+}
+
+/* ---------------------------------------------------------------- footnote */
+
+.afaqAnFoot {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(min(340px, 100%), 1fr));
+	gap: 16px;
+	margin-top: 16px;
+}
+
+.afaqAnFoot .afaqAnPanel {
+	margin-top: 0;
+}
+
+.afaqAnRetention {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 8px;
+	padding: 16px 20px;
+}
+
+.afaqAnNote {
+	padding: 16px 20px;
+	color: var(--afaqAn-muted);
+	font-size: 12px;
+	line-height: 1.65;
+}
+
+.afaqAnNote p {
+	margin: 0 0 8px;
+}
+
+.afaqAnNote p:last-child {
+	margin-bottom: 0;
+}
+
+.afaqAnFlag {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 12px;
+	padding: 12px 16px;
+	border: 1px solid var(--afaqAn-line);
+	border-left: 4px solid var(--afaqAn-blue);
+	margin-bottom: 16px;
+	background: #fff;
+	font-size: 13px;
+}
+
+.afaqAnFlag a {
+	color: var(--afaqAn-blue);
+}
+
+/* -------------------------------------------------------------- responsive */
+
+@media (max-width: 1200px) {
+	.afaqAnCards {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+}
+
+/* Narrower than this the chart is squeezed into something unreadable, so the
+   two panels stack instead — chart first, because that is the one the heading
+   above them promises. */
+@media (max-width: 1100px) {
+	.afaqAnSplit {
+		grid-template-columns: minmax(0, 1fr);
+	}
+}
+
+@media (max-width: 782px) {
+	.afaqAnWrap {
+		margin-right: 10px;
+	}
+
+	.afaqAnCards {
+		grid-template-columns: minmax(0, 1fr);
+	}
+
+	.afaqAnTools {
+		width: 100%;
+	}
+
+	.afaqAnTools select {
+		flex: 1 1 100%;
+		max-width: none;
+	}
+
+	.afaqAnRange {
+		flex: 1 1 auto;
+	}
+
+	.afaqAnRange a {
+		flex: 1;
+		padding: 0 10px;
+		text-align: center;
+	}
+
+	.afaqAnFilters input[type='search'] {
+		width: 100%;
+	}
+
+	/* A four column table on a phone is unreadable, so it scrolls inside the
+	   panel rather than pushing the whole admin screen sideways. */
+	.afaqAnScroll {
+		overflow-x: auto;
+	}
+
+	.afaqAnTable {
+		min-width: 720px;
+	}
+}

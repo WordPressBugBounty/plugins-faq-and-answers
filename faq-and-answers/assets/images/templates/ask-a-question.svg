@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400" role="img" aria-label="Preview of the ask a question template">
+	<rect width="600" height="400" fill="#f6f7f9"/>
+	<rect x="210" y="38" width="180" height="18" rx="3" fill="#2b3440"/><rect x="150" y="70" width="300" height="10" rx="3" fill="#c7ccd4"/>
+	<rect x="120" y="108" width="360" height="260" rx="6" fill="#ffffff" stroke="#dde1e7"/>
+	<rect x="196" y="132" width="208" height="14" rx="3" fill="#2b3440"/>
+	<rect x="166" y="156" width="268" height="8" rx="3" fill="#c7ccd4"/>
+	<rect x="148" y="186" width="64" height="8" rx="3" fill="#8b95a3"/><rect x="148" y="200" width="304" height="30" rx="3" fill="#f6f7f9" stroke="#dde1e7"/>
+	<rect x="148" y="238" width="82" height="8" rx="3" fill="#8b95a3"/><rect x="148" y="252" width="304" height="30" rx="3" fill="#f6f7f9" stroke="#dde1e7"/>
+	<rect x="148" y="290" width="72" height="8" rx="3" fill="#8b95a3"/>
+	<rect x="148" y="304" width="304" height="30" rx="3" fill="#f6f7f9" stroke="#dde1e7"/>
+	<rect x="148" y="344" width="304" height="30" rx="3" fill="#2b3440" stroke="#2b3440"/>
+	<rect x="272" y="355" width="56" height="8" rx="3" fill="#ffffff"/>
+</svg>

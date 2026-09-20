@@ -10,7 +10,13 @@ if (!class_exists('FaaAdmin')) {
             // Late, so it lands under every other item this plugin registers —
             // including the ones added by the premium screens.
             add_action('admin_menu', [$this, 'faa_upgrade_menu'], 999);
+            add_action('admin_menu', [$this, 'faa_add_new_menu_icon'], 999);
             add_action('admin_head', [$this, 'faa_upgrade_menu_style']);
+            add_action('admin_head', [$this, 'faa_menu_icon_style']);
+
+            if (defined('AFAQ_FILE')) {
+                add_filter('plugin_action_links_' . plugin_basename(AFAQ_FILE), [$this, 'faa_plugin_action_links']);
+            }
             add_filter('manage_faq_cpt_posts_columns', [$this, 'sc_setCustomColumn_edit']);
             add_action('manage_faq_cpt_posts_custom_column', [$this, 'sc_manageCustomColumn'], 10, 2);
             add_filter('allowed_block_types_all', [$this, 'afaq_allowed_block_types'], 10, 2);
@@ -26,9 +32,25 @@ if (!class_exists('FaaAdmin')) {
                 return $allowed_blocks;
             }
 
+            /*
+             * The free blocks the FAQ Builder picker offers.
+             *
+             * Post FAQ, Sidebar Post Tab and FAQ Form are free, so they belong
+             * here rather than in the premium list below — a picker card for a
+             * block the editor is not allowed to insert does nothing when it is
+             * clicked, and says nothing about why.
+             *
+             * Free installs are unaffected: their FAQ CPT is template locked to
+             * the main block, so nothing else can be placed regardless.
+             */
             // Core blocks stay allowed so a Nested FAQ answer can hold headings,
             // images, video, columns and groups like anywhere else.
-            $blocks = ['faa/faq-and-answers'];
+            $blocks = [
+                'faa/faq-and-answers',
+                'faa/post-faq',
+                'faa/sidebar-tab-faq',
+                'faa/faq-form',
+            ];
 
             $blocks = array_merge($blocks, [
                 'core/paragraph',
@@ -57,13 +79,14 @@ if (!class_exists('FaaAdmin')) {
 
             // Every block the FAQ Builder picker can insert has to be listed
             // here as well, or the editor refuses the swap and the card looks
-            // dead. These are all pro — on a free install they are not even
-            // registered, so the list is simply never reached.
+            // dead. The pro half of that list — on a free install these are not
+            // even registered, so it is simply never reached.
             if (function_exists('faa_is_premium') && faa_is_premium()) {
                 $blocks = array_merge($blocks, [
                     'faa/nested-faq',
                     'faa/faq-item',
                     'faa/bento-faq',
+                    'faa/image-faq',
                     'faa/ask-ai',
                     'faa/faq-parent',
                 ]);
@@ -145,7 +168,7 @@ if (!class_exists('FaaAdmin')) {
             }
 
             $submenu[$parent][] = [
-                '<span class="afaq-upgrade-btn">' . esc_html__('Upgrade', 'faq-and-answers') . ' &#10148;</span>',
+                '<span class="afaq-upgrade-btn">&#10148; ' . esc_html__('Upgrade to Pro', 'faq-and-answers') . '</span>',
                 'manage_options',
                 admin_url('edit.php?post_type=faq_cpt&page=faq_Dashboard#/pricing'),
             ];
@@ -195,6 +218,98 @@ if (!class_exists('FaaAdmin')) {
             </style>
             <?php
         }
+        /**
+         * A small icon in front of the "Add New FAQ" item in the submenu.
+         *
+         * Written onto the $submenu global rather than into the post type's
+         * add_new label: that label is also what the button at the top of the
+         * FAQ list is drawn from, and markup put there would show up as an
+         * icon inside the button too.
+         *
+         * Matched on the item's own slug rather than on index 10, which is
+         * where WordPress happens to put "Add New" today.
+         */
+        public function faa_add_new_menu_icon() {
+            global $submenu;
+
+            $parent = 'edit.php?post_type=faq_cpt';
+
+            if (empty($submenu[$parent])) {
+                return;
+            }
+
+            foreach ($submenu[$parent] as $index => $item) {
+                if (!isset($item[0], $item[2]) || 'post-new.php?post_type=faq_cpt' !== $item[2]) {
+                    continue;
+                }
+
+                // admin_menu can run more than once in some setups, and a
+                // second pass would put a second glyph in front of the first.
+                if (false !== strpos($item[0], 'afaq-menu-icon')) {
+                    break;
+                }
+
+                // Decorative, so hidden from screen readers — the item already
+                // reads as "Add New FAQ" without it.
+                $submenu[$parent][$index][0] = '<span class="afaq-menu-icon" aria-hidden="true">&#8627;</span>' . $item[0];
+
+                break;
+            }
+        }
+
+        /**
+         * Spacing for the arrow above.
+         *
+         * A plain character rather than a dashicon, so it inherits the menu's
+         * own size and colour and needs nothing but a gap after it.
+         */
+        public function faa_menu_icon_style() {
+            ?>
+            <style>
+                #adminmenu .wp-submenu .afaq-menu-icon {
+                    display: inline-block;
+                    margin-right: 6px;
+                    opacity: .85;
+                }
+            </style>
+            <?php
+        }
+
+        /**
+         * "Go Pro!" and "Dashboard!" on the Plugins screen.
+         *
+         * Appended rather than unshifted, so Deactivate stays where WordPress
+         * puts it and the two additions read as extras rather than displacing
+         * the action people came to that row for.
+         *
+         * @param array $links Existing row action links.
+         * @return array
+         */
+        public function faa_plugin_action_links($links) {
+            if (!is_array($links)) {
+                $links = [];
+            }
+
+            $dashboard = admin_url('edit.php?post_type=faq_cpt&page=faq_Dashboard');
+
+            // Nothing to sell somebody who has already bought it.
+            if (!function_exists('faa_is_premium') || !faa_is_premium()) {
+                $links['afaq_pro'] = sprintf(
+                    '<a href="%1$s" style="color:#d54e21;font-weight:600;">%2$s</a>',
+                    esc_url($dashboard . '#/pricing'),
+                    esc_html__('Go Pro!', 'faq-and-answers')
+                );
+            }
+
+            $links['afaq_dashboard'] = sprintf(
+                '<a href="%1$s" style="color:#d54e21;font-weight:600;">%2$s</a>',
+                esc_url($dashboard),
+                esc_html__('Dashboard!', 'faq-and-answers')
+            );
+
+            return $links;
+        }
+
         public function faq_Dashboard_page() {
             ?>
             <div id='vgbDashboard' data-info='<?php echo esc_attr(wp_json_encode([

@@ -1,8 +1,8 @@
 === Awesome FAQ – answer questions before customers ask ===
-Contributors: bplugins, shehabulislam, abuhayat, prosanta10, freemius
+Contributors: bplugins, abuhayat, prosanta10, freemius
 Tags: faq block, accordion, faq schema, responsive faq, block
-Tested up to: 7.0
-Stable tag: 2.4.0
+Tested up to: 7.1
+Stable tag: 2.5.0
 Requires PHP: 7.4
 Requires at least: 6.5
 Donate link: https://www.buymeacoffee.com/abuhayat
@@ -11,7 +11,7 @@ License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
 Build responsive FAQ sections with accordion themes, FAQ schema for SEO rich results, Gutenberg block and shortcode support – no coding needed.
 
-== Description ==
+== Description == 
 
 **Answer your visitors' questions before they hit the contact form – beautiful, SEO-ready FAQ sections in minutes, no code required.**
 
@@ -44,7 +44,7 @@ Upgrade to [**Awesome FAQ Pro**](https://bplugins.com/products/faq-and-answers/p
 
 **Pro features include:**
 
-- **More Premium FAQ Templates:** Exclusive interactive, pre-designed accordion layouts.
+- **50+ Ready-Made FAQ Templates:** Exclusive interactive, pre-designed accordion & grid layouts.
 - **Category & Filter FAQ:** Organize your FAQs with filterable tabs for a cleaner presentation.
 - **FAQ Search System:** Real-time live search bar so users find answers instantly.
 - **Multi-Column FAQ Grid:** Multi-column and grid layouts to present FAQs beautifully.
@@ -57,6 +57,10 @@ Upgrade to [**Awesome FAQ Pro**](https://bplugins.com/products/faq-and-answers/p
 - **New: Ask AI Block** - Interactive AI answer assistant that answers visitor questions instantly using your FAQ content, complete with source citations and user feedback.
 - **New: Bento FAQ Block** - Modern asymmetric bento grid layout for FAQ cards with interactive focused modal previews, custom card sizing, and scroll animations.
 - **New: Nested FAQ Block** - Multi-level accordion structure allowing sub-questions and multi-tier Q&A hierarchy with separate parent/child design controls.
+- **New: FAQ Form Block** - Allow visitors to submit questions directly from the front end with custom form fields and submission management.
+- **New: Image FAQ Block** - Present FAQs alongside images and media with side-by-side or stacked custom layouts.
+- **New: Post FAQ Block** - Dynamically query and display FAQs from WordPress posts or custom post types.
+- **New: Sidebar Tab FAQ Block** - Vertical sidebar navigation with tabbed FAQ categories and smooth seamless switching.
 - **New: Ask AI Dashboard** - Centralized admin dashboard for managing AI provider settings, custom system prompts, real-time query logs, token usage, and visitor feedback analytics.
 
 
@@ -244,6 +248,13 @@ Please report security bugs found in the source code of the Awesome FAQ plugin t
 11. Gutenberg Block Settings
 
 == Changelog ==
+
+= 2.5.0 - 2026-09-20  =
+* New: Add 50+ Ready Pages Template library 
+* New: Image FAQ - Image based question answer display 
+* New: FAQ Form Block - Allow visitors to submit questions directly from the front end with custom form fields and submission management.
+* New: FAQ Sidebar Tab Block - Vertical sidebar navigation with tabbed FAQ categories and smooth seamless switching.
+* New: FAQ Post - Display FAQs from WordPress posts or custom post types.
 
 = 2.4.0 - 2026-08-19  =
 * New: Ask AI Block - Interactive AI answer assistant that answers visitor questions instantly using your FAQ content, complete with source citations and user feedback.

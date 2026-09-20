@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400" role="img" aria-label="Preview of the buying process template">
+	<rect width="600" height="400" fill="#f0f7f2"/>
+	<rect x="215" y="34" width="170" height="17" rx="3" fill="#2b3440"/><rect x="160" y="63" width="280" height="9" rx="3" fill="#c7ccd4"/>
+	<rect x="80" y="96" width="256" height="30" rx="15" fill="#ffffff" stroke="#dde1e7"/>
+	<circle cx="100" cy="111" r="5.5" fill="none" stroke="#15803d" stroke-width="2"/>
+	<path d="M104 115l5 5" stroke="#15803d" stroke-width="2" stroke-linecap="round"/>
+	<rect x="116" y="108" width="120" height="7" rx="3" fill="#c7ccd4"/>
+	<rect x="80" y="136" width="256" height="32" rx="5" fill="#ffffff" stroke="#dde1e7"/>
+	<rect x="80" y="136" width="3" height="32" rx="1.5" fill="#15803d"/>
+	<rect x="94" y="148" width="148" height="8" rx="3" fill="#2b3440"/>
+	<path d="M310 148l6.5 6.5 6.5-6.5" fill="none" stroke="#15803d" stroke-width="2.2" stroke-linecap="round"/>
+	<rect x="80" y="176" width="256" height="32" rx="5" fill="#ffffff" stroke="#dde1e7"/>
+	<rect x="80" y="176" width="3" height="32" rx="1.5" fill="#15803d"/>
+	<rect x="94" y="188" width="110" height="8" rx="3" fill="#2b3440"/>
+	<path d="M310 188l6.5 6.5 6.5-6.5" fill="none" stroke="#15803d" stroke-width="2.2" stroke-linecap="round"/>
+	<rect x="80" y="216" width="256" height="32" rx="5" fill="#ffffff" stroke="#dde1e7"/>
+	<rect x="80" y="216" width="3" height="32" rx="1.5" fill="#15803d"/>
+	<rect x="94" y="228" width="166" height="8" rx="3" fill="#2b3440"/>
+	<path d="M310 228l6.5 6.5 6.5-6.5" fill="none" stroke="#15803d" stroke-width="2.2" stroke-linecap="round"/>
+	<rect x="80" y="256" width="256" height="32" rx="5" fill="#ffffff" stroke="#dde1e7"/>
+	<rect x="80" y="256" width="3" height="32" rx="1.5" fill="#15803d"/>
+	<rect x="94" y="268" width="124" height="8" rx="3" fill="#2b3440"/>
+	<path d="M310 268l6.5 6.5 6.5-6.5" fill="none" stroke="#15803d" stroke-width="2.2" stroke-linecap="round"/>
+	<rect x="80" y="296" width="256" height="32" rx="5" fill="#ffffff" stroke="#dde1e7"/>
+	<rect x="80" y="296" width="3" height="32" rx="1.5" fill="#15803d"/>
+	<rect x="94" y="308" width="94" height="8" rx="3" fill="#2b3440"/>
+	<path d="M310 308l6.5 6.5 6.5-6.5" fill="none" stroke="#15803d" stroke-width="2.2" stroke-linecap="round"/>
+	<rect x="360" y="96" width="120" height="13" rx="3" fill="#2b3440"/>
+	<rect x="360" y="122" width="140" height="7" rx="3" fill="#8b95a3"/>
+	<rect x="360" y="136" width="114" height="7" rx="3" fill="#8b95a3"/>
+	<rect x="360" y="150" width="130" height="7" rx="3" fill="#8b95a3"/>
+	<circle cx="364" cy="175" r="3" fill="#15803d"/>
+	<rect x="374" y="172" width="114" height="7" rx="3" fill="#8b95a3"/>
+	<circle cx="364" cy="191" r="3" fill="#15803d"/>
+	<rect x="374" y="188" width="90" height="7" rx="3" fill="#8b95a3"/>
+	<circle cx="364" cy="207" r="3" fill="#15803d"/>
+	<rect x="374" y="204" width="128" height="7" rx="3" fill="#8b95a3"/>
+	<circle cx="364" cy="223" r="3" fill="#15803d"/>
+	<rect x="374" y="220" width="102" height="7" rx="3" fill="#8b95a3"/>
+	<rect x="360" y="246" width="96" height="26" rx="6" fill="#15803d" stroke="#15803d"/>
+	<rect x="382" y="255" width="52" height="7" rx="3" fill="#ffffff"/>
+</svg>

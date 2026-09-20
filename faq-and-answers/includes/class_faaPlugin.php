@@ -15,11 +15,33 @@ if (!class_exists('FaaPlugin')) {
         public function pluginsDependency()
         {
             require_once AFAQ_DIR_PATH . 'includes/function.php';
+            require_once AFAQ_DIR_PATH . 'includes/class-afaq-style.php';
             require_once AFAQ_DIR_PATH . 'faq-and-answers-block.php';
             require_once AFAQ_DIR_PATH . 'includes/class_faaAdmin.php';
             require_once AFAQ_DIR_PATH . 'includes/class_faaAjax.php';
             new FaaAjax();
+
+            // The editor's Template Library: five ready-made sections that ship
+            // with the plugin, plus anything published for it on the template
+            // server. Admin only — every endpoint it registers is wp_ajax_.
+            if (is_admin()) {
+                require_once AFAQ_DIR_PATH . 'includes/Templates/Templates.php';
+                new \AFAQ\Templates\Templates();
+            }
             if (faa_is_premium() && AFAQ_HAS_PRO) {
+                // Questions visitors send in through the FAQ Form block, and
+                // the screen they are read on. Loaded on the front end too:
+                // the form posts to a public REST route.
+                //
+                // Premium only, and stripped from the free build by the
+                // @fs_premium_only header — the FAQ Form block that feeds it is
+                // premium as well, so on a free install there is nothing to
+                // collect and nothing to read.
+                if (file_exists(AFAQ_DIR_PATH . 'includes/submissions/class-afaq-submissions.php')) {
+                    require_once AFAQ_DIR_PATH . 'includes/submissions/class-afaq-submissions.php';
+                    AFAQ_Submissions::instance();
+                }
+
                 if (file_exists(AFAQ_DIR_PATH . 'includes/class_faaAnalysis.php')) {
                     require_once AFAQ_DIR_PATH . 'includes/class_faaAnalysis.php';
                 }
@@ -47,6 +69,12 @@ if (!class_exists('FaaPlugin')) {
                 if (is_admin() && file_exists(AFAQ_DIR_PATH . 'includes/class-faa-freeAskAi.php')) {
                     require_once AFAQ_DIR_PATH . 'includes/class-faa-freeAskAi.php';
                 }
+                // Same for Form Submissions: the menu item stays, and the
+                // screen behind it says what the feature does instead of
+                // listing submissions this build cannot collect.
+                if (is_admin() && file_exists(AFAQ_DIR_PATH . 'includes/class-faa-freeSubmissions.php')) {
+                    require_once AFAQ_DIR_PATH . 'includes/class-faa-freeSubmissions.php';
+                }
             }
 
         }
@@ -66,12 +94,44 @@ if (!class_exists('FaaPlugin')) {
             }
 
         }
+
+        /**
+         * A registered block type, by name.
+         *
+         * There is no get_block_type() in WordPress — that name belongs to
+         * wp.blocks.getBlockType() in the editor's JavaScript. Called from PHP
+         * it is a fatal, and because this shortcode runs inside the_content it
+         * took the REST save response and the front end down with it. The
+         * registry is what PHP has, and it is what the Ask AI and WooCommerce
+         * halves of this plugin already ask.
+         *
+         * @param string $name Block name, e.g. faa/faq-and-answers.
+         * @return WP_Block_Type|null
+         */
+        private function blockType($name)
+        {
+            if (!class_exists('WP_Block_Type_Registry')) {
+                return null;
+            }
+
+            return WP_Block_Type_Registry::get_instance()->get_registered($name);
+        }
+
         public function faq_shortcode($atts)
         {
 
             if (isset($atts['id'])) {
                 $faq_id = absint($atts['id']);
                 $post = $faq_id ? get_post($faq_id) : null;
+
+                // An id that is not an FAQ is a typo, not something to render.
+                // get_post() happily returns the page, the attachment or the
+                // wp_global_styles row sitting on that id — on a fresh install
+                // [faq id=6] is usually the last of those — and rendering it
+                // produced an empty FAQ instead of saying the id was wrong.
+                if ($post && 'faq_cpt' !== $post->post_type) {
+                    $post = null;
+                }
 
                 if ($post) {
                     $post_meta = get_post_meta($faq_id, "ba_re_", true);
@@ -90,18 +150,38 @@ if (!class_exists('FaaPlugin')) {
                     if ($blocks) {
                         $output = '';
                         foreach ($blocks as $block) {
-                            if ($block['blockName'] === 'faa/faq-and-answers') {
+                            /*
+                             * Tell the block which FAQ it is, whichever block it is.
+                             *
+                             * This used to name faa/faq-and-answers alone, so a CPT
+                             * built with any other block rendered here without an
+                             * identity — and Analytics filed its clicks under
+                             * whatever page the shortcode happened to sit on,
+                             * because render.php falls back to get_the_title().
+                             *
+                             * Asked of the block type rather than a list kept here:
+                             * a block that declares the two attributes gets them,
+                             * one that has no use for them (FAQ Form) is skipped,
+                             * and a block added later needs nothing added here.
+                             * WordPress strips undeclared attributes before render
+                             * anyway, so a list would have gone stale silently.
+                             */
+                            $block_type = $this->blockType($block['blockName']);
+                            $declared = $block_type && isset($block_type->attributes) ? $block_type->attributes : [];
+
+                            if (isset($declared['faqTitle'], $declared['faqId'])) {
                                 if (!isset($block['attrs'])) {
                                     $block['attrs'] = [];
                                 }
                                 $block['attrs']['faqTitle'] = $post->post_title;
                                 $block['attrs']['faqId'] = $post->ID;
                             }
+
                             $output .= render_block($block);
                         }
                         return $output;
                     } else {
-                        $block_type = get_block_type('faa/faq-and-answers');
+                        $block_type = $this->blockType('faa/faq-and-answers');
                         $default_attrs = [];
                         if ($block_type && isset($block_type->attributes)) {
                             foreach ($block_type->attributes as $key => $attr) {

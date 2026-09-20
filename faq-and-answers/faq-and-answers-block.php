@@ -2,7 +2,7 @@
 // phpcs:disable
 
 if (!defined('ABSPATH')) {
-    exit; 
+    exit;
 }
 if (!class_exists('FAQBlock')) {
     class FAQBlock
@@ -11,7 +11,7 @@ if (!class_exists('FAQBlock')) {
          * Blocks that live in build/blocks/*. The folder name is also the key
          * used in the afaq_disabled_blocks option and on the dashboard.
          */
-        private $child_blocks = ['nested-faq', 'faq-item', 'faq-parent', 'ask-ai', 'bento-faq'];
+        private $child_blocks = ['nested-faq', 'faq-item', 'faq-parent', 'ask-ai', 'bento-faq', 'faq-form', 'post-faq', 'sidebar-tab-faq', 'image-faq'];
 
         /**
          * Blocks in build/blocks/* that only register for premium users.
@@ -22,7 +22,7 @@ if (!class_exists('FAQBlock')) {
          * the glob below never sees them. The check stays for the pro build
          * running without an active license.
          */
-        private $premium_blocks = ['ask-ai', 'bento-faq', 'nested-faq', 'faq-parent', 'faq-item'];
+        private $premium_blocks = ['ask-ai', 'bento-faq', 'nested-faq', 'faq-parent', 'faq-item', 'image-faq', 'post-faq', 'sidebar-tab-faq', 'faq-form'];
 
         public function __construct()
         {
@@ -45,9 +45,9 @@ if (!class_exists('FAQBlock')) {
             }
 
             array_unshift($categories, [
-                'slug'  => 'awesome-faq',
+                'slug' => 'awesome-faq',
                 'title' => __('Awesome FAQ', 'faq-and-answers'),
-                'icon'  => 'feedback',
+                'icon' => 'feedback',
             ]);
 
             return $categories;
@@ -142,13 +142,22 @@ if (!class_exists('FAQBlock')) {
 
         public function scbEnqueueEditorAssets()
         {
-            $flag = 'const scdIsPipeChecker = ' . wp_json_encode(faa_is_premium()) . ';';
+            $flag = 'var scdIsPipeChecker = ' . wp_json_encode(faa_is_premium()) . '; window.scdIsPipeChecker = scdIsPipeChecker;';
 
             wp_add_inline_script('faa-faq-and-answers-editor-script', $flag, 'before');
 
             foreach ($this->child_blocks as $slug) {
                 wp_add_inline_script("faa-{$slug}-editor-script", $flag, 'before');
             }
+
+            // Image FAQ starts with five placeholder pictures that ship with the
+            // plugin. Only PHP knows where the plugin lives, so the folder is
+            // handed to the editor rather than guessed at in JavaScript.
+            wp_add_inline_script(
+                'faa-image-faq-editor-script',
+                'window.afaqImageFaqDemo = ' . wp_json_encode(AFAQ_DIR_URL . 'assets/images/image-faq/') . ';',
+                'before'
+            );
 
             global $wp_version;
             $is_wp7 = version_compare($wp_version, '7.0', '>=');
@@ -189,21 +198,48 @@ if (!class_exists('FAQBlock')) {
                 }, $this->child_blocks)
             );
 
+            /*
+             * The licence flag and the Analytics endpoint, once per handle.
+             *
+             * afaq_frontend_bootstrap_js() is written to survive being printed
+             * on the same page more than once — see the note on it. Before that
+             * it was a `const` declaration built here, and a page carrying two
+             * FAQ blocks broke the second copy of it outright.
+             *
+             * faq-item and faq-parent have no viewScript of their own, so their
+             * handles are not registered and wp_add_inline_script would only
+             * return false for them. Asking first keeps that out of the script
+             * loader rather than leaning on it.
+             */
+            $bootstrap = afaq_frontend_bootstrap_js();
+
             foreach ($handles as $handle) {
-                wp_add_inline_script(
-                    $handle,
-                    'const scdIsPipeChecker = ' . wp_json_encode(faa_is_premium()) . ';',
-                    'before'
-                );
-                wp_add_inline_script(
-                    $handle,
-                    'window.faaAnalytics = ' . wp_json_encode([
-                        'ajax_url' => admin_url('admin-ajax.php'),
-                        'nonce' => wp_create_nonce('faa_analytics_nonce')
-                    ]) . ';',
-                    'before'
-                );
+                if (!wp_script_is($handle, 'registered')) {
+                    continue;
+                }
+
+                wp_add_inline_script($handle, $bootstrap, 'before');
             }
+
+            // The FAQ Form posts to the REST API from the front end, where
+            // wpApiSettings is not printed. The nonce only matters for a
+            // logged in visitor — without one the request is simply anonymous,
+            // which is what a public form wants.
+            wp_add_inline_script(
+                'faa-faq-form-view-script',
+                'window.afaqFormApi = ' . wp_json_encode([
+                    'root' => esc_url_raw(rest_url('afaq/v1/submissions')),
+                    'nonce' => wp_create_nonce('wp_rest'),
+                ]) . ';'
+                . 'window.afaqFormL10n = ' . wp_json_encode([
+                        'required' => __('This field is required.', 'faq-and-answers'),
+                        'email' => __('Please enter a valid email address.', 'faq-and-answers'),
+                        /* translators: %d: maximum number of words allowed. */
+                        'tooLong' => __('Please keep this under %d words.', 'faq-and-answers'),
+                        'failed' => __('Something went wrong. Please try again.', 'faq-and-answers'),
+                    ]) . ';',
+                'before'
+            );
         }
     }
     new FAQBlock();

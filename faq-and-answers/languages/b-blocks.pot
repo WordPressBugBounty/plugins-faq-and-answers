@@ -2,14 +2,14 @@
 # This file is distributed under the GPLv3 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Awesome FAQ – Modern Accordion, Tabs, Responsive & Super Fast FAQ Builder 2.4.0\n"
+"Project-Id-Version: Awesome FAQ – Modern Accordion, Tabs, Responsive & Super Fast FAQ Builder 2.5.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/faq-and-answers\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-08-19T05:15:08+00:00\n"
+"POT-Creation-Date: 2026-09-20T06:07:27+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: faq-and-answers\n"
@@ -35,6 +35,10 @@ msgid "https://bplugins.com"
 msgstr ""
 
 #: build/blocks/ask-ai/render.php:38
+#: includes/Templates/DetailSet.php:163
+#: includes/Templates/ProSet.php:682
+#: includes/Templates/ProSet.php:764
+#: includes/Templates/SectorSet.php:884
 #: build/blocks/ask-ai/index.js:1
 msgid "Ask"
 msgstr ""
@@ -80,6 +84,7 @@ msgid "Thanks for the feedback!"
 msgstr ""
 
 #: build/blocks/ask-ai/render.php:156
+#: faq-and-answers-block.php:239
 msgid "Something went wrong. Please try again."
 msgstr ""
 
@@ -97,6 +102,7 @@ msgid "Contact us"
 msgstr ""
 
 #: build/blocks/ask-ai/render.php:187
+#: includes/Templates/ProSet.php:676
 msgid "Ask a question"
 msgstr ""
 
@@ -105,8 +111,133 @@ msgstr ""
 msgid "Read answer"
 msgstr ""
 
+#: build/blocks/faq-form/render.php:62
+#: build/blocks/faq-form/index.js:1
+msgid "Still Have Questions?"
+msgstr ""
+
+#: build/blocks/faq-form/render.php:65
+#: build/blocks/faq-form/index.js:1
+msgid "Submit FAQ"
+msgstr ""
+
+#: build/blocks/faq-form/render.php:66
+msgid "Thank you. Your question has been sent to our team."
+msgstr ""
+
+#. translators: %d: maximum number of words allowed.
+#: build/blocks/faq-form/render.php:280
+#: build/blocks/faq-form/index.js:1
+#, php-format,js-format
+msgid "0 words out of %d"
+msgstr ""
+
+#: build/blocks/faq-form/render.php:340
+msgid "Full Name"
+msgstr ""
+
+#: build/blocks/faq-form/render.php:354
+msgid "Email Address"
+msgstr ""
+
+#: build/blocks/faq-form/render.php:369
+#: includes/ai/class-afaq-ask-ai-admin.php:2504
+#: includes/class-faa-freeSubmissions.php:156
+#: includes/class_faaAnalysis.php:1407
+#: includes/class_faaAnalysis.php:2128
+#: includes/submissions/class-afaq-submissions-list-table.php:52
+#: build/ask-ai-promo/index.js:1
+#: build/blocks/bento-faq/index.js:1
+#: build/blocks/faq-item/index.js:1
+#: build/blocks/nested-faq/index.js:1
+msgid "Question"
+msgstr ""
+
+#: build/blocks/faq-form/render.php:382
+msgid "Explain Your Question"
+msgstr ""
+
+#: build/blocks/faq-form/render.php:397
+msgid "Know the answer? Share it"
+msgstr ""
+
+#: build/blocks/faq-form/render.php:415
+msgid "Leave this field empty"
+msgstr ""
+
+#: build/blocks/faq-form/render.php:426
+msgid "Ask another question"
+msgstr ""
+
+#: build/blocks/faq-form/render.php:431
+msgid "This form needs JavaScript to send your question. Please enable it and try again."
+msgstr ""
+
+#: build/blocks/image-faq/render.php:44
+msgid "Image FAQ: choose a template in the editor to show your pictures here."
+msgstr ""
+
+#: build/blocks/image-faq/render.php:65
+msgid "Image FAQ: add a picture to at least one panel in the block settings."
+msgstr ""
+
+#: build/blocks/image-faq/render.php:189
+#: build/blocks/post-faq/render.php:310
+#: build/blocks/sidebar-tab-faq/render.php:343
+#: includes/Templates/Parts.php:419
+#: build/blocks/image-faq/index.js:1
+msgid "Read More"
+msgstr ""
+
+#. translators: %d: panel number.
+#: build/blocks/image-faq/render.php:197
+#, php-format
+msgid "Panel %d"
+msgstr ""
+
+#. translators: %s: the panel's heading.
+#: build/blocks/image-faq/render.php:261
+#, php-format
+msgid "See %s at full size"
+msgstr ""
+
+#: build/blocks/image-faq/render.php:275
+#: build/blocks/post-faq/render.php:329
+msgid "Close"
+msgstr ""
+
+#: build/blocks/post-faq/render.php:46
+msgid "Post FAQ: choose a layout in the editor to show your posts here."
+msgstr ""
+
+#: build/blocks/post-faq/render.php:104
+msgid "Post FAQ: no posts matched. Check the post type and categories in the block settings."
+msgstr ""
+
+#. translators: %d: reading time in minutes.
+#: build/blocks/post-faq/render.php:276
+#: build/blocks/sidebar-tab-faq/render.php:293
+#, php-format
+msgid "%d min to read"
+msgid_plural "%d mins to read"
+msgstr[0] ""
+msgstr[1] ""
+
+#: build/blocks/post-faq/render.php:482
+msgid "Load More"
+msgstr ""
+
+#: build/blocks/sidebar-tab-faq/render.php:45
+msgid "Sidebar Post Tab: choose a look in the editor to show your posts here."
+msgstr ""
+
+#: build/blocks/sidebar-tab-faq/render.php:102
+msgid "Sidebar Post Tab: no posts matched. Check the post type and categories in the block settings."
+msgstr ""
+
 #: faq-and-answers-block.php:49
-#: includes/class_faaAdmin.php:82
+#: includes/class_faaAdmin.php:105
+#: includes/class_faaAnalysis.php:116
 #: build/blocks/faq-parent/index.js:1
 msgid "Awesome FAQ"
 msgstr ""
@@ -114,6 +245,20 @@ msgstr ""
 #: faq-and-answers-block.php:119
 #: woocommerce/class-afaq-wc-ai-connector.php:34
 msgid "WordPress AI Client is not available."
+msgstr ""
+
+#: faq-and-answers-block.php:235
+msgid "This field is required."
+msgstr ""
+
+#: faq-and-answers-block.php:236
+msgid "Please enter a valid email address."
+msgstr ""
+
+#. translators: %d: maximum number of words allowed.
+#: faq-and-answers-block.php:238
+#, php-format
+msgid "Please keep this under %d words."
 msgstr ""
 
 #: includes/ai/class-afaq-ask-ai-admin.php:58
@@ -296,11 +441,14 @@ msgid "Settings"
 msgstr ""
 
 #: includes/ai/class-afaq-ask-ai-admin.php:1121
+#: includes/class_faaAnalysis.php:621
 #: build/ask-ai-promo/index.js:1
 msgid "General"
 msgstr ""
 
 #: includes/ai/class-afaq-ask-ai-admin.php:1136
+#: includes/Templates/DesignSet.php:305
+#: includes/Templates/DesignSet.php:320
 #: build/ask-ai-promo/index.js:1
 msgid "Support"
 msgstr ""
@@ -565,6 +713,7 @@ msgid "Last 90 days"
 msgstr ""
 
 #: includes/ai/class-afaq-ask-ai-admin.php:1679
+#: includes/Templates/DetailSet.php:440
 msgid "Most asked"
 msgstr ""
 
@@ -590,11 +739,11 @@ msgstr ""
 
 #: includes/ai/class-afaq-ask-ai-admin.php:1717
 #: includes/ai/class-afaq-ask-ai-admin.php:2329
+#: includes/class_faaAnalysis.php:1264
 msgid "Apply"
 msgstr ""
 
 #: includes/ai/class-afaq-ask-ai-admin.php:1721
-#: includes/class_faaAnalysis.php:513
 msgid "Clear"
 msgstr ""
 
@@ -615,7 +764,9 @@ msgid "%1$s of %2$s"
 msgstr ""
 
 #. translators: %s: number of questions.
+#. translators: %s: number of rows.
 #: includes/ai/class-afaq-ask-ai-admin.php:1764
+#: includes/class_faaAnalysis.php:1522
 #, php-format
 msgid "%s question"
 msgid_plural "%s questions"
@@ -852,7 +1003,7 @@ msgid "Untitled"
 msgstr ""
 
 #: includes/ai/class-afaq-ask-ai-admin.php:2393
-#: includes/class_faaAdmin.php:86
+#: includes/class_faaAdmin.php:109
 #: build/ask-ai-promo/index.js:1
 msgid "Edit FAQ"
 msgstr ""
@@ -897,15 +1048,6 @@ msgstr ""
 msgid "For answers that belong nowhere else, or wording your FAQs do not cover. Nothing here is published on your site — only the assistant reads it."
 msgstr ""
 
-#: includes/ai/class-afaq-ask-ai-admin.php:2504
-#: includes/class_faaAnalysis.php:535
-#: build/ask-ai-promo/index.js:1
-#: build/blocks/bento-faq/index.js:1
-#: build/blocks/faq-item/index.js:1
-#: build/blocks/nested-faq/index.js:1
-msgid "Question"
-msgstr ""
-
 #: includes/ai/class-afaq-ask-ai-admin.php:2511
 #: build/ask-ai-promo/index.js:1
 msgid "Do you ship to Canada?"
@@ -927,6 +1069,7 @@ msgstr ""
 #: build/blocks/ask-ai/index.js:1
 #: build/blocks/bento-faq/index.js:1
 #: build/blocks/nested-faq/index.js:1
+#: build/blocks/sidebar-tab-faq/index.js:1
 msgid "Answer"
 msgstr ""
 
@@ -1018,6 +1161,7 @@ msgid "Delete this entry? This cannot be undone."
 msgstr ""
 
 #: includes/ai/class-afaq-ask-ai-admin.php:2704
+#: includes/submissions/class-afaq-submissions-list-table.php:273
 msgid "Delete"
 msgstr ""
 
@@ -1537,16 +1681,36 @@ msgstr ""
 msgid "Could not parse AI response. Please try again."
 msgstr ""
 
-#: includes/class-faa-freeAnalytics.php:38
-msgid "Analytics is a Premium Feature"
+#: includes/class-faa-freeAnalytics.php:28
+#: includes/class-faa-freeAnalytics.php:29
+#: includes/class-faa-freeAnalytics.php:43
+#: includes/class_faaAnalysis.php:150
+#: includes/class_faaAnalysis.php:151
+#: includes/class_faaAnalysis.php:1096
+msgid "Analytics"
 msgstr ""
 
-#: includes/class-faa-freeAnalytics.php:40
-msgid "Unlock detailed insights into how your users interact with your FAQs. Track clicks, most popular questions, and export reports."
+#: includes/class-faa-freeAnalytics.php:39
+#: includes/class_faaAnalysis.php:779
+msgid "You do not have permission to view FAQ analytics."
 msgstr ""
 
-#: includes/class-faa-freeAnalytics.php:44
+#: includes/class-faa-freeAnalytics.php:47
+msgid "Preview of the Analytics screen"
+msgstr ""
+
+#: includes/class-faa-freeAnalytics.php:58
+msgid "Analytics is a Pro feature"
+msgstr ""
+
+#: includes/class-faa-freeAnalytics.php:61
+msgid "See which questions get clicked, how that changes day by day, which ones are trending, and export the whole thing as a CSV."
+msgstr ""
+
+#: includes/class-faa-freeAnalytics.php:66
 #: includes/class-faa-freeAskAi.php:135
+#: includes/class-faa-freeSubmissions.php:198
+#: includes/class_faaAdmin.php:171
 #: build/ask-ai-promo/index.js:1
 msgid "Upgrade to Pro"
 msgstr ""
@@ -1555,220 +1719,4624 @@ msgstr ""
 msgid "Ask AI is a Pro feature. It answers your visitors' questions from your own FAQ content, and shows you which questions your FAQs do not cover yet."
 msgstr ""
 
-#: includes/class_faaAdmin.php:83
+#: includes/class-faa-freeSubmissions.php:48
+#: includes/class-faa-freeSubmissions.php:49
+#: includes/class-faa-freeSubmissions.php:134
+#: includes/submissions/class-afaq-submissions-admin.php:38
+#: includes/submissions/class-afaq-submissions-admin.php:66
+#: includes/submissions/class-afaq-submissions-admin.php:320
+msgid "Form Submissions"
+msgstr ""
+
+#: includes/class-faa-freeSubmissions.php:75
+msgid "Do you ship outside the country?"
+msgstr ""
+
+#: includes/class-faa-freeSubmissions.php:76
+#: includes/class-faa-freeSubmissions.php:84
+#: includes/class-faa-freeSubmissions.php:92
+#: includes/class-faa-freeSubmissions.php:100
+#: includes/class-faa-freeSubmissions.php:108
+#: includes/class-faa-freeSubmissions.php:116
+msgid "Sample visitor"
+msgstr ""
+
+#: includes/class-faa-freeSubmissions.php:78
+#: includes/class_faaAnalysis.php:736
+#: includes/submissions/class-afaq-submissions-list-table.php:319
+msgid "New"
+msgstr ""
+
+#: includes/class-faa-freeSubmissions.php:80
+msgid "2 hours ago"
+msgstr ""
+
+#: includes/class-faa-freeSubmissions.php:83
+msgid "How long does a refund take?"
+msgstr ""
+
+#: includes/class-faa-freeSubmissions.php:86
+#: includes/class-faa-freeSubmissions.php:94
+#: includes/class-faa-freeSubmissions.php:102
+#: includes/class-faa-freeSubmissions.php:110
+#: includes/submissions/class-afaq-submissions-list-table.php:320
+msgid "Answered"
+msgstr ""
+
+#: includes/class-faa-freeSubmissions.php:88
+msgid "Yesterday"
+msgstr ""
+
+#: includes/class-faa-freeSubmissions.php:91
+msgid "Can I change my plan later?"
+msgstr ""
+
+#: includes/class-faa-freeSubmissions.php:96
+msgid "3 days ago"
+msgstr ""
+
+#: includes/class-faa-freeSubmissions.php:99
+#: build/ask-ai-promo/index.js:1
+msgid "Is there a discount for non-profits?"
+msgstr ""
+
+#: includes/class-faa-freeSubmissions.php:104
+msgid "1 week ago"
+msgstr ""
+
+#: includes/class-faa-freeSubmissions.php:107
+#: build/ask-ai-promo/index.js:1
+msgid "Which payment methods do you take?"
+msgstr ""
+
+#: includes/class-faa-freeSubmissions.php:112
+msgid "2 weeks ago"
+msgstr ""
+
+#: includes/class-faa-freeSubmissions.php:115
+msgid "Do you offer a trial?"
+msgstr ""
+
+#: includes/class-faa-freeSubmissions.php:118
+#: includes/submissions/class-afaq-submissions-list-table.php:321
+msgid "Spam"
+msgstr ""
+
+#: includes/class-faa-freeSubmissions.php:120
+msgid "3 weeks ago"
+msgstr ""
+
+#: includes/class-faa-freeSubmissions.php:128
+msgid "You do not have permission to view form submissions."
+msgstr ""
+
+#: includes/class-faa-freeSubmissions.php:136
+#: includes/submissions/class-afaq-submissions-admin.php:326
+msgid "Questions visitors sent in through the FAQ Form block."
+msgstr ""
+
+#: includes/class-faa-freeSubmissions.php:157
+#: includes/submissions/class-afaq-submissions-list-table.php:53
+msgid "From"
+msgstr ""
+
+#: includes/class-faa-freeSubmissions.php:158
+#: includes/submissions/class-afaq-submissions-list-table.php:54
+msgid "Email"
+msgstr ""
+
+#: includes/class-faa-freeSubmissions.php:159
+#: includes/class_faaAnalysis.php:1409
+#: includes/submissions/class-afaq-submissions-list-table.php:55
+msgid "Status"
+msgstr ""
+
+#: includes/class-faa-freeSubmissions.php:160
+#: includes/submissions/class-afaq-submissions-list-table.php:57
+msgid "Received"
+msgstr ""
+
+#: includes/class-faa-freeSubmissions.php:191
+msgid "Form Submissions is a Pro feature"
+msgstr ""
+
+#: includes/class-faa-freeSubmissions.php:194
+msgid "Let visitors send in the question they could not find an answer to. Every one arrives here with their name and email, ready to read, mark answered and reply to."
+msgstr ""
+
+#: includes/class_faaAdmin.php:106
+#: includes/class_faaAnalysis.php:2129
+#: includes/Templates/ProSet.php:109
+#: includes/Templates/SectorSet.php:393
+#: includes/Templates/ShowcaseSet.php:776
 #: woocommerce/class-afaq-wc-display.php:254
 msgid "FAQ"
 msgstr ""
 
-#: includes/class_faaAdmin.php:84
+#: includes/class_faaAdmin.php:107
 msgid "Add New "
 msgstr ""
 
-#: includes/class_faaAdmin.php:85
+#: includes/class_faaAdmin.php:108
 msgid "Add New FAQ"
 msgstr ""
 
-#: includes/class_faaAdmin.php:87
+#: includes/class_faaAdmin.php:110
 msgid "New FAQ"
 msgstr ""
 
-#: includes/class_faaAdmin.php:88
+#: includes/class_faaAdmin.php:111
 msgid "View FAQ"
 msgstr ""
 
-#: includes/class_faaAdmin.php:89
+#: includes/class_faaAdmin.php:112
 msgid "Search FAQ"
 msgstr ""
 
-#: includes/class_faaAdmin.php:90
+#: includes/class_faaAdmin.php:113
 msgid "Sorry, we couldn't find the ShortCode you are looking for."
 msgstr ""
 
-#: includes/class_faaAdmin.php:112
-#: includes/class_faaAdmin.php:116
+#: includes/class_faaAdmin.php:135
+#: includes/class_faaAdmin.php:139
 msgid "Demo & Help"
 msgstr ""
 
-#: includes/class_faaAdmin.php:148
-msgid "Upgrade"
+#: includes/class_faaAdmin.php:300
+msgid "Go Pro!"
 msgstr ""
 
-#: includes/class_faaAnalysis.php:160
-msgid "Others"
+#: includes/class_faaAdmin.php:307
+msgid "Dashboard!"
 msgstr ""
 
-#: includes/class_faaAnalysis.php:166
-#: includes/class_faaAnalysis.php:309
-msgid "Total Clicks"
+#: includes/class_faaAnalysis.php:117
+#: build/blocks/faq-parent/index.js:1
+msgid "Post FAQ"
 msgstr ""
 
-#: includes/class_faaAnalysis.php:169
-msgid "No Data"
+#: includes/class_faaAnalysis.php:118
+#: build/blocks/faq-parent/index.js:1
+msgid "Sidebar Post Tab"
 msgstr ""
 
-#: includes/class_faaAnalysis.php:245
-msgid "FAQ Click Analytics"
+#: includes/class_faaAnalysis.php:119
+#: build/blocks/faq-parent/index.js:1
+msgid "Nested FAQ"
 msgstr ""
 
-#: includes/class_faaAnalysis.php:254
-msgid "Analytics data has been cleared successfully."
+#: includes/class_faaAnalysis.php:120
+#: build/blocks/faq-parent/index.js:1
+msgid "Bento FAQ"
 msgstr ""
 
-#: includes/class_faaAnalysis.php:263
-msgid "Retention settings saved."
+#: includes/class_faaAnalysis.php:121
+#: build/blocks/faq-parent/index.js:1
+msgid "Image FAQ"
 msgstr ""
 
-#: includes/class_faaAnalysis.php:271
-msgid "Currently Filtering:"
+#: includes/class_faaAnalysis.php:242
+#: includes/class_faaAnalysis.php:604
+#: includes/submissions/class-afaq-submissions-list-table.php:346
+msgid "Unknown"
 msgstr ""
 
-#: includes/class_faaAnalysis.php:275
-msgid "Showing analytics data exclusively for this FAQ post."
+#: includes/class_faaAnalysis.php:489
+msgid "Today"
 msgstr ""
 
-#: includes/class_faaAnalysis.php:279
-#: includes/class_faaAnalysis.php:285
-msgid "Clear Filter"
+#: includes/class_faaAnalysis.php:490
+msgid "7 days"
 msgstr ""
 
-#: includes/class_faaAnalysis.php:315
-msgid "Today's Performance"
+#: includes/class_faaAnalysis.php:491
+msgid "30 days"
 msgstr ""
 
-#: includes/class_faaAnalysis.php:319
-msgid "Clicks Today"
+#: includes/class_faaAnalysis.php:492
+#: includes/class_faaAnalysis.php:1111
+#: includes/class_faaAnalysis.php:1423
+msgid "All time"
 msgstr ""
 
-#: includes/class_faaAnalysis.php:323
-msgid "Most Popular FAQ"
+#: includes/class_faaAnalysis.php:892
+msgid "whole period"
 msgstr ""
 
-#: includes/class_faaAnalysis.php:337
-msgid "Auto Data Retention"
-msgstr ""
-
-#: includes/class_faaAnalysis.php:346
-msgid "Never delete"
-msgstr ""
-
-#: includes/class_faaAnalysis.php:349
-msgid "7 Days"
-msgstr ""
-
-#: includes/class_faaAnalysis.php:352
-msgid "15 Days"
-msgstr ""
-
-#: includes/class_faaAnalysis.php:355
-msgid "30 Days"
-msgstr ""
-
-#: includes/class_faaAnalysis.php:358
-msgid "Update"
-msgstr ""
-
-#: includes/class_faaAnalysis.php:362
-msgid "Automatically cleans up records older than the selected timeframe."
-msgstr ""
-
-#: includes/class_faaAnalysis.php:373
-msgid "Analytics Overview"
-msgstr ""
-
-#: includes/class_faaAnalysis.php:378
-msgid "Avg Clicks per FAQ"
-msgstr ""
-
-#: includes/class_faaAnalysis.php:384
-msgid "Tracking Items"
-msgstr ""
-
-#: includes/class_faaAnalysis.php:392
-msgid "Track user engagement in real-time. Use the data above to optimize your most clicked FAQ content and improve user satisfaction."
-msgstr ""
-
-#: includes/class_faaAnalysis.php:494
-msgid "Search..."
-msgstr ""
-
-#: includes/class_faaAnalysis.php:498
-msgid "Top Clicks"
-msgstr ""
-
-#: includes/class_faaAnalysis.php:501
-msgid "Recent Clicks"
-msgstr ""
-
-#: includes/class_faaAnalysis.php:504
-msgid "By Question"
-msgstr ""
-
-#: includes/class_faaAnalysis.php:507
-msgid "By Title"
-msgstr ""
-
-#: includes/class_faaAnalysis.php:510
-msgid "Filter"
-msgstr ""
-
-#: includes/class_faaAnalysis.php:520
-msgid "Download CSV"
-msgstr ""
-
-#: includes/class_faaAnalysis.php:524
-msgid "Are you sure you want to clear all analytics data? This action cannot be undone."
-msgstr ""
-
-#: includes/class_faaAnalysis.php:526
-msgid "Clear Data"
-msgstr ""
-
-#: includes/class_faaAnalysis.php:538
-msgid "Source Page Link"
-msgstr ""
-
-#: includes/class_faaAnalysis.php:541
-msgid "Click Count"
-msgstr ""
-
-#: includes/class_faaAnalysis.php:544
-msgid "Last Clicked"
-msgstr ""
-
-#: includes/class_faaAnalysis.php:551
-msgid "No click data available yet."
-msgstr ""
-
-#: includes/class_faaAnalysis.php:568
-msgid "No URL"
-msgstr ""
-
-#: includes/class_faaAnalysis.php:588
-msgid "&laquo; Previous"
-msgstr ""
-
-#: includes/class_faaAnalysis.php:589
-msgid "Next &raquo;"
-msgstr ""
-
-#. translators: %s: number of items
-#: includes/class_faaAnalysis.php:594
+#. translators: %s: number of days.
+#: includes/class_faaAnalysis.php:895
 #, php-format
-msgid "%s item"
-msgid_plural "%s items"
+msgid "%s day"
+msgid_plural "%s days"
 msgstr[0] ""
 msgstr[1] ""
 
-#: includes/class_faaAnalysis.php:608
-#: includes/class_faaAnalysis.php:671
-#: includes/class_faaAnalysis.php:686
-msgid "Unauthorized"
+#: includes/class_faaAnalysis.php:900
+msgid "every click on record"
+msgstr ""
+
+#. translators: %s: number of days.
+#: includes/class_faaAnalysis.php:903
+#, php-format
+msgid "vs previous %s day"
+msgid_plural "vs previous %s days"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: start date, 2: end date.
+#: includes/class_faaAnalysis.php:1114
+#, php-format
+msgid "%1$s – %2$s"
+msgstr ""
+
+#. translators: %s: number of questions clicked in the range.
+#: includes/class_faaAnalysis.php:1122
+#, php-format
+msgid "%s question clicked in this range"
+msgid_plural "%s questions clicked in this range"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s: number of questions with any history at all.
+#: includes/class_faaAnalysis.php:1128
+#, php-format
+msgid "%s tracked all time"
+msgid_plural "%s tracked all time"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/class_faaAnalysis.php:1142
+msgid "including your own clicks"
+msgstr ""
+
+#: includes/class_faaAnalysis.php:1143
+msgid "clicks by editors are not counted"
+msgstr ""
+
+#: includes/class_faaAnalysis.php:1150
+msgid "Your own clicks are being counted. Useful while testing, but turn it off before you read these numbers as visitor behaviour."
+msgstr ""
+
+#: includes/class_faaAnalysis.php:1168
+msgid "Nothing has been recorded yet."
+msgstr ""
+
+#: includes/class_faaAnalysis.php:1176
+msgid "Every question below is being tracked, but none of them has been clicked yet."
+msgstr ""
+
+#: includes/class_faaAnalysis.php:1178
+msgid "Every record here holds clicks that no dated range can show — either older than the 90 days of day by day history kept, or recorded before that history existed. Choose All time to see them."
+msgstr ""
+
+#. translators: 1: number of clicks, 2: date of the most recent click.
+#: includes/class_faaAnalysis.php:1182
+#, php-format
+msgid "No clicks in this range. There are %1$s recorded in total, the most recent on %2$s — choose All time to see them."
+msgstr ""
+
+#. translators: %s: number of clicks.
+#: includes/class_faaAnalysis.php:1186
+#, php-format
+msgid "%s click"
+msgid_plural "%s clicks"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/class_faaAnalysis.php:1193
+msgid "No clicks in this range, and the records that exist carry no date to place them on."
+msgstr ""
+
+#: includes/class_faaAnalysis.php:1201
+#, php-format
+msgid "%s question also holds clicks too old for day by day history, which only All time can show."
+msgid_plural "%s questions also hold clicks too old for day by day history, which only All time can show."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/class_faaAnalysis.php:1214
+msgid "Your own clicks are never counted while you can edit this site — switch on “Count my own clicks” below to test it."
+msgstr ""
+
+#: includes/class_faaAnalysis.php:1230
+msgid "Filter by FAQ"
+msgstr ""
+
+#: includes/class_faaAnalysis.php:1232
+msgid "All FAQs"
+msgstr ""
+
+#: includes/class_faaAnalysis.php:1244
+msgid "Filter by block"
+msgstr ""
+
+#: includes/class_faaAnalysis.php:1246
+msgid "All blocks"
+msgstr ""
+
+#. translators: 1: block name, 2: number of clicks.
+#: includes/class_faaAnalysis.php:1252
+#, php-format
+msgid "%1$s (%2$s)"
+msgstr ""
+
+#: includes/class_faaAnalysis.php:1278
+msgid "Export CSV"
+msgstr ""
+
+#: includes/class_faaAnalysis.php:1286
+msgid "Filtered to:"
+msgstr ""
+
+#: includes/class_faaAnalysis.php:1289
+msgid "Show all FAQs"
+msgstr ""
+
+#: includes/class_faaAnalysis.php:1296
+#: includes/class_faaAnalysis.php:1349
+#: includes/class_faaAnalysis.php:1790
+msgid "Clicks"
+msgstr ""
+
+#: includes/class_faaAnalysis.php:1304
+#: includes/class_faaAnalysis.php:1350
+#: includes/class_faaAnalysis.php:1791
+msgid "Questions clicked"
+msgstr ""
+
+#: includes/class_faaAnalysis.php:1308
+msgid "questions with at least one click"
+msgstr ""
+
+#: includes/class_faaAnalysis.php:1312
+msgid "Clicks per question"
+msgstr ""
+
+#: includes/class_faaAnalysis.php:1316
+msgid "clicks ÷ questions clicked"
+msgstr ""
+
+#: includes/class_faaAnalysis.php:1320
+msgid "Busiest day"
+msgstr ""
+
+#. translators: %s: number of clicks.
+#: includes/class_faaAnalysis.php:1327
+#, php-format
+msgid "%s click that day"
+msgid_plural "%s clicks that day"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/class_faaAnalysis.php:1330
+msgid "no dated clicks yet"
+msgstr ""
+
+#: includes/class_faaAnalysis.php:1330
+msgid "no clicks in this range"
+msgstr ""
+
+#: includes/class_faaAnalysis.php:1347
+msgid "Clicks over time"
+msgstr ""
+
+#: includes/class_faaAnalysis.php:1359
+msgid "Top clicked FAQs"
+msgstr ""
+
+#: includes/class_faaAnalysis.php:1379
+msgid "Search questions"
+msgstr ""
+
+#: includes/class_faaAnalysis.php:1381
+msgid "Search questions…"
+msgstr ""
+
+#: includes/class_faaAnalysis.php:1383
+msgid "Search"
+msgstr ""
+
+#: includes/class_faaAnalysis.php:1387
+msgid "Reset"
+msgstr ""
+
+#: includes/class_faaAnalysis.php:1397
+msgid "Delete every click record? This cannot be undone."
+msgstr ""
+
+#: includes/class_faaAnalysis.php:1398
+msgid "Clear data"
+msgstr ""
+
+#: includes/class_faaAnalysis.php:1410
+#: includes/class_faaAnalysis.php:2130
+msgid "Block"
+msgstr ""
+
+#: includes/class_faaAnalysis.php:1420
+msgid "Clicks in range"
+msgstr ""
+
+#: includes/class_faaAnalysis.php:1424
+#: includes/class_faaAnalysis.php:2140
+msgid "Last clicked"
+msgstr ""
+
+#: includes/class_faaAnalysis.php:1426
+#: includes/class_faaAnalysis.php:2131
+msgid "Source page"
+msgstr ""
+
+#: includes/class_faaAnalysis.php:1434
+msgid "Nothing to show yet."
+msgstr ""
+
+#: includes/class_faaAnalysis.php:1435
+msgid "Clicks appear here once a visitor opens a question on the front end."
+msgstr ""
+
+#: includes/class_faaAnalysis.php:1447
+msgid "Your own clicks are not counted, because you can edit this site. To check it works, switch on “Count my own clicks” below, open a question on the front end, and reload this page."
+msgstr ""
+
+#: includes/class_faaAnalysis.php:1473
+#: includes/class_faaAnalysis.php:1505
+msgid "Not recorded"
+msgstr ""
+
+#: includes/class_faaAnalysis.php:1496
+msgid "Never"
+msgstr ""
+
+#: includes/class_faaAnalysis.php:1537
+msgid "‹"
+msgstr ""
+
+#: includes/class_faaAnalysis.php:1538
+msgid "›"
+msgstr ""
+
+#: includes/class_faaAnalysis.php:1551
+msgid "Automatic cleanup"
+msgstr ""
+
+#: includes/class_faaAnalysis.php:1557
+msgid "Delete records older than"
+msgstr ""
+
+#: includes/class_faaAnalysis.php:1563
+msgid "Never delete"
+msgstr ""
+
+#: includes/class_faaAnalysis.php:1564
+msgid "Delete after 7 days"
+msgstr ""
+
+#: includes/class_faaAnalysis.php:1565
+msgid "Delete after 15 days"
+msgstr ""
+
+#: includes/class_faaAnalysis.php:1566
+msgid "Delete after 30 days"
+msgstr ""
+
+#: includes/class_faaAnalysis.php:1567
+msgid "Delete after 90 days"
+msgstr ""
+
+#: includes/class_faaAnalysis.php:1578
+#: includes/class_faaAnalysis.php:1593
+msgid "Save"
+msgstr ""
+
+#: includes/class_faaAnalysis.php:1590
+msgid "Count my own clicks"
+msgstr ""
+
+#: includes/class_faaAnalysis.php:1596
+msgid "Off by default: a page you are building and previewing yourself is not visitor interest. Turn it on while you are testing, then turn it back off."
+msgstr ""
+
+#: includes/class_faaAnalysis.php:1603
+#: includes/Templates/ProSet.php:490
+msgid "How to read this"
+msgstr ""
+
+#. translators: %s: the length of the chosen range, already worded.
+#: includes/class_faaAnalysis.php:1611
+#, php-format
+msgid "🔥 High marks a question in the top tier of clicks for this range. ⚡ Trending marks one clicked more in the last half of the %s than the first. ℹ️ Active means it was clicked at least once."
+msgstr ""
+
+#: includes/class_faaAnalysis.php:1619
+msgid "Day by day history is kept for 90 days, so that is as far back as the chart can draw. All time is not limited that way — it reads each question’s running total, which counts every click ever recorded, so its figures can be higher than the bars above add up to."
+msgstr ""
+
+#: includes/class_faaAnalysis.php:1624
+msgid "Some records were made before day by day history existed. Their clicks are shown on the day they were last clicked, so an old question can appear as one tall spike. Once that day falls outside the 90 days kept, the spike goes and only All time still counts them."
+msgstr ""
+
+#: includes/class_faaAnalysis.php:1643
+msgid "Analytics data cleared."
+msgstr ""
+
+#: includes/class_faaAnalysis.php:1648
+msgid "Cleanup setting saved."
+msgstr ""
+
+#: includes/class_faaAnalysis.php:1725
+msgid "· Idle"
+msgstr ""
+
+#: includes/class_faaAnalysis.php:1732
+msgid "🔥 High"
+msgstr ""
+
+#: includes/class_faaAnalysis.php:1742
+msgid "⚡ Trending"
+msgstr ""
+
+#: includes/class_faaAnalysis.php:1746
+msgid "ℹ️ Active"
+msgstr ""
+
+#: includes/class_faaAnalysis.php:1864
+msgid "No clicks on record yet."
+msgstr ""
+
+#: includes/class_faaAnalysis.php:1865
+msgid "No clicks in this range yet."
+msgstr ""
+
+#: includes/class_faaAnalysis.php:1904
+msgid "click"
+msgid_plural "clicks"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/class_faaAnalysis.php:2000
+msgid "Clicks per day over the selected range"
+msgstr ""
+
+#: includes/class_faaAnalysis.php:2026
+msgid "You do not have permission to export FAQ analytics."
+msgstr ""
+
+#: includes/class_faaAnalysis.php:2133
+msgid "Clicks in range (all time)"
+msgstr ""
+
+#. translators: %s: number of days.
+#: includes/class_faaAnalysis.php:2136
+#, php-format
+msgid "Clicks in last %s day"
+msgid_plural "Clicks in last %s days"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/class_faaAnalysis.php:2139
+msgid "Clicks all time"
+msgstr ""
+
+#: includes/class_faaAnalysis.php:2179
+msgid "You do not have permission to clear FAQ analytics."
+msgstr ""
+
+#: includes/class_faaAnalysis.php:2194
+#: includes/class_faaAnalysis.php:2216
+msgid "You do not have permission to change this setting."
 msgstr ""
 
 #. translators: %s: FAQ post ID used in the shortcode.
-#: includes/class_faaPlugin.php:156
+#: includes/class_faaPlugin.php:236
 #, php-format
 msgid "Error: Awesome FAQ with ID %s not found."
+msgstr ""
+
+#: includes/submissions/class-afaq-post-types.php:72
+msgid "FAQ Submissions"
+msgstr ""
+
+#: includes/submissions/class-afaq-post-types.php:73
+msgid "FAQ Submission"
+msgstr ""
+
+#: includes/submissions/class-afaq-post-types.php:74
+msgid "Edit FAQ Submission"
+msgstr ""
+
+#: includes/submissions/class-afaq-post-types.php:75
+msgid "No submissions yet."
+msgstr ""
+
+#: includes/submissions/class-afaq-rest-submissions-controller.php:57
+msgid "You must be logged in to manage submissions."
+msgstr ""
+
+#: includes/submissions/class-afaq-rest-submissions-controller.php:65
+#: includes/submissions/class-afaq-submissions-admin.php:152
+#: includes/submissions/class-afaq-submissions-admin.php:196
+#: includes/submissions/class-afaq-submissions-admin.php:310
+msgid "You are not allowed to manage submissions."
+msgstr ""
+
+#: includes/submissions/class-afaq-rest-submissions-controller.php:175
+msgid "This form is not accepting questions right now."
+msgstr ""
+
+#: includes/submissions/class-afaq-rest-submissions-controller.php:199
+msgid "That was quick — please take a moment and send it again."
+msgstr ""
+
+#: includes/submissions/class-afaq-submission-repository.php:66
+msgid "Please write your question."
+msgstr ""
+
+#: includes/submissions/class-afaq-submission-repository.php:77
+msgid "That email address does not look right."
+msgstr ""
+
+#: includes/submissions/class-afaq-submission-repository.php:180
+msgid "You have sent a few questions already — please try again later."
+msgstr ""
+
+#: includes/submissions/class-afaq-submission-repository.php:359
+msgid "You are not allowed to change this submission."
+msgstr ""
+
+#: includes/submissions/class-afaq-submission-repository.php:365
+msgid "Unknown status."
+msgstr ""
+
+#: includes/submissions/class-afaq-submission-repository.php:386
+msgid "You are not allowed to delete this submission."
+msgstr ""
+
+#: includes/submissions/class-afaq-submission-repository.php:392
+msgid "The submission could not be deleted."
+msgstr ""
+
+#: includes/submissions/class-afaq-submission-repository.php:409
+msgid "Submission not found."
+msgstr ""
+
+#: includes/submissions/class-afaq-submissions-admin.php:92
+msgid "Submissions per page"
+msgstr ""
+
+#. translators: %s: number of submissions.
+#: includes/submissions/class-afaq-submissions-admin.php:273
+#, php-format
+msgid "%s submission updated."
+msgid_plural "%s submissions updated."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s: number of submissions.
+#: includes/submissions/class-afaq-submissions-admin.php:281
+#, php-format
+msgid "%s submission deleted."
+msgid_plural "%s submissions deleted."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/submissions/class-afaq-submissions-admin.php:288
+msgid "Nothing was selected."
+msgstr ""
+
+#: includes/submissions/class-afaq-submissions-admin.php:293
+msgid "That could not be done. The submission may already have been deleted."
+msgstr ""
+
+#: includes/submissions/class-afaq-submissions-admin.php:346
+msgid "Search submissions"
+msgstr ""
+
+#: includes/submissions/class-afaq-submissions-list-table.php:56
+msgid "Sent from"
+msgstr ""
+
+#: includes/submissions/class-afaq-submissions-list-table.php:91
+msgctxt "submissions filter"
+msgid "All"
+msgstr ""
+
+#: includes/submissions/class-afaq-submissions-list-table.php:92
+msgctxt "submissions filter"
+msgid "New"
+msgstr ""
+
+#: includes/submissions/class-afaq-submissions-list-table.php:93
+msgctxt "submissions filter"
+msgid "Answered"
+msgstr ""
+
+#: includes/submissions/class-afaq-submissions-list-table.php:94
+msgctxt "submissions filter"
+msgid "Spam"
+msgstr ""
+
+#: includes/submissions/class-afaq-submissions-list-table.php:100
+msgctxt "submissions filter"
+msgid "Converted"
+msgstr ""
+
+#: includes/submissions/class-afaq-submissions-list-table.php:126
+msgid "Mark as new"
+msgstr ""
+
+#: includes/submissions/class-afaq-submissions-list-table.php:127
+msgid "Mark as answered"
+msgstr ""
+
+#: includes/submissions/class-afaq-submissions-list-table.php:128
+msgid "Mark as spam"
+msgstr ""
+
+#: includes/submissions/class-afaq-submissions-list-table.php:129
+msgid "Delete permanently"
+msgstr ""
+
+#: includes/submissions/class-afaq-submissions-list-table.php:180
+msgid "No submissions yet. Questions sent through the FAQ Form block arrive here."
+msgstr ""
+
+#: includes/submissions/class-afaq-submissions-list-table.php:197
+msgid "Select this submission"
+msgstr ""
+
+#: includes/submissions/class-afaq-submissions-list-table.php:218
+msgid "Answer they suggested:"
+msgstr ""
+
+#: includes/submissions/class-afaq-submissions-list-table.php:236
+msgid "Mark new"
+msgstr ""
+
+#: includes/submissions/class-afaq-submissions-list-table.php:237
+msgid "Mark answered"
+msgstr ""
+
+#: includes/submissions/class-afaq-submissions-list-table.php:238
+msgid "Mark spam"
+msgstr ""
+
+#. translators: %s: the visitor's question.
+#: includes/submissions/class-afaq-submissions-list-table.php:262
+#, php-format
+msgid "Re: %s"
+msgstr ""
+
+#: includes/submissions/class-afaq-submissions-list-table.php:264
+msgid "Reply by email"
+msgstr ""
+
+#: includes/submissions/class-afaq-submissions-list-table.php:272
+msgid "Delete this submission permanently? This cannot be undone."
+msgstr ""
+
+#: includes/submissions/class-afaq-submissions-list-table.php:289
+msgid "Anonymous"
+msgstr ""
+
+#: includes/submissions/class-afaq-submissions-list-table.php:302
+msgid "None given"
+msgstr ""
+
+#: includes/submissions/class-afaq-submissions-list-table.php:322
+msgid "Converted"
+msgstr ""
+
+#. translators: %s: human readable time difference, e.g. "2 hours".
+#: includes/submissions/class-afaq-submissions-list-table.php:381
+#, php-format
+msgid "%s ago"
+msgstr ""
+
+#: includes/Templates/BuiltIn.php:143
+msgid "Support pages"
+msgstr ""
+
+#: includes/Templates/BuiltIn.php:144
+#: includes/Templates/CoreSet.php:61
+#: includes/Templates/CoreSet.php:66
+#: includes/Templates/CoreSet.php:71
+#: includes/Templates/ProSet.php:717
+#: includes/Templates/ProSet.php:722
+msgid "Getting started"
+msgstr ""
+
+#: includes/Templates/BuiltIn.php:145
+msgid "Sales pages"
+msgstr ""
+
+#: includes/Templates/BuiltIn.php:147
+#: includes/Templates/ShowcaseSet.php:98
+msgid "Fashion Lookbook"
+msgstr ""
+
+#: includes/Templates/BuiltIn.php:148
+msgid "Fitness / Diet"
+msgstr ""
+
+#: includes/Templates/BuiltIn.php:149
+#: includes/Templates/ShowcaseSet.php:148
+msgid "Food Menu"
+msgstr ""
+
+#: includes/Templates/BuiltIn.php:150
+msgid "Health"
+msgstr ""
+
+#: includes/Templates/BuiltIn.php:151
+#: includes/Templates/ShowcaseSet.php:243
+msgid "Hotel Suites"
+msgstr ""
+
+#: includes/Templates/BuiltIn.php:152
+#: includes/Templates/ShowcaseSet.php:838
+msgid "Product Features"
+msgstr ""
+
+#: includes/Templates/BuiltIn.php:153
+msgid "Projects / Portfolios"
+msgstr ""
+
+#: includes/Templates/BuiltIn.php:154
+#: includes/Templates/ShowcaseSet.php:400
+msgid "Real Estate Zones"
+msgstr ""
+
+#: includes/Templates/BuiltIn.php:155
+msgid "Services"
+msgstr ""
+
+#: includes/Templates/BuiltIn.php:156
+#: includes/Templates/ShowcaseSet.php:423
+msgid "Speakers & Performers"
+msgstr ""
+
+#: includes/Templates/BuiltIn.php:157
+msgid "Travel Destination"
+msgstr ""
+
+#: includes/Templates/BuiltIn.php:158
+#: includes/Templates/ShowcaseSet.php:547
+msgid "Visual Storytelling"
+msgstr ""
+
+#: includes/Templates/CoreSet.php:62
+#: includes/Templates/ProSet.php:772
+msgid "How long does setup take?"
+msgstr ""
+
+#: includes/Templates/CoreSet.php:63
+msgid "Most people are finished in under ten minutes. Install the plugin, drop a block on a page and start typing — there is nothing to configure first."
+msgstr ""
+
+#: includes/Templates/CoreSet.php:67
+msgid "Will it match my theme?"
+msgstr ""
+
+#: includes/Templates/CoreSet.php:68
+msgid "Yes. Every block inherits your theme's colours and typography to begin with, and each of those can be overridden per block if you want something different."
+msgstr ""
+
+#: includes/Templates/CoreSet.php:72
+msgid "Can I put the same questions on more than one page?"
+msgstr ""
+
+#: includes/Templates/CoreSet.php:73
+msgid "Save the block as a synced pattern and place it wherever you need it. Editing the pattern updates every page carrying it, so nothing has to be kept in step by hand."
+msgstr ""
+
+#: includes/Templates/CoreSet.php:76
+#: includes/Templates/CoreSet.php:81
+msgid "Billing"
+msgstr ""
+
+#: includes/Templates/CoreSet.php:77
+msgid "Can I change plan later?"
+msgstr ""
+
+#: includes/Templates/CoreSet.php:78
+msgid "Any time, in either direction. Upgrades take effect immediately and you only pay the difference for the rest of the term."
+msgstr ""
+
+#: includes/Templates/CoreSet.php:82
+#: build/ask-ai-promo/index.js:1
+#: build/blocks/ask-ai/index.js:1
+msgid "What is your refund policy?"
+msgstr ""
+
+#: includes/Templates/CoreSet.php:83
+msgid "Thirty days, no questions asked. Write to support and the money goes back the way it came."
+msgstr ""
+
+#: includes/Templates/CoreSet.php:88
+msgid "Help Centre"
+msgstr ""
+
+#: includes/Templates/CoreSet.php:93
+msgid "How can we help?"
+msgstr ""
+
+#: includes/Templates/CoreSet.php:94
+msgid "The questions we are asked most often, answered."
+msgstr ""
+
+#: includes/Templates/CoreSet.php:110
+msgid "Browse by Topic"
+msgstr ""
+
+#: includes/Templates/CoreSet.php:118
+msgid "Browse by topic"
+msgstr ""
+
+#: includes/Templates/CoreSet.php:119
+msgid "Pick a subject on the left and the answer opens beside it."
+msgstr ""
+
+#: includes/Templates/CoreSet.php:163
+#: includes/Templates/CoreSet.php:168
+msgid "Display"
+msgstr ""
+
+#: includes/Templates/CoreSet.php:164
+msgid "The block shows nothing on the page"
+msgstr ""
+
+#: includes/Templates/CoreSet.php:165
+msgid "Nine times in ten the page is cached. Clear the cache, then reload with a hard refresh. If it is still empty, check the block is not set to a category that has no questions in it."
+msgstr ""
+
+#: includes/Templates/CoreSet.php:169
+msgid "My colours are being ignored"
+msgstr ""
+
+#: includes/Templates/CoreSet.php:170
+msgid "Something in the theme is winning on specificity. Open the block, set the colour you want, and if it still does not take, look for an !important rule in the theme's stylesheet against the same element."
+msgstr ""
+
+#: includes/Templates/CoreSet.php:173
+#: includes/Templates/CoreSet.php:178
+#: build/blocks/bento-faq/index.js:1
+#: build/blocks/image-faq/index.js:1
+#: build/blocks/nested-faq/index.js:1
+#: build/blocks/post-faq/index.js:1
+#: build/blocks/sidebar-tab-faq/index.js:1
+msgid "Behaviour"
+msgstr ""
+
+#: includes/Templates/CoreSet.php:174
+msgid "Questions will not open when clicked"
+msgstr ""
+
+#: includes/Templates/CoreSet.php:175
+msgid "A JavaScript error elsewhere on the page stops every script after it, including this one. Open the browser console and fix whatever is reported first — it is rarely this plugin."
+msgstr ""
+
+#: includes/Templates/CoreSet.php:179
+msgid "The layout breaks on mobile only"
+msgstr ""
+
+#: includes/Templates/CoreSet.php:180
+msgid "Check the width you set for the block. A fixed pixel width wider than a phone screen cannot fold, so use a percentage or leave it unset and let the block fill its column."
+msgstr ""
+
+#: includes/Templates/CoreSet.php:183
+#: includes/Templates/CoreSet.php:188
+msgid "Search engines"
+msgstr ""
+
+#: includes/Templates/CoreSet.php:184
+msgid "Google is not showing my FAQ rich result"
+msgstr ""
+
+#: includes/Templates/CoreSet.php:185
+msgid "The markup is only half of it. Keep FAQ schema on one block per page, make sure the questions are visible without clicking, and give Search Console a few weeks — rich results are never guaranteed."
+msgstr ""
+
+#: includes/Templates/CoreSet.php:189
+msgid "Two FAQ blocks on one page, which one wins?"
+msgstr ""
+
+#: includes/Templates/CoreSet.php:190
+msgid "Neither reliably. Pick the block a search engine should read, and switch the schema off on the other one in its settings."
+msgstr ""
+
+#: includes/Templates/CoreSet.php:196
+msgid "Find the symptom, then the fix. Most of these take under a minute."
+msgstr ""
+
+#: includes/Templates/CoreSet.php:234
+#: includes/Templates/ProSet.php:737
+#: includes/Templates/ProSet.php:742
+msgid "Troubleshooting"
+msgstr ""
+
+#: includes/Templates/CoreSet.php:239
+msgid "Something not working?"
+msgstr ""
+
+#: includes/Templates/CoreSet.php:258
+msgid "Support Articles"
+msgstr ""
+
+#: includes/Templates/CoreSet.php:266
+msgid "Support articles"
+msgstr ""
+
+#: includes/Templates/CoreSet.php:267
+msgid "Everything we have written down, newest first. Open one to read the summary."
+msgstr ""
+
+#: includes/Templates/CoreSet.php:285
+msgid "Show more articles"
+msgstr ""
+
+#: includes/Templates/CoreSet.php:306
+msgid "Answers From the Blog"
+msgstr ""
+
+#: includes/Templates/CoreSet.php:314
+msgid "Read up on it"
+msgstr ""
+
+#: includes/Templates/CoreSet.php:315
+msgid "Longer answers, pulled straight from what we have already written."
+msgstr ""
+
+#: includes/Templates/CoreSet.php:355
+msgid "Ask a Question"
+msgstr ""
+
+#: includes/Templates/CoreSet.php:399
+#: includes/Templates/CoreSet.php:404
+#: includes/Templates/CoreSet.php:409
+#: includes/Templates/CoreSet.php:414
+#: includes/Templates/CoreSet.php:419
+#: includes/Templates/CoreSet.php:424
+msgid "Projects"
+msgstr ""
+
+#: includes/Templates/CoreSet.php:400
+msgid "Brand Identity Design"
+msgstr ""
+
+#: includes/Templates/CoreSet.php:401
+msgid "Comprehensive visual identity system including logo design, color palette, typography guidelines, and brand assets."
+msgstr ""
+
+#: includes/Templates/CoreSet.php:405
+msgid "Website Design & Development"
+msgstr ""
+
+#: includes/Templates/CoreSet.php:406
+msgid "Custom responsive WordPress website crafted with modern UI/UX principles, high performance, and SEO optimization."
+msgstr ""
+
+#: includes/Templates/CoreSet.php:410
+msgid "E-commerce Product Showcase"
+msgstr ""
+
+#: includes/Templates/CoreSet.php:411
+msgid "Conversion-focused online store experience with seamless checkout, product filtering, and mobile optimization."
+msgstr ""
+
+#: includes/Templates/CoreSet.php:415
+msgid "Mobile App Interface Design"
+msgstr ""
+
+#: includes/Templates/CoreSet.php:416
+msgid "User-centric iOS and Android mobile app UI design focused on intuitive navigation and seamless user journeys."
+msgstr ""
+
+#: includes/Templates/CoreSet.php:420
+msgid "Marketing Campaign Visuals"
+msgstr ""
+
+#: includes/Templates/CoreSet.php:421
+msgid "High-converting social media templates, ad banners, and promotional graphics tailored for your target audience."
+msgstr ""
+
+#: includes/Templates/CoreSet.php:425
+msgid "Corporate Presentation Design"
+msgstr ""
+
+#: includes/Templates/CoreSet.php:426
+msgid "Professional pitch deck and slide presentation design that effectively communicates your business story and metrics."
+msgstr ""
+
+#: includes/Templates/CoreSet.php:430
+msgid "Projects and Case Studies"
+msgstr ""
+
+#: includes/Templates/CoreSet.php:431
+msgid "This section highlights a selection of projects I've worked on, showing how I approach different challenges and deliver practical, well-crafted solutions for clients."
+msgstr ""
+
+#: includes/Templates/CoreSet.php:432
+msgid "Let's Work Together"
+msgstr ""
+
+#: includes/Templates/CoreSet.php:467
+msgid "Getting Started"
+msgstr ""
+
+#: includes/Templates/CoreSet.php:491
+#: includes/Templates/CoreSet.php:496
+#: includes/Templates/ProSet.php:571
+#: includes/Templates/ProSet.php:576
+msgid "Content"
+msgstr ""
+
+#: includes/Templates/CoreSet.php:492
+msgid "Every question has an answer"
+msgstr ""
+
+#: includes/Templates/CoreSet.php:493
+msgid "Read the section end to end before publishing. A question with nothing under it is worse than no question at all — it tells a visitor you knew to ask it and stopped there."
+msgstr ""
+
+#: includes/Templates/CoreSet.php:497
+msgid "The answers say what happens next"
+msgstr ""
+
+#: includes/Templates/CoreSet.php:498
+msgid "An answer that stops at “yes” leaves the reader where they started. Finish each one with the link or the step they need."
+msgstr ""
+
+#: includes/Templates/CoreSet.php:501
+#: includes/Templates/CoreSet.php:506
+#: includes/Templates/ProSet.php:393
+msgid "Technical"
+msgstr ""
+
+#: includes/Templates/CoreSet.php:502
+msgid "Only one block carries FAQ schema"
+msgstr ""
+
+#: includes/Templates/CoreSet.php:503
+msgid "Two sets of FAQ markup on one page compete with each other. Pick the block a search engine should read and switch schema off on the rest."
+msgstr ""
+
+#: includes/Templates/CoreSet.php:507
+msgid "It reads correctly on a phone"
+msgstr ""
+
+#: includes/Templates/CoreSet.php:508
+msgid "Open the page on an actual phone, not just a narrow window. Check the tap targets, the font size, and that nothing scrolls sideways."
+msgstr ""
+
+#: includes/Templates/CoreSet.php:545
+msgid "Before You Go Live"
+msgstr ""
+
+#: includes/Templates/CoreSet.php:546
+msgid "Four essential things worth checking before publishing your site. Open each checklist item for guidance on completing your pre-launch audit."
+msgstr ""
+
+#: includes/Templates/CoreSet.php:547
+msgid "Start Pre-Launch Audit"
+msgstr ""
+
+#: includes/Templates/CoreSet.php:550
+msgid "Launch Checklist"
+msgstr ""
+
+#: includes/Templates/CoreSet.php:574
+msgid "Straight away"
+msgstr ""
+
+#: includes/Templates/CoreSet.php:575
+msgid "Today — you get a confirmation"
+msgstr ""
+
+#: includes/Templates/CoreSet.php:576
+msgid "An email with your order number arrives within a few minutes. If it has not, check the spam folder before writing to us — that is where it is nine times out of ten."
+msgstr ""
+
+#: includes/Templates/CoreSet.php:579
+#: includes/Templates/CoreSet.php:584
+msgid "This week"
+msgstr ""
+
+#: includes/Templates/CoreSet.php:580
+msgid "Day 1 to 2 — we get in touch"
+msgstr ""
+
+#: includes/Templates/CoreSet.php:581
+msgid "Someone reads what you sent and replies with either the answer or the one question we need to get started. Always a person, never a form response."
+msgstr ""
+
+#: includes/Templates/CoreSet.php:585
+msgid "Day 3 to 5 — the work starts"
+msgstr ""
+
+#: includes/Templates/CoreSet.php:586
+msgid "You get access to a shared board where you can see what is being worked on and what is waiting on you. No status meetings."
+msgstr ""
+
+#: includes/Templates/CoreSet.php:589
+#: includes/Templates/CoreSet.php:594
+msgid "Later"
+msgstr ""
+
+#: includes/Templates/CoreSet.php:590
+msgid "Week 2 — first thing to look at"
+msgstr ""
+
+#: includes/Templates/CoreSet.php:591
+msgid "Something real, on a staging site, that you can click. We would rather show you early and be wrong than show you late and be close."
+msgstr ""
+
+#: includes/Templates/CoreSet.php:595
+msgid "Week 4 — handover"
+msgstr ""
+
+#: includes/Templates/CoreSet.php:596
+msgid "Everything live, plus the recording and notes on how to change it yourself. Support carries on after that whether or not you need it."
+msgstr ""
+
+#: includes/Templates/CoreSet.php:601
+msgid "What Happens Next"
+msgstr ""
+
+#: includes/Templates/CoreSet.php:606
+msgid "What happens next"
+msgstr ""
+
+#: includes/Templates/CoreSet.php:607
+msgid "From the moment you order to the day it is yours."
+msgstr ""
+
+#: includes/Templates/CoreSet.php:627
+#: includes/Templates/CoreSet.php:632
+#: includes/Templates/CoreSet.php:637
+msgid "Buying"
+msgstr ""
+
+#: includes/Templates/CoreSet.php:628
+msgid "Which plan is right for me?"
+msgstr ""
+
+#: includes/Templates/CoreSet.php:629
+msgid "Start on the smallest one that covers the sites you have today. Upgrading takes a click and you only pay the difference for the rest of the term, so there is nothing to lose by starting small."
+msgstr ""
+
+#: includes/Templates/CoreSet.php:633
+msgid "What happens when my licence expires?"
+msgstr ""
+
+#: includes/Templates/CoreSet.php:634
+msgid "Nothing on your site stops working. You keep the version you have and everything built with it — what lapses is access to updates and support until you renew."
+msgstr ""
+
+#: includes/Templates/CoreSet.php:638
+msgid "Can I use one licence on client sites?"
+msgstr ""
+
+#: includes/Templates/CoreSet.php:639
+msgid "Yes, up to the number of sites your plan covers, and it does not matter who owns them. Agencies usually take the highest tier for exactly this reason."
+msgstr ""
+
+#: includes/Templates/CoreSet.php:642
+#: includes/Templates/CoreSet.php:647
+msgid "Risk"
+msgstr ""
+
+#: includes/Templates/CoreSet.php:643
+msgid "What if it does not work for me?"
+msgstr ""
+
+#: includes/Templates/CoreSet.php:644
+msgid "Ask for a refund within 30 days and you get the money back, no questions and no form to fill in. We would rather you spent it somewhere that fits."
+msgstr ""
+
+#: includes/Templates/CoreSet.php:648
+msgid "Will this slow my site down?"
+msgstr ""
+
+#: includes/Templates/CoreSet.php:649
+msgid "Each block loads only its own styles and script, and only on pages that use it. A page with no FAQ on it loads nothing at all from this plugin."
+msgstr ""
+
+#: includes/Templates/CoreSet.php:707
+msgid "Pricing & Objections"
+msgstr ""
+
+#: includes/Templates/CoreSet.php:712
+msgid "Questions before you buy"
+msgstr ""
+
+#: includes/Templates/CoreSet.php:713
+msgid "The things people ask us most in the last minute before they decide."
+msgstr ""
+
+#: includes/Templates/CoreSet.php:736
+msgid "How fast can we start?"
+msgstr ""
+
+#: includes/Templates/CoreSet.php:737
+msgid "Same day. Install it, drop a block on a page, and you are running — there is no setup call and nothing to migrate."
+msgstr ""
+
+#: includes/Templates/CoreSet.php:739
+msgid "Popular"
+msgstr ""
+
+#: includes/Templates/CoreSet.php:743
+msgid "Where does my data live?"
+msgstr ""
+
+#: includes/Templates/CoreSet.php:744
+msgid "In your own database, on your own hosting. Nothing is sent anywhere else, and there is no account to create."
+msgstr ""
+
+#: includes/Templates/CoreSet.php:749
+msgid "Will it match our brand?"
+msgstr ""
+
+#: includes/Templates/CoreSet.php:750
+msgid "Colours, type and spacing are all yours to set, per block. It inherits the theme first, so it looks right before you touch anything."
+msgstr ""
+
+#: includes/Templates/CoreSet.php:755
+msgid "Does it work on mobile?"
+msgstr ""
+
+#: includes/Templates/CoreSet.php:756
+msgid "Every layout folds down on its own — columns become one, tabs become an accordion, and images stack above their text."
+msgstr ""
+
+#: includes/Templates/CoreSet.php:761
+msgid "Will Google pick it up?"
+msgstr ""
+
+#: includes/Templates/CoreSet.php:762
+msgid "FAQ schema is printed for you on whichever block you choose. Keep it to one block per page and the markup is valid."
+msgstr ""
+
+#: includes/Templates/CoreSet.php:767
+msgid "What if we get stuck?"
+msgstr ""
+
+#: includes/Templates/CoreSet.php:768
+msgid "Write to us. Replies come from the people who wrote it, usually within a working day."
+msgstr ""
+
+#: includes/Templates/CoreSet.php:774
+msgid "FAQ Grid"
+msgstr ""
+
+#: includes/Templates/CoreSet.php:779
+msgid "Everything you might be wondering"
+msgstr ""
+
+#: includes/Templates/CoreSet.php:780
+msgid "No clicking required — it is all on the page."
+msgstr ""
+
+#: includes/Templates/CoreSet.php:811
+msgid "A city skyline at blue hour"
+msgstr ""
+
+#: includes/Templates/CoreSet.php:812
+msgid "Web Development"
+msgstr ""
+
+#: includes/Templates/CoreSet.php:813
+msgid "Sites built to load fast and stay easy to change, with no framework you will have to pay someone to understand later."
+msgstr ""
+
+#: includes/Templates/CoreSet.php:817
+msgid "A lighthouse above a turquoise coast"
+msgstr ""
+
+#: includes/Templates/CoreSet.php:818
+msgid "UI & UX Design"
+msgstr ""
+
+#: includes/Templates/CoreSet.php:819
+msgid "Interfaces designed around what people are actually trying to do, then tested with them before a line is written."
+msgstr ""
+
+#: includes/Templates/CoreSet.php:823
+msgid "Pines in morning mist"
+msgstr ""
+
+#: includes/Templates/CoreSet.php:824
+msgid "SEO Optimisation"
+msgstr ""
+
+#: includes/Templates/CoreSet.php:825
+msgid "Technical fixes and content work that compound, measured against traffic you can trace to a page."
+msgstr ""
+
+#: includes/Templates/CoreSet.php:829
+msgid "Rolling dunes under a low sun"
+msgstr ""
+
+#: includes/Templates/CoreSet.php:830
+msgid "E-commerce Solutions"
+msgstr ""
+
+#: includes/Templates/CoreSet.php:831
+msgid "Product management, secure payments and a checkout short enough that people finish it."
+msgstr ""
+
+#: includes/Templates/CoreSet.php:835
+#: build/blocks/image-faq/index.js:1
+msgid "Snow-capped peaks at sunrise"
+msgstr ""
+
+#: includes/Templates/CoreSet.php:836
+msgid "Support & Maintenance"
+msgstr ""
+
+#: includes/Templates/CoreSet.php:837
+msgid "Updates, backups and someone who answers when something breaks at an inconvenient hour."
+msgstr ""
+
+#: includes/Templates/CoreSet.php:842
+msgid "Service Spotlight"
+msgstr ""
+
+#: includes/Templates/CoreSet.php:847
+msgid "What we do"
+msgstr ""
+
+#: includes/Templates/DesignSet.php:72
+#: includes/Templates/DesignSet.php:77
+#: includes/Templates/DesignSet.php:82
+msgid "Tickets"
+msgstr ""
+
+#: includes/Templates/DesignSet.php:73
+msgid "How do I download my e-tickets?"
+msgstr ""
+
+#: includes/Templates/DesignSet.php:74
+msgid "Once your purchase is confirmed your electronic tickets are generated straight away and sent to your registered email address as a PDF attachment. You can also reach them at any time from the My Orders section of your dashboard. For a faster entry, save the QR codes to your phone wallet and let the staff on the door scan them from your screen."
+msgstr ""
+
+#: includes/Templates/DesignSet.php:78
+msgid "Are the tickets fully refundable?"
+msgstr ""
+
+#: includes/Templates/DesignSet.php:79
+msgid "Refunds are available up to seventy-two hours before the doors open, less the booking fee. Inside that window the ticket can still be transferred to somebody else, which most people find easier than asking for the money back."
+msgstr ""
+
+#: includes/Templates/DesignSet.php:83
+msgid "Can I change the attendee name?"
+msgstr ""
+
+#: includes/Templates/DesignSet.php:84
+msgid "Yes, and free of charge, right up until the morning of the event. Open the order, choose Edit attendee, and a fresh ticket is issued to the new name while the old one is voided."
+msgstr ""
+
+#: includes/Templates/DesignSet.php:87
+msgid "Event"
+msgstr ""
+
+#: includes/Templates/DesignSet.php:88
+msgid "What if the event is cancelled?"
+msgstr ""
+
+#: includes/Templates/DesignSet.php:89
+msgid "Everybody who bought a ticket is refunded in full, booking fee included, to the card that paid. You do not need to ask — the money goes back automatically within five working days and we write to tell you it has."
+msgstr ""
+
+#: includes/Templates/DesignSet.php:140
+msgid "Event Ticket Booking"
+msgstr ""
+
+#: includes/Templates/DesignSet.php:145
+msgid "Event Ticket Booking FAQ"
+msgstr ""
+
+#: includes/Templates/DesignSet.php:176
+#: includes/Templates/DesignSet.php:181
+#: includes/Templates/DesignSet.php:186
+#: includes/Templates/SectorSet.php:659
+#: includes/Templates/SectorSet.php:664
+msgid "Booking"
+msgstr ""
+
+#: includes/Templates/DesignSet.php:177
+msgid "How do I book a home service?"
+msgstr ""
+
+#: includes/Templates/DesignSet.php:178
+msgid "Pick the service you need, choose a time that suits you, add your address and confirm. The booking is accepted straight away and matched to a verified professional working in your area — there is no callback to wait for."
+msgstr ""
+
+#: includes/Templates/DesignSet.php:182
+msgid "What happens after booking confirmation?"
+msgstr ""
+
+#: includes/Templates/DesignSet.php:183
+msgid "You get a confirmation with the name and photograph of the professional assigned to you, and a message on the morning of the visit with a narrower arrival window. Both also appear under Bookings in your account."
+msgstr ""
+
+#: includes/Templates/DesignSet.php:187
+msgid "Can I reschedule my booking easily?"
+msgstr ""
+
+#: includes/Templates/DesignSet.php:188
+msgid "Up to four hours before the slot, yes, and as many times as you need. Open the booking, choose a new slot, and the professional is notified for you. Inside four hours it counts as a late change and a small fee applies."
+msgstr ""
+
+#: includes/Templates/DesignSet.php:191
+#: includes/Templates/DesignSet.php:201
+msgid "Service"
+msgstr ""
+
+#: includes/Templates/DesignSet.php:192
+msgid "How are service professionals assigned?"
+msgstr ""
+
+#: includes/Templates/DesignSet.php:193
+msgid "By trade, by distance and by rating, in that order. Everybody on the platform is background checked and carries their own insurance, and anyone whose rating falls below four stars stops receiving new work until it recovers."
+msgstr ""
+
+#: includes/Templates/DesignSet.php:196
+#: includes/Templates/DetailSet.php:380
+#: includes/Templates/DetailSet.php:385
+msgid "Payment"
+msgstr ""
+
+#: includes/Templates/DesignSet.php:197
+msgid "What payment methods are available?"
+msgstr ""
+
+#: includes/Templates/DesignSet.php:198
+msgid "Card, bank transfer and the usual digital wallets. Nothing is taken until the job is marked complete, so a visit that does not happen is never a visit you have paid for."
+msgstr ""
+
+#: includes/Templates/DesignSet.php:202
+msgid "How is service quality ensured?"
+msgstr ""
+
+#: includes/Templates/DesignSet.php:203
+msgid "Every job is rated, and every rating is read. Work that falls short is put right at our expense within seven days — you do not pay twice to have something finished properly."
+msgstr ""
+
+#: includes/Templates/DesignSet.php:269
+msgid "Home Service Booking"
+msgstr ""
+
+#: includes/Templates/DesignSet.php:274
+msgid "Easy Home Service Booking Guide"
+msgstr ""
+
+#: includes/Templates/DesignSet.php:300
+msgid "Consulting"
+msgstr ""
+
+#: includes/Templates/DesignSet.php:301
+msgid "How can business consulting improve company growth?"
+msgstr ""
+
+#: includes/Templates/DesignSet.php:302
+msgid "Consulting helps an organisation see where the opportunities actually are, work through the operational problems holding it back, and put a plan behind the answer. The value is rarely the advice on its own — it is having someone whose whole job that week is the decision you have been putting off."
+msgstr ""
+
+#: includes/Templates/DesignSet.php:306
+msgid "Why is professional IT support important?"
+msgstr ""
+
+#: includes/Templates/DesignSet.php:307
+msgid "Because the cost of an outage is almost never the outage. Monitored systems, tested backups and somebody who answers out of hours turn a day lost into an hour lost, and that difference compounds across a year."
+msgstr ""
+
+#: includes/Templates/DesignSet.php:310
+msgid "Marketing"
+msgstr ""
+
+#: includes/Templates/DesignSet.php:311
+msgid "What benefits does digital marketing provide?"
+msgstr ""
+
+#: includes/Templates/DesignSet.php:312
+msgid "Reach you can measure and spend you can stop. Every channel reports what it returned, which means the budget moves towards what is working rather than towards what was agreed in January."
+msgstr ""
+
+#: includes/Templates/DesignSet.php:315
+msgid "Delivery"
+msgstr ""
+
+#: includes/Templates/DesignSet.php:316
+msgid "How does project management ensure success?"
+msgstr ""
+
+#: includes/Templates/DesignSet.php:317
+msgid "By making scope, owner and date visible to everyone at once. Most projects do not fail on capability — they fail because two people held different versions of the same deadline for six weeks."
+msgstr ""
+
+#: includes/Templates/DesignSet.php:321
+msgid "Why invest in customer support services?"
+msgstr ""
+
+#: includes/Templates/DesignSet.php:322
+msgid "Support is where a customer finds out whether the promise was real. It is also the cheapest research a company can buy: the same three questions arriving every week are a product decision waiting to be made."
+msgstr ""
+
+#: includes/Templates/DesignSet.php:372
+msgid "FAQs"
+msgstr ""
+
+#: includes/Templates/DesignSet.php:374
+msgid "Frequently Asked Questions About Business Services"
+msgstr ""
+
+#: includes/Templates/DesignSet.php:387
+msgid "Business Services"
+msgstr ""
+
+#: includes/Templates/DesignSet.php:427
+#: includes/Templates/DesignSet.php:433
+msgid "Styles"
+msgstr ""
+
+#: includes/Templates/DesignSet.php:428
+msgid "What makes bold abstract art so visually powerful?"
+msgstr ""
+
+#: includes/Templates/DesignSet.php:429
+msgid "Abstract work gives up the job of depicting something, and gets colour, form and texture back in exchange. Nothing in the frame tells you what to think about it, so the reading is yours — which is why two people can stand in front of the same canvas and describe two different paintings."
+msgstr ""
+
+#: includes/Templates/DesignSet.php:434
+msgid "How does minimalist line art say so much with so little?"
+msgstr ""
+
+#: includes/Templates/DesignSet.php:435
+msgid "By trusting the eye to finish the sentence. A single continuous line describing a shoulder reads as a whole figure because we supply the rest without noticing, and the restraint is what makes the gesture land."
+msgstr ""
+
+#: includes/Templates/DesignSet.php:439
+#: includes/Templates/DesignSet.php:445
+msgid "Medium"
+msgstr ""
+
+#: includes/Templates/DesignSet.php:440
+msgid "Can digital tools replace canvas and paintbrush?"
+msgstr ""
+
+#: includes/Templates/DesignSet.php:441
+msgid "They replace some of the constraints, not the practice. Undo, layers and infinite colour change what is easy, but they do not change what is worth making — and plenty of painters work in both without feeling they have swapped one for the other."
+msgstr ""
+
+#: includes/Templates/DesignSet.php:446
+msgid "Why is mixed media considered the most expressive form?"
+msgstr ""
+
+#: includes/Templates/DesignSet.php:447
+msgid "Because the materials argue with each other. Paper against paint against thread gives a surface with real depth and real accident in it, and the places where two materials refuse to sit together are usually the places the eye goes first."
+msgstr ""
+
+#: includes/Templates/DesignSet.php:504
+msgid "Gallery Questions"
+msgstr ""
+
+#: includes/Templates/DesignSet.php:509
+msgid "About the Work"
+msgstr ""
+
+#: includes/Templates/DesignSet.php:510
+msgid "What people ask most often about the pieces on show."
+msgstr ""
+
+#: includes/Templates/DesignSet.php:541
+#: includes/Templates/DesignSet.php:546
+#: includes/Templates/DesignSet.php:650
+#: includes/Templates/DesignSet.php:655
+msgid "Products"
+msgstr ""
+
+#: includes/Templates/DesignSet.php:542
+#: includes/Templates/DesignSet.php:651
+msgid "What materials do you use?"
+msgstr ""
+
+#: includes/Templates/DesignSet.php:543
+msgid "Solid North American oak, top-grain leather and recycled fabric, and nothing that needs an asterisk. Every piece is built the way furniture was built before veneer became the default, which is the reason we are comfortable quoting decades rather than years."
+msgstr ""
+
+#: includes/Templates/DesignSet.php:547
+#: includes/Templates/DesignSet.php:656
+msgid "Is assembly required for items?"
+msgstr ""
+
+#: includes/Templates/DesignSet.php:548
+msgid "Most pieces arrive assembled. The few that do not — beds, and the larger dining tables — take two people about twenty minutes with the tool included in the box, and there is nothing to buy separately."
+msgstr ""
+
+#: includes/Templates/DesignSet.php:551
+#: includes/Templates/DesignSet.php:556
+#: includes/Templates/DesignSet.php:561
+#: includes/Templates/DesignSet.php:660
+#: includes/Templates/DesignSet.php:665
+#: includes/Templates/DesignSet.php:670
+#: includes/Templates/ProSet.php:383
+#: includes/Templates/ProSet.php:388
+msgid "Orders"
+msgstr ""
+
+#: includes/Templates/DesignSet.php:552
+#: includes/Templates/DesignSet.php:661
+msgid "Do you offer custom sizes?"
+msgstr ""
+
+#: includes/Templates/DesignSet.php:553
+msgid "On tables, shelving and beds, yes. Send the measurements you need and you will have a quote and a lead time within two working days. Custom pieces carry the same guarantee as everything else."
+msgstr ""
+
+#: includes/Templates/DesignSet.php:557
+#: includes/Templates/DesignSet.php:666
+msgid "What is your shipping cost?"
+msgstr ""
+
+#: includes/Templates/DesignSet.php:558
+msgid "Free above the order threshold, a flat rate below it, and no surcharge for a piece being heavy or awkward. Delivery is to the room of your choice, not to the kerb."
+msgstr ""
+
+#: includes/Templates/DesignSet.php:562
+#: includes/Templates/DesignSet.php:671
+msgid "Can I order fabric samples?"
+msgstr ""
+
+#: includes/Templates/DesignSet.php:563
+msgid "Up to five swatches, posted free. Colour on a screen is a promise nobody can keep, so we would much rather you held the fabric next to your floor before deciding."
+msgstr ""
+
+#: includes/Templates/DesignSet.php:614
+msgid "Materials & Care"
+msgstr ""
+
+#: includes/Templates/DesignSet.php:619
+msgid "Before You Order"
+msgstr ""
+
+#: includes/Templates/DesignSet.php:652
+msgid "Solid oak, top-grain leather and recycled fabric throughout. The specification for every piece is published on its own page, down to the finish and the hardware, because a material list nobody can check is just a adjective."
+msgstr ""
+
+#: includes/Templates/DesignSet.php:657
+msgid "Rarely. Most pieces arrive built; the few that do not come with the tool and a single sheet of instructions, and take two people about twenty minutes."
+msgstr ""
+
+#: includes/Templates/DesignSet.php:662
+msgid "On tables, shelving and beds. Send your measurements and a quote comes back within two working days, with the same guarantee as a stock piece."
+msgstr ""
+
+#: includes/Templates/DesignSet.php:667
+msgid "Free above the order threshold and a flat rate below it, delivered to the room you want it in rather than left at the door."
+msgstr ""
+
+#: includes/Templates/DesignSet.php:672
+msgid "Five swatches, posted free, no order required. Screens lie about colour and we would rather you found that out before the sofa arrives."
+msgstr ""
+
+#: includes/Templates/DesignSet.php:723
+msgid "If your question is not listed here, reach out and we will help."
+msgstr ""
+
+#: includes/Templates/DesignSet.php:724
+#: includes/Templates/ShowcaseSet.php:643
+msgid "Contact Us"
+msgstr ""
+
+#: includes/Templates/DesignSet.php:729
+msgid "Your Questions, Answered"
+msgstr ""
+
+#: includes/Templates/DesignSet.php:743
+msgid "Questions Answered"
+msgstr ""
+
+#: includes/Templates/DetailSet.php:54
+msgid "How do I know if it is you or me?"
+msgstr ""
+
+#: includes/Templates/DetailSet.php:55
+msgid "Check the status page first — it is hosted separately, so it stays up when we do not. If everything there is green, it is worth trying a different network before writing to us."
+msgstr ""
+
+#: includes/Templates/DetailSet.php:59
+msgid "What counts as an incident?"
+msgstr ""
+
+#: includes/Templates/DetailSet.php:60
+msgid "Anything that stops you doing something you could do an hour ago. Slower than usual counts as degraded, and we post those too rather than hoping nobody notices."
+msgstr ""
+
+#: includes/Templates/DetailSet.php:67
+msgid "Can I be told automatically?"
+msgstr ""
+
+#: includes/Templates/DetailSet.php:68
+msgid "Subscribe on the status page for email or a webhook. Both fire within a minute of an incident opening and again when it closes."
+msgstr ""
+
+#: includes/Templates/DetailSet.php:72
+msgid "Do you publish post-mortems?"
+msgstr ""
+
+#: includes/Templates/DetailSet.php:73
+msgid "For anything over fifteen minutes, within five working days, with what broke and what changed so it does not again. Names are left out; causes are not."
+msgstr ""
+
+#: includes/Templates/DetailSet.php:80
+msgid "Do you have downtime windows?"
+msgstr ""
+
+#: includes/Templates/DetailSet.php:81
+msgid "Planned work is announced a week ahead and scheduled between 02:00 and 04:00 UTC on a Sunday. Most releases need no window at all."
+msgstr ""
+
+#: includes/Templates/DetailSet.php:87
+msgid "Real-Time Status"
+msgstr ""
+
+#: includes/Templates/DetailSet.php:88
+msgid "Current system state and incident classification."
+msgstr ""
+
+#: includes/Templates/DetailSet.php:94
+msgid "Notifications & Reports"
+msgstr ""
+
+#: includes/Templates/DetailSet.php:95
+msgid "Automated alerts, webhooks, and post-mortem logs."
+msgstr ""
+
+#: includes/Templates/DetailSet.php:100
+msgid "Scheduled Maintenance"
+msgstr ""
+
+#: includes/Templates/DetailSet.php:101
+msgid "Planned downtime windows and maintenance schedules."
+msgstr ""
+
+#: includes/Templates/DetailSet.php:107
+msgid "Status & Incidents"
+msgstr ""
+
+#: includes/Templates/DetailSet.php:112
+msgid "Status and incidents"
+msgstr ""
+
+#: includes/Templates/DetailSet.php:113
+msgid "What we post, when we post it, and how to be told without checking."
+msgstr ""
+
+#: includes/Templates/DetailSet.php:149
+msgid "Ask AI Assistant"
+msgstr ""
+
+#: includes/Templates/DetailSet.php:154
+msgid "Get in touch"
+msgstr ""
+
+#: includes/Templates/DetailSet.php:155
+msgid "Try the quick way first. Most questions are already answered somewhere on this site."
+msgstr ""
+
+#: includes/Templates/DetailSet.php:159
+msgid "Ask first"
+msgstr ""
+
+#: includes/Templates/DetailSet.php:160
+msgid "Most questions are already answered somewhere on this site."
+msgstr ""
+
+#: includes/Templates/DetailSet.php:166
+#: includes/Templates/ProSet.php:767
+msgid "Still need help? Write to us."
+msgstr ""
+
+#: includes/Templates/DetailSet.php:171
+#: includes/Templates/ProSet.php:369
+msgid "How do I reset my password?"
+msgstr ""
+
+#: includes/Templates/DetailSet.php:172
+msgid "Where is my invoice?"
+msgstr ""
+
+#: includes/Templates/DetailSet.php:173
+msgid "How do I move my licence?"
+msgstr ""
+
+#: includes/Templates/DetailSet.php:194
+msgid "Keyboard"
+msgstr ""
+
+#: includes/Templates/DetailSet.php:195
+msgid "Can everything be used without a mouse?"
+msgstr ""
+
+#: includes/Templates/DetailSet.php:196
+msgid "Yes. Every question is a real button, focus is always visible, and nothing traps the keyboard inside it. Tab and Enter reach everything a click does."
+msgstr ""
+
+#: includes/Templates/DetailSet.php:199
+#: includes/Templates/DetailSet.php:204
+msgid "Screen readers"
+msgstr ""
+
+#: includes/Templates/DetailSet.php:200
+msgid "Is open and closed announced?"
+msgstr ""
+
+#: includes/Templates/DetailSet.php:201
+msgid "Each question carries its expanded state and points at the answer it controls, so a screen reader says whether it is open before you decide to open it."
+msgstr ""
+
+#: includes/Templates/DetailSet.php:205
+msgid "Which readers do you test with?"
+msgstr ""
+
+#: includes/Templates/DetailSet.php:206
+msgid "NVDA on Windows and VoiceOver on macOS and iOS. Those three cover most of the people who write to us about it."
+msgstr ""
+
+#: includes/Templates/DetailSet.php:209
+msgid "Motion"
+msgstr ""
+
+#: includes/Templates/DetailSet.php:210
+msgid "Can I turn the animation off?"
+msgstr ""
+
+#: includes/Templates/DetailSet.php:211
+msgid "It turns itself off. If your system asks for reduced motion, panels open instantly instead of sliding, and nothing moves under the pointer."
+msgstr ""
+
+#: includes/Templates/DetailSet.php:214
+#: build/blocks/faq-form/index.js:1
+#: build/blocks/image-faq/index.js:1
+msgid "Colour"
+msgstr ""
+
+#: includes/Templates/DetailSet.php:215
+msgid "Do the default colours pass contrast?"
+msgstr ""
+
+#: includes/Templates/DetailSet.php:216
+msgid "Every default combination meets AA for body text. Once you change them that is yours to check, and the contrast figure is shown beside the colour picker."
+msgstr ""
+
+#: includes/Templates/DetailSet.php:219
+msgid "Reporting"
+msgstr ""
+
+#: includes/Templates/DetailSet.php:220
+msgid "I found a barrier. Who do I tell?"
+msgstr ""
+
+#: includes/Templates/DetailSet.php:221
+msgid "Write to us with the page and what happened. Accessibility reports are treated as bugs rather than requests, and they go to the front of the queue."
+msgstr ""
+
+#: includes/Templates/DetailSet.php:226
+#: includes/Templates/DetailSet.php:231
+msgid "Accessibility"
+msgstr ""
+
+#: includes/Templates/DetailSet.php:232
+msgid "What works, what we test, and where to tell us it does not."
+msgstr ""
+
+#: includes/Templates/DetailSet.php:252
+msgid "Do I have to remove the old plugin first?"
+msgstr ""
+
+#: includes/Templates/DetailSet.php:253
+msgid "No, and you should not. Leave it active until the new pages are published, then deactivate rather than delete for a fortnight."
+msgstr ""
+
+#: includes/Templates/DetailSet.php:257
+msgid "Will my URLs change?"
+msgstr ""
+
+#: includes/Templates/DetailSet.php:258
+msgid "Not unless you move the pages. FAQs live inside a page here rather than having addresses of their own."
+msgstr ""
+
+#: includes/Templates/DetailSet.php:265
+msgid "Can I bring the questions across automatically?"
+msgstr ""
+
+#: includes/Templates/DetailSet.php:266
+msgid "From the common formats, yes. From a page builder's own accordion, usually not — those store content in a shape only they can read."
+msgstr ""
+
+#: includes/Templates/DetailSet.php:270
+msgid "What about my styling?"
+msgstr ""
+
+#: includes/Templates/DetailSet.php:271
+msgid "It does not come with them, and that is a feature. Pick the closest theme and adjust; matching the old plugin exactly usually means keeping choices you had stopped liking."
+msgstr ""
+
+#: includes/Templates/DetailSet.php:275
+msgid "What if the two clash on one page?"
+msgstr ""
+
+#: includes/Templates/DetailSet.php:276
+msgid "Switch schema off on one of them. Two sets of FAQ markup is the only real conflict, and it is a setting rather than a code change."
+msgstr ""
+
+#: includes/Templates/DetailSet.php:283
+msgid "Will search rankings drop?"
+msgstr ""
+
+#: includes/Templates/DetailSet.php:284
+msgid "Not from this, as long as the questions and answers stay on the same URLs and stay visible without clicking. Keep the wording and you keep the position."
+msgstr ""
+
+#: includes/Templates/DetailSet.php:288
+msgid "How long should I keep the old one?"
+msgstr ""
+
+#: includes/Templates/DetailSet.php:289
+msgid "Two weeks, deactivated. Long enough to spot a page you forgot, short enough that nobody reactivates it by accident."
+msgstr ""
+
+#: includes/Templates/DetailSet.php:295
+msgid "Before you start"
+msgstr ""
+
+#: includes/Templates/DetailSet.php:296
+msgid "Two things worth knowing, both of which save an afternoon."
+msgstr ""
+
+#: includes/Templates/DetailSet.php:302
+msgid "Moving the content"
+msgstr ""
+
+#: includes/Templates/DetailSet.php:303
+msgid "What comes across on its own and what has to be retyped."
+msgstr ""
+
+#: includes/Templates/DetailSet.php:308
+#: includes/Templates/ProSet.php:71
+#: includes/Templates/ShowcaseSet.php:748
+msgid "Afterwards"
+msgstr ""
+
+#: includes/Templates/DetailSet.php:309
+msgid "Rankings, and when it is safe to delete the old plugin."
+msgstr ""
+
+#: includes/Templates/DetailSet.php:314
+msgid "Want us to check it?"
+msgstr ""
+
+#: includes/Templates/DetailSet.php:315
+msgid "Send the URL of one migrated page before you do the rest. We would rather look at one than untangle thirty."
+msgstr ""
+
+#: includes/Templates/DetailSet.php:320
+msgid "Migration Guide"
+msgstr ""
+
+#: includes/Templates/DetailSet.php:325
+msgid "Moving from another plugin"
+msgstr ""
+
+#: includes/Templates/DetailSet.php:326
+msgid "Three stages, and the honest answer on what does not come across."
+msgstr ""
+
+#: includes/Templates/DetailSet.php:365
+#: includes/Templates/DetailSet.php:370
+#: includes/Templates/DetailSet.php:375
+msgid "Paperwork"
+msgstr ""
+
+#: includes/Templates/DetailSet.php:366
+msgid "Can you complete our vendor questionnaire?"
+msgstr ""
+
+#: includes/Templates/DetailSet.php:367
+msgid "Yes, and usually within three working days. Send it early — it is the step that delays these the most, and it is rarely the buyer who is slow."
+msgstr ""
+
+#: includes/Templates/DetailSet.php:371
+msgid "Will you sign our contract instead of yours?"
+msgstr ""
+
+#: includes/Templates/DetailSet.php:372
+msgid "We will read it and mark what we cannot agree to, which is usually two clauses about unlimited liability. Everything else is negotiable."
+msgstr ""
+
+#: includes/Templates/DetailSet.php:376
+msgid "Do you have a DPA?"
+msgstr ""
+
+#: includes/Templates/DetailSet.php:377
+msgid "One that is pre-signed and downloadable, with sub-processors listed. If your legal team wants changes, send them and we will look."
+msgstr ""
+
+#: includes/Templates/DetailSet.php:381
+msgid "Can we pay by invoice and purchase order?"
+msgstr ""
+
+#: includes/Templates/DetailSet.php:382
+msgid "Annually, by bank transfer, on thirty-day terms. Quarterly is possible above a threshold; monthly invoicing is not."
+msgstr ""
+
+#: includes/Templates/DetailSet.php:386
+msgid "Is there a discount for multi-year?"
+msgstr ""
+
+#: includes/Templates/DetailSet.php:387
+msgid "Two years at ten per cent, three at fifteen, and the rate is locked for the term. Ask rather than assuming it is on the pricing page."
+msgstr ""
+
+#: includes/Templates/DetailSet.php:391
+msgid "What we can send today"
+msgstr ""
+
+#: includes/Templates/DetailSet.php:394
+msgid "Pre-signed data processing agreement"
+msgstr ""
+
+#: includes/Templates/DetailSet.php:395
+msgid "Sub-processor list and hosting locations"
+msgstr ""
+
+#: includes/Templates/DetailSet.php:396
+msgid "Insurance certificate and company details"
+msgstr ""
+
+#: includes/Templates/DetailSet.php:397
+msgid "Accessibility conformance statement"
+msgstr ""
+
+#: includes/Templates/DetailSet.php:398
+msgid "A quote against a purchase order"
+msgstr ""
+
+#: includes/Templates/DetailSet.php:401
+msgid "Ask for all five in one email and they come back in one reply."
+msgstr ""
+
+#: includes/Templates/DetailSet.php:402
+msgid "Request the pack"
+msgstr ""
+
+#: includes/Templates/DetailSet.php:405
+msgid "Enterprise & Procurement"
+msgstr ""
+
+#: includes/Templates/DetailSet.php:410
+msgid "For procurement"
+msgstr ""
+
+#: includes/Templates/DetailSet.php:437
+#: includes/Templates/ShowcaseSet.php:807
+msgid "Does it work with my page builder?"
+msgstr ""
+
+#: includes/Templates/DetailSet.php:438
+msgid "Through a shortcode anywhere a builder gives you a text field, and as a native block in the block editor. Both produce the same markup."
+msgstr ""
+
+#: includes/Templates/DetailSet.php:444
+msgid "Will my SEO plugin conflict?"
+msgstr ""
+
+#: includes/Templates/DetailSet.php:445
+msgid "Only over FAQ schema, and only if both are printing it. Switch it off in one of the two and they stay out of each other's way."
+msgstr ""
+
+#: includes/Templates/DetailSet.php:450
+#: includes/Templates/ShowcaseSet.php:825
+msgid "Is it translation ready?"
+msgstr ""
+
+#: includes/Templates/DetailSet.php:451
+msgid "Every string goes through the translation functions, and the multilingual plugins treat each FAQ as translatable content."
+msgstr ""
+
+#: includes/Templates/DetailSet.php:456
+msgid "What about caching and optimisation?"
+msgstr ""
+
+#: includes/Templates/DetailSet.php:457
+msgid "Nothing here needs to be excluded from a cache. Styles and scripts load per block and only on pages using one, so combining them is safe."
+msgstr ""
+
+#: includes/Templates/DetailSet.php:462
+msgid "Is there a hook for developers?"
+msgstr ""
+
+#: includes/Templates/DetailSet.php:463
+msgid "Filters on the query, the output and the schema, and a REST route for the library. All documented rather than discovered."
+msgstr ""
+
+#: includes/Templates/DetailSet.php:469
+msgid "Integrations"
+msgstr ""
+
+#: includes/Templates/DetailSet.php:474
+msgid "What it works with"
+msgstr ""
+
+#: includes/Templates/DetailSet.php:475
+msgid "The compatibility questions, answered without a matrix nobody reads."
+msgstr ""
+
+#: includes/Templates/DetailSet.php:506
+msgid "Where do the questions live?"
+msgstr ""
+
+#: includes/Templates/DetailSet.php:507
+msgid "In your own WordPress database, as ordinary posts. Nothing about your library is stored anywhere else, and there is no account to create."
+msgstr ""
+
+#: includes/Templates/DetailSet.php:511
+msgid "What about form submissions?"
+msgstr ""
+
+#: includes/Templates/DetailSet.php:512
+msgid "Also your database. They hold the name and email the visitor typed, which is why deleting one is permanent and says so before it happens."
+msgstr ""
+
+#: includes/Templates/DetailSet.php:516
+msgid "And the AI answers?"
+msgstr ""
+
+#: includes/Templates/DetailSet.php:517
+msgid "The question and the matching FAQ text are sent to the model to compose a reply. No visitor identity goes with it, and nothing is used for training."
+msgstr ""
+
+#: includes/Templates/DetailSet.php:524
+msgid "Who can see submissions?"
+msgstr ""
+
+#: includes/Templates/DetailSet.php:525
+msgid "Anyone who can edit pages on your site, and nobody else. It follows your existing roles rather than adding permissions of its own."
+msgstr ""
+
+#: includes/Templates/DetailSet.php:529
+msgid "Can I export or delete on request?"
+msgstr ""
+
+#: includes/Templates/DetailSet.php:530
+msgid "Both, from the Form Submissions screen, and a delete is a real delete rather than a flag. That is what makes a subject access request answerable in minutes."
+msgstr ""
+
+#: includes/Templates/DetailSet.php:537
+msgid "How do you handle vulnerability reports?"
+msgstr ""
+
+#: includes/Templates/DetailSet.php:538
+msgid "Acknowledged within one working day, fixed and released before it is described publicly, and the reporter credited if they want to be."
+msgstr ""
+
+#: includes/Templates/DetailSet.php:542
+msgid "Is the code audited?"
+msgstr ""
+
+#: includes/Templates/DetailSet.php:543
+msgid "Every release goes through automated checks, and every input is validated before it reaches a database or a stylesheet. Independent review has happened twice."
+msgstr ""
+
+#: includes/Templates/DetailSet.php:549
+msgid "Where your data lives"
+msgstr ""
+
+#: includes/Templates/DetailSet.php:550
+msgid "Three different answers, depending on which data you mean."
+msgstr ""
+
+#: includes/Templates/DetailSet.php:556
+msgid "Who can reach it"
+msgstr ""
+
+#: includes/Templates/DetailSet.php:557
+msgid "Roles, exports, and deleting on request."
+msgstr ""
+
+#: includes/Templates/DetailSet.php:562
+#: includes/Templates/ShowcaseSet.php:760
+msgid "How we work"
+msgstr ""
+
+#: includes/Templates/DetailSet.php:563
+msgid "Reports, releases and review."
+msgstr ""
+
+#: includes/Templates/DetailSet.php:568
+msgid "Reporting something"
+msgstr ""
+
+#: includes/Templates/DetailSet.php:569
+msgid "Use the security address rather than the support form, so it reaches somebody who can act on it the same day."
+msgstr ""
+
+#: includes/Templates/DetailSet.php:574
+msgid "Security & Privacy"
+msgstr ""
+
+#: includes/Templates/DetailSet.php:579
+msgid "Security and privacy"
+msgstr ""
+
+#: includes/Templates/DetailSet.php:580
+msgid "Where things are kept, who can reach them, and what happens when somebody finds a hole."
+msgstr ""
+
+#: includes/Templates/ProSet.php:56
+#: includes/Templates/ProSet.php:61
+#: includes/Templates/ProSet.php:66
+msgid "Before you buy"
+msgstr ""
+
+#: includes/Templates/ProSet.php:57
+msgid "Is there a trial?"
+msgstr ""
+
+#: includes/Templates/ProSet.php:58
+msgid "There is a thirty-day refund instead, which amounts to the same thing without a card timer running. Install it, use it properly, and decide."
+msgstr ""
+
+#: includes/Templates/ProSet.php:62
+msgid "How long until we are set up?"
+msgstr ""
+
+#: includes/Templates/ProSet.php:63
+msgid "An afternoon for most teams. There is nothing to migrate and no onboarding call to book — the first page can go live the same day."
+msgstr ""
+
+#: includes/Templates/ProSet.php:67
+msgid "What if we outgrow the plan?"
+msgstr ""
+
+#: includes/Templates/ProSet.php:68
+msgid "Move up whenever you like and pay only the difference for the rest of the term. Nobody is ever charged for a plan they have stopped using."
+msgstr ""
+
+#: includes/Templates/ProSet.php:72
+msgid "Who do we talk to when something breaks?"
+msgstr ""
+
+#: includes/Templates/ProSet.php:73
+msgid "The people who wrote it. Replies usually come within a working day, and there is no tier of support you have to pay extra to reach."
+msgstr ""
+
+#: includes/Templates/ProSet.php:77
+msgid "Everything in one place"
+msgstr ""
+
+#: includes/Templates/ProSet.php:78
+msgid "One library of questions, ten ways to show it, and a form that turns what people ask into the next answer on the page."
+msgstr ""
+
+#: includes/Templates/ProSet.php:81
+msgid "Ten layouts, from a plain accordion to a grid"
+msgstr ""
+
+#: includes/Templates/ProSet.php:82
+msgid "One library, reused across every page"
+msgstr ""
+
+#: includes/Templates/ProSet.php:83
+msgid "FAQ schema handled for you"
+msgstr ""
+
+#: includes/Templates/ProSet.php:84
+msgid "Thirty-day refund, no questions"
+msgstr ""
+
+#: includes/Templates/ProSet.php:87
+#: build/ask-ai-promo/index.js:1
+msgid "See the plans"
+msgstr ""
+
+#: includes/Templates/ProSet.php:112
+#: includes/Templates/SectorSet.php:269
+#: includes/Templates/SectorSet.php:396
+#: includes/Templates/ShowcaseSet.php:779
+msgid "Answers to Frequently Asked Questions."
+msgstr ""
+
+#: includes/Templates/ProSet.php:113
+#: includes/Templates/SectorSet.php:270
+#: includes/Templates/SectorSet.php:397
+#: includes/Templates/ShowcaseSet.php:780
+msgid "In our FAQ, you'll find concise answers to common questions about our service, Booking Steps. If you still have questions, feel free to reach out to us."
+msgstr ""
+
+#: includes/Templates/ProSet.php:117
+#: includes/Templates/SectorSet.php:274
+#: includes/Templates/SectorSet.php:401
+#: includes/Templates/ShowcaseSet.php:784
+msgid "FAQ Illustration"
+msgstr ""
+
+#: includes/Templates/ProSet.php:130
+msgid "Why teams choose us"
+msgstr ""
+
+#: includes/Templates/ProSet.php:139
+msgid "Pitch Beside Answers"
+msgstr ""
+
+#: includes/Templates/ProSet.php:162
+msgid "What counts as one site?"
+msgstr ""
+
+#: includes/Templates/ProSet.php:163
+msgid "One live installation. Staging and local copies of the same site are free and do not come out of your total."
+msgstr ""
+
+#: includes/Templates/ProSet.php:167
+msgid "Can I move a licence between sites?"
+msgstr ""
+
+#: includes/Templates/ProSet.php:168
+msgid "Yes, as often as you like. Deactivate it on the old site and it is immediately available on the next one."
+msgstr ""
+
+#: includes/Templates/ProSet.php:172
+msgid "Do client sites need their own?"
+msgstr ""
+
+#: includes/Templates/ProSet.php:173
+msgid "No. Your licence covers whatever you install it on, whoever owns the site, up to the number of sites on your plan."
+msgstr ""
+
+#: includes/Templates/ProSet.php:180
+msgid "What happens if I do not renew?"
+msgstr ""
+
+#: includes/Templates/ProSet.php:181
+msgid "Everything on your site keeps working. What stops is updates and support, until you renew again."
+msgstr ""
+
+#: includes/Templates/ProSet.php:185
+msgid "Does the price go up at renewal?"
+msgstr ""
+
+#: includes/Templates/ProSet.php:186
+msgid "Not for you. The rate you buy at is the rate you renew at for as long as the licence stays active."
+msgstr ""
+
+#: includes/Templates/ProSet.php:192
+msgid "How is it licensed?"
+msgstr ""
+
+#: includes/Templates/ProSet.php:193
+msgid "Per site, per year. Open this for what that means in the cases people actually ask about."
+msgstr ""
+
+#: includes/Templates/ProSet.php:199
+msgid "Renewals and lapses"
+msgstr ""
+
+#: includes/Templates/ProSet.php:200
+msgid "Nothing here is designed to catch you out, so it is all written down."
+msgstr ""
+
+#: includes/Templates/ProSet.php:205
+msgid "Invoices and VAT"
+msgstr ""
+
+#: includes/Templates/ProSet.php:206
+msgid "Every payment produces a proper invoice with your company details and VAT number on it, available from your account the moment it clears."
+msgstr ""
+
+#: includes/Templates/ProSet.php:210
+msgid "What you are buying"
+msgstr ""
+
+#: includes/Templates/ProSet.php:211
+msgid "One price, every feature, for a year of updates and support. There is no tier that unlocks the block you actually wanted."
+msgstr ""
+
+#: includes/Templates/ProSet.php:214
+msgid "Every block and every theme included"
+msgstr ""
+
+#: includes/Templates/ProSet.php:215
+msgid "Unlimited questions and groups"
+msgstr ""
+
+#: includes/Templates/ProSet.php:216
+msgid "A year of updates and replies"
+msgstr ""
+
+#: includes/Templates/ProSet.php:217
+msgid "Use it on staging for free"
+msgstr ""
+
+#: includes/Templates/ProSet.php:220
+msgid "Choose a plan"
+msgstr ""
+
+#: includes/Templates/ProSet.php:223
+msgid "Plan Details"
+msgstr ""
+
+#: includes/Templates/ProSet.php:228
+msgid "The details, before you ask"
+msgstr ""
+
+#: includes/Templates/ProSet.php:276
+#: includes/Templates/ProSet.php:281
+#: includes/Templates/ProSet.php:286
+msgid "Before you write"
+msgstr ""
+
+#: includes/Templates/ProSet.php:277
+msgid "How quickly will I hear back?"
+msgstr ""
+
+#: includes/Templates/ProSet.php:278
+msgid "One working day for almost everything. If it is going to take longer than that, you get a message saying so rather than silence."
+msgstr ""
+
+#: includes/Templates/ProSet.php:282
+msgid "What should I include?"
+msgstr ""
+
+#: includes/Templates/ProSet.php:283
+msgid "The page it happens on, what you expected, and what happened instead. A screenshot saves a whole exchange."
+msgstr ""
+
+#: includes/Templates/ProSet.php:287
+msgid "Can I attach a file?"
+msgstr ""
+
+#: includes/Templates/ProSet.php:288
+msgid "Not to this form. Send the question first and reply to the email that comes back with anything you need to attach."
+msgstr ""
+
+#: includes/Templates/ProSet.php:291
+#: includes/Templates/ProSet.php:296
+msgid "After you write"
+msgstr ""
+
+#: includes/Templates/ProSet.php:292
+msgid "Will my question end up on this page?"
+msgstr ""
+
+#: includes/Templates/ProSet.php:293
+msgid "Possibly, if it is one other people will have too — reworded, and never with your name or email on it."
+msgstr ""
+
+#: includes/Templates/ProSet.php:297
+msgid "Who reads it?"
+msgstr ""
+
+#: includes/Templates/ProSet.php:298
+msgid "The support team, and every one gets read. There is no queue you can be dropped from without a reply."
+msgstr ""
+
+#: includes/Templates/ProSet.php:305
+msgid "Ask us directly"
+msgstr ""
+
+#: includes/Templates/ProSet.php:306
+msgid "One working day, and a person on the other end."
+msgstr ""
+
+#: includes/Templates/ProSet.php:338
+msgid "Ask While You Read"
+msgstr ""
+
+#: includes/Templates/ProSet.php:343
+msgid "Cannot find it? Ask."
+msgstr ""
+
+#: includes/Templates/ProSet.php:344
+msgid "The form is on the left. The answers most people were looking for are on the right."
+msgstr ""
+
+#: includes/Templates/ProSet.php:368
+#: includes/Templates/ProSet.php:373
+#: includes/Templates/ProSet.php:378
+msgid "Account"
+msgstr ""
+
+#: includes/Templates/ProSet.php:370
+msgid "Use the forgotten-password link on the sign-in page. The email arrives within a minute and the link is good for an hour."
+msgstr ""
+
+#: includes/Templates/ProSet.php:374
+msgid "Can I change the email on my account?"
+msgstr ""
+
+#: includes/Templates/ProSet.php:375
+msgid "Yes, from Account settings. You will need to confirm it from the new address before it takes effect."
+msgstr ""
+
+#: includes/Templates/ProSet.php:379
+msgid "How do I add someone to my team?"
+msgstr ""
+
+#: includes/Templates/ProSet.php:380
+msgid "Invite them by email from the Team page. They get their own sign-in and you decide what they can change."
+msgstr ""
+
+#: includes/Templates/ProSet.php:384
+msgid "Where is my licence key?"
+msgstr ""
+
+#: includes/Templates/ProSet.php:385
+msgid "On the order confirmation and in your account under Purchases. It never expires, even if the licence lapses."
+msgstr ""
+
+#: includes/Templates/ProSet.php:389
+msgid "Can I get a VAT invoice?"
+msgstr ""
+
+#: includes/Templates/ProSet.php:390
+msgid "Every order produces one automatically. Add your company details before paying and they will be on it."
+msgstr ""
+
+#: includes/Templates/ProSet.php:394
+msgid "Which PHP versions are supported?"
+msgstr ""
+
+#: includes/Templates/ProSet.php:395
+msgid "7.4 and above, and we test on the two most recent. Anything older will run but stops getting security fixes from us."
+msgstr ""
+
+#: includes/Templates/ProSet.php:399
+msgid "Still stuck?"
+msgstr ""
+
+#: includes/Templates/ProSet.php:400
+msgid "Search is faster than we are, but if it is not in there we would rather hear from you than have you give up."
+msgstr ""
+
+#: includes/Templates/ProSet.php:403
+msgid "Replies within one working day"
+msgstr ""
+
+#: includes/Templates/ProSet.php:404
+msgid "Monday to Friday, 09:00 to 17:00 UTC"
+msgstr ""
+
+#: includes/Templates/ProSet.php:405
+msgid "Answered by the people who built it"
+msgstr ""
+
+#: includes/Templates/ProSet.php:408
+msgid "Contact support"
+msgstr ""
+
+#: includes/Templates/ProSet.php:411
+msgid "Search Then Ask"
+msgstr ""
+
+#: includes/Templates/ProSet.php:437
+msgid "From the WordPress dashboard"
+msgstr ""
+
+#: includes/Templates/ProSet.php:438
+msgid "Plugins, Add New, search for it, Install, Activate. Nothing appears on your pages until you place a block."
+msgstr ""
+
+#: includes/Templates/ProSet.php:442
+msgid "By uploading the zip"
+msgstr ""
+
+#: includes/Templates/ProSet.php:443
+msgid "Plugins, Add New, Upload Plugin. If an older copy is already there, deactivate it first — your questions are kept either way."
+msgstr ""
+
+#: includes/Templates/ProSet.php:450
+msgid "Placing your first block"
+msgstr ""
+
+#: includes/Templates/ProSet.php:451
+msgid "Open a page, add the FAQ block, type a question. The answer box appears underneath and can be left for later."
+msgstr ""
+
+#: includes/Templates/ProSet.php:455
+msgid "Reusing questions across pages"
+msgstr ""
+
+#: includes/Templates/ProSet.php:456
+msgid "Save the block as a synced pattern, then place it. One edit updates every page carrying it."
+msgstr ""
+
+#: includes/Templates/ProSet.php:460
+msgid "Using it inside a page builder"
+msgstr ""
+
+#: includes/Templates/ProSet.php:461
+msgid "Copy the shortcode from the group and paste it into any text widget the builder gives you."
+msgstr ""
+
+#: includes/Templates/ProSet.php:467
+msgid "Installing"
+msgstr ""
+
+#: includes/Templates/ProSet.php:468
+msgid "Two ways in, both about a minute."
+msgstr ""
+
+#: includes/Templates/ProSet.php:474
+msgid "Your first FAQ"
+msgstr ""
+
+#: includes/Templates/ProSet.php:475
+msgid "From an empty page to something published."
+msgstr ""
+
+#: includes/Templates/ProSet.php:480
+msgid "Search engines and schema"
+msgstr ""
+
+#: includes/Templates/ProSet.php:481
+msgid "Keep FAQ markup on one block per page. More than one set competes with itself and neither is reliably read."
+msgstr ""
+
+#: includes/Templates/ProSet.php:485
+msgid "Getting help"
+msgstr ""
+
+#: includes/Templates/ProSet.php:486
+msgid "The form on the support page reaches the people who wrote this. Include the page and what you expected to happen."
+msgstr ""
+
+#: includes/Templates/ProSet.php:491
+msgid "Each heading opens into the specific cases underneath it, so you can stay at the top level until something matches."
+msgstr ""
+
+#: includes/Templates/ProSet.php:494
+msgid "Start at the top and work down"
+msgstr ""
+
+#: includes/Templates/ProSet.php:495
+msgid "One branch open at a time, so nothing scrolls away"
+msgstr ""
+
+#: includes/Templates/ProSet.php:496
+msgid "Everything here also works from search"
+msgstr ""
+
+#: includes/Templates/ProSet.php:499
+msgid "Full documentation"
+msgstr ""
+
+#: includes/Templates/ProSet.php:502
+msgid "Documentation Tree"
+msgstr ""
+
+#: includes/Templates/ProSet.php:507
+msgid "Documentation"
+msgstr ""
+
+#: includes/Templates/ProSet.php:551
+#: includes/Templates/ProSet.php:556
+msgid "Layouts"
+msgstr ""
+
+#: includes/Templates/ProSet.php:552
+msgid "Can I use more than one layout on a page?"
+msgstr ""
+
+#: includes/Templates/ProSet.php:553
+msgid "Yes, as many as you like. Keep FAQ schema switched on for only one of them so the markup stays valid."
+msgstr ""
+
+#: includes/Templates/ProSet.php:557
+msgid "Do the layouts share their questions?"
+msgstr ""
+
+#: includes/Templates/ProSet.php:558
+msgid "If you point them at the same group, yes. Editing the group updates every block showing it, in whatever layout."
+msgstr ""
+
+#: includes/Templates/ProSet.php:561
+#: includes/Templates/ProSet.php:566
+msgid "Styling"
+msgstr ""
+
+#: includes/Templates/ProSet.php:562
+#: includes/Templates/ShowcaseSet.php:819
+msgid "How much can I change?"
+msgstr ""
+
+#: includes/Templates/ProSet.php:563
+msgid "Colours, type, spacing, borders and behaviour, per block. It inherits your theme first, so it looks right before you touch anything."
+msgstr ""
+
+#: includes/Templates/ProSet.php:567
+msgid "Will an update overwrite my styling?"
+msgstr ""
+
+#: includes/Templates/ProSet.php:568
+msgid "No. Everything you set is stored with the block in your post content, not in the plugin."
+msgstr ""
+
+#: includes/Templates/ProSet.php:572
+msgid "Can questions come from my posts?"
+msgstr ""
+
+#: includes/Templates/ProSet.php:573
+msgid "Post FAQ turns any post type into an FAQ list, using the title as the question and the excerpt as the answer."
+msgstr ""
+
+#: includes/Templates/ProSet.php:577
+msgid "What happens to questions visitors send?"
+msgstr ""
+
+#: includes/Templates/ProSet.php:578
+msgid "They arrive under Form Submissions, where you can read each one, reply by email and mark it answered once it is handled."
+msgstr ""
+
+#: includes/Templates/ProSet.php:582
+msgid "Built to be lived in"
+msgstr ""
+
+#: includes/Templates/ProSet.php:583
+msgid "The parts that matter after the first week: one library behind every block, styling that survives updates, and somewhere for the questions you did not think of."
+msgstr ""
+
+#: includes/Templates/ProSet.php:586
+msgid "One library, every layout"
+msgstr ""
+
+#: includes/Templates/ProSet.php:587
+msgid "Per-block styling, stored with your content"
+msgstr ""
+
+#: includes/Templates/ProSet.php:588
+msgid "Submissions become answers in a click"
+msgstr ""
+
+#: includes/Templates/ProSet.php:589
+msgid "Schema handled, on the block you choose"
+msgstr ""
+
+#: includes/Templates/ProSet.php:592
+msgid "See every feature"
+msgstr ""
+
+#: includes/Templates/ProSet.php:605
+msgid "Feature Tour"
+msgstr ""
+
+#: includes/Templates/ProSet.php:610
+msgid "What it does, in detail"
+msgstr ""
+
+#: includes/Templates/ProSet.php:633
+msgid "Knowledge Hub"
+msgstr ""
+
+#: includes/Templates/ProSet.php:638
+msgid "Find it, or just ask"
+msgstr ""
+
+#: includes/Templates/ProSet.php:639
+msgid "Browse what we have written, or type the question and let it find the answer for you."
+msgstr ""
+
+#: includes/Templates/ProSet.php:644
+msgid "Recent articles"
+msgstr ""
+
+#: includes/Templates/ProSet.php:662
+msgid "More articles"
+msgstr ""
+
+#: includes/Templates/ProSet.php:680
+msgid "What do you need to know?"
+msgstr ""
+
+#: includes/Templates/ProSet.php:681
+msgid "Answered from the articles beside this, with links to the ones it used."
+msgstr ""
+
+#: includes/Templates/ProSet.php:685
+msgid "Still need a person?"
+msgstr ""
+
+#: includes/Templates/ProSet.php:690
+msgid "How do I reuse questions across pages?"
+msgstr ""
+
+#: includes/Templates/ProSet.php:691
+msgid "Which layout is best for a pricing page?"
+msgstr ""
+
+#: includes/Templates/ProSet.php:692
+msgid "How do I add FAQ schema?"
+msgstr ""
+
+#: includes/Templates/ProSet.php:718
+msgid "Where do I begin?"
+msgstr ""
+
+#: includes/Templates/ProSet.php:719
+msgid "Add one block to one page and write one question. Everything else in here is something you can come back for."
+msgstr ""
+
+#: includes/Templates/ProSet.php:723
+msgid "Do I need to configure anything first?"
+msgstr ""
+
+#: includes/Templates/ProSet.php:724
+msgid "No. There is no settings page you have to visit before the first block works."
+msgstr ""
+
+#: includes/Templates/ProSet.php:727
+#: includes/Templates/ProSet.php:732
+msgid "Using it"
+msgstr ""
+
+#: includes/Templates/ProSet.php:728
+msgid "How do I change how it looks?"
+msgstr ""
+
+#: includes/Templates/ProSet.php:729
+msgid "Select the block and use the Style tab. Themes change the whole layout; the controls under them change one thing at a time."
+msgstr ""
+
+#: includes/Templates/ProSet.php:733
+msgid "Can two pages share the same questions?"
+msgstr ""
+
+#: includes/Templates/ProSet.php:734
+msgid "Save them as a group and place the group on both. One edit reaches every page carrying it."
+msgstr ""
+
+#: includes/Templates/ProSet.php:738
+msgid "Nothing shows on the page"
+msgstr ""
+
+#: includes/Templates/ProSet.php:739
+msgid "Clear the cache and hard refresh first — that is nine times in ten. After that, check the block is not filtered to an empty category."
+msgstr ""
+
+#: includes/Templates/ProSet.php:743
+msgid "The AI answer was wrong"
+msgstr ""
+
+#: includes/Templates/ProSet.php:744
+msgid "Mark it unhelpful and it is logged with the question. It answers from your own FAQs, so a wrong answer usually means one of them needs rewording."
+msgstr ""
+
+#: includes/Templates/ProSet.php:749
+msgid "AI Answer Desk"
+msgstr ""
+
+#: includes/Templates/ProSet.php:754
+msgid "Ask, and read on"
+msgstr ""
+
+#: includes/Templates/ProSet.php:755
+msgid "Type the question. If the answer is already written, this finds it and says where it came from."
+msgstr ""
+
+#: includes/Templates/ProSet.php:760
+#: build/blocks/ask-ai/index.js:1
+msgid "Ask us anything"
+msgstr ""
+
+#: includes/Templates/ProSet.php:761
+msgid "An instant answer from our own FAQs, with the sources it used."
+msgstr ""
+
+#: includes/Templates/ProSet.php:773
+msgid "Can I use it on client sites?"
+msgstr ""
+
+#: includes/Templates/ProSet.php:774
+msgid "What is the refund policy?"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:56
+msgid "Which size am I?"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:57
+msgid "Measure your chest and waist and read them off the chart, rather than going by the size you usually take. Ours run a little generous through the shoulder."
+msgstr ""
+
+#: includes/Templates/SectorSet.php:59
+#: includes/Templates/ShowcaseSet.php:803
+msgid "Start here"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:63
+msgid "Between two sizes?"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:64
+msgid "Take the smaller one in knitwear and the larger in outerwear. Knits relax with wear; a coat has to close over a jumper."
+msgstr ""
+
+#: includes/Templates/SectorSet.php:69
+msgid "Will it shrink?"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:70
+msgid "Everything is pre-washed, so no more than a percent or so. Wash cool and dry flat and it will hold its shape."
+msgstr ""
+
+#: includes/Templates/SectorSet.php:75
+msgid "What if it does not fit?"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:76
+msgid "Send it back within thirty days, unworn, and we pay the postage. Exchanges for a different size ship the same day we receive it."
+msgstr ""
+
+#: includes/Templates/SectorSet.php:81
+msgid "Do you alter?"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:82
+msgid "Trousers and jackets, free, in any of our shops. Allow three working days, or a week in December."
+msgstr ""
+
+#: includes/Templates/SectorSet.php:87
+msgid "Are the sizes UK or EU?"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:88
+msgid "UK on the label, with EU and US on the chart. If you are ordering from outside the UK, go by the measurements."
+msgstr ""
+
+#: includes/Templates/SectorSet.php:94
+msgid "Size & Fit Guide"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:99
+msgid "Size and fit"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:100
+msgid "The six things people ask before ordering. All of it on the page — no clicking."
+msgstr ""
+
+#: includes/Templates/SectorSet.php:130
+msgid "Do I need a visa?"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:131
+msgid "It depends on your passport, not on us. We send the requirement for your nationality with the booking confirmation, and again a month before you fly."
+msgstr ""
+
+#: includes/Templates/SectorSet.php:133
+msgid "Check first"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:137
+msgid "Any vaccinations?"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:138
+msgid "None are compulsory on any of our trips. Two are recommended for the desert itinerary — ask your GP eight weeks ahead, not two."
+msgstr ""
+
+#: includes/Templates/SectorSet.php:143
+msgid "Cash or card?"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:144
+msgid "Cards work in the cities and nowhere else on three of the four trips. Bring enough cash for a week and top up when you can."
+msgstr ""
+
+#: includes/Templates/SectorSet.php:149
+msgid "How much can I bring?"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:150
+msgid "One bag of twenty kilos and a daypack. On the walking trips a porter carries the large bag, so weight matters more than size."
+msgstr ""
+
+#: includes/Templates/SectorSet.php:155
+msgid "What is the weather like?"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:156
+msgid "Each itinerary lists the average high, low and rainfall by month. We only run trips in the months that read well."
+msgstr ""
+
+#: includes/Templates/SectorSet.php:161
+msgid "Is insurance included?"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:162
+msgid "No, and you cannot travel with us without it. Medical cover and repatriation are the two parts we check."
+msgstr ""
+
+#: includes/Templates/SectorSet.php:168
+msgid "Before You Travel"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:173
+msgid "Before you travel"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:174
+msgid "The paperwork and the packing, in the order people worry about them."
+msgstr ""
+
+#: includes/Templates/SectorSet.php:207
+msgid "Which dishes contain nuts?"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:208
+msgid "Three on the current menu, all marked. The kitchen is not nut free, so we will not tell you that traces are impossible — we will tell you exactly which surfaces and pans are shared."
+msgstr ""
+
+#: includes/Templates/SectorSet.php:212
+msgid "Can a dish be made without them?"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:213
+msgid "Two of the three, yes, and it is cooked separately. The third is built on a nut base and we would rather say no than serve you something risky."
+msgstr ""
+
+#: includes/Templates/SectorSet.php:220
+msgid "What is gluten free as it comes?"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:221
+msgid "Eleven dishes, marked on the menu. The bread and two of the puddings are the only things that cannot be adapted."
+msgstr ""
+
+#: includes/Templates/SectorSet.php:225
+msgid "Is it coeliac safe?"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:226
+msgid "We use a separate fryer and separate boards, and flour is handled at the other end of the kitchen. Tell your server it is coeliac rather than a preference and the ticket is flagged."
+msgstr ""
+
+#: includes/Templates/SectorSet.php:233
+msgid "How many dishes are vegan?"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:234
+msgid "Nine, and six of them are on the menu because they are good rather than because they are vegan. The small plates section is almost entirely plant based."
+msgstr ""
+
+#: includes/Templates/SectorSet.php:238
+msgid "Is the wine list vegan?"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:239
+msgid "Most of it. The list marks the four that are not, all of them fined with egg white."
+msgstr ""
+
+#: includes/Templates/SectorSet.php:245
+msgid "Nuts"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:246
+msgid "The kitchen is not nut free. Here is exactly where they appear."
+msgstr ""
+
+#: includes/Templates/SectorSet.php:252
+msgid "Gluten"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:253
+msgid "What is safe as it comes, and what we can adapt."
+msgstr ""
+
+#: includes/Templates/SectorSet.php:258
+msgid "Vegan and vegetarian"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:259
+msgid "Nine vegan dishes, and an honest note about the wine."
+msgstr ""
+
+#: includes/Templates/SectorSet.php:264
+msgid "Something else"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:265
+msgid "Ring us before you book rather than asking on the night. The kitchen can plan around almost anything with a day's notice."
+msgstr ""
+
+#: includes/Templates/SectorSet.php:288
+msgid "Allergens & Dietary"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:329
+msgid "How many sessions will I need?"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:330
+msgid "Four to six for most people, spread over a couple of months. You should feel a difference by the second — if you do not, we will say so and refer you on."
+msgstr ""
+
+#: includes/Templates/SectorSet.php:334
+msgid "Do I need a scan first?"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:335
+msgid "Usually not. Imaging changes the plan in fewer than one case in ten, and an unnecessary scan tends to find something harmless that then worries you."
+msgstr ""
+
+#: includes/Templates/SectorSet.php:342
+msgid "Is it worth it if I am older?"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:343
+msgid "Age is not the deciding factor — how much you move already is. Our oldest patient last year was eighty-four and finished the programme."
+msgstr ""
+
+#: includes/Templates/SectorSet.php:347
+msgid "Will I need surgery eventually?"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:348
+msgid "Sometimes, and we will tell you when we think so rather than selling you sessions first. Getting stronger beforehand improves the outcome either way."
+msgstr ""
+
+#: includes/Templates/SectorSet.php:355
+msgid "How soon can I train again?"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:356
+msgid "Something on the first day, almost always — modified, not nothing. Complete rest is the slowest way back for most injuries."
+msgstr ""
+
+#: includes/Templates/SectorSet.php:360
+msgid "Do you work with my coach?"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:361
+msgid "Gladly, with your permission. The programmes that hold are the ones where the coach knows what we have asked for."
+msgstr ""
+
+#: includes/Templates/SectorSet.php:367
+msgid "Back and neck"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:368
+msgid "The most common reason people come to us, and the one with the most myths attached."
+msgstr ""
+
+#: includes/Templates/SectorSet.php:374
+msgid "Joints and arthritis"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:375
+msgid "What is realistic, and when we would send you elsewhere."
+msgstr ""
+
+#: includes/Templates/SectorSet.php:380
+msgid "Sports injuries"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:381
+msgid "Getting back to it, sooner than resting would allow."
+msgstr ""
+
+#: includes/Templates/SectorSet.php:386
+msgid "Not sure which applies"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:387
+msgid "Book a fifteen-minute call. It is free, it is with a clinician rather than a receptionist, and it often ends with us telling you that you do not need us."
+msgstr ""
+
+#: includes/Templates/SectorSet.php:415
+msgid "Treatment Explorer"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:456
+msgid "How often, and for how long?"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:457
+msgid "Three sessions a week for twelve weeks, forty-five minutes each. Missing one is fine; missing a fortnight means starting the block again."
+msgstr ""
+
+#: includes/Templates/SectorSet.php:461
+msgid "Do I need a gym?"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:462
+msgid "From week five, yes, or a barbell at home. The first four weeks need a floor and a pair of bands."
+msgstr ""
+
+#: includes/Templates/SectorSet.php:469
+msgid "How fast will I lose weight?"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:470
+msgid "Half a kilo a week is the honest answer and the one that lasts. Anything faster is mostly water and comes back."
+msgstr ""
+
+#: includes/Templates/SectorSet.php:474
+msgid "Do I have to count calories?"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:475
+msgid "Only if it suits you. Most people do better on portion habits and stop tracking within a month either way."
+msgstr ""
+
+#: includes/Templates/SectorSet.php:482
+msgid "I have never run before"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:483
+msgid "Then start on the walk-run weeks rather than skipping them. Everyone who gets injured in the first month skipped them."
+msgstr ""
+
+#: includes/Templates/SectorSet.php:487
+msgid "Can I train for a specific race?"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:488
+msgid "Yes — give us the date and the distance and the block is built backwards from it, with a taper that actually tapers."
+msgstr ""
+
+#: includes/Templates/SectorSet.php:494
+msgid "I want to get stronger"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:495
+msgid "Twelve weeks, three sessions a week, measurable at the end."
+msgstr ""
+
+#: includes/Templates/SectorSet.php:501
+msgid "I want to lose weight"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:502
+msgid "Slower than the internet promises, and it stays off."
+msgstr ""
+
+#: includes/Templates/SectorSet.php:507
+msgid "I want to run further"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:508
+msgid "From nothing to a distance, or from a distance to a faster one."
+msgstr ""
+
+#: includes/Templates/SectorSet.php:513
+msgid "I do not know yet"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:514
+msgid "Come in for an assessment. It costs nothing, takes half an hour, and ends with a recommendation you can take elsewhere if you want to."
+msgstr ""
+
+#: includes/Templates/SectorSet.php:519
+msgid "Programme Explorer"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:524
+msgid "What are you training for?"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:525
+msgid "Pick the goal and the programme underneath it explains itself."
+msgstr ""
+
+#: includes/Templates/SectorSet.php:561
+msgid "Fixed price or day rate?"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:562
+msgid "Fixed, wherever the work can be described. Day rate only for open-ended discovery, and we will tell you which one applies before you ask."
+msgstr ""
+
+#: includes/Templates/SectorSet.php:566
+msgid "What is the smallest project you take?"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:567
+msgid "About a week. Below that the writing-it-down costs more than the work, and you are better off with someone hourly."
+msgstr ""
+
+#: includes/Templates/SectorSet.php:571
+msgid "When do we pay?"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:572
+msgid "A third to start, a third at the halfway review, a third on handover. No invoice arrives before the thing it covers exists."
+msgstr ""
+
+#: includes/Templates/SectorSet.php:579
+msgid "What counts as a change?"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:580
+msgid "Anything that moves the date or the price. Reworded copy and a different shade of blue do not; a new page does."
+msgstr ""
+
+#: includes/Templates/SectorSet.php:584
+msgid "How is it agreed?"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:585
+msgid "A note saying what it is, what it costs and what it moves, and your reply. Nothing is started on a verbal yes in a meeting."
+msgstr ""
+
+#: includes/Templates/SectorSet.php:591
+msgid "How you charge"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:592
+msgid "Fixed price against a written scope, in three payments."
+msgstr ""
+
+#: includes/Templates/SectorSet.php:598
+msgid "When things change"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:599
+msgid "They will. Here is what happens when they do."
+msgstr ""
+
+#: includes/Templates/SectorSet.php:604
+msgid "What we need from you"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:605
+msgid "One person who can decide, and content by the date we agree. Late content is the single most common reason a project slips."
+msgstr ""
+
+#: includes/Templates/SectorSet.php:609
+msgid "Who owns the work"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:610
+msgid "You do, including the source, from the moment the final invoice clears. There is no licence to renew and nothing held back as leverage."
+msgstr ""
+
+#: includes/Templates/SectorSet.php:615
+msgid "Scope & Pricing"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:620
+msgid "Scope, change and cost"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:621
+msgid "The commercial questions, answered before you have to ask them twice."
+msgstr ""
+
+#: includes/Templates/SectorSet.php:660
+msgid "Can I cancel?"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:661
+msgid "Free up to seven days before arrival. Inside seven days it is one night, and we would rather move your dates than take it."
+msgstr ""
+
+#: includes/Templates/SectorSet.php:665
+msgid "Do you take a deposit?"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:666
+msgid "One night, taken at booking and counted against the bill. Nothing else is charged until you leave."
+msgstr ""
+
+#: includes/Templates/SectorSet.php:669
+#: includes/Templates/SectorSet.php:674
+msgid "Staying"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:670
+msgid "Is breakfast included?"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:671
+msgid "In every room but the Courtyard Double, where it is nine pounds and worth it. Served until eleven, and later at weekends."
+msgstr ""
+
+#: includes/Templates/SectorSet.php:675
+msgid "Can I bring a dog?"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:676
+msgid "In the Garden Rooms, two at most, no charge. They can be anywhere on the ground floor including the bar."
+msgstr ""
+
+#: includes/Templates/SectorSet.php:679
+msgid "Getting here"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:680
+msgid "Is there parking?"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:681
+msgid "Six spaces behind the building, free, first come. The car park on Mill Street is two minutes away and never full."
+msgstr ""
+
+#: includes/Templates/SectorSet.php:685
+msgid "The practical bits"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:686
+msgid "Everything that decides whether a stay goes smoothly, in one place rather than in the confirmation email."
+msgstr ""
+
+#: includes/Templates/SectorSet.php:689
+msgid "Check in from 15:00, out by 11:00"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:690
+msgid "Late arrival any time — tell us and the door code follows"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:691
+msgid "Luggage held before and after, no charge"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:692
+msgid "Quiet hours from 22:30"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:695
+msgid "Check availability"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:698
+msgid "Booking & Stay"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:703
+msgid "Booking and your stay"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:724
+#: includes/Templates/SectorSet.php:729
+msgid "Offers"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:725
+msgid "How much below asking should I offer?"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:726
+msgid "There is no rule, and anyone who gives you one is guessing. We will tell you what similar houses on that street actually sold for, which is the only useful number."
+msgstr ""
+
+#: includes/Templates/SectorSet.php:730
+msgid "What makes an offer stronger than a higher one?"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:731
+msgid "Being ready. A mortgage in principle, a solicitor instructed and no chain beats several thousand pounds more from someone who has none of those."
+msgstr ""
+
+#: includes/Templates/SectorSet.php:734
+#: includes/Templates/SectorSet.php:739
+msgid "Surveys"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:735
+msgid "Which survey do I need?"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:736
+msgid "A homebuyer report for anything built after 1950 and in normal condition. Older or altered, pay for the full building survey — it is the cheapest money you will spend."
+msgstr ""
+
+#: includes/Templates/SectorSet.php:740
+msgid "The survey found something. Now what?"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:741
+msgid "Get a quote for the work, then decide whether to renegotiate or walk. Most findings are ordinary maintenance dressed in alarming language."
+msgstr ""
+
+#: includes/Templates/SectorSet.php:744
+#: includes/Templates/SectorSet.php:749
+msgid "Timing"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:745
+msgid "How long does it take?"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:746
+msgid "Eight to twelve weeks from accepted offer to keys, if the chain behaves. Nobody can promise a date, and we will not pretend otherwise."
+msgstr ""
+
+#: includes/Templates/SectorSet.php:750
+msgid "What usually causes delays?"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:751
+msgid "Searches with slow councils, and one solicitor in the chain who does not reply. Both are worth chasing weekly rather than waiting on."
+msgstr ""
+
+#: includes/Templates/SectorSet.php:755
+msgid "The five stages"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:758
+msgid "1. Mortgage in principle"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:759
+msgid "2. Offer and acceptance"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:760
+msgid "3. Survey and searches"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:761
+msgid "4. Exchange of contracts"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:762
+msgid "5. Completion, and the keys"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:765
+msgid "You will hear from us at every one of them, whether or not there is news."
+msgstr ""
+
+#: includes/Templates/SectorSet.php:766
+msgid "Talk to an agent"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:769
+msgid "Buying Process"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:774
+msgid "Buying a home"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:796
+#: includes/Templates/SectorSet.php:809
+msgid "Starting"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:797
+msgid "What does the first conversation cover?"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:798
+msgid "The initial conversation is designed to understand your goals, current challenges, and project requirements. We focus on identifying what you want to achieve and what solutions have already been attempted."
+msgstr ""
+
+#: includes/Templates/SectorSet.php:799
+msgid "Key topics covered during the call:"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:801
+msgid "Project scope, vision, and core business objectives"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:802
+msgid "Existing technical stack and design assets"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:803
+msgid "Timeline expectations and key milestones"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:804
+msgid "Budget allocation and team alignment"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:806
+msgid "This 30-minute discovery session helps determine whether our expertise aligns with your needs without any high-pressure pitch decks."
+msgstr ""
+
+#: includes/Templates/SectorSet.php:810
+msgid "Do you pitch for work?"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:811
+msgid "We do not participate in unpaid speculative design competitions or uncompensated pitch decks. Instead, we demonstrate our capabilities through relevant past case studies, transparent methodologies, and direct client references."
+msgstr ""
+
+#: includes/Templates/SectorSet.php:812
+msgid "Our collaborative process involves:"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:814
+msgid "Reviewing similar portfolio projects and verified outcomes"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:815
+msgid "Discussing strategic design and technical approaches"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:816
+msgid "Providing fixed-scope estimates prior to project kickoff"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:818
+msgid "This ensures every project receives dedicated craftsmanship from senior specialists right from day one."
+msgstr ""
+
+#: includes/Templates/SectorSet.php:821
+#: includes/Templates/SectorSet.php:834
+msgid "During"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:822
+msgid "How often will we hear from you?"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:823
+msgid "Communication is continuous, transparent, and structured so you always know exactly what progress is being made without waiting for monthly status reports."
+msgstr ""
+
+#: includes/Templates/SectorSet.php:824
+msgid "How we keep you updated:"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:826
+msgid "Weekly working demos with interactive previews"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:827
+msgid "Shared task board accessible anytime for real-time tracking"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:828
+msgid "Direct asynchronous messaging for quick questions"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:829
+msgid "Milestone review sessions at every major release"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:831
+msgid "This approach eliminates surprises and keeps feedback loops fast and productive."
+msgstr ""
+
+#: includes/Templates/SectorSet.php:835
+msgid "Who is actually doing the work?"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:836
+msgid "Your project is handled directly by senior designers and developers—the exact team members you speak with during initial discussions. We do not pass work down to unmonitored juniors or third-party contractors."
+msgstr ""
+
+#: includes/Templates/SectorSet.php:837
+msgid "Steps to ensure quality delivery:"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:839
+msgid "Dedicated senior lead assigned to your project"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:840
+msgid "Continuous code review and quality assurance"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:841
+msgid "Direct communication with the creators building your application"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:843
+msgid "This guarantees consistent high quality, accountability, and seamless execution throughout the engagement."
+msgstr ""
+
+#: includes/Templates/SectorSet.php:846
+msgid "After"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:847
+msgid "Can our own team take it on?"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:848
+msgid "Yes, smooth handoff and complete team empowerment are core objectives of our engagement model. Once the project is complete, we transfer full ownership and complete source assets to your internal team."
+msgstr ""
+
+#: includes/Templates/SectorSet.php:849
+msgid "What is included in the handover package:"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:851
+msgid "Full clean source code, repositories, and design system files"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:852
+msgid "Comprehensive documentation and architectural decision logs"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:853
+msgid "Recorded video walkthroughs covering setup and maintenance"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:854
+msgid "30 days of post-launch support and guidance at no extra charge"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:856
+msgid "Your internal team will be fully equipped to maintain and extend the system independently."
+msgstr ""
+
+#: includes/Templates/SectorSet.php:887
+msgid "Rather talk to a person?"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:892
+msgid "How long does a typical project take?"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:893
+msgid "Do you work with in-house teams?"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:894
+msgid "What does it cost to start?"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:901
+msgid "Working With Us"
+msgstr ""
+
+#: includes/Templates/SectorSet.php:906
+msgid "Ask something else"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:102
+msgid "The new collection"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:103
+msgid "Four looks, and what each one is made of. Tap a panel to read it."
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:111
+msgid "Abstract artwork for a tailoring look"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:112
+msgid "Tailoring"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:113
+msgid "Wool-blend suiting cut for movement, half-lined so it wears through a warm afternoon. Sizes 6 to 22, with alterations included in store."
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:114
+#: includes/Templates/ShowcaseSet.php:121
+#: includes/Templates/ShowcaseSet.php:128
+#: includes/Templates/ShowcaseSet.php:135
+msgid "See the look"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:118
+msgid "Abstract artwork for a knitwear look"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:119
+msgid "Knitwear"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:120
+msgid "Merino from a mill we have used for nine years. It softens rather than pills, and every piece is machine washable on cool."
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:125
+msgid "Abstract artwork for an outerwear look"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:126
+msgid "Outerwear"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:127
+msgid "Recycled shell, taped seams, and pockets deep enough for a phone that will not fall out on a bus. Weatherproof to a proper downpour."
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:132
+msgid "Abstract artwork for an accessories look"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:133
+msgid "Accessories"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:134
+msgid "Vegetable-tanned leather and solid brass, made to be repaired rather than replaced. Belts and bags carry a ten-year guarantee."
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:152
+msgid "On the menu"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:160
+msgid "Abstract artwork for the small plates course"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:161
+msgid "Small plates"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:162
+msgid "Six to share between two, or four if you are hungry. Everything here is vegetarian and three of the six are vegan without changing anything."
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:163
+#: includes/Templates/ShowcaseSet.php:170
+#: includes/Templates/ShowcaseSet.php:177
+#: includes/Templates/ShowcaseSet.php:184
+msgid "See the dishes"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:167
+msgid "Abstract artwork for the main courses"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:168
+msgid "From the grill"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:169
+msgid "Cooked over charcoal, so nothing comes out well done — tell us if that matters and we will steer you elsewhere on the menu."
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:174
+msgid "Abstract artwork for the sides"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:175
+msgid "Sides"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:176
+msgid "Grown within forty miles for most of the year. The menu changes on Tuesdays when the delivery arrives, so this is where it moves most."
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:181
+msgid "Abstract artwork for the desserts"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:182
+msgid "Puddings"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:183
+msgid "Made here each morning, which is why they run out. Ask what is left before you plan around one."
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:198
+msgid "Abstract artwork for the garden room"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:199
+msgid "Garden Room"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:200
+msgid "Twenty-six square metres on the ground floor, doors onto the walled garden. Quietest rooms we have, and the only ones a dog can stay in."
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:201
+#: includes/Templates/ShowcaseSet.php:208
+#: includes/Templates/ShowcaseSet.php:215
+#: includes/Templates/ShowcaseSet.php:222
+msgid "Check dates"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:205
+msgid "Abstract artwork for the harbour suite"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:206
+msgid "Harbour Suite"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:207
+msgid "Corner room on the second floor with windows on two sides. Breakfast is included and served until eleven, later at weekends."
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:212
+msgid "Abstract artwork for the loft suite"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:213
+msgid "The Loft"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:214
+msgid "The whole top floor, with a separate sitting room and a bath under the skylight. Sleeps four; the second bedroom has no window, so we say so plainly."
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:219
+msgid "Abstract artwork for the courtyard double"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:220
+msgid "Courtyard Double"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:221
+msgid "Our smallest and least expensive, eighteen square metres, shower rather than a bath. Everything else is exactly the same as the rest."
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:231
+msgid "Where you will be staying"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:236
+msgid "Check Availability"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:277
+msgid "Abstract artwork for a rebuild project"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:278
+msgid "Checkout rebuild"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:279
+msgid "A five-step checkout became two. Abandonment fell by a third over the following quarter, and support stopped fielding “where is my order” entirely."
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:280
+#: includes/Templates/ShowcaseSet.php:287
+#: includes/Templates/ShowcaseSet.php:294
+#: includes/Templates/ShowcaseSet.php:301
+msgid "Read the case study"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:284
+msgid "Abstract artwork for a migration project"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:285
+msgid "Platform migration"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:286
+msgid "Eleven years of content moved with every URL intact. Traffic dipped for nine days and then came back above where it started."
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:291
+msgid "Abstract artwork for a design system project"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:292
+msgid "Design system"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:293
+msgid "One set of components replacing four. New pages that took a fortnight now take an afternoon, and they look like each other."
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:298
+msgid "Abstract artwork for a performance project"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:299
+msgid "Performance work"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:300
+msgid "Largest Contentful Paint from 4.1s to 1.3s on a mid-range phone, without dropping a single feature from the page."
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:306
+msgid "Projects & Portfolio"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:311
+msgid "Selected work"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:312
+msgid "Four projects, with what the problem actually was and what changed."
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:329
+msgid "See More"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:341
+msgid "Wall Art"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:342
+msgid "How do I choose the right art size for my space?"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:343
+msgid "A good rule of thumb is to choose artwork that fills 60% to 75% of available wall space. Over furniture like a sofa, aim for a width of about two-thirds the furniture's length."
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:346
+msgid "Framing"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:347
+msgid "What materials and framing options are available?"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:348
+msgid "We offer handcrafted solid wood frames, modern metal finishes, and gallery canvas wraps using museum-grade archival paper and UV-resistant glass."
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:351
+msgid "Custom Orders"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:352
+msgid "Can I request custom sizes or personalized prints?"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:353
+msgid "Yes, bespoke dimensions and custom framing are available across our collection. Simply reach out to our curation team with your room dimensions."
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:356
+msgid "Care & Hanging"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:357
+msgid "How should I hang and care for my artwork?"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:358
+msgid "Hang artwork at standard eye level (roughly 57 to 60 inches from floor to center). Dust gently with a soft microfiber cloth and avoid hanging in direct, harsh sunlight."
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:395
+msgid "Wall Art & Decoration"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:396
+msgid "Enhance your home walls with creative artwork, framed photos, and modern decorative pieces that reflect your personality."
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:397
+msgid "Explore Now"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:427
+msgid "This year's line-up"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:436
+msgid "Abstract artwork for the opening keynote"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:437
+msgid "Opening keynote"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:438
+msgid "Thursday, 09:30, Main Hall. Forty minutes on what a decade of shipping accessible interfaces actually taught them, with the failures left in."
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:439
+#: includes/Templates/ShowcaseSet.php:446
+#: includes/Templates/ShowcaseSet.php:453
+#: includes/Templates/ShowcaseSet.php:460
+msgid "See the session"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:443
+msgid "Abstract artwork for the workshop track"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:444
+msgid "Workshop track"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:445
+msgid "Thursday afternoon, Studio 2. Bring a laptop. Capped at thirty people and it does fill up, so sign up when you collect your badge."
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:450
+msgid "Abstract artwork for the panel discussion"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:451
+msgid "Panel discussion"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:452
+msgid "Friday, 14:00, Main Hall. Four people who disagree, and half the hour kept for questions from the floor rather than from us."
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:457
+msgid "Abstract artwork for the closing performance"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:458
+msgid "Closing performance"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:459
+msgid "Friday, 19:00, Courtyard Stage. Outdoors, so dress for it. Included with any ticket and open to guests as well."
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:474
+msgid "Abstract artwork for a coastal trip"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:475
+msgid "The coast road"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:476
+msgid "Nine days, April to June, easy pace. Small hotels and a driver, so nobody has to take the wheel on the switchbacks."
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:477
+#: includes/Templates/ShowcaseSet.php:484
+#: includes/Templates/ShowcaseSet.php:491
+#: includes/Templates/ShowcaseSet.php:498
+msgid "See the itinerary"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:481
+msgid "Abstract artwork for a mountain trip"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:482
+msgid "High passes"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:483
+msgid "Twelve days, July to September, demanding. Five hours of walking most days at altitude — we will be honest with you about fitness."
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:488
+msgid "Abstract artwork for a desert trip"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:489
+msgid "Desert nights"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:490
+msgid "Seven days, October to March only. Two nights under canvas with no signal, which is the point rather than the compromise."
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:495
+msgid "Abstract artwork for a city trip"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:496
+msgid "Three cities"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:497
+msgid "Ten days by rail, any month. The most walking of the four and the best food; the least rest, if that matters to you."
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:502
+#: includes/Templates/ShowcaseSet.php:524
+msgid "Travel Destinations"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:503
+msgid "Discover unforgettable journeys, breathtaking landscapes, and handcrafted travel itineraries designed for every adventure."
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:504
+msgid "Explore Trips"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:551
+msgid "The story so far"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:561
+msgid "Abstract artwork for chapter one"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:562
+msgid "One — where it started"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:563
+msgid "A workshop, two people and a problem nobody else seemed to think was a problem. It took four years to find out they were right."
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:564
+#: includes/Templates/ShowcaseSet.php:571
+#: includes/Templates/ShowcaseSet.php:578
+#: includes/Templates/ShowcaseSet.php:585
+msgid "Read the chapter"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:568
+msgid "Abstract artwork for chapter two"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:569
+msgid "Two — the wrong turn"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:570
+msgid "Eighteen months building the thing customers asked for instead of the thing they needed. Worth telling, because it is the part everyone skips."
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:575
+msgid "Abstract artwork for chapter three"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:576
+msgid "Three — what changed"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:577
+msgid "One decision, taken over a weekend, that meant throwing away most of the code. It is the only reason any of the rest exists."
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:582
+msgid "Abstract artwork for chapter four"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:583
+msgid "Four — now"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:584
+msgid "Where things stand, what we are still getting wrong, and what the next year looks like from here."
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:600
+#: includes/Templates/ShowcaseSet.php:605
+#: includes/Templates/ShowcaseSet.php:610
+#: includes/Templates/ShowcaseSet.php:615
+msgid "Nutrition"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:601
+msgid "Why Is Protein Breakfast Important Daily?"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:602
+msgid "Starting your day with protein stabilizes blood sugar, reduces mid-morning cravings, and provides essential amino acids to rebuild muscle tissue and maintain steady energy levels throughout the morning."
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:606
+msgid "What Defines A Balanced Healthy Lunch?"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:607
+msgid "A balanced lunch combines lean protein, complex carbohydrates, healthy fats, and fiber-rich vegetables to sustain mental clarity and prevent afternoon energy slumps."
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:611
+msgid "How Should Light Dinners Be Structured?"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:612
+msgid "Evening meals should focus on easily digestible proteins and green vegetables while reducing heavy refined carbs, promoting restful sleep and night-time recovery."
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:616
+msgid "Which Healthy Snacks Maintain Stable Energy?"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:617
+msgid "Nut-based snacks, Greek yogurt, fresh berries, or hummus with raw vegetables provide a smooth balance of macronutrients without spiking insulin."
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:620
+msgid "Hydration"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:621
+msgid "How Much Water Should I Drink?"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:622
+msgid "Most adults need eight to ten glasses of water daily, though this varies by body weight, activity level, and climate. Staying well hydrated improves skin clarity, boosts energy, supports kidney function, and helps control appetite throughout the day effectively."
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:640
+msgid "FAQS SECTION"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:641
+msgid "Healthy Living Questions Answered For Everyday Wellness"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:642
+msgid "Still have a question in mind? Contact us directly!"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:652
+msgid "Fitness & Diet"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:672
+#: includes/Templates/ShowcaseSet.php:677
+#: includes/Templates/ShowcaseSet.php:682
+msgid "Appointments"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:673
+msgid "How soon can I be seen?"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:674
+msgid "Routine appointments are usually within five working days. Keep an eye on the same-day list from eight in the morning if you need something sooner."
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:678
+msgid "Can I be seen by video instead?"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:679
+msgid "For most follow-ups, yes, and it is often quicker. Anything that needs an examination has to be in person, and we will tell you which when you book."
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:683
+msgid "What should I bring?"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:684
+msgid "A list of anything you take, including things bought over the counter, and the dates of anything relevant that has already been done elsewhere."
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:687
+#: includes/Templates/ShowcaseSet.php:692
+msgid "Cost & cover"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:688
+msgid "Do you take my insurance?"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:689
+msgid "We work with the main providers. Bring your membership number and we will confirm cover before anything is booked, not after."
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:693
+msgid "What if I am paying myself?"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:694
+msgid "Every price is on the fees page, including the ones people forget to ask about. You will get the full figure in writing before you agree to it."
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:697
+msgid "Records"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:698
+msgid "Who can see my notes?"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:699
+msgid "Only the clinicians involved in your care, unless you ask us in writing to share them. You can request a copy of everything we hold at any time."
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:704
+msgid "Health & Clinic"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:709
+msgid "Patient questions"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:710
+msgid "Appointments, cost and cover, and what happens to your records."
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:723
+#: includes/Templates/ShowcaseSet.php:728
+#: includes/Templates/ShowcaseSet.php:733
+msgid "Working together"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:724
+msgid "How do projects usually start?"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:725
+msgid "A call, then a short written scope with a fixed price against it. Nothing begins until you have that in front of you and have said yes to it."
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:729
+msgid "Who will I actually be dealing with?"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:730
+msgid "The people doing the work. There is no account manager in between, which is faster and occasionally less polished."
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:734
+msgid "What do you need from us?"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:735
+msgid "One person who can make decisions, and content by the date we agree. Late content is the single most common reason a project slips."
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:738
+#: includes/Templates/ShowcaseSet.php:743
+msgid "Scope & change"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:739
+msgid "What if we want to change something halfway?"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:740
+msgid "Small things are absorbed. Anything that moves the date or the price comes back to you as a written change before it is started, never after."
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:744
+msgid "Do you work with our existing team?"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:745
+msgid "Often, and it usually goes well. Tell us early who owns what, so we are not quietly rebuilding something your developer already maintains."
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:749
+msgid "What happens when it is finished?"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:750
+msgid "You own everything, including the source. Support is available monthly but is not a condition of anything, and you can leave whenever you like."
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:755
+msgid "Services & Engagement"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:761
+msgid "What a project looks like from your side of it."
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:800
+msgid "What is actually included?"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:801
+msgid "Every layout, the shared library behind them, the submission form, and updates. No feature is held back for a higher tier."
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:808
+msgid "Yes, through the shortcode where a builder will not give you a block. The block editor needs nothing extra."
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:813
+msgid "Is it accessible?"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:814
+msgid "Every question is a real button, reachable by keyboard, with focus you can see and state a screen reader announces."
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:820
+msgid "Colours, type, spacing, borders and behaviour, per block. It inherits your theme first so it looks right untouched."
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:826
+msgid "Every string goes through the translation functions, and the templates are translated with the plugin."
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:831
+msgid "Can I see what people ask?"
+msgstr ""
+
+#: includes/Templates/ShowcaseSet.php:832
+msgid "Submissions land on the Form Submissions screen, where you can read every question visitors sent and mark what you have handled."
 msgstr ""
 
 #: woocommerce/class-afaq-wc-ai-connector.php:71
@@ -1952,6 +6520,10 @@ msgid "Advanced FAQ Categories & Filtering."
 msgstr ""
 
 #: build/admin-dashboard.js:1
+msgid "50+ Ready Pages Template library"
+msgstr ""
+
+#: build/admin-dashboard.js:1
 msgid "More premium FAQ templates."
 msgstr ""
 
@@ -2004,6 +6576,22 @@ msgid "Ask AI Block & Ask AI Dashboard."
 msgstr ""
 
 #: build/admin-dashboard.js:1
+msgid "FAQ Form Block - Allow visitors to submit questions directly from the front end with custom form fields and submission management."
+msgstr ""
+
+#: build/admin-dashboard.js:1
+msgid "FAQ Image Block - Display FAQs with images and media."
+msgstr ""
+
+#: build/admin-dashboard.js:1
+msgid "FAQ Sidebar Tab Block - Vertical sidebar navigation with tabbed FAQ categories and smooth seamless switching."
+msgstr ""
+
+#: build/admin-dashboard.js:1
+msgid "FAQ Post - Display FAQs from WordPress posts or custom post types."
+msgstr ""
+
+#: build/admin-dashboard.js:1
 msgid "Nested FAQ Block & Advanced Settings Panel."
 msgstr ""
 
@@ -2036,10 +6624,6 @@ msgid "Can I pay monthly instead of yearly?"
 msgstr ""
 
 #: build/ask-ai-promo/index.js:1
-msgid "Is there a discount for non-profits?"
-msgstr ""
-
-#: build/ask-ai-promo/index.js:1
 msgid "What happens to my data if I cancel?"
 msgstr ""
 
@@ -2061,10 +6645,6 @@ msgstr ""
 
 #: build/ask-ai-promo/index.js:1
 msgid "Yes. Deactivate the licence on the old site from the plugin's Activation screen, then activate it on the new one. Your remaining term carries over."
-msgstr ""
-
-#: build/ask-ai-promo/index.js:1
-msgid "Which payment methods do you take?"
 msgstr ""
 
 #: build/ask-ai-promo/index.js:1
@@ -2153,11 +6733,6 @@ msgstr ""
 
 #: build/ask-ai-promo/index.js:1
 msgid "Updates automatically whenever you edit your FAQs. Easily add or change custom answers anytime with zero setup."
-msgstr ""
-
-#: build/ask-ai-promo/index.js:1
-#: build/blocks/ask-ai/index.js:1
-msgid "What is your refund policy?"
 msgstr ""
 
 #: build/ask-ai-promo/index.js:1
@@ -2609,16 +7184,14 @@ msgid "You have the FAQ blocks and the shortcode. Ask AI, the gap report and the
 msgstr ""
 
 #: build/ask-ai-promo/index.js:1
-msgid "See the plans"
-msgstr ""
-
-#: build/ask-ai-promo/index.js:1
 msgid "Compare free and Pro"
 msgstr ""
 
 #: build/blocks/ask-ai/index.js:1
+#: build/blocks/faq-form/index.js:1
 #: build/blocks/faq-item/index.js:1
 #: build/blocks/nested-faq/index.js:1
+#: build/blocks/sidebar-tab-faq/index.js:1
 msgid "Left"
 msgstr ""
 
@@ -2627,8 +7200,10 @@ msgid "Center"
 msgstr ""
 
 #: build/blocks/ask-ai/index.js:1
+#: build/blocks/faq-form/index.js:1
 #: build/blocks/faq-item/index.js:1
 #: build/blocks/nested-faq/index.js:1
+#: build/blocks/sidebar-tab-faq/index.js:1
 msgid "Right"
 msgstr ""
 
@@ -2641,6 +7216,7 @@ msgid "Add"
 msgstr ""
 
 #: build/blocks/ask-ai/index.js:1
+#: build/blocks/post-faq/index.js:1
 msgid "Header"
 msgstr ""
 
@@ -2661,6 +7237,8 @@ msgid "Questions"
 msgstr ""
 
 #: build/blocks/ask-ai/index.js:1
+#: build/blocks/faq-form/index.js:1
+#: build/blocks/image-faq/index.js:1
 msgid "Button text"
 msgstr ""
 
@@ -2755,6 +7333,10 @@ msgid "Accent"
 msgstr ""
 
 #: build/blocks/ask-ai/index.js:1
+#: build/blocks/faq-form/index.js:1
+#: build/blocks/image-faq/index.js:1
+#: build/blocks/post-faq/index.js:1
+#: build/blocks/sidebar-tab-faq/index.js:1
 msgid "Text"
 msgstr ""
 
@@ -2768,11 +7350,17 @@ msgstr ""
 
 #: build/blocks/ask-ai/index.js:1
 #: build/blocks/bento-faq/index.js:1
+#: build/blocks/faq-form/index.js:1
+#: build/blocks/image-faq/index.js:1
 #: build/blocks/nested-faq/index.js:1
+#: build/blocks/post-faq/index.js:1
+#: build/blocks/sidebar-tab-faq/index.js:1
 msgid "Typography"
 msgstr ""
 
 #: build/blocks/ask-ai/index.js:1
+#: build/blocks/faq-form/index.js:1
+#: build/blocks/image-faq/index.js:1
 msgid "Heading"
 msgstr ""
 
@@ -2781,6 +7369,7 @@ msgid "Heading align"
 msgstr ""
 
 #: build/blocks/ask-ai/index.js:1
+#: build/blocks/post-faq/index.js:1
 msgid "Body"
 msgstr ""
 
@@ -2793,24 +7382,37 @@ msgid "Input field"
 msgstr ""
 
 #: build/blocks/ask-ai/index.js:1
+#: build/blocks/faq-form/index.js:1
+#: build/blocks/image-faq/index.js:1
 #: build/blocks/nested-faq/index.js:1
+#: build/blocks/post-faq/index.js:1
+#: build/blocks/sidebar-tab-faq/index.js:1
 msgid "Background"
 msgstr ""
 
 #: build/blocks/ask-ai/index.js:1
+#: build/blocks/faq-form/index.js:1
 msgid "Typed text"
 msgstr ""
 
 #: build/blocks/ask-ai/index.js:1
+#: build/blocks/faq-form/index.js:1
 msgid "Placeholder"
 msgstr ""
 
 #: build/blocks/ask-ai/index.js:1
+#: build/blocks/faq-form/index.js:1
+#: build/blocks/image-faq/index.js:1
 #: build/blocks/nested-faq/index.js:1
+#: build/blocks/post-faq/index.js:1
+#: build/blocks/sidebar-tab-faq/index.js:1
 msgid "Border"
 msgstr ""
 
 #: build/blocks/ask-ai/index.js:1
+#: build/blocks/faq-form/index.js:1
+#: build/blocks/image-faq/index.js:1
+#: build/blocks/sidebar-tab-faq/index.js:1
 msgid "Text on hover"
 msgstr ""
 
@@ -2819,6 +7421,7 @@ msgid "AI answer box"
 msgstr ""
 
 #: build/blocks/ask-ai/index.js:1
+#: build/blocks/faq-form/index.js:1
 msgid "Label"
 msgstr ""
 
@@ -2860,7 +7463,11 @@ msgstr ""
 
 #: build/blocks/ask-ai/index.js:1
 #: build/blocks/bento-faq/index.js:1
+#: build/blocks/faq-form/index.js:1
+#: build/blocks/image-faq/index.js:1
 #: build/blocks/nested-faq/index.js:1
+#: build/blocks/post-faq/index.js:1
+#: build/blocks/sidebar-tab-faq/index.js:1
 msgid "Padding"
 msgstr ""
 
@@ -2870,22 +7477,34 @@ msgstr ""
 
 #: build/blocks/ask-ai/index.js:1
 #: build/blocks/bento-faq/index.js:1
+#: build/blocks/faq-form/index.js:1
 #: build/blocks/faq-parent/index.js:1
+#: build/blocks/image-faq/index.js:1
 #: build/blocks/nested-faq/index.js:1
+#: build/blocks/post-faq/index.js:1
+#: build/blocks/sidebar-tab-faq/index.js:1
 msgid "Copied Successfully!"
 msgstr ""
 
 #: build/blocks/ask-ai/index.js:1
 #: build/blocks/bento-faq/index.js:1
+#: build/blocks/faq-form/index.js:1
 #: build/blocks/faq-parent/index.js:1
+#: build/blocks/image-faq/index.js:1
 #: build/blocks/nested-faq/index.js:1
+#: build/blocks/post-faq/index.js:1
+#: build/blocks/sidebar-tab-faq/index.js:1
 msgid "Copy To Clipboard"
 msgstr ""
 
 #: build/blocks/ask-ai/index.js:1
 #: build/blocks/bento-faq/index.js:1
+#: build/blocks/faq-form/index.js:1
 #: build/blocks/faq-parent/index.js:1
+#: build/blocks/image-faq/index.js:1
 #: build/blocks/nested-faq/index.js:1
+#: build/blocks/post-faq/index.js:1
+#: build/blocks/sidebar-tab-faq/index.js:1
 msgid "Copy the shortcode and use it anywhere."
 msgstr ""
 
@@ -2899,10 +7518,6 @@ msgstr ""
 
 #: build/blocks/ask-ai/index.js:1
 msgid "Connect an API key in Settings › Connectors"
-msgstr ""
-
-#: build/blocks/ask-ai/index.js:1
-msgid "Ask us anything"
 msgstr ""
 
 #: build/blocks/ask-ai/index.js:1
@@ -2975,6 +7590,7 @@ msgid "Mix sizes to get the bento look. Everything becomes full width on mobile.
 msgstr ""
 
 #: build/blocks/bento-faq/index.js:1
+#: build/blocks/image-faq/index.js:1
 #: build/blocks/nested-faq/index.js:1
 msgid "Icon"
 msgstr ""
@@ -3010,16 +7626,21 @@ msgid "Cards"
 msgstr ""
 
 #: build/blocks/bento-faq/index.js:1
+#: build/blocks/faq-form/index.js:1
 #: build/blocks/faq-item/index.js:1
 #: build/blocks/nested-faq/index.js:1
+#: build/blocks/post-faq/index.js:1
 msgid "Card"
 msgstr ""
 
 #: build/blocks/bento-faq/index.js:1
+#: build/blocks/post-faq/index.js:1
+#: build/blocks/sidebar-tab-faq/index.js:1
 msgid "Layout"
 msgstr ""
 
 #: build/blocks/bento-faq/index.js:1
+#: build/blocks/post-faq/index.js:1
 msgid "Columns"
 msgstr ""
 
@@ -3040,16 +7661,12 @@ msgid "Vertical and horizontal spacing are set separately, per device."
 msgstr ""
 
 #: build/blocks/bento-faq/index.js:1
+#: build/blocks/image-faq/index.js:1
 msgid "Row height"
 msgstr ""
 
 #: build/blocks/bento-faq/index.js:1
 msgid "The minimum height of one grid row. Tall and large cards take two."
-msgstr ""
-
-#: build/blocks/bento-faq/index.js:1
-#: build/blocks/nested-faq/index.js:1
-msgid "Behaviour"
 msgstr ""
 
 #: build/blocks/bento-faq/index.js:1
@@ -3098,10 +7715,13 @@ msgid "Drives the badge, the hover border, the glow and the link colour at once.
 msgstr ""
 
 #: build/blocks/bento-faq/index.js:1
+#: build/blocks/faq-form/index.js:1
+#: build/blocks/image-faq/index.js:1
 msgid "Card background"
 msgstr ""
 
 #: build/blocks/bento-faq/index.js:1
+#: build/blocks/faq-form/index.js:1
 msgid "Card border"
 msgstr ""
 
@@ -3118,11 +7738,13 @@ msgid "Leave the colours empty to let the block follow light and dark mode on it
 msgstr ""
 
 #: build/blocks/bento-faq/index.js:1
+#: build/blocks/image-faq/index.js:1
 msgid "Size"
 msgstr ""
 
 #: build/blocks/bento-faq/index.js:1
 #: build/blocks/nested-faq/index.js:1
+#: build/blocks/post-faq/index.js:1
 msgid "Color"
 msgstr ""
 
@@ -3131,6 +7753,8 @@ msgid "Leave empty and picked icons take the accent colour."
 msgstr ""
 
 #: build/blocks/bento-faq/index.js:1
+#: build/blocks/faq-form/index.js:1
+#: build/blocks/sidebar-tab-faq/index.js:1
 msgid "Corner radius"
 msgstr ""
 
@@ -3152,6 +7776,174 @@ msgstr ""
 
 #: build/blocks/bento-faq/index.js:1
 msgid "FAQPage schema is turned off for this block."
+msgstr ""
+
+#: build/blocks/faq-form/index.js:1
+#: build/blocks/image-faq/index.js:1
+msgid "Centre"
+msgstr ""
+
+#: build/blocks/faq-form/index.js:1
+msgid "Show heading"
+msgstr ""
+
+#: build/blocks/faq-form/index.js:1
+msgid "Heading level"
+msgstr ""
+
+#: build/blocks/faq-form/index.js:1
+msgid "Pick the level that fits the page around it. A page should only carry one H1."
+msgstr ""
+
+#: build/blocks/faq-form/index.js:1
+msgid "Show subheading"
+msgstr ""
+
+#: build/blocks/faq-form/index.js:1
+msgid "Alignment"
+msgstr ""
+
+#: build/blocks/faq-form/index.js:1
+msgid "Name field"
+msgstr ""
+
+#: build/blocks/faq-form/index.js:1
+msgid "Show this field"
+msgstr ""
+
+#: build/blocks/faq-form/index.js:1
+msgid "Required"
+msgstr ""
+
+#: build/blocks/faq-form/index.js:1
+msgid "Email field"
+msgstr ""
+
+#: build/blocks/faq-form/index.js:1
+msgid "Without an email you cannot reply to the person who asked."
+msgstr ""
+
+#: build/blocks/faq-form/index.js:1
+msgid "Question field"
+msgstr ""
+
+#: build/blocks/faq-form/index.js:1
+msgid "The question is what the form is for, so it is always shown and always required."
+msgstr ""
+
+#: build/blocks/faq-form/index.js:1
+msgid "Word limit"
+msgstr ""
+
+#: build/blocks/faq-form/index.js:1
+msgid "Set to 0 to hide the counter and drop the limit."
+msgstr ""
+
+#: build/blocks/faq-form/index.js:1
+msgid "Detail field"
+msgstr ""
+
+#: build/blocks/faq-form/index.js:1
+msgid "Suggested answer"
+msgstr ""
+
+#: build/blocks/faq-form/index.js:1
+msgid "Let visitors answer too"
+msgstr ""
+
+#: build/blocks/faq-form/index.js:1
+msgid "Adds an optional field so somebody who already knows the answer can send it with the question. It arrives as a draft for you to check."
+msgstr ""
+
+#: build/blocks/faq-form/index.js:1
+msgid "Button & confirmation"
+msgstr ""
+
+#: build/blocks/faq-form/index.js:1
+msgid "Thank you message"
+msgstr ""
+
+#: build/blocks/faq-form/index.js:1
+msgid "Shown in place of the form once the question has been sent."
+msgstr ""
+
+#: build/blocks/faq-form/index.js:1
+msgid "Maximum width"
+msgstr ""
+
+#: build/blocks/faq-form/index.js:1
+msgid "Shared by the card and the button. The fields have their own, under Fields."
+msgstr ""
+
+#: build/blocks/faq-form/index.js:1
+msgid "Behind the card"
+msgstr ""
+
+#: build/blocks/faq-form/index.js:1
+msgid "Subheading"
+msgstr ""
+
+#: build/blocks/faq-form/index.js:1
+msgid "Field labels"
+msgstr ""
+
+#: build/blocks/faq-form/index.js:1
+msgid "Fields"
+msgstr ""
+
+#: build/blocks/faq-form/index.js:1
+msgid "The preview fields are empty, so this one shows itself on the published page once somebody types."
+msgstr ""
+
+#: build/blocks/faq-form/index.js:1
+msgid "Border on hover"
+msgstr ""
+
+#: build/blocks/faq-form/index.js:1
+msgid "Border when active"
+msgstr ""
+
+#: build/blocks/faq-form/index.js:1
+msgid "Leave the active colour empty and a focused field keeps using the button colour. A field that fails a check turns red either way."
+msgstr ""
+
+#: build/blocks/faq-form/index.js:1
+msgid "Space between fields"
+msgstr ""
+
+#: build/blocks/faq-form/index.js:1
+#: build/blocks/image-faq/index.js:1
+msgid "Button"
+msgstr ""
+
+#: build/blocks/faq-form/index.js:1
+msgid "Also what a focused field is outlined in, unless Fields sets its own active colour."
+msgstr ""
+
+#: build/blocks/faq-form/index.js:1
+#: build/blocks/image-faq/index.js:1
+#: build/blocks/sidebar-tab-faq/index.js:1
+msgid "Background on hover"
+msgstr ""
+
+#: build/blocks/faq-form/index.js:1
+msgid "Full width"
+msgstr ""
+
+#: build/blocks/faq-form/index.js:1
+msgid "Text alignment"
+msgstr ""
+
+#: build/blocks/faq-form/index.js:1
+msgid "With full width off this moves the button itself, since there is no spare room inside it."
+msgstr ""
+
+#: build/blocks/faq-form/index.js:1
+msgid "Submissions arrive under Awesome FAQ → Form Submissions, where you can read, mark and reply to them."
+msgstr ""
+
+#: build/blocks/faq-form/index.js:1
+msgid "Tell people what happens after they send it."
 msgstr ""
 
 #: build/blocks/faq-item/index.js:1
@@ -3176,6 +7968,7 @@ msgstr ""
 
 #: build/blocks/faq-item/index.js:1
 #: build/blocks/nested-faq/index.js:1
+#: build/blocks/sidebar-tab-faq/index.js:1
 msgid "Chevron"
 msgstr ""
 
@@ -3236,7 +8029,19 @@ msgid "Classic accordion with themes, search and categories."
 msgstr ""
 
 #: build/blocks/faq-parent/index.js:1
-msgid "Nested FAQ"
+msgid "Your posts as an FAQ — three card layouts with Load More."
+msgstr ""
+
+#: build/blocks/faq-parent/index.js:1
+msgid "Tabs down one side, each opening a post beside them."
+msgstr ""
+
+#: build/blocks/faq-parent/index.js:1
+msgid "FAQ Form"
+msgstr ""
+
+#: build/blocks/faq-parent/index.js:1
+msgid "Let visitors send questions — read them under Form Submissions."
 msgstr ""
 
 #: build/blocks/faq-parent/index.js:1
@@ -3244,11 +8049,11 @@ msgid "Multi level accordion — sub questions inside a question."
 msgstr ""
 
 #: build/blocks/faq-parent/index.js:1
-msgid "Bento FAQ"
+msgid "Bento grid of cards — each answer opens in a focused dialog."
 msgstr ""
 
 #: build/blocks/faq-parent/index.js:1
-msgid "Bento grid of cards — each answer opens in a focused dialog."
+msgid "A row of pictures — each one opens its own question."
 msgstr ""
 
 #: build/blocks/faq-parent/index.js:1
@@ -3263,8 +8068,251 @@ msgstr ""
 msgid "Pick a block to build — the shortcode is generated once you save."
 msgstr ""
 
+#: build/blocks/image-faq/index.js:1
+msgid "Spotlight Card"
+msgstr ""
+
+#: build/blocks/image-faq/index.js:1
+msgid "The open image carries a tinted card in the middle, holding the heading, the text and a button."
+msgstr ""
+
+#: build/blocks/image-faq/index.js:1
+msgid "Caption Overlay"
+msgstr ""
+
+#: build/blocks/image-faq/index.js:1
+msgid "The heading and text sit straight on the open image, over a soft gradient."
+msgstr ""
+
+#: build/blocks/image-faq/index.js:1
+#: build/blocks/post-faq/index.js:1
+#: build/blocks/sidebar-tab-faq/index.js:1
+msgid "Click"
+msgstr ""
+
+#: build/blocks/image-faq/index.js:1
+#: build/blocks/post-faq/index.js:1
+#: build/blocks/sidebar-tab-faq/index.js:1
+msgid "Hover"
+msgstr ""
+
+#: build/blocks/image-faq/index.js:1
+msgid "Bottom left"
+msgstr ""
+
+#: build/blocks/image-faq/index.js:1
+msgid "Bottom centre"
+msgstr ""
+
+#: build/blocks/image-faq/index.js:1
+msgid "The Himalayan Giants"
+msgstr ""
+
+#: build/blocks/image-faq/index.js:1
+msgid "The Annapurna mountains stand tall with snow-capped peaks glowing under the warm sunrise."
+msgstr ""
+
+#: build/blocks/image-faq/index.js:1
+msgid "A lone tree mirrored in still water"
+msgstr ""
+
+#: build/blocks/image-faq/index.js:1
+msgid "Reflections at Dusk"
+msgstr ""
+
+#: build/blocks/image-faq/index.js:1
+msgid "A single tree mirrored in still water, held between the last light and the first stars."
+msgstr ""
+
+#: build/blocks/image-faq/index.js:1
+msgid "A full moon over a frozen shore"
+msgstr ""
+
+#: build/blocks/image-faq/index.js:1
+msgid "Moonrise Over Ice"
+msgstr ""
+
+#: build/blocks/image-faq/index.js:1
+msgid "The moon climbs above a frozen shore while the sky keeps the colour of the sun that has just gone."
+msgstr ""
+
+#: build/blocks/image-faq/index.js:1
+msgid "A five-tiered pagoda at first light"
+msgstr ""
+
+#: build/blocks/image-faq/index.js:1
+msgid "The Pagoda at First Light"
+msgstr ""
+
+#: build/blocks/image-faq/index.js:1
+msgid "Five tiers of timber catching the sun as it breaks the horizon behind them."
+msgstr ""
+
+#: build/blocks/image-faq/index.js:1
+msgid "Red rock peaks in the morning light"
+msgstr ""
+
+#: build/blocks/image-faq/index.js:1
+msgid "Red Rock Morning"
+msgstr ""
+
+#: build/blocks/image-faq/index.js:1
+msgid "Bare peaks turning copper in the first minutes of the day, with the valley still in shadow."
+msgstr ""
+
+#: build/blocks/image-faq/index.js:1
+msgid "Picture"
+msgstr ""
+
+#: build/blocks/image-faq/index.js:1
+msgid "Alt text"
+msgstr ""
+
+#: build/blocks/image-faq/index.js:1
+msgid "What the picture shows, for anyone who cannot see it. Leave empty if it is purely decorative."
+msgstr ""
+
+#: build/blocks/image-faq/index.js:1
+msgid "Button link"
+msgstr ""
+
+#: build/blocks/image-faq/index.js:1
+msgid "Leave empty and the button is left off this panel."
+msgstr ""
+
+#: build/blocks/image-faq/index.js:1
+msgid "Open in a new tab"
+msgstr ""
+
+#: build/blocks/image-faq/index.js:1
 #: build/blocks/nested-faq/index.js:1
 msgid "Template"
+msgstr ""
+
+#: build/blocks/image-faq/index.js:1
+msgid "Template style"
+msgstr ""
+
+#: build/blocks/image-faq/index.js:1
+msgid "Caption position"
+msgstr ""
+
+#: build/blocks/image-faq/index.js:1
+msgid "Card width"
+msgstr ""
+
+#: build/blocks/image-faq/index.js:1
+msgid "How much of the open picture the tinted card covers."
+msgstr ""
+
+#: build/blocks/image-faq/index.js:1
+msgid "Darken the picture behind the words"
+msgstr ""
+
+#: build/blocks/image-faq/index.js:1
+msgid "Keeps the heading readable whatever the photograph is doing underneath it."
+msgstr ""
+
+#: build/blocks/image-faq/index.js:1
+msgid "Images"
+msgstr ""
+
+#: build/blocks/image-faq/index.js:1
+msgid "New image"
+msgstr ""
+
+#: build/blocks/image-faq/index.js:1
+msgid "A line or two about what this picture shows."
+msgstr ""
+
+#: build/blocks/image-faq/index.js:1
+msgid "Panel"
+msgstr ""
+
+#: build/blocks/image-faq/index.js:1
+msgid "Closed panel height"
+msgstr ""
+
+#: build/blocks/image-faq/index.js:1
+msgid "Open panel height"
+msgstr ""
+
+#: build/blocks/image-faq/index.js:1
+msgid "On a phone the row turns on its side: the panels stack full width and open downwards."
+msgstr ""
+
+#: build/blocks/image-faq/index.js:1
+msgid "Closed panel width"
+msgstr ""
+
+#: build/blocks/image-faq/index.js:1
+msgid "How much wider the open panel gets"
+msgstr ""
+
+#: build/blocks/image-faq/index.js:1
+msgid "The open panel takes this many times the room of a closed one."
+msgstr ""
+
+#: build/blocks/image-faq/index.js:1
+msgid "Switch to the phone icon above to set what the stacked panels do."
+msgstr ""
+
+#: build/blocks/image-faq/index.js:1
+msgid "Gap between panels"
+msgstr ""
+
+#: build/blocks/image-faq/index.js:1
+#: build/blocks/post-faq/index.js:1
+msgid "What to show"
+msgstr ""
+
+#: build/blocks/image-faq/index.js:1
+msgid "Enlarge button"
+msgstr ""
+
+#: build/blocks/image-faq/index.js:1
+msgid "The round magnifier. Opens the full size picture over the page."
+msgstr ""
+
+#: build/blocks/image-faq/index.js:1
+#: build/blocks/post-faq/index.js:1
+msgid "Open a panel on"
+msgstr ""
+
+#: build/blocks/image-faq/index.js:1
+msgid "Open at the start"
+msgstr ""
+
+#: build/blocks/image-faq/index.js:1
+msgid "Which panel is already open when the page loads."
+msgstr ""
+
+#: build/blocks/image-faq/index.js:1
+msgid "Sliding speed"
+msgstr ""
+
+#: build/blocks/image-faq/index.js:1
+msgid "Milliseconds. Zero opens instantly."
+msgstr ""
+
+#: build/blocks/image-faq/index.js:1
+msgid "Words on the picture"
+msgstr ""
+
+#: build/blocks/image-faq/index.js:1
+msgid "Overlay background"
+msgstr ""
+
+#: build/blocks/image-faq/index.js:1
+msgid "Choose a template"
+msgstr ""
+
+#: build/blocks/image-faq/index.js:1
+msgid "You can change this later, and every colour, size and space stays adjustable."
+msgstr ""
+
+#: build/blocks/image-faq/index.js:1
+msgid "Some panels have no picture yet. Open Images in the sidebar and choose one for each."
 msgstr ""
 
 #: build/blocks/nested-faq/index.js:1
@@ -3384,6 +8432,494 @@ msgstr ""
 #: build/blocks/nested-faq/index.js:1
 #, js-format
 msgid "Free plan: %d nested level and the Default template. Upgrade for deeper nesting and all templates."
+msgstr ""
+
+#: build/blocks/post-faq/index.js:1
+msgid "Classic Accordion"
+msgstr ""
+
+#: build/blocks/post-faq/index.js:1
+msgid "Classic"
+msgstr ""
+
+#: build/blocks/post-faq/index.js:1
+msgid "A plain title bar. Opens to show the featured image beside the excerpt."
+msgstr ""
+
+#: build/blocks/post-faq/index.js:1
+msgid "Compact List"
+msgstr ""
+
+#: build/blocks/post-faq/index.js:1
+msgid "Compact"
+msgstr ""
+
+#: build/blocks/post-faq/index.js:1
+msgid "Thumbnail, title and meta all in the bar. Opens to the excerpt underneath."
+msgstr ""
+
+#: build/blocks/post-faq/index.js:1
+msgid "Cover Cards"
+msgstr ""
+
+#: build/blocks/post-faq/index.js:1
+msgid "Cover"
+msgstr ""
+
+#: build/blocks/post-faq/index.js:1
+msgid "The featured image is the card, with the title and meta over it."
+msgstr ""
+
+#: build/blocks/post-faq/index.js:1
+#: build/blocks/sidebar-tab-faq/index.js:1
+msgid "Newest first"
+msgstr ""
+
+#: build/blocks/post-faq/index.js:1
+#: build/blocks/sidebar-tab-faq/index.js:1
+msgid "Recently updated"
+msgstr ""
+
+#: build/blocks/post-faq/index.js:1
+#: build/blocks/sidebar-tab-faq/index.js:1
+msgid "Title A–Z"
+msgstr ""
+
+#: build/blocks/post-faq/index.js:1
+#: build/blocks/sidebar-tab-faq/index.js:1
+msgid "Menu order"
+msgstr ""
+
+#: build/blocks/post-faq/index.js:1
+#: build/blocks/sidebar-tab-faq/index.js:1
+msgid "Most commented"
+msgstr ""
+
+#: build/blocks/post-faq/index.js:1
+#: build/blocks/sidebar-tab-faq/index.js:1
+msgid "Random"
+msgstr ""
+
+#: build/blocks/post-faq/index.js:1
+#: build/blocks/sidebar-tab-faq/index.js:1
+msgid "Descending"
+msgstr ""
+
+#: build/blocks/post-faq/index.js:1
+#: build/blocks/sidebar-tab-faq/index.js:1
+msgid "Ascending"
+msgstr ""
+
+#: build/blocks/post-faq/index.js:1
+msgid "Choose a layout"
+msgstr ""
+
+#: build/blocks/post-faq/index.js:1
+#: build/blocks/sidebar-tab-faq/index.js:1
+msgid "You can change this later, and every colour and size stays adjustable."
+msgstr ""
+
+#: build/blocks/post-faq/index.js:1
+#: build/blocks/sidebar-tab-faq/index.js:1
+msgid "Which posts"
+msgstr ""
+
+#: build/blocks/post-faq/index.js:1
+#: build/blocks/sidebar-tab-faq/index.js:1
+msgid "Post type"
+msgstr ""
+
+#: build/blocks/post-faq/index.js:1
+#: build/blocks/sidebar-tab-faq/index.js:1
+msgid "Posts"
+msgstr ""
+
+#: build/blocks/post-faq/index.js:1
+#: build/blocks/sidebar-tab-faq/index.js:1
+msgid "Order by"
+msgstr ""
+
+#: build/blocks/post-faq/index.js:1
+#: build/blocks/sidebar-tab-faq/index.js:1
+msgid "Direction"
+msgstr ""
+
+#: build/blocks/post-faq/index.js:1
+#: build/blocks/sidebar-tab-faq/index.js:1
+msgid "Limit to categories"
+msgstr ""
+
+#: build/blocks/post-faq/index.js:1
+msgid "Show at first"
+msgstr ""
+
+#: build/blocks/post-faq/index.js:1
+msgid "How many cards appear before Load More is pressed."
+msgstr ""
+
+#: build/blocks/post-faq/index.js:1
+msgid "Fetch at most"
+msgstr ""
+
+#: build/blocks/post-faq/index.js:1
+msgid "Every post is printed into the page, so keep this to what the page really needs."
+msgstr ""
+
+#: build/blocks/post-faq/index.js:1
+#: build/blocks/sidebar-tab-faq/index.js:1
+msgid "Featured image"
+msgstr ""
+
+#: build/blocks/post-faq/index.js:1
+#: build/blocks/sidebar-tab-faq/index.js:1
+msgid "Author"
+msgstr ""
+
+#: build/blocks/post-faq/index.js:1
+#: build/blocks/sidebar-tab-faq/index.js:1
+msgid "Category"
+msgstr ""
+
+#: build/blocks/post-faq/index.js:1
+#: build/blocks/sidebar-tab-faq/index.js:1
+msgid "Date"
+msgstr ""
+
+#: build/blocks/post-faq/index.js:1
+#: build/blocks/sidebar-tab-faq/index.js:1
+msgid "Reading time"
+msgstr ""
+
+#: build/blocks/post-faq/index.js:1
+#: build/blocks/sidebar-tab-faq/index.js:1
+msgid "Excerpt"
+msgstr ""
+
+#: build/blocks/post-faq/index.js:1
+#: build/blocks/sidebar-tab-faq/index.js:1
+msgid "Excerpt length (words)"
+msgstr ""
+
+#: build/blocks/post-faq/index.js:1
+#: build/blocks/sidebar-tab-faq/index.js:1
+msgid "Read More link"
+msgstr ""
+
+#: build/blocks/post-faq/index.js:1
+#: build/blocks/sidebar-tab-faq/index.js:1
+msgid "Read More text"
+msgstr ""
+
+#: build/blocks/post-faq/index.js:1
+msgid "Close button"
+msgstr ""
+
+#: build/blocks/post-faq/index.js:1
+msgid "Close button text"
+msgstr ""
+
+#: build/blocks/post-faq/index.js:1
+msgid "Hovering a card opens it, and it stays open when the pointer moves on. Clicking and the keyboard still work, which is what keeps the cards reachable on a phone."
+msgstr ""
+
+#: build/blocks/post-faq/index.js:1
+msgid "A card opens when its title is clicked, or with Enter when it is focused."
+msgstr ""
+
+#: build/blocks/post-faq/index.js:1
+msgid "Open the first card on load"
+msgstr ""
+
+#: build/blocks/post-faq/index.js:1
+msgid "Close the others when one opens"
+msgstr ""
+
+#: build/blocks/post-faq/index.js:1
+msgid "Load More button"
+msgstr ""
+
+#: build/blocks/post-faq/index.js:1
+msgid "Reveals the next batch. The posts are already on the page, so nothing is fetched."
+msgstr ""
+
+#: build/blocks/post-faq/index.js:1
+msgid "Load More text"
+msgstr ""
+
+#: build/blocks/post-faq/index.js:1
+msgid "Gap between cards"
+msgstr ""
+
+#: build/blocks/post-faq/index.js:1
+#: build/blocks/sidebar-tab-faq/index.js:1
+msgid "Background when open"
+msgstr ""
+
+#: build/blocks/post-faq/index.js:1
+msgid "Toggle icon"
+msgstr ""
+
+#: build/blocks/post-faq/index.js:1
+msgid "Title"
+msgstr ""
+
+#: build/blocks/post-faq/index.js:1
+msgid "Color when open"
+msgstr ""
+
+#: build/blocks/post-faq/index.js:1
+msgid "Meta"
+msgstr ""
+
+#: build/blocks/post-faq/index.js:1
+msgid "Excerpt color"
+msgstr ""
+
+#: build/blocks/post-faq/index.js:1
+msgid "Excerpt typography"
+msgstr ""
+
+#: build/blocks/post-faq/index.js:1
+msgid "Cover photo"
+msgstr ""
+
+#: build/blocks/post-faq/index.js:1
+#: build/blocks/sidebar-tab-faq/index.js:1
+msgid "Image"
+msgstr ""
+
+#: build/blocks/post-faq/index.js:1
+msgid "Image width"
+msgstr ""
+
+#: build/blocks/post-faq/index.js:1
+msgid "Card height"
+msgstr ""
+
+#: build/blocks/post-faq/index.js:1
+msgid "Photo tint"
+msgstr ""
+
+#: build/blocks/post-faq/index.js:1
+msgid "Washes the photograph in a colour so the words on top of it read as one design rather than three different pictures. A part-transparent colour works best — the card already darkens towards the bottom on its own."
+msgstr ""
+
+#: build/blocks/post-faq/index.js:1
+#: build/blocks/sidebar-tab-faq/index.js:1
+msgid "Category pill"
+msgstr ""
+
+#: build/blocks/post-faq/index.js:1
+#: build/blocks/sidebar-tab-faq/index.js:1
+msgid "Image radius"
+msgstr ""
+
+#: build/blocks/post-faq/index.js:1
+msgid "Load More & Close buttons"
+msgstr ""
+
+#: build/blocks/post-faq/index.js:1
+msgid "The Read More link follows the excerpt colour instead, so it always sits with the text it belongs to."
+msgstr ""
+
+#: build/blocks/post-faq/index.js:1
+msgid "Cards open here just as they will on the page. Use the sidebar to change the layout, the posts and the styling."
+msgstr ""
+
+#: build/blocks/sidebar-tab-faq/index.js:1
+msgid "Bordered Panel"
+msgstr ""
+
+#: build/blocks/sidebar-tab-faq/index.js:1
+msgid "Bordered"
+msgstr ""
+
+#: build/blocks/sidebar-tab-faq/index.js:1
+msgid "One outlined box. A divided list down the side, the answer beside it."
+msgstr ""
+
+#: build/blocks/sidebar-tab-faq/index.js:1
+msgid "Plain Lines"
+msgstr ""
+
+#: build/blocks/sidebar-tab-faq/index.js:1
+msgid "Lines"
+msgstr ""
+
+#: build/blocks/sidebar-tab-faq/index.js:1
+msgid "No outer box. Ruled tabs with a single divider between them and the answer."
+msgstr ""
+
+#: build/blocks/sidebar-tab-faq/index.js:1
+msgid "Pill Tabs"
+msgstr ""
+
+#: build/blocks/sidebar-tab-faq/index.js:1
+msgid "Pills"
+msgstr ""
+
+#: build/blocks/sidebar-tab-faq/index.js:1
+msgid "Each tab is its own rounded button, and the answer sits on a card."
+msgstr ""
+
+#: build/blocks/sidebar-tab-faq/index.js:1
+msgid "Accordion"
+msgstr ""
+
+#: build/blocks/sidebar-tab-faq/index.js:1
+msgid "Stacked"
+msgstr ""
+
+#: build/blocks/sidebar-tab-faq/index.js:1
+msgid "Full content"
+msgstr ""
+
+#: build/blocks/sidebar-tab-faq/index.js:1
+msgid "Choose a look"
+msgstr ""
+
+#: build/blocks/sidebar-tab-faq/index.js:1
+msgid "Look"
+msgstr ""
+
+#: build/blocks/sidebar-tab-faq/index.js:1
+msgid "Tabs on the"
+msgstr ""
+
+#: build/blocks/sidebar-tab-faq/index.js:1
+msgid "Sidebar width — desktop"
+msgstr ""
+
+#: build/blocks/sidebar-tab-faq/index.js:1
+msgid "Sidebar width — tablet"
+msgstr ""
+
+#: build/blocks/sidebar-tab-faq/index.js:1
+msgid "Gap between the columns"
+msgstr ""
+
+#: build/blocks/sidebar-tab-faq/index.js:1
+msgid "Scroll the tab list after"
+msgstr ""
+
+#: build/blocks/sidebar-tab-faq/index.js:1
+msgid "Least answer height"
+msgstr ""
+
+#: build/blocks/sidebar-tab-faq/index.js:1
+msgid "Switch tabs on"
+msgstr ""
+
+#: build/blocks/sidebar-tab-faq/index.js:1
+msgid "On a phone"
+msgstr ""
+
+#: build/blocks/sidebar-tab-faq/index.js:1
+msgid "Each answer drops in under the tab it belongs to."
+msgstr ""
+
+#: build/blocks/sidebar-tab-faq/index.js:1
+msgid "The whole tab list stays together, with one answer panel under it."
+msgstr ""
+
+#: build/blocks/sidebar-tab-faq/index.js:1
+msgid "How many tabs"
+msgstr ""
+
+#: build/blocks/sidebar-tab-faq/index.js:1
+msgid "Every answer is printed into the page, so keep this to what the page really needs."
+msgstr ""
+
+#: build/blocks/sidebar-tab-faq/index.js:1
+msgid "The tab"
+msgstr ""
+
+#: build/blocks/sidebar-tab-faq/index.js:1
+msgid "Number"
+msgstr ""
+
+#: build/blocks/sidebar-tab-faq/index.js:1
+msgid "The answer"
+msgstr ""
+
+#: build/blocks/sidebar-tab-faq/index.js:1
+msgid "Show"
+msgstr ""
+
+#: build/blocks/sidebar-tab-faq/index.js:1
+msgid "Repeat the title above the answer"
+msgstr ""
+
+#: build/blocks/sidebar-tab-faq/index.js:1
+msgid "Frame"
+msgstr ""
+
+#: build/blocks/sidebar-tab-faq/index.js:1
+msgid "Answer card border"
+msgstr ""
+
+#: build/blocks/sidebar-tab-faq/index.js:1
+msgid "Tab list background"
+msgstr ""
+
+#: build/blocks/sidebar-tab-faq/index.js:1
+msgid "Tabs"
+msgstr ""
+
+#: build/blocks/sidebar-tab-faq/index.js:1
+msgid "Text when open"
+msgstr ""
+
+#: build/blocks/sidebar-tab-faq/index.js:1
+msgid "Divider"
+msgstr ""
+
+#: build/blocks/sidebar-tab-faq/index.js:1
+msgid "Chevron when open"
+msgstr ""
+
+#: build/blocks/sidebar-tab-faq/index.js:1
+msgid "Answer title & meta"
+msgstr ""
+
+#: build/blocks/sidebar-tab-faq/index.js:1
+msgid "Title color"
+msgstr ""
+
+#: build/blocks/sidebar-tab-faq/index.js:1
+msgid "Title typography"
+msgstr ""
+
+#: build/blocks/sidebar-tab-faq/index.js:1
+msgid "Meta color"
+msgstr ""
+
+#: build/blocks/sidebar-tab-faq/index.js:1
+msgid "Meta typography"
+msgstr ""
+
+#: build/blocks/sidebar-tab-faq/index.js:1
+msgid "Tab image size"
+msgstr ""
+
+#: build/blocks/sidebar-tab-faq/index.js:1
+msgid "Answer image height"
+msgstr ""
+
+#: build/blocks/sidebar-tab-faq/index.js:1
+msgid "Buttons"
+msgstr ""
+
+#: build/blocks/sidebar-tab-faq/index.js:1
+msgid "Tabs switch here just as they will on the page, and fold into an accordion on a phone. Use the sidebar to change the look, the posts and the styling."
+msgstr ""
+
+#: build/template-library.js:1
+msgid "Template Library"
+msgstr ""
+
+#: build/template-library.js:1
+msgid "Awesome FAQ Templates"
 msgstr ""
 
 #: build/block.json
@@ -3572,6 +9108,7 @@ msgid "answer engine"
 msgstr ""
 
 #: build/blocks/ask-ai/block.json
+#: build/blocks/faq-form/block.json
 msgctxt "block keyword"
 msgid "support"
 msgstr ""
@@ -3626,6 +9163,36 @@ msgctxt "block keyword"
 msgid "masonry"
 msgstr ""
 
+#: build/blocks/faq-form/block.json
+msgctxt "block title"
+msgid "FAQ Form"
+msgstr ""
+
+#: build/blocks/faq-form/block.json
+msgctxt "block description"
+msgid "Let visitors send in the question they could not find an answer to — and optionally the answer they already know. Submissions land on the Form Submissions screen for review."
+msgstr ""
+
+#: build/blocks/faq-form/block.json
+msgctxt "block keyword"
+msgid "faq form"
+msgstr ""
+
+#: build/blocks/faq-form/block.json
+msgctxt "block keyword"
+msgid "ask a question"
+msgstr ""
+
+#: build/blocks/faq-form/block.json
+msgctxt "block keyword"
+msgid "submit question"
+msgstr ""
+
+#: build/blocks/faq-form/block.json
+msgctxt "block keyword"
+msgid "contact"
+msgstr ""
+
 #: build/blocks/faq-item/block.json
 msgctxt "block title"
 msgid "FAQ Item"
@@ -3676,6 +9243,46 @@ msgctxt "block keyword"
 msgid "shortcode"
 msgstr ""
 
+#: build/blocks/image-faq/block.json
+msgctxt "block title"
+msgid "Image FAQ"
+msgstr ""
+
+#: build/blocks/image-faq/block.json
+msgctxt "block description"
+msgid "A row of images that opens like an accordion. The one in front widens to show its heading, its text and a link, and the row folds into a stack on a phone."
+msgstr ""
+
+#: build/blocks/image-faq/block.json
+msgctxt "block keyword"
+msgid "image faq"
+msgstr ""
+
+#: build/blocks/image-faq/block.json
+msgctxt "block keyword"
+msgid "image accordion"
+msgstr ""
+
+#: build/blocks/image-faq/block.json
+msgctxt "block keyword"
+msgid "horizontal accordion"
+msgstr ""
+
+#: build/blocks/image-faq/block.json
+msgctxt "block keyword"
+msgid "gallery faq"
+msgstr ""
+
+#: build/blocks/image-faq/block.json
+msgctxt "block keyword"
+msgid "photo faq"
+msgstr ""
+
+#: build/blocks/image-faq/block.json
+msgctxt "block keyword"
+msgid "showcase"
+msgstr ""
+
 #: build/blocks/nested-faq/block.json
 msgctxt "block title"
 msgid "Nested FAQ"
@@ -3704,4 +9311,84 @@ msgstr ""
 #: build/blocks/nested-faq/block.json
 msgctxt "block keyword"
 msgid "schema"
+msgstr ""
+
+#: build/blocks/post-faq/block.json
+msgctxt "block title"
+msgid "Post FAQ"
+msgstr ""
+
+#: build/blocks/post-faq/block.json
+msgctxt "block description"
+msgid "Turn your posts into an FAQ-style list. Pick a layout, choose the posts, and each title opens to show the excerpt with a link to read the rest."
+msgstr ""
+
+#: build/blocks/post-faq/block.json
+msgctxt "block keyword"
+msgid "post faq"
+msgstr ""
+
+#: build/blocks/post-faq/block.json
+msgctxt "block keyword"
+msgid "posts accordion"
+msgstr ""
+
+#: build/blocks/post-faq/block.json
+msgctxt "block keyword"
+msgid "blog faq"
+msgstr ""
+
+#: build/blocks/post-faq/block.json
+msgctxt "block keyword"
+msgid "article list"
+msgstr ""
+
+#: build/blocks/post-faq/block.json
+msgctxt "block keyword"
+msgid "knowledge"
+msgstr ""
+
+#: build/blocks/sidebar-tab-faq/block.json
+msgctxt "block title"
+msgid "Sidebar Post Tab"
+msgstr ""
+
+#: build/blocks/sidebar-tab-faq/block.json
+msgctxt "block description"
+msgid "A vertical list of post titles down one side, the answer beside it. Pick a look, choose the posts, and the list folds into an accordion on a phone."
+msgstr ""
+
+#: build/blocks/sidebar-tab-faq/block.json
+msgctxt "block keyword"
+msgid "sidebar post tab"
+msgstr ""
+
+#: build/blocks/sidebar-tab-faq/block.json
+msgctxt "block keyword"
+msgid "sidebar tabs"
+msgstr ""
+
+#: build/blocks/sidebar-tab-faq/block.json
+msgctxt "block keyword"
+msgid "vertical tabs"
+msgstr ""
+
+#: build/blocks/sidebar-tab-faq/block.json
+msgctxt "block keyword"
+msgid "tab faq"
+msgstr ""
+
+#: build/blocks/sidebar-tab-faq/block.json
+msgctxt "block keyword"
+msgid "side faq"
+msgstr ""
+
+#: build/blocks/sidebar-tab-faq/block.json
+msgctxt "block keyword"
+msgid "tabbed accordion"
+msgstr ""
+
+#: build/blocks/sidebar-tab-faq/block.json
+msgctxt "block keyword"
+msgid "services"
 msgstr ""

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400" role="img" aria-label="Preview of the glossary template">
+	<rect width="600" height="400" fill="#f6f7f9"/>
+	<rect x="210" y="40" width="180" height="18" rx="3" fill="#2b3440"/><rect x="150" y="72" width="300" height="10" rx="3" fill="#c7ccd4"/>
+	<text x="84" y="128" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="12" font-weight="700" fill="#0b81ee" text-anchor="start">A–F</text>
+	<line x1="128" y1="124" x2="520" y2="124" stroke="#eceff3"/>
+	<rect x="84" y="142" width="92" height="10" rx="3" fill="#2b3440"/>
+	<rect x="190" y="143" width="300" height="8" rx="3" fill="#8b95a3"/>
+	<rect x="84" y="166" width="118" height="10" rx="3" fill="#2b3440"/>
+	<rect x="190" y="167" width="258" height="8" rx="3" fill="#8b95a3"/>
+	<rect x="84" y="190" width="74" height="10" rx="3" fill="#2b3440"/>
+	<rect x="190" y="191" width="326" height="8" rx="3" fill="#8b95a3"/>
+	<text x="84" y="232" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="12" font-weight="700" fill="#0b81ee" text-anchor="start">G–P</text>
+	<line x1="128" y1="228" x2="520" y2="228" stroke="#eceff3"/>
+	<rect x="84" y="246" width="92" height="10" rx="3" fill="#2b3440"/>
+	<rect x="190" y="247" width="300" height="8" rx="3" fill="#8b95a3"/>
+	<rect x="84" y="270" width="118" height="10" rx="3" fill="#2b3440"/>
+	<rect x="190" y="271" width="258" height="8" rx="3" fill="#8b95a3"/>
+	<text x="84" y="312" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="12" font-weight="700" fill="#0b81ee" text-anchor="start">Q–Z</text>
+	<line x1="128" y1="308" x2="520" y2="308" stroke="#eceff3"/>
+	<rect x="84" y="326" width="92" height="10" rx="3" fill="#2b3440"/>
+	<rect x="190" y="327" width="300" height="8" rx="3" fill="#8b95a3"/>
+	<rect x="84" y="350" width="118" height="10" rx="3" fill="#2b3440"/>
+	<rect x="190" y="351" width="258" height="8" rx="3" fill="#8b95a3"/>
+</svg>

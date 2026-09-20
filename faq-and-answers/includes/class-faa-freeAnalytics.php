@@ -1,7 +1,18 @@
 <?php
+/**
+ * The Analytics menu item on a free install.
+ *
+ * Keeps the screen present at the slug the premium version uses, showing what
+ * the feature does rather than hiding it. Squared off to match the real
+ * Analytics screen — nothing on either page has a rounded corner.
+ *
+ * @package Awesome_FAQ
+ */
+
 if (!defined('ABSPATH')) {
     exit;
 }
+
 if (!class_exists('FaaFreeAnalytics')) {
     class FaaFreeAnalytics
     {
@@ -14,8 +25,8 @@ if (!class_exists('FaaFreeAnalytics')) {
         {
             add_submenu_page(
                 'edit.php?post_type=faq_cpt',
-                'Analytics',
-                'Analytics',
+                __('Analytics', 'faq-and-answers'),
+                __('Analytics', 'faq-and-answers'),
                 'manage_options',
                 'faq_analytics',
                 [$this, 'faq_analytics_free_page']
@@ -24,24 +35,36 @@ if (!class_exists('FaaFreeAnalytics')) {
 
         public function faq_analytics_free_page()
         {
+            if (!current_user_can('manage_options')) {
+                wp_die(esc_html__('You do not have permission to view FAQ analytics.', 'faq-and-answers'));
+            }
             ?>
             <div class="wrap">
-                <div style="position: relative; border-radius: 12px; overflow: hidden; ">
-                    <img src="<?php echo esc_url(AFAQ_DIR_URL . 'assets/faq-analysis-dashboard.png'); ?>" style="width: 100%; display: block;"
-                        alt="Analytics Preview">
-                    <div
-                        style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; color: #fff; width: 40%; line-height: 1.5;">
-                        <div
-                            style="background: rgba(0, 0, 0, 0.4); backdrop-filter: blur(5px); padding: 40px; border-radius: 20px; border: 1px solid rgba(255,255,255,0.1);">
-                            <div style="font-size: 50px; margin-bottom: 20px;">📊</div>
-                            <h2 style="color: #fff; font-size: 28px; font-weight: 700; margin: 0 0 15px;">
-                                <?php esc_html_e('Analytics is a Premium Feature', 'faq-and-answers'); ?></h2>
-                            <p style="font-size: 16px; margin-bottom: 30px; opacity: 0.9;">
-                                <?php esc_html_e('Unlock detailed insights into how your users interact with your FAQs. Track clicks, most popular questions, and export reports.', 'faq-and-answers'); ?>
+                <h1><?php esc_html_e('Analytics', 'faq-and-answers'); ?></h1>
+
+                <div style="position:relative; overflow:hidden; border:1px solid #dcdcde; background:#fff; margin-top:16px;">
+                    <img src="<?php echo esc_url(AFAQ_DIR_URL . 'assets/faq-analysis-dashboard.png'); ?>"
+                        style="width:100%; display:block;" alt="<?php esc_attr_e('Preview of the Analytics screen', 'faq-and-answers'); ?>">
+
+                    <?php
+                    // The padding here is what keeps the card off the edges of
+                    // the panel. border-box on both, or the padding is added to
+                    // the widths and the card runs past the sides it is meant
+                    // to be inset from.
+                    ?>
+                    <div style="position:absolute; inset:0; box-sizing:border-box; display:flex; align-items:center; justify-content:center; padding:40px 32px; background:rgba(15,23,42,0.55);">
+                        <div style="box-sizing:border-box; width:100%; max-width:520px; padding:36px 32px; background:#fff; border:1px solid #dcdcde; border-top:3px solid #2563eb; text-align:center;">
+                            <h2 style="margin:0 0 12px; font-size:22px; font-weight:700; color:#0f172a;">
+                                <?php esc_html_e('Analytics is a Pro feature', 'faq-and-answers'); ?>
+                            </h2>
+                            <p style="margin:0 0 24px; font-size:14px; line-height:1.7; color:#475569;">
+                                <?php esc_html_e('See which questions get clicked, how that changes day by day, which ones are trending, and export the whole thing as a CSV.', 'faq-and-answers'); ?>
                             </p>
-                            <a href="<?php echo esc_url(admin_url('edit.php?post_type=faq_cpt&page=faq_Dashboard/#pricing')); ?>"
-                                target="_blank" class="button button-primary button-large"
-                                style="background: #6366f1; border: none; padding: 10px 30px; font-size: 18px; height: auto; border-radius: 8px; font-weight: 600; box-shadow: 0 4px 14px rgba(99, 102, 241, 0.4);"><?php esc_html_e('Upgrade to Pro', 'faq-and-answers'); ?></a>
+                            <?php // "#/pricing", the dashboard's own route — "#pricing" matches nothing and lands on the dashboard's default view. ?>
+                            <a href="<?php echo esc_url(admin_url('edit.php?post_type=faq_cpt&page=faq_Dashboard#/pricing')); ?>"
+                                style="display:inline-block; padding:11px 28px; background:#2563eb; border:1px solid #2563eb; color:#fff; font-size:15px; font-weight:600; text-decoration:none;">
+                                <?php esc_html_e('Upgrade to Pro', 'faq-and-answers'); ?>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -49,5 +72,6 @@ if (!class_exists('FaaFreeAnalytics')) {
             <?php
         }
     }
+
     new FaaFreeAnalytics();
 }

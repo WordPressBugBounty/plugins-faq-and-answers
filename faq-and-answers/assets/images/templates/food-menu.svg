@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400" role="img" aria-label="Preview of the food menu template">
+	<rect width="600" height="400" fill="#1d1208"/>
+	<rect x="210" y="38" width="180" height="18" rx="3" fill="#ffffff"/><rect x="150" y="70" width="300" height="10" rx="3" fill="#98795a"/>
+	<rect x="49" y="108" width="64" height="244" rx="8" fill="#8a4416"/>
+	<rect x="49" y="296" width="64" height="56" rx="8" fill="#0d1218" fill-opacity="0.38"/>
+	<rect x="61" y="318" width="40" height="8" rx="3" fill="#ffffff"/>
+	<rect x="121" y="108" width="214" height="244" rx="8" fill="#a5401f"/>
+	<rect x="121" y="244" width="214" height="108" rx="8" fill="#0d1218" fill-opacity="0.42"/>
+	<rect x="139" y="270" width="120" height="12" rx="3" fill="#ffffff"/>
+	<rect x="139" y="292" width="156" height="7" rx="3" fill="#e8ebf0"/>
+	<rect x="139" y="306" width="128" height="7" rx="3" fill="#e8ebf0"/>
+	<rect x="139" y="324" width="74" height="20" rx="4" fill="none" stroke="#ffffff"/>
+	<rect x="343" y="108" width="64" height="244" rx="8" fill="#7a5c18"/>
+	<rect x="343" y="296" width="64" height="56" rx="8" fill="#0d1218" fill-opacity="0.38"/>
+	<rect x="355" y="318" width="40" height="8" rx="3" fill="#ffffff"/>
+	<rect x="415" y="108" width="64" height="244" rx="8" fill="#b25a2c"/>
+	<rect x="415" y="296" width="64" height="56" rx="8" fill="#0d1218" fill-opacity="0.38"/>
+	<rect x="427" y="318" width="40" height="8" rx="3" fill="#ffffff"/>
+	<rect x="487" y="108" width="64" height="244" rx="8" fill="#8f4a1c"/>
+	<rect x="487" y="296" width="64" height="56" rx="8" fill="#0d1218" fill-opacity="0.38"/>
+	<rect x="499" y="318" width="40" height="8" rx="3" fill="#ffffff"/>
+</svg>

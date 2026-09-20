@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400" role="img" aria-label="Preview of the service spotlight template">
+	<rect width="600" height="400" fill="#f6f7f9"/>
+	<rect x="220" y="38" width="160" height="18" rx="3" fill="#2b3440"/><rect x="150" y="70" width="300" height="10" rx="3" fill="#c7ccd4"/>
+	<rect x="80" y="110" width="68" height="230" rx="6" fill="#8e9aa8"/>
+	<rect x="80" y="250" width="68" height="90" rx="6" fill="#0f141c" fill-opacity="0.45"/>
+	<rect x="92" y="306" width="44" height="8" rx="3" fill="#ffffff"/>
+	<rect x="156" y="110" width="168" height="230" rx="6" fill="#7f8b99"/>
+	<rect x="156" y="250" width="168" height="90" rx="6" fill="#0f141c" fill-opacity="0.45"/>
+	<rect x="172" y="276" width="116" height="12" rx="3" fill="#ffffff"/>
+	<rect x="172" y="298" width="136" height="7" rx="3" fill="#e6e9ee"/>
+	<rect x="172" y="314" width="72" height="20" rx="3" fill="none" stroke="#ffffff"/>
+	<rect x="332" y="110" width="68" height="230" rx="6" fill="#98a1ae"/>
+	<rect x="332" y="250" width="68" height="90" rx="6" fill="#0f141c" fill-opacity="0.45"/>
+	<rect x="344" y="306" width="44" height="8" rx="3" fill="#ffffff"/>
+	<rect x="408" y="110" width="68" height="230" rx="6" fill="#8894a2"/>
+	<rect x="408" y="250" width="68" height="90" rx="6" fill="#0f141c" fill-opacity="0.45"/>
+	<rect x="420" y="306" width="44" height="8" rx="3" fill="#ffffff"/>
+	<rect x="484" y="110" width="68" height="230" rx="6" fill="#a2abb7"/>
+	<rect x="484" y="250" width="68" height="90" rx="6" fill="#0f141c" fill-opacity="0.45"/>
+	<rect x="496" y="306" width="44" height="8" rx="3" fill="#ffffff"/>
+</svg>

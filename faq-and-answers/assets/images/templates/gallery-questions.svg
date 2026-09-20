@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400" role="img" aria-label="Preview of the gallery questions template">
+	<defs>
+		<linearGradient id="afaq-gq-art" x1="0" y1="0" x2="1" y2="1">
+			<stop offset="0" stop-color="#f59e0b"/>
+			<stop offset="0.5" stop-color="#ec4899"/>
+			<stop offset="1" stop-color="#6366f1"/>
+		</linearGradient>
+	</defs>
+
+	<rect width="600" height="400" fill="#ffffff"/>
+	<rect x="238" y="26" width="124" height="15" rx="3" fill="#111827"/>
+	<rect x="198" y="52" width="204" height="8" rx="4" fill="#9aa1ab"/>
+
+	<!-- open row: dark bar, white answer panel with the picture -->
+	<rect x="60" y="86" width="480" height="44" rx="5" fill="#111827"/>
+	<rect x="78" y="97" width="22" height="22" rx="6" fill="#ffffff" fill-opacity="0.12"/>
+	<rect x="83" y="107" width="12" height="2.4" rx="1.2" fill="#ffffff"/>
+	<rect x="116" y="103" width="290" height="9" rx="4.5" fill="#ffffff"/>
+
+	<rect x="60" y="130" width="480" height="140" rx="5" fill="#ffffff" stroke="#e2e5ea"/>
+	<rect x="82" y="152" width="164" height="96" rx="4" fill="url(#afaq-gq-art)"/>
+	<circle cx="120" cy="184" r="13" fill="#ffffff" fill-opacity="0.35"/>
+	<path d="M82 230l38-32 32 26 26-22 68 46H82z" fill="#ffffff" fill-opacity="0.28"/>
+
+	<rect x="268" y="158" width="250" height="7" rx="3.5" fill="#c9ced6"/>
+	<rect x="268" y="174" width="250" height="7" rx="3.5" fill="#c9ced6"/>
+	<rect x="268" y="190" width="250" height="7" rx="3.5" fill="#c9ced6"/>
+	<rect x="268" y="206" width="168" height="7" rx="3.5" fill="#c9ced6"/>
+	<rect x="268" y="230" width="250" height="7" rx="3.5" fill="#c9ced6"/>
+	<rect x="268" y="246" width="202" height="7" rx="3.5" fill="#c9ced6"/>
+
+	<!-- closed rows -->
+	<g>
+		<rect x="60" y="282" width="480" height="44" rx="5" fill="#111827"/>
+		<rect x="78" y="293" width="22" height="22" rx="6" fill="#ffffff" fill-opacity="0.12"/>
+		<rect x="83" y="303" width="12" height="2.4" rx="1.2" fill="#ffffff"/>
+		<rect x="87.8" y="298.2" width="2.4" height="12" rx="1.2" fill="#ffffff"/>
+		<rect x="116" y="299" width="258" height="9" rx="4.5" fill="#ffffff"/>
+	</g>
+	<g>
+		<rect x="60" y="336" width="480" height="44" rx="5" fill="#111827"/>
+		<rect x="78" y="347" width="22" height="22" rx="6" fill="#ffffff" fill-opacity="0.12"/>
+		<rect x="83" y="357" width="12" height="2.4" rx="1.2" fill="#ffffff"/>
+		<rect x="87.8" y="352.2" width="2.4" height="12" rx="1.2" fill="#ffffff"/>
+		<rect x="116" y="353" width="296" height="9" rx="4.5" fill="#ffffff"/>
+	</g>
+</svg>

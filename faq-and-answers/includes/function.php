@@ -7,6 +7,49 @@ function faa_is_premium()
     return AFAQ_HAS_PRO ? faa_fs()->can_use_premium_code() : false;
 }
 
+if (!function_exists('afaq_frontend_bootstrap_js')) {
+    /**
+     * The one line of JavaScript every front end script of this plugin needs.
+     *
+     * Carries the licence flag and the click Analytics endpoint, and is written
+     * so printing it more than once on a page is harmless.
+     *
+     * That last part is the whole reason this function exists. It used to be
+     * built inline per script handle as `const scdIsPipeChecker = …`, and a top
+     * level `const` in a classic script lands in the shared global lexical
+     * scope — so a page with two FAQ blocks on it printed the declaration
+     * twice, and the second <script> tag threw "Identifier
+     * 'scdIsPipeChecker' has already been declared" before it reached the
+     * `window.faaAnalytics` assignment sitting on the same tag. `var` plus a
+     * window property re-runs cleanly.
+     *
+     * @return string JavaScript, ready to hand to wp_add_inline_script().
+     */
+    function afaq_frontend_bootstrap_js()
+    {
+        static $js = null;
+
+        if (null !== $js) {
+            return $js;
+        }
+
+        $is_premium = function_exists('faa_is_premium') ? (bool) faa_is_premium() : false;
+
+        $js = 'var scdIsPipeChecker = ' . wp_json_encode($is_premium) . ';'
+            . 'window.scdIsPipeChecker = scdIsPipeChecker;'
+            . 'window.faaAnalytics = window.faaAnalytics || ' . wp_json_encode([
+                'ajax_url' => admin_url('admin-ajax.php'),
+                'nonce'    => wp_create_nonce('faa_analytics_nonce'),
+                // Read by trackAnalytics.js purely so a dead endpoint on a free
+                // install reports itself in the console instead of looking like
+                // a bug in the block.
+                'tracking' => $is_premium,
+            ]) . ';';
+
+        return $js;
+    }
+}
+
 if (!function_exists('afaq_menu_badge')) {
     /**
      * A small badge to append to an admin menu label, e.g. "Ask AI  NEW".

@@ -3,7 +3,7 @@
 /**
  * Plugin Name: Awesome FAQ – Modern Accordion, Tabs, Responsive & Super Fast FAQ Builder
  * Description: Create responsive, customizable FAQ sections with ready-made templates.Perfect for boosting clarity, trust, and user experience on any page. 
- * Version: 2.4.0
+ * Version: 2.5.0
  * Author: bPlugins
  * Author URI: https://bplugins.com 
  * License: GPLv3 or later
@@ -16,9 +16,27 @@ if ( !defined( 'ABSPATH' ) ) {
 if ( function_exists( 'faa_fs' ) ) {
     faa_fs()->set_basename( false, __FILE__ );
 } else {
-    define( 'AFAQ_VERSION', ( isset( $_SERVER['HTTP_HOST'] ) && 'localhost' === $_SERVER['HTTP_HOST'] ? time() : '2.4.0' ) );
+    /*
+     * Read from the plugin header rather than repeated as a literal here.
+     *
+     * The literal said 2.4.0 while the header above said 2.5.0, so every asset
+     * versioned with this constant — the analytics stylesheet, the admin
+     * dashboard, the shortcode assets — kept its old cache-busting string
+     * across the upgrade, and browsers and CDNs went on serving the previous
+     * file. Derived, it cannot drift from the header again.
+     */
+    $afaq_header = get_file_data( __FILE__, [
+        'Version' => 'Version',
+    ], 'plugin' );
+    // On a local install the timestamp busts the cache on every reload, which
+    // is what makes editing a stylesheet bearable.
+    define( 'AFAQ_VERSION', ( isset( $_SERVER['HTTP_HOST'] ) && 'localhost' === $_SERVER['HTTP_HOST'] ? time() : (( !empty( $afaq_header['Version'] ) ? $afaq_header['Version'] : '2.5.0' )) ) );
+    unset($afaq_header);
     define( 'AFAQ_DIR_URL', plugin_dir_url( __FILE__ ) );
     define( 'AFAQ_DIR_PATH', plugin_dir_path( __FILE__ ) );
+    // The entry file itself, for plugin_basename() — the folder is named
+    // differently on the premium build, so the basename cannot be a literal.
+    define( 'AFAQ_FILE', __FILE__ );
     define( 'AFAQ_HAS_PRO', file_exists( AFAQ_DIR_PATH . 'vendor/freemius/start.php' ) );
     if ( !function_exists( 'faa_fs' ) ) {
         function faa_fs() {
@@ -37,7 +55,7 @@ if ( function_exists( 'faa_fs' ) ) {
                     'premium_slug'        => 'faq-and-answers-pro',
                     'type'                => 'plugin',
                     'public_key'          => 'pk_2d82b77e5ff183b2a656c04d19840',
-                    'is_premium'          => 'free',
+                    'is_premium'          => false,
                     'premium_suffix'      => 'Pro',
                     'has_premium_version' => true,
                     'has_addons'          => false,
