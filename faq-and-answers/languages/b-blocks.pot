@@ -2,21 +2,25 @@
 # This file is distributed under the GPLv3 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Awesome FAQ – Modern Accordion, Tabs, Responsive & Super Fast FAQ Builder 2.5.0\n"
+"Project-Id-Version: Awesome FAQ 2.5.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/faq-and-answers\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-09-20T06:07:27+00:00\n"
+"POT-Creation-Date: 2026-09-21T11:06:39+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: faq-and-answers\n"
 
 #. Plugin Name of the plugin
 #: faq-and-answers.php
-msgid "Awesome FAQ – Modern Accordion, Tabs, Responsive & Super Fast FAQ Builder"
+#: faq-and-answers-block.php:49
+#: includes/class_faaAdmin.php:105
+#: includes/class_faaAnalysis.php:116
+#: build/blocks/faq-parent/index.js:6
+msgid "Awesome FAQ"
 msgstr ""
 
 #. Description of the plugin
@@ -39,12 +43,13 @@ msgstr ""
 #: includes/Templates/ProSet.php:682
 #: includes/Templates/ProSet.php:764
 #: includes/Templates/SectorSet.php:884
-#: build/blocks/ask-ai/index.js:1
+#: build/blocks/ask-ai/index.js:270
+#: build/blocks/ask-ai/index.js:307
 msgid "Ask"
 msgstr ""
 
 #: build/blocks/ask-ai/render.php:62
-#: build/blocks/ask-ai/index.js:1
+#: build/blocks/ask-ai/index.js:308
 msgid "AI answer"
 msgstr ""
 
@@ -53,7 +58,7 @@ msgid "From our FAQ"
 msgstr ""
 
 #: build/blocks/ask-ai/render.php:72
-#: build/blocks/ask-ai/index.js:1
+#: build/blocks/ask-ai/index.js:309
 msgid "Was this helpful?"
 msgstr ""
 
@@ -66,7 +71,7 @@ msgid "Log in"
 msgstr ""
 
 #: build/blocks/ask-ai/render.php:120
-#: build/blocks/ask-ai/index.js:1
+#: build/blocks/ask-ai/index.js:306
 msgid "Type your question…"
 msgstr ""
 
@@ -75,7 +80,7 @@ msgid "Looking through the FAQs…"
 msgstr ""
 
 #: build/blocks/ask-ai/render.php:153
-#: build/blocks/ask-ai/index.js:1
+#: build/blocks/ask-ai/index.js:308
 msgid "Based on"
 msgstr ""
 
@@ -107,17 +112,17 @@ msgid "Ask a question"
 msgstr ""
 
 #: build/blocks/bento-faq/render.php:189
-#: build/blocks/bento-faq/index.js:1
+#: build/blocks/bento-faq/index.js:660
 msgid "Read answer"
 msgstr ""
 
 #: build/blocks/faq-form/render.php:62
-#: build/blocks/faq-form/index.js:1
+#: build/blocks/faq-form/index.js:298
 msgid "Still Have Questions?"
 msgstr ""
 
 #: build/blocks/faq-form/render.php:65
-#: build/blocks/faq-form/index.js:1
+#: build/blocks/faq-form/index.js:300
 msgid "Submit FAQ"
 msgstr ""
 
@@ -127,7 +132,7 @@ msgstr ""
 
 #. translators: %d: maximum number of words allowed.
 #: build/blocks/faq-form/render.php:280
-#: build/blocks/faq-form/index.js:1
+#: build/blocks/faq-form/index.js:294
 #, php-format,js-format
 msgid "0 words out of %d"
 msgstr ""
@@ -146,10 +151,10 @@ msgstr ""
 #: includes/class_faaAnalysis.php:1407
 #: includes/class_faaAnalysis.php:2128
 #: includes/submissions/class-afaq-submissions-list-table.php:52
-#: build/ask-ai-promo/index.js:1
-#: build/blocks/bento-faq/index.js:1
-#: build/blocks/faq-item/index.js:1
-#: build/blocks/nested-faq/index.js:1
+#: build/ask-ai-promo/index.js:80
+#: build/blocks/bento-faq/index.js:639
+#: build/blocks/faq-item/index.js:13
+#: build/blocks/nested-faq/index.js:397
 msgid "Question"
 msgstr ""
 
@@ -185,7 +190,8 @@ msgstr ""
 #: build/blocks/post-faq/render.php:310
 #: build/blocks/sidebar-tab-faq/render.php:343
 #: includes/Templates/Parts.php:419
-#: build/blocks/image-faq/index.js:1
+#: build/blocks/image-faq/index.js:378
+#: build/blocks/image-faq/index.js:405
 msgid "Read More"
 msgstr ""
 
@@ -235,13 +241,6 @@ msgstr ""
 msgid "Sidebar Post Tab: no posts matched. Check the post type and categories in the block settings."
 msgstr ""
 
-#: faq-and-answers-block.php:49
-#: includes/class_faaAdmin.php:105
-#: includes/class_faaAnalysis.php:116
-#: build/blocks/faq-parent/index.js:1
-msgid "Awesome FAQ"
-msgstr ""
-
 #: faq-and-answers-block.php:119
 #: woocommerce/class-afaq-wc-ai-connector.php:34
 msgid "WordPress AI Client is not available."
@@ -274,8 +273,8 @@ msgstr ""
 #: includes/class-faa-freeAskAi.php:55
 #: includes/class-faa-freeAskAi.php:56
 #: includes/class-faa-freeAskAi.php:126
-#: build/ask-ai-promo/index.js:1
-#: build/blocks/faq-parent/index.js:1
+#: build/ask-ai-promo/index.js:95
+#: build/blocks/faq-parent/index.js:9
 msgid "Ask AI"
 msgstr ""
 
@@ -323,7 +322,8 @@ msgstr ""
 
 #: includes/ai/class-afaq-ask-ai-admin.php:721
 #: includes/ai/class-afaq-ask-ai-admin.php:1953
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:20
+#: build/ask-ai-promo/index.js:52
 msgid "Cached"
 msgstr ""
 
@@ -337,7 +337,7 @@ msgid "Answered by AI"
 msgstr ""
 
 #: includes/ai/class-afaq-ask-ai-admin.php:792
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:96
 msgid "An answer assistant for your visitors, built from your FAQs and the answers you write yourself."
 msgstr ""
 
@@ -414,14 +414,15 @@ msgstr ""
 #: includes/ai/class-afaq-ask-ai-admin.php:1115
 #: includes/ai/class-afaq-ask-ai-admin.php:1201
 #: includes/ai/class-afaq-ask-ai-admin.php:2977
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:92
 msgid "Dashboard"
 msgstr ""
 
 #: includes/ai/class-afaq-ask-ai-admin.php:1116
 #: includes/ai/class-afaq-ask-ai-admin.php:1733
 #: includes/ai/class-afaq-ask-ai-admin.php:2981
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:77
+#: build/ask-ai-promo/index.js:92
 msgid "Asked Questions"
 msgstr ""
 
@@ -429,34 +430,38 @@ msgstr ""
 #: includes/ai/class-afaq-ask-ai-admin.php:2182
 #: includes/ai/class-afaq-ask-ai-admin.php:2985
 #: includes/ai/class-afaq-ask-ai.php:127
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:69
+#: build/ask-ai-promo/index.js:93
 msgid "AI Knowledge"
 msgstr ""
 
 #: includes/ai/class-afaq-ask-ai-admin.php:1118
 #: includes/ai/class-afaq-ask-ai-admin.php:2728
 #: includes/ai/class-afaq-ask-ai-admin.php:2989
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:88
+#: build/ask-ai-promo/index.js:93
 msgid "Settings"
 msgstr ""
 
 #: includes/ai/class-afaq-ask-ai-admin.php:1121
 #: includes/class_faaAnalysis.php:621
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:92
 msgid "General"
 msgstr ""
 
 #: includes/ai/class-afaq-ask-ai-admin.php:1136
 #: includes/Templates/DesignSet.php:305
 #: includes/Templates/DesignSet.php:320
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:93
 msgid "Support"
 msgstr ""
 
 #: includes/ai/class-afaq-ask-ai-admin.php:1143
 #: includes/ai/class-afaq-ask-ai-admin.php:1194
 #: includes/ai/class-afaq-ask-ai-admin.php:2996
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:55
+#: build/ask-ai-promo/index.js:59
+#: build/ask-ai-promo/index.js:93
 msgid "How it works"
 msgstr ""
 
@@ -538,7 +543,7 @@ msgstr ""
 
 #: includes/ai/class-afaq-ask-ai-admin.php:1270
 #: includes/ai/class-afaq-ask-ai-admin.php:1839
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:81
 msgid "Copy"
 msgstr ""
 
@@ -551,7 +556,7 @@ msgstr[0] ""
 msgstr[1] ""
 
 #: includes/ai/class-afaq-ask-ai-admin.php:1304
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:41
 msgid "Questions today"
 msgstr ""
 
@@ -560,7 +565,7 @@ msgid "since midnight UTC"
 msgstr ""
 
 #: includes/ai/class-afaq-ask-ai-admin.php:1313
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:41
 msgid "Answered for free"
 msgstr ""
 
@@ -604,12 +609,12 @@ msgid "%1$s up · %2$s down"
 msgstr ""
 
 #: includes/ai/class-afaq-ask-ai-admin.php:1371
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:45
 msgid "Last 14 days"
 msgstr ""
 
 #: includes/ai/class-afaq-ask-ai-admin.php:1372
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:45
 msgid "questions per day"
 msgstr ""
 
@@ -618,13 +623,14 @@ msgid "One bar per day. Hover a bar for the exact split — purple is what the A
 msgstr ""
 
 #: includes/ai/class-afaq-ask-ai-admin.php:1391
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:48
 msgid "Today's AI budget"
 msgstr ""
 
 #. translators: %s: daily limit.
+#. translators: %s: daily call limit.
 #: includes/ai/class-afaq-ask-ai-admin.php:1400
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:49
 #, php-format,js-format
 msgid "of %s calls"
 msgstr ""
@@ -634,7 +640,7 @@ msgid "Cached answers and answers taken straight from a FAQ are free and never c
 msgstr ""
 
 #: includes/ai/class-afaq-ask-ai-admin.php:1417
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:49
 msgid "Knowledge base"
 msgstr ""
 
@@ -653,7 +659,7 @@ msgid "Kept in step on its own — editing an FAQ or changing how answers read r
 msgstr ""
 
 #: includes/ai/class-afaq-ask-ai-admin.php:1458
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:50
 msgid "Today so far"
 msgstr ""
 
@@ -676,7 +682,7 @@ msgid "%1$s cached, %2$s from FAQ, %3$s answered by AI"
 msgstr ""
 
 #: includes/ai/class-afaq-ask-ai-admin.php:1509
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:56
 msgid "Top gaps to fill"
 msgstr ""
 
@@ -748,12 +754,12 @@ msgid "Clear"
 msgstr ""
 
 #: includes/ai/class-afaq-ask-ai-admin.php:1734
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:77
 msgid "What visitors asked in their own words. Every gap here is an answer worth writing — and once written, that question is answered for free from then on."
 msgstr ""
 
 #: includes/ai/class-afaq-ask-ai-admin.php:1748
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:80
 msgid "Questions with no answer"
 msgstr ""
 
@@ -804,12 +810,12 @@ msgid "last asked %s ago"
 msgstr ""
 
 #: includes/ai/class-afaq-ask-ai-admin.php:1854
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:82
 msgid "Answer it"
 msgstr ""
 
 #: includes/ai/class-afaq-ask-ai-admin.php:1862
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:82
 msgid "Dismiss"
 msgstr ""
 
@@ -828,7 +834,7 @@ msgid "Clear all collected questions"
 msgstr ""
 
 #: includes/ai/class-afaq-ask-ai-admin.php:1951
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:51
 msgid "AI"
 msgstr ""
 
@@ -837,7 +843,7 @@ msgid "Answers &amp; feedback"
 msgstr ""
 
 #: includes/ai/class-afaq-ask-ai-admin.php:1962
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:83
 msgid "thumbs down first"
 msgstr ""
 
@@ -866,7 +872,7 @@ msgstr[0] ""
 msgstr[1] ""
 
 #: includes/ai/class-afaq-ask-ai-admin.php:2030
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:85
 msgid "More people disliked this than liked it — edit the FAQ it came from so the answer covers what they are really asking."
 msgstr ""
 
@@ -880,7 +886,7 @@ msgstr ""
 
 #: includes/ai/class-afaq-ask-ai-admin.php:2150
 #: includes/ai/class-afaq-ask-ai-admin.php:2353
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:71
 msgid "From your FAQs"
 msgstr ""
 
@@ -893,7 +899,7 @@ msgstr[0] ""
 msgstr[1] ""
 
 #: includes/ai/class-afaq-ask-ai-admin.php:2160
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:72
 msgid "kept in step automatically"
 msgstr ""
 
@@ -903,7 +909,7 @@ msgstr ""
 
 #: includes/ai/class-afaq-ask-ai-admin.php:2168
 #: includes/ai/class-afaq-ask-ai-admin.php:2617
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:73
 msgid "Your own answers"
 msgstr ""
 
@@ -1004,7 +1010,7 @@ msgstr ""
 
 #: includes/ai/class-afaq-ask-ai-admin.php:2393
 #: includes/class_faaAdmin.php:109
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:73
 msgid "Edit FAQ"
 msgstr ""
 
@@ -1049,7 +1055,7 @@ msgid "For answers that belong nowhere else, or wording your FAQs do not cover. 
 msgstr ""
 
 #: includes/ai/class-afaq-ask-ai-admin.php:2511
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:25
 msgid "Do you ship to Canada?"
 msgstr ""
 
@@ -1066,10 +1072,10 @@ msgid "Optional. Shown under the answer for anyone who wants the whole story."
 msgstr ""
 
 #: includes/ai/class-afaq-ask-ai-admin.php:2533
-#: build/blocks/ask-ai/index.js:1
-#: build/blocks/bento-faq/index.js:1
-#: build/blocks/nested-faq/index.js:1
-#: build/blocks/sidebar-tab-faq/index.js:1
+#: build/blocks/ask-ai/index.js:272
+#: build/blocks/bento-faq/index.js:639
+#: build/blocks/nested-faq/index.js:399
+#: build/blocks/sidebar-tab-faq/index.js:287
 msgid "Answer"
 msgstr ""
 
@@ -1144,7 +1150,7 @@ msgstr[0] ""
 msgstr[1] ""
 
 #: includes/ai/class-afaq-ask-ai-admin.php:2677
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:74
 msgid "Edit"
 msgstr ""
 
@@ -1166,62 +1172,62 @@ msgid "Delete"
 msgstr ""
 
 #: includes/ai/class-afaq-ask-ai-admin.php:2729
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:88
 msgid "Spending limits, abuse protection and how the answers read. Values outside the allowed range are clamped on save, so the guards can never be switched off by accident."
 msgstr ""
 
 #: includes/ai/class-afaq-ask-ai-admin.php:2738
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:33
 msgid "Cost control"
 msgstr ""
 
 #: includes/ai/class-afaq-ask-ai-admin.php:2740
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:33
 msgid "These decide the most you can ever be charged in a day."
 msgstr ""
 
 #: includes/ai/class-afaq-ask-ai-admin.php:2743
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:33
 msgid "Daily AI budget"
 msgstr ""
 
 #: includes/ai/class-afaq-ask-ai-admin.php:2747
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:34
 msgid "AI calls"
 msgstr ""
 
 #: includes/ai/class-afaq-ask-ai-admin.php:2748
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:34
 msgid "A hard ceiling for the whole site. Cached answers and answers taken straight from a FAQ do not count against it."
 msgstr ""
 
 #: includes/ai/class-afaq-ask-ai-admin.php:2753
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:34
 msgid "Cache answers for"
 msgstr ""
 
 #: includes/ai/class-afaq-ask-ai-admin.php:2757
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:34
 msgid "hours"
 msgstr ""
 
 #: includes/ai/class-afaq-ask-ai-admin.php:2758
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:34
 msgid "Longer is cheaper — a repeated question then costs nothing. Set to 0 to disable caching, which is not recommended."
 msgstr ""
 
 #: includes/ai/class-afaq-ask-ai-admin.php:2763
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:35
 msgid "Answer length"
 msgstr ""
 
 #: includes/ai/class-afaq-ask-ai-admin.php:2767
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:35
 msgid "words"
 msgstr ""
 
 #: includes/ai/class-afaq-ask-ai-admin.php:2768
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:35
 msgid "Output is the expensive half of an AI call, so shorter answers cost less. Between 70 and 90 reads well."
 msgstr ""
 
@@ -1230,7 +1236,7 @@ msgid "How much of each answer is used"
 msgstr ""
 
 #: includes/ai/class-afaq-ask-ai-admin.php:2777
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:39
 msgid "characters"
 msgstr ""
 
@@ -1239,7 +1245,7 @@ msgid "Longer FAQ answers are cut to this before the assistant reads them, so an
 msgstr ""
 
 #: includes/ai/class-afaq-ask-ai-admin.php:2783
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:35
 msgid "Budget alert e-mail"
 msgstr ""
 
@@ -1248,47 +1254,47 @@ msgid "One notice a day when 80% of the budget is gone, so the bill never arrive
 msgstr ""
 
 #: includes/ai/class-afaq-ask-ai-admin.php:2795
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:36
 msgid "Abuse protection"
 msgstr ""
 
 #: includes/ai/class-afaq-ask-ai-admin.php:2797
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:36
 msgid "Only AI calls are counted, so a visitor reading cached or FAQ answers is never locked out. Logged-in editors are never limited."
 msgstr ""
 
 #: includes/ai/class-afaq-ask-ai-admin.php:2800
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:36
 msgid "Per visitor limits"
 msgstr ""
 
 #: includes/ai/class-afaq-ask-ai-admin.php:2806
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:36
 msgid "per minute"
 msgstr ""
 
 #: includes/ai/class-afaq-ask-ai-admin.php:2812
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:37
 msgid "per hour"
 msgstr ""
 
 #: includes/ai/class-afaq-ask-ai-admin.php:2818
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:37
 msgid "per day"
 msgstr ""
 
 #: includes/ai/class-afaq-ask-ai-admin.php:2821
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:37
 msgid "The hourly limit is capped at the daily one automatically."
 msgstr ""
 
 #: includes/ai/class-afaq-ask-ai-admin.php:2826
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:37
 msgid "Minimum time before sending"
 msgstr ""
 
 #: includes/ai/class-afaq-ask-ai-admin.php:2830
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:37
 msgid "seconds"
 msgstr ""
 
@@ -1297,17 +1303,17 @@ msgid "Nobody reads a page and types a question in under two seconds, so anythin
 msgstr ""
 
 #: includes/ai/class-afaq-ask-ai-admin.php:2836
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:37
 msgid "Access"
 msgstr ""
 
 #: includes/ai/class-afaq-ask-ai-admin.php:2840
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:38
 msgid "Only logged-in users can ask"
 msgstr ""
 
 #: includes/ai/class-afaq-ask-ai-admin.php:2843
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:38
 msgid "Signed-out visitors see a \"log in to ask\" prompt instead of the form, and a floating bubble is not shown at all."
 msgstr ""
 
@@ -1320,12 +1326,12 @@ msgid "Purge it after changing this — cached pages keep serving whichever vers
 msgstr ""
 
 #: includes/ai/class-afaq-ask-ai-admin.php:2854
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:38
 msgid "Answers"
 msgstr ""
 
 #: includes/ai/class-afaq-ask-ai-admin.php:2858
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:38
 msgid "Tone"
 msgstr ""
 
@@ -1334,42 +1340,42 @@ msgid "friendly and to the point"
 msgstr ""
 
 #: includes/ai/class-afaq-ask-ai-admin.php:2863
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:39
 msgid "Added to the instructions the assistant follows. Leave empty for a neutral support voice."
 msgstr ""
 
 #: includes/ai/class-afaq-ask-ai-admin.php:2868
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:39
 msgid "Insights"
 msgstr ""
 
 #: includes/ai/class-afaq-ask-ai-admin.php:2872
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:40
 msgid "Record unanswered questions and feedback"
 msgstr ""
 
 #: includes/ai/class-afaq-ask-ai-admin.php:2874
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:40
 msgid "This is what fills the Questions section. Only the question text is stored — never the visitor."
 msgstr ""
 
 #: includes/ai/class-afaq-ask-ai-admin.php:2880
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:91
 msgid "Save changes"
 msgstr ""
 
 #: includes/ai/class-afaq-ask-ai-admin.php:2881
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:91
 msgid "Limits are clamped to safe values on save."
 msgstr ""
 
 #: includes/ai/class-afaq-ask-ai-admin.php:2902
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:28
 msgid "A visitor asks a question"
 msgstr ""
 
 #: includes/ai/class-afaq-ask-ai-admin.php:2903
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:29
 msgid "The block prints its form with the page, so nothing is requested and nothing is spent until somebody actually types something."
 msgstr ""
 
@@ -1379,27 +1385,31 @@ msgstr ""
 #: includes/ai/class-afaq-ask-ai-admin.php:2919
 #: includes/ai/class-afaq-ask-ai-admin.php:2924
 #: includes/ai/class-afaq-ask-ai-admin.php:2929
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:20
+#: build/ask-ai-promo/index.js:29
+#: build/ask-ai-promo/index.js:30
+#: build/ask-ai-promo/index.js:31
+#: build/ask-ai-promo/index.js:32
 msgid "free"
 msgstr ""
 
 #: includes/ai/class-afaq-ask-ai-admin.php:2907
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:29
 msgid "Bot checks"
 msgstr ""
 
 #: includes/ai/class-afaq-ask-ai-admin.php:2908
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:29
 msgid "A hidden field no person can see must stay empty, the question has to be between 3 and 300 characters, and anything submitted in under two seconds is treated as a script."
 msgstr ""
 
 #: includes/ai/class-afaq-ask-ai-admin.php:2912
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:30
 msgid "Cache lookup"
 msgstr ""
 
 #: includes/ai/class-afaq-ask-ai-admin.php:2913
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:30
 msgid "Questions are reduced to their meaningful words, so \"What is your refund policy?\" and \"refund policy???\" share one cached answer. A hit returns instantly and costs nothing."
 msgstr ""
 
@@ -1412,27 +1422,27 @@ msgid "Only your own FAQ content is searched, with word endings trimmed so \"ser
 msgstr ""
 
 #: includes/ai/class-afaq-ask-ai-admin.php:2922
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:31
 msgid "An exact match answers directly"
 msgstr ""
 
 #: includes/ai/class-afaq-ask-ai-admin.php:2923
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:31
 msgid "If the question is essentially one you have already answered, your wording is served as it is. No model is involved, so it is instant and free."
 msgstr ""
 
 #: includes/ai/class-afaq-ask-ai-admin.php:2927
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:32
 msgid "Limits are checked"
 msgstr ""
 
 #: includes/ai/class-afaq-ask-ai-admin.php:2928
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:32
 msgid "Only now do the per visitor limits and the daily site budget apply — so somebody reading cached or FAQ answers is never locked out."
 msgstr ""
 
 #: includes/ai/class-afaq-ask-ai-admin.php:2932
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:32
 msgid "The AI writes an answer"
 msgstr ""
 
@@ -1441,7 +1451,7 @@ msgid "The model receives your matching FAQ snippets and nothing else, and is to
 msgstr ""
 
 #: includes/ai/class-afaq-ask-ai-admin.php:2934
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:33
 msgid "costs a call"
 msgstr ""
 
@@ -1534,7 +1544,7 @@ msgid "to do"
 msgstr ""
 
 #: includes/ai/class-afaq-ask-ai-admin.php:3052
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:60
 msgid "The journey of one question"
 msgstr ""
 
@@ -1551,7 +1561,7 @@ msgid "Four screens, and only one of them needs visiting regularly — Asked Que
 msgstr ""
 
 #: includes/ai/class-afaq-ask-ai-admin.php:3098
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:61
 msgid "It cannot make things up"
 msgstr ""
 
@@ -1560,7 +1570,7 @@ msgid "The model never sees your database, your pages or the open web. It receiv
 msgstr ""
 
 #: includes/ai/class-afaq-ask-ai-admin.php:3108
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:62
 msgid "Privacy"
 msgstr ""
 
@@ -1711,7 +1721,9 @@ msgstr ""
 #: includes/class-faa-freeAskAi.php:135
 #: includes/class-faa-freeSubmissions.php:198
 #: includes/class_faaAdmin.php:171
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:14
+#: build/ask-ai-promo/index.js:55
+#: build/ask-ai-promo/index.js:96
 msgid "Upgrade to Pro"
 msgstr ""
 
@@ -1776,7 +1788,7 @@ msgid "3 days ago"
 msgstr ""
 
 #: includes/class-faa-freeSubmissions.php:99
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:17
 msgid "Is there a discount for non-profits?"
 msgstr ""
 
@@ -1785,7 +1797,8 @@ msgid "1 week ago"
 msgstr ""
 
 #: includes/class-faa-freeSubmissions.php:107
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:18
+#: build/ask-ai-promo/index.js:25
 msgid "Which payment methods do you take?"
 msgstr ""
 
@@ -1891,27 +1904,27 @@ msgid "Dashboard!"
 msgstr ""
 
 #: includes/class_faaAnalysis.php:117
-#: build/blocks/faq-parent/index.js:1
+#: build/blocks/faq-parent/index.js:6
 msgid "Post FAQ"
 msgstr ""
 
 #: includes/class_faaAnalysis.php:118
-#: build/blocks/faq-parent/index.js:1
+#: build/blocks/faq-parent/index.js:7
 msgid "Sidebar Post Tab"
 msgstr ""
 
 #: includes/class_faaAnalysis.php:119
-#: build/blocks/faq-parent/index.js:1
+#: build/blocks/faq-parent/index.js:8
 msgid "Nested FAQ"
 msgstr ""
 
 #: includes/class_faaAnalysis.php:120
-#: build/blocks/faq-parent/index.js:1
+#: build/blocks/faq-parent/index.js:8
 msgid "Bento FAQ"
 msgstr ""
 
 #: includes/class_faaAnalysis.php:121
-#: build/blocks/faq-parent/index.js:1
+#: build/blocks/faq-parent/index.js:8
 msgid "Image FAQ"
 msgstr ""
 
@@ -2328,7 +2341,7 @@ msgid "You do not have permission to change this setting."
 msgstr ""
 
 #. translators: %s: FAQ post ID used in the shortcode.
-#: includes/class_faaPlugin.php:236
+#: includes/class_faaPlugin.php:266
 #, php-format
 msgid "Error: Awesome FAQ with ID %s not found."
 msgstr ""
@@ -2644,8 +2657,8 @@ msgid "Any time, in either direction. Upgrades take effect immediately and you o
 msgstr ""
 
 #: includes/Templates/CoreSet.php:82
-#: build/ask-ai-promo/index.js:1
-#: build/blocks/ask-ai/index.js:1
+#: build/ask-ai-promo/index.js:24
+#: build/blocks/ask-ai/index.js:272
 msgid "What is your refund policy?"
 msgstr ""
 
@@ -2700,11 +2713,11 @@ msgstr ""
 
 #: includes/Templates/CoreSet.php:173
 #: includes/Templates/CoreSet.php:178
-#: build/blocks/bento-faq/index.js:1
-#: build/blocks/image-faq/index.js:1
-#: build/blocks/nested-faq/index.js:1
-#: build/blocks/post-faq/index.js:1
-#: build/blocks/sidebar-tab-faq/index.js:1
+#: build/blocks/bento-faq/index.js:633
+#: build/blocks/image-faq/index.js:410
+#: build/blocks/nested-faq/index.js:392
+#: build/blocks/post-faq/index.js:282
+#: build/blocks/sidebar-tab-faq/index.js:275
 msgid "Behaviour"
 msgstr ""
 
@@ -3167,7 +3180,7 @@ msgid "Product management, secure payments and a checkout short enough that peop
 msgstr ""
 
 #: includes/Templates/CoreSet.php:835
-#: build/blocks/image-faq/index.js:1
+#: build/blocks/image-faq/index.js:375
 msgid "Snow-capped peaks at sunrise"
 msgstr ""
 
@@ -3698,8 +3711,10 @@ msgid "It turns itself off. If your system asks for reduced motion, panels open 
 msgstr ""
 
 #: includes/Templates/DetailSet.php:214
-#: build/blocks/faq-form/index.js:1
-#: build/blocks/image-faq/index.js:1
+#: build/blocks/faq-form/index.js:272
+#: build/blocks/faq-form/index.js:273
+#: build/blocks/image-faq/index.js:413
+#: build/blocks/image-faq/index.js:414
 msgid "Colour"
 msgstr ""
 
@@ -4138,7 +4153,7 @@ msgid "Thirty-day refund, no questions"
 msgstr ""
 
 #: includes/Templates/ProSet.php:87
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:98
 msgid "See the plans"
 msgstr ""
 
@@ -4725,7 +4740,7 @@ msgid "Type the question. If the answer is already written, this finds it and sa
 msgstr ""
 
 #: includes/Templates/ProSet.php:760
-#: build/blocks/ask-ai/index.js:1
+#: build/blocks/ask-ai/index.js:305
 msgid "Ask us anything"
 msgstr ""
 
@@ -6498,8 +6513,8 @@ msgid "Please enter a prompt first."
 msgstr ""
 
 #: woocommerce/class-afaq-woocommerce.php:114
-#: build/blocks/faq-item/index.js:1
-#: build/blocks/nested-faq/index.js:1
+#: build/blocks/faq-item/index.js:7
+#: build/blocks/nested-faq/index.js:278
 msgid "Default"
 msgstr ""
 
@@ -6515,2410 +6530,2590 @@ msgstr ""
 msgid "Theme Three"
 msgstr ""
 
-#: build/admin-dashboard.js:1
+#: build/admin-dashboard.js:363
 msgid "Advanced FAQ Categories & Filtering."
 msgstr ""
 
-#: build/admin-dashboard.js:1
+#: build/admin-dashboard.js:363
 msgid "50+ Ready Pages Template library"
 msgstr ""
 
-#: build/admin-dashboard.js:1
+#: build/admin-dashboard.js:363
 msgid "More premium FAQ templates."
 msgstr ""
 
-#: build/admin-dashboard.js:1
+#: build/admin-dashboard.js:364
 msgid "Advanced FAQ Search Options."
 msgstr ""
 
-#: build/admin-dashboard.js:1
+#: build/admin-dashboard.js:364
 msgid "FAQ Schema Rich Results – Improve SEO & Search Visibility."
 msgstr ""
 
-#: build/admin-dashboard.js:1
+#: build/admin-dashboard.js:364
 msgid "Shortcode Support – Display FAQs Anywhere."
 msgstr ""
 
-#: build/admin-dashboard.js:1
+#: build/admin-dashboard.js:364
 msgid "Multi-Column FAQ Layout Support."
 msgstr ""
 
-#: build/admin-dashboard.js:1
+#: build/admin-dashboard.js:364
 msgid "Advanced Design Controls – Colors, Icons, Spacing & Typography."
 msgstr ""
 
-#: build/admin-dashboard.js:1
+#: build/admin-dashboard.js:364
 msgid "Additional layouts & animation effects."
 msgstr ""
 
-#: build/admin-dashboard.js:1
+#: build/admin-dashboard.js:365
 msgid "Analytics dashboard to track user interactions and popular questions."
 msgstr ""
 
-#: build/admin-dashboard.js:1
+#: build/admin-dashboard.js:365
 msgid "Advanced Classic Editor Support for Answers."
 msgstr ""
 
-#: build/admin-dashboard.js:1
+#: build/admin-dashboard.js:365
 msgid "WooCommerce Product FAQ Integration."
 msgstr ""
 
-#: build/admin-dashboard.js:1
+#: build/admin-dashboard.js:365
 msgid "AI-Powered WooCommerce Product FAQ Builder."
 msgstr ""
 
-#: build/admin-dashboard.js:1
+#: build/admin-dashboard.js:365
 msgid "WooCommerce Settings Panel."
 msgstr ""
 
-#: build/admin-dashboard.js:1
+#: build/admin-dashboard.js:365
 msgid "Ask AI Block & Ask AI Dashboard."
 msgstr ""
 
-#: build/admin-dashboard.js:1
+#: build/admin-dashboard.js:366
 msgid "FAQ Form Block - Allow visitors to submit questions directly from the front end with custom form fields and submission management."
 msgstr ""
 
-#: build/admin-dashboard.js:1
+#: build/admin-dashboard.js:366
 msgid "FAQ Image Block - Display FAQs with images and media."
 msgstr ""
 
-#: build/admin-dashboard.js:1
+#: build/admin-dashboard.js:366
 msgid "FAQ Sidebar Tab Block - Vertical sidebar navigation with tabbed FAQ categories and smooth seamless switching."
 msgstr ""
 
-#: build/admin-dashboard.js:1
+#: build/admin-dashboard.js:366
 msgid "FAQ Post - Display FAQs from WordPress posts or custom post types."
 msgstr ""
 
-#: build/admin-dashboard.js:1
+#: build/admin-dashboard.js:367
 msgid "Nested FAQ Block & Advanced Settings Panel."
 msgstr ""
 
-#: build/admin-dashboard.js:1
+#: build/admin-dashboard.js:367
 msgid "AI-Powered Gutenberg FAQ Builder (generate Q&A content and dynamically customize layout designs, colors, and backgrounds using custom prompts)."
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:13
 msgid "Pro dashboard"
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:13
 msgid "Turn your FAQs into an answer assistant"
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:14
 msgid "Ask AI ships with Awesome FAQ Pro, together with every other premium block and the analytics dashboard — one licence, no separate AI subscription to manage."
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:15
 msgid "See it on a live site"
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:16
 msgid "Do you ship to Canada, and how long does it take?"
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:17
+#: build/ask-ai-promo/index.js:25
 msgid "Can I pay monthly instead of yearly?"
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:17
+#: build/ask-ai-promo/index.js:26
 msgid "What happens to my data if I cancel?"
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:17
 msgid "Does the licence cover my client sites?"
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:17
 msgid "How long is the refund window?"
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:17
 msgid "You can request a full refund within 14 days of purchase — just reply to your order e-mail and we will process it, no questions asked."
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:18
 msgid "Can I move my licence to another domain?"
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:18
 msgid "Yes. Deactivate the licence on the old site from the plugin's Activation screen, then activate it on the new one. Your remaining term carries over."
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:19
 msgid "All major cards and PayPal. Bank transfer is available on annual plans over five sites."
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:19
 msgid "Do you offer phone support?"
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:19
 msgid "Support runs over e-mail and the plugin forum so every reply is written down and searchable."
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:19
 msgid "From your FAQ"
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:20
 msgid "AI wrote it"
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:20
 msgid "1 call"
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:20
 msgid "Direct answers to visitor questions"
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:20
 msgid "Visitors type what they need and get instant answers based only on your FAQs. It never makes up wrong information."
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:21
 msgid "See missing questions automatically"
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:21
 msgid "Tracks unanswered questions and ranks them by popularity, showing you exactly what new FAQs to write."
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:21
 msgid "Strict daily spending limits"
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:21
 msgid "Set a maximum daily limit so you never spend more than planned. Get email warnings before reaching the cap."
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:22
 msgid "Most answers are completely free"
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:22
 msgid "Saved answers and repeat questions are shown instantly without using AI credits, keeping costs very low."
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:22
 msgid "Built-in protection from abuse"
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:22
 msgid "Automatic limits per visitor and smart bot protection stop spammers from draining your budget."
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:23
 msgid "Spot unclear answers fast"
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:23
 msgid "Visitor ratings highlight answers with thumbs-down feedback so you can quickly improve them."
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:23
 msgid "Complete visitor privacy"
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:23
 msgid "Only question text is saved. No names, personal details, or visitor tracking are ever collected."
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:24
 msgid "Easy control over your content"
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:24
 msgid "Updates automatically whenever you edit your FAQs. Easily add or change custom answers anytime with zero setup."
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:24
+#: build/ask-ai-promo/index.js:25
 msgid "FAQ: Billing"
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:24
 msgid "How long does delivery take?"
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:25
 msgid "FAQ: Shipping"
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:25
 msgid "Do you offer student pricing?"
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:25
 msgid "Pricing page"
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:25
 msgid "added from a gap"
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:26
 msgid "added by hand"
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:26
 msgid "A question box, answered in seconds"
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:26
 msgid "Clickable suggested questions"
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:26
 msgid "Rotating hints in the empty field"
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:26
 msgid "Sources under every answer"
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:27
 msgid "AI answers labelled as AI"
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:27
 msgid "A 👍 / 👎 on each answer"
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:27
 msgid "A \"still need help?\" fallback link"
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:27
 msgid "Your colours, fonts and spacing"
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:27
 msgid "Questions your FAQs miss, ranked"
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:27
 msgid "One click from a gap to an answer"
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:27
 msgid "Write answers no FAQ has to carry"
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:27
 msgid "Extra wordings for the same answer"
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:28
 msgid "Answer from your FAQs, or only yours"
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:28
 msgid "Pause an entry without deleting it"
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:28
 msgid "A daily budget nothing can exceed"
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:28
 msgid "Per-visitor rate limits"
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:28
 msgid "14 days of usage at a glance"
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:28
 msgid "Rated answers, worst first"
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:30
 msgid "Your knowledge is searched"
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:30
 msgid "Only what you have given the assistant is searched — your published FAQs and the answers you wrote yourself — with word endings trimmed so \"service\" matches \"services\". If nothing is close enough, the visitor gets related questions instead of a made-up answer."
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:33
 msgid "The model receives your matching entries and nothing else, and is told to reply only from them. Its reply is stripped down to plain paragraphs and lists before it reaches the page."
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:35
 msgid "One notice a day when 80% of the budget is gone, so the bill never arrives as a surprise."
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:37
 msgid "Nobody reads a page and types a question in under two seconds, so anything faster is treated as a script."
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:38
 msgid "How the assistant reads, and what it remembers."
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:38
 msgid "Friendly and brief, like a helpful shop assistant"
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:39
 msgid "Most an entry may carry"
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:39
 msgid "How much of a long FAQ or a hand-written answer reaches the assistant. Raise it if your answers are being cut short."
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:41
 msgid "Ask AI Block"
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:41
 msgid "Ask AI Admin Dashboard"
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:41
 msgid "asked by visitors"
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#. translators: %s: percentage of answers that cost nothing.
+#: build/ask-ai-promo/index.js:43
 #, js-format
 msgid "%s%% of everything asked"
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:43
 msgid "AI calls used"
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#. translators: %s: the daily budget in AI calls.
+#: build/ask-ai-promo/index.js:44
 #, js-format
 msgid "of a %s call budget"
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:44
 msgid "Gaps found"
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:44
 msgid "FAQs worth writing next"
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:45
 msgid "One bar per day. The blue part is what the AI was actually asked to answer — everything below it cost nothing."
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:47
 msgid "AI answered"
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:47
 msgid "cached or straight from a FAQ"
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:49
 msgid "A ceiling you set, that nothing can push past. Cached answers and answers taken straight from a FAQ are free and never counted here."
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:50
 msgid "question and answer pairs"
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:50
 msgid "112 from your FAQs, 16 your own answers."
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:50
 msgid "Assembled from your published FAQs and kept in step on its own — editing an FAQ or changing how answers read refreshes it without being asked."
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:51
 msgid "from a FAQ"
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:51
 msgid "cached"
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:51
 msgid "Straight from a FAQ"
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:52
 msgid "Written by the AI"
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:52
 msgid "The more of this bar that is green or blue, the less the assistant costs you."
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:53
 msgid "Turn Your FAQs & Custom Answers into an Instant AI Answers Assistant."
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:53
 msgid "Ask AI puts a question box on your site and answers only from what you have given it: your published FAQs, plus any answers you write yourself on the AI Knowledge screen. Nothing else — so it cannot invent a policy you do not have. Every question it could not answer is written down for you, which quietly turns into the best content plan you will ever get: the questions your customers are actually asking."
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:55
 msgid "What the Pro dashboard shows you"
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:55
 msgid "These are the real panels, with sample figures in place of your own. Upgrading fills them in at this very same address — there is no new screen to learn."
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:56
 msgid "The panel worth the licence on its own"
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:57
 msgid "See the whole list"
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:57
 msgid "Asked most often, answered by nothing in your FAQs yet. Write one of these up and it is answered instantly and for free from then on."
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:58
 msgid "Write FAQ"
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:58
 msgid "What you get"
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:58
 msgid "Key features included with your license, built to save time and keep costs low."
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:59
 msgid "What happens between a visitor pressing Ask and an answer appearing — and which of those steps costs anything."
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:60
 msgid "Each step can end the request. Most questions never reach the last one — which is exactly why running this is cheaper than people expect."
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:61
 msgid "The model never sees your database, your pages or the open web. It receives the visitor's question plus the entries that matched it — your FAQs and your own written answers, nothing else — and is instructed to answer from those alone. When nothing matches closely enough, the visitor is shown related questions rather than a confident guess, and you get told about it on the Asked Questions page."
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:63
 msgid "Visitors are counted by a one-way hash of their address, never by the address itself, and only question text is stored — no names, no addresses, no session data. The AI provider only ever receives the question and the entries of your own that matched it."
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:63
 msgid "What it takes to switch on"
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:63
 msgid "There is no training step, no data export and nothing to upload."
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:64
 msgid "Activate the Pro licence — the Ask AI screen at this same address fills in with live data."
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:64
 msgid "Add an AI provider key under Settings › Connectors. One key, used by every plugin that asks."
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:65
 msgid "Open AI Knowledge. Your published FAQs are already listed; write in anything they do not cover yet."
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:65
 msgid "Add the Ask AI block to a page and publish — the top of your FAQ page is the obvious spot."
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:66
 msgid "Set a daily budget you are comfortable with. The defaults are already conservative."
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:66
 msgid "Come back in a week and read the gap list. That is the part that keeps paying."
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:67
 msgid "good to know"
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:67
 msgid "Your FAQ content stays exactly where it is. Deactivating the licence leaves every FAQ, block and shortcode working — only the assistant stops."
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:68
 msgid "Live demo site"
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:68
 msgid "Free versus Pro, side by side"
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:68
 msgid "Ask us a question first"
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:69
 msgid "Everything the assistant is allowed to answer from. Your FAQs feed it on their own; you add an entry by hand when the wording visitors use is not in any FAQ."
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:69
+#: build/ask-ai-promo/index.js:78
+#: build/ask-ai-promo/index.js:88
 msgid "Pro feature"
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:70
 msgid "Nothing is hidden, and nothing needs syncing"
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:70
 msgid "Every published FAQ becomes an entry the moment you save it — there is no import step and no training. Edit an FAQ where it lives and the assistant picks up the new wording on the next question. What you cannot do from an FAQ page is answer a question you have not written up yet, and that is what the second half of this screen is for."
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:72
 msgid "Collected from every published FAQ, with a link straight to the one an entry came from."
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:73
 msgid "For answers that belong nowhere else. Nothing here is published on your site — only the assistant reads it."
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:74
 msgid "wordings"
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:74
 msgid "Why the extra wordings matter"
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:74
 msgid "The one thing worth knowing before you use this screen."
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:74
 msgid "Matching is done on words, not meaning"
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:75
 msgid "“Can I get my money back?” and “What is your refund policy?” mean the same thing to a person and nothing to a keyword search. So every entry can carry a list of the other ways people ask it, and each one is matched against on its own while pointing at the same answer. It is the cheapest way to make the assistant feel like it understands your visitors — and it costs nothing per question, because a match this good never needs the AI at all."
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:77
 msgid "Answer the questions your FAQs miss"
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:77
 msgid "Ask AI ships with Awesome FAQ Pro, together with every premium block and the analytics dashboard."
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:79
 msgid "This is the page people renew for"
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:79
 msgid "Analytics tells you which of your FAQs got read. This tells you what people wanted to read and could not find — in their own words, ranked by how many asked. You are no longer guessing which FAQ to write next; the list writes itself, and every entry you clear is one less support e-mail forever."
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:80
 msgid "Each row can be copied, turned straight into a new FAQ, or dismissed if it is not worth answering."
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:81
 msgid "Asked"
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:82
 msgid "Only the text of a question is stored — never the visitor. One button clears everything collected."
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:83
 msgid "Answers & feedback"
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:83
 msgid "What the assistant actually replied, and how visitors rated it. A row with more thumbs down than up is pointing at a FAQ whose wording is missing the real question."
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:85
 msgid "Start collecting your own list"
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:85
 msgid "The moment the licence is active the assistant begins recording, and the first gaps usually show up the same day."
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:89
 msgid "You decide the worst case before it happens"
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:89
 msgid "Most people hesitate over an AI feature for one reason: an unpredictable bill. So the first thing on this screen is a hard daily ceiling, and it is a real ceiling — once the day's budget is gone, no further call is made by anyone. Add caching, per-visitor limits and an alert at 80%, and the most it can cost you is a number you chose yourself."
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:90
 msgid "The real Settings screen, shown read-only"
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:91
 msgid "Set your own ceiling"
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:92
 msgid "Activate the licence and these controls become yours — with the defaults above already in place, so it is safe from the first question."
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
-#: build/blocks/faq-parent/index.js:1
-#: build/blocks/nested-faq/index.js:1
+#: build/ask-ai-promo/index.js:95
+#: build/blocks/faq-parent/index.js:12
+#: build/blocks/nested-faq/index.js:392
 msgid "Pro"
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:98
 msgid "On the free plan"
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:98
 msgid "You have the FAQ blocks and the shortcode. Ask AI, the gap report and the premium blocks come with Pro."
 msgstr ""
 
-#: build/ask-ai-promo/index.js:1
+#: build/ask-ai-promo/index.js:99
 msgid "Compare free and Pro"
 msgstr ""
 
-#: build/blocks/ask-ai/index.js:1
-#: build/blocks/faq-form/index.js:1
-#: build/blocks/faq-item/index.js:1
-#: build/blocks/nested-faq/index.js:1
-#: build/blocks/sidebar-tab-faq/index.js:1
+#: build/blocks/ask-ai/index.js:264
+#: build/blocks/faq-form/index.js:255
+#: build/blocks/faq-item/index.js:8
+#: build/blocks/nested-faq/index.js:284
+#: build/blocks/sidebar-tab-faq/index.js:4
+#: build/index.js:674
+#: build/index.js:675
 msgid "Left"
 msgstr ""
 
-#: build/blocks/ask-ai/index.js:1
+#: build/blocks/ask-ai/index.js:264
+#: build/index.js:674
+#: build/index.js:676
 msgid "Center"
 msgstr ""
 
-#: build/blocks/ask-ai/index.js:1
-#: build/blocks/faq-form/index.js:1
-#: build/blocks/faq-item/index.js:1
-#: build/blocks/nested-faq/index.js:1
-#: build/blocks/sidebar-tab-faq/index.js:1
+#: build/blocks/ask-ai/index.js:264
+#: build/blocks/faq-form/index.js:255
+#: build/blocks/faq-item/index.js:8
+#: build/blocks/nested-faq/index.js:284
+#: build/blocks/sidebar-tab-faq/index.js:4
+#: build/index.js:674
+#: build/index.js:676
 msgid "Right"
 msgstr ""
 
-#: build/blocks/ask-ai/index.js:1
+#: build/blocks/ask-ai/index.js:266
 msgid "Remove"
 msgstr ""
 
-#: build/blocks/ask-ai/index.js:1
+#: build/blocks/ask-ai/index.js:266
 msgid "Add"
 msgstr ""
 
-#: build/blocks/ask-ai/index.js:1
-#: build/blocks/post-faq/index.js:1
+#: build/blocks/ask-ai/index.js:268
+#: build/blocks/post-faq/index.js:286
 msgid "Header"
 msgstr ""
 
-#: build/blocks/ask-ai/index.js:1
+#: build/blocks/ask-ai/index.js:268
 msgid "Show title"
 msgstr ""
 
-#: build/blocks/ask-ai/index.js:1
+#: build/blocks/ask-ai/index.js:269
 msgid "The title and subtitle are written on the block itself. Switch one off to drop it from the page without losing the words."
 msgstr ""
 
-#: build/blocks/ask-ai/index.js:1
+#: build/blocks/ask-ai/index.js:269
 msgid "Show subtitle"
 msgstr ""
 
-#: build/blocks/ask-ai/index.js:1
+#: build/blocks/ask-ai/index.js:269
 msgid "Questions"
 msgstr ""
 
-#: build/blocks/ask-ai/index.js:1
-#: build/blocks/faq-form/index.js:1
-#: build/blocks/image-faq/index.js:1
+#: build/blocks/ask-ai/index.js:270
+#: build/blocks/faq-form/index.js:268
+#: build/blocks/image-faq/index.js:397
 msgid "Button text"
 msgstr ""
 
-#: build/blocks/ask-ai/index.js:1
+#: build/blocks/ask-ai/index.js:270
 msgid "Leave empty for the default."
 msgstr ""
 
-#: build/blocks/ask-ai/index.js:1
+#: build/blocks/ask-ai/index.js:270
 msgid "Rotating placeholders"
 msgstr ""
 
-#: build/blocks/ask-ai/index.js:1
+#: build/blocks/ask-ai/index.js:270
 msgid "Shown one after another in the empty field — a strong hint that the box is worth using. The first one is the text visitors see before it starts cycling, so set just one to keep it still."
 msgstr ""
 
-#: build/blocks/ask-ai/index.js:1
+#: build/blocks/ask-ai/index.js:271
 msgid "How long does shipping take?"
 msgstr ""
 
-#: build/blocks/ask-ai/index.js:1
+#: build/blocks/ask-ai/index.js:271
+#: build/blocks/ask-ai/index.js:280
 msgid "Suggested questions"
 msgstr ""
 
-#: build/blocks/ask-ai/index.js:1
+#: build/blocks/ask-ai/index.js:271
 msgid "Clickable chips under the field. Ask one and the answer appears instantly."
 msgstr ""
 
-#: build/blocks/ask-ai/index.js:1
+#: build/blocks/ask-ai/index.js:272
 msgid "AI answer label"
 msgstr ""
 
-#: build/blocks/ask-ai/index.js:1
+#: build/blocks/ask-ai/index.js:272
 msgid "Shown above an answer the AI wrote. Leave empty for the default."
 msgstr ""
 
-#: build/blocks/ask-ai/index.js:1
+#: build/blocks/ask-ai/index.js:273
 msgid "FAQ answer label"
 msgstr ""
 
-#: build/blocks/ask-ai/index.js:1
+#: build/blocks/ask-ai/index.js:273
 msgid "Shown when the answer came straight from one of your FAQs."
 msgstr ""
 
-#: build/blocks/ask-ai/index.js:1
+#: build/blocks/ask-ai/index.js:273
 msgid "Show sources"
 msgstr ""
 
-#: build/blocks/ask-ai/index.js:1
+#: build/blocks/ask-ai/index.js:273
 msgid "Lists the FAQ entries the answer was built from — this is what makes visitors trust it."
 msgstr ""
 
-#: build/blocks/ask-ai/index.js:1
+#: build/blocks/ask-ai/index.js:274
 msgid "Ask for feedback"
 msgstr ""
 
-#: build/blocks/ask-ai/index.js:1
+#: build/blocks/ask-ai/index.js:274
 msgid "Collects 👍/👎 so you can see which answers miss."
 msgstr ""
 
-#: build/blocks/ask-ai/index.js:1
+#: build/blocks/ask-ai/index.js:274
 msgid "Feedback question"
 msgstr ""
 
-#: build/blocks/ask-ai/index.js:1
+#: build/blocks/ask-ai/index.js:274
 msgid "Asked next to the 👍/👎 buttons. Leave empty for the default."
 msgstr ""
 
-#: build/blocks/ask-ai/index.js:1
+#: build/blocks/ask-ai/index.js:275
 msgid "Fallback link text"
 msgstr ""
 
-#: build/blocks/ask-ai/index.js:1
+#: build/blocks/ask-ai/index.js:275
 msgid "Fallback link URL"
 msgstr ""
 
-#: build/blocks/ask-ai/index.js:1
+#: build/blocks/ask-ai/index.js:275
 msgid "Where to send someone the assistant could not help — your contact or support page."
 msgstr ""
 
-#: build/blocks/ask-ai/index.js:1
+#: build/blocks/ask-ai/index.js:276
 msgid "Disclaimer"
 msgstr ""
 
-#: build/blocks/ask-ai/index.js:1
-#: build/blocks/bento-faq/index.js:1
+#: build/blocks/ask-ai/index.js:276
+#: build/blocks/bento-faq/index.js:637
 msgid "Colors"
 msgstr ""
 
-#: build/blocks/ask-ai/index.js:1
-#: build/blocks/bento-faq/index.js:1
+#: build/blocks/ask-ai/index.js:276
+#: build/blocks/bento-faq/index.js:637
 msgid "Accent"
 msgstr ""
 
-#: build/blocks/ask-ai/index.js:1
-#: build/blocks/faq-form/index.js:1
-#: build/blocks/image-faq/index.js:1
-#: build/blocks/post-faq/index.js:1
-#: build/blocks/sidebar-tab-faq/index.js:1
+#: build/blocks/ask-ai/index.js:276
+#: build/blocks/ask-ai/index.js:280
+#: build/blocks/ask-ai/index.js:281
+#: build/blocks/ask-ai/index.js:282
+#: build/blocks/faq-form/index.js:271
+#: build/blocks/faq-form/index.js:278
+#: build/blocks/image-faq/index.js:396
+#: build/blocks/image-faq/index.js:409
+#: build/blocks/image-faq/index.js:414
+#: build/blocks/image-faq/index.js:415
+#: build/blocks/post-faq/index.js:293
+#: build/blocks/sidebar-tab-faq/index.js:285
+#: build/blocks/sidebar-tab-faq/index.js:288
+#: build/blocks/sidebar-tab-faq/index.js:292
 msgid "Text"
 msgstr ""
 
-#: build/blocks/ask-ai/index.js:1
+#: build/blocks/ask-ai/index.js:277
 msgid "Muted text"
 msgstr ""
 
-#: build/blocks/ask-ai/index.js:1
+#: build/blocks/ask-ai/index.js:277
 msgid "Box background"
 msgstr ""
 
-#: build/blocks/ask-ai/index.js:1
-#: build/blocks/bento-faq/index.js:1
-#: build/blocks/faq-form/index.js:1
-#: build/blocks/image-faq/index.js:1
-#: build/blocks/nested-faq/index.js:1
-#: build/blocks/post-faq/index.js:1
-#: build/blocks/sidebar-tab-faq/index.js:1
+#: build/blocks/ask-ai/index.js:277
+#: build/blocks/ask-ai/index.js:282
+#: build/blocks/bento-faq/index.js:639
+#: build/blocks/faq-form/index.js:272
+#: build/blocks/faq-form/index.js:273
+#: build/blocks/faq-form/index.js:275
+#: build/blocks/faq-form/index.js:279
+#: build/blocks/image-faq/index.js:413
+#: build/blocks/image-faq/index.js:414
+#: build/blocks/image-faq/index.js:415
+#: build/blocks/nested-faq/index.js:397
+#: build/blocks/nested-faq/index.js:399
+#: build/blocks/post-faq/index.js:287
+#: build/blocks/post-faq/index.js:288
+#: build/blocks/sidebar-tab-faq/index.js:286
+#: build/blocks/sidebar-tab-faq/index.js:288
 msgid "Typography"
 msgstr ""
 
-#: build/blocks/ask-ai/index.js:1
-#: build/blocks/faq-form/index.js:1
-#: build/blocks/image-faq/index.js:1
+#: build/blocks/ask-ai/index.js:277
+#: build/blocks/faq-form/index.js:257
+#: build/blocks/faq-form/index.js:271
+#: build/blocks/image-faq/index.js:396
+#: build/blocks/image-faq/index.js:408
+#: build/blocks/image-faq/index.js:413
 msgid "Heading"
 msgstr ""
 
-#: build/blocks/ask-ai/index.js:1
+#: build/blocks/ask-ai/index.js:278
 msgid "Heading align"
 msgstr ""
 
-#: build/blocks/ask-ai/index.js:1
-#: build/blocks/post-faq/index.js:1
+#: build/blocks/ask-ai/index.js:278
+#: build/blocks/post-faq/index.js:288
 msgid "Body"
 msgstr ""
 
-#: build/blocks/ask-ai/index.js:1
+#: build/blocks/ask-ai/index.js:278
 msgid "Subtitle align"
 msgstr ""
 
-#: build/blocks/ask-ai/index.js:1
+#: build/blocks/ask-ai/index.js:279
 msgid "Input field"
 msgstr ""
 
-#: build/blocks/ask-ai/index.js:1
-#: build/blocks/faq-form/index.js:1
-#: build/blocks/image-faq/index.js:1
-#: build/blocks/nested-faq/index.js:1
-#: build/blocks/post-faq/index.js:1
-#: build/blocks/sidebar-tab-faq/index.js:1
+#: build/blocks/ask-ai/index.js:279
+#: build/blocks/ask-ai/index.js:281
+#: build/blocks/ask-ai/index.js:282
+#: build/blocks/ask-ai/index.js:284
+#: build/blocks/faq-form/index.js:275
+#: build/blocks/faq-form/index.js:277
+#: build/blocks/image-faq/index.js:415
+#: build/blocks/image-faq/index.js:417
+#: build/blocks/nested-faq/index.js:398
+#: build/blocks/nested-faq/index.js:400
+#: build/blocks/nested-faq/index.js:401
+#: build/blocks/post-faq/index.js:286
+#: build/blocks/post-faq/index.js:289
+#: build/blocks/post-faq/index.js:293
+#: build/blocks/sidebar-tab-faq/index.js:284
+#: build/blocks/sidebar-tab-faq/index.js:288
+#: build/blocks/sidebar-tab-faq/index.js:291
+#: build/index.js:671
+#: build/index.js:672
+#: build/index.js:680
+#: build/index.js:682
+#: build/index.js:684
+#: build/index.js:686
+#: build/index.js:687
 msgid "Background"
 msgstr ""
 
-#: build/blocks/ask-ai/index.js:1
-#: build/blocks/faq-form/index.js:1
+#: build/blocks/ask-ai/index.js:279
+#: build/blocks/faq-form/index.js:274
 msgid "Typed text"
 msgstr ""
 
-#: build/blocks/ask-ai/index.js:1
-#: build/blocks/faq-form/index.js:1
+#: build/blocks/ask-ai/index.js:279
+#: build/blocks/faq-form/index.js:260
+#: build/blocks/faq-form/index.js:262
+#: build/blocks/faq-form/index.js:263
+#: build/blocks/faq-form/index.js:265
+#: build/blocks/faq-form/index.js:267
+#: build/blocks/faq-form/index.js:274
 msgid "Placeholder"
 msgstr ""
 
-#: build/blocks/ask-ai/index.js:1
-#: build/blocks/faq-form/index.js:1
-#: build/blocks/image-faq/index.js:1
-#: build/blocks/nested-faq/index.js:1
-#: build/blocks/post-faq/index.js:1
-#: build/blocks/sidebar-tab-faq/index.js:1
+#: build/blocks/ask-ai/index.js:280
+#: build/blocks/ask-ai/index.js:281
+#: build/blocks/ask-ai/index.js:285
+#: build/blocks/faq-form/index.js:275
+#: build/blocks/image-faq/index.js:412
+#: build/blocks/image-faq/index.js:416
+#: build/blocks/nested-faq/index.js:402
+#: build/blocks/post-faq/index.js:285
+#: build/blocks/sidebar-tab-faq/index.js:284
 msgid "Border"
 msgstr ""
 
-#: build/blocks/ask-ai/index.js:1
-#: build/blocks/faq-form/index.js:1
-#: build/blocks/image-faq/index.js:1
-#: build/blocks/sidebar-tab-faq/index.js:1
+#: build/blocks/ask-ai/index.js:280
+#: build/blocks/faq-form/index.js:278
+#: build/blocks/image-faq/index.js:415
+#: build/blocks/sidebar-tab-faq/index.js:285
 msgid "Text on hover"
 msgstr ""
 
-#: build/blocks/ask-ai/index.js:1
+#: build/blocks/ask-ai/index.js:281
 msgid "AI answer box"
 msgstr ""
 
-#: build/blocks/ask-ai/index.js:1
-#: build/blocks/faq-form/index.js:1
+#: build/blocks/ask-ai/index.js:282
+#: build/blocks/faq-form/index.js:260
+#: build/blocks/faq-form/index.js:261
+#: build/blocks/faq-form/index.js:263
+#: build/blocks/faq-form/index.js:265
+#: build/blocks/faq-form/index.js:267
 msgid "Label"
 msgstr ""
 
-#: build/blocks/ask-ai/index.js:1
+#: build/blocks/ask-ai/index.js:282
 msgid "Sources"
 msgstr ""
 
-#: build/blocks/ask-ai/index.js:1
+#: build/blocks/ask-ai/index.js:283
 msgid "\"Based on\" text"
 msgstr ""
 
-#: build/blocks/ask-ai/index.js:1
+#: build/blocks/ask-ai/index.js:283
 msgid "Source link"
 msgstr ""
 
-#: build/blocks/ask-ai/index.js:1
+#: build/blocks/ask-ai/index.js:283
 msgid "Feedback"
 msgstr ""
 
-#: build/blocks/ask-ai/index.js:1
+#: build/blocks/ask-ai/index.js:283
 msgid "\"Was this helpful?\" text"
 msgstr ""
 
-#: build/blocks/ask-ai/index.js:1
+#: build/blocks/ask-ai/index.js:284
 msgid "Suggestion box"
 msgstr ""
 
-#: build/blocks/ask-ai/index.js:1
+#: build/blocks/ask-ai/index.js:284
 msgid "Box text"
 msgstr ""
 
-#: build/blocks/ask-ai/index.js:1
+#: build/blocks/ask-ai/index.js:284
 msgid "Message text"
 msgstr ""
 
-#: build/blocks/ask-ai/index.js:1
+#: build/blocks/ask-ai/index.js:285
 msgid "Box"
 msgstr ""
 
-#: build/blocks/ask-ai/index.js:1
-#: build/blocks/bento-faq/index.js:1
-#: build/blocks/faq-form/index.js:1
-#: build/blocks/image-faq/index.js:1
-#: build/blocks/nested-faq/index.js:1
-#: build/blocks/post-faq/index.js:1
-#: build/blocks/sidebar-tab-faq/index.js:1
+#: build/blocks/ask-ai/index.js:285
+#: build/blocks/bento-faq/index.js:641
+#: build/blocks/faq-form/index.js:270
+#: build/blocks/faq-form/index.js:275
+#: build/blocks/faq-form/index.js:279
+#: build/blocks/image-faq/index.js:413
+#: build/blocks/image-faq/index.js:416
+#: build/blocks/nested-faq/index.js:399
+#: build/blocks/nested-faq/index.js:400
+#: build/blocks/post-faq/index.js:286
+#: build/blocks/post-faq/index.js:289
+#: build/blocks/sidebar-tab-faq/index.js:286
+#: build/blocks/sidebar-tab-faq/index.js:288
 msgid "Padding"
 msgstr ""
 
-#: build/blocks/ask-ai/index.js:1
+#: build/blocks/ask-ai/index.js:285
 msgid "Radius"
 msgstr ""
 
-#: build/blocks/ask-ai/index.js:1
-#: build/blocks/bento-faq/index.js:1
-#: build/blocks/faq-form/index.js:1
-#: build/blocks/faq-parent/index.js:1
-#: build/blocks/image-faq/index.js:1
-#: build/blocks/nested-faq/index.js:1
-#: build/blocks/post-faq/index.js:1
-#: build/blocks/sidebar-tab-faq/index.js:1
+#: build/blocks/ask-ai/index.js:296
+#: build/blocks/bento-faq/index.js:651
+#: build/blocks/faq-form/index.js:289
+#: build/blocks/faq-parent/index.js:3
+#: build/blocks/image-faq/index.js:420
+#: build/blocks/nested-faq/index.js:415
+#: build/blocks/post-faq/index.js:294
+#: build/blocks/sidebar-tab-faq/index.js:293
+#: build/index.js:779
 msgid "Copied Successfully!"
 msgstr ""
 
-#: build/blocks/ask-ai/index.js:1
-#: build/blocks/bento-faq/index.js:1
-#: build/blocks/faq-form/index.js:1
-#: build/blocks/faq-parent/index.js:1
-#: build/blocks/image-faq/index.js:1
-#: build/blocks/nested-faq/index.js:1
-#: build/blocks/post-faq/index.js:1
-#: build/blocks/sidebar-tab-faq/index.js:1
+#: build/blocks/ask-ai/index.js:296
+#: build/blocks/ask-ai/index.js:298
+#: build/blocks/bento-faq/index.js:651
+#: build/blocks/bento-faq/index.js:653
+#: build/blocks/faq-form/index.js:289
+#: build/blocks/faq-form/index.js:291
+#: build/blocks/faq-parent/index.js:3
+#: build/blocks/faq-parent/index.js:5
+#: build/blocks/image-faq/index.js:421
+#: build/blocks/image-faq/index.js:422
+#: build/blocks/nested-faq/index.js:415
+#: build/blocks/nested-faq/index.js:417
+#: build/blocks/post-faq/index.js:295
+#: build/blocks/post-faq/index.js:296
+#: build/blocks/sidebar-tab-faq/index.js:293
+#: build/blocks/sidebar-tab-faq/index.js:294
+#: build/index.js:779
+#: build/index.js:780
 msgid "Copy To Clipboard"
 msgstr ""
 
-#: build/blocks/ask-ai/index.js:1
-#: build/blocks/bento-faq/index.js:1
-#: build/blocks/faq-form/index.js:1
-#: build/blocks/faq-parent/index.js:1
-#: build/blocks/image-faq/index.js:1
-#: build/blocks/nested-faq/index.js:1
-#: build/blocks/post-faq/index.js:1
-#: build/blocks/sidebar-tab-faq/index.js:1
+#: build/blocks/ask-ai/index.js:299
+#: build/blocks/bento-faq/index.js:654
+#: build/blocks/faq-form/index.js:292
+#: build/blocks/faq-parent/index.js:6
+#: build/blocks/image-faq/index.js:424
+#: build/blocks/nested-faq/index.js:418
+#: build/blocks/post-faq/index.js:298
+#: build/blocks/sidebar-tab-faq/index.js:296
+#: build/index.js:782
 msgid "Copy the shortcode and use it anywhere."
 msgstr ""
 
-#: build/blocks/ask-ai/index.js:1
+#: build/blocks/ask-ai/index.js:300
 msgid "No AI provider is connected"
 msgstr ""
 
-#: build/blocks/ask-ai/index.js:1
+#: build/blocks/ask-ai/index.js:300
 msgid "Visitors can still be served answers that match one of your FAQs exactly, but anything else needs an AI provider — until a key is added, those questions get no answer."
 msgstr ""
 
-#: build/blocks/ask-ai/index.js:1
+#: build/blocks/ask-ai/index.js:301
 msgid "Connect an API key in Settings › Connectors"
 msgstr ""
 
-#: build/blocks/ask-ai/index.js:1
+#: build/blocks/ask-ai/index.js:306
 msgid "Add a short subtitle…"
 msgstr ""
 
-#: build/blocks/ask-ai/index.js:1
+#: build/blocks/ask-ai/index.js:308
 msgid "Answers are generated from your own FAQ content when a visitor asks. Nothing is requested until then."
 msgstr ""
 
-#: build/blocks/ask-ai/index.js:1
+#: build/blocks/ask-ai/index.js:308
 msgid "Matching FAQ entries"
 msgstr ""
 
-#: build/blocks/bento-faq/index.js:1
-#: build/blocks/bento-faq/view.js:1
+#: build/blocks/bento-faq/index.js:525
+#: build/blocks/bento-faq/view.js:5
 msgid "Small"
 msgstr ""
 
-#: build/blocks/bento-faq/index.js:1
-#: build/blocks/bento-faq/view.js:1
+#: build/blocks/bento-faq/index.js:525
+#: build/blocks/bento-faq/view.js:5
 msgid "Wide"
 msgstr ""
 
-#: build/blocks/bento-faq/index.js:1
-#: build/blocks/bento-faq/view.js:1
+#: build/blocks/bento-faq/index.js:525
+#: build/blocks/bento-faq/view.js:5
 msgid "Tall"
 msgstr ""
 
-#: build/blocks/bento-faq/index.js:1
-#: build/blocks/bento-faq/view.js:1
+#: build/blocks/bento-faq/index.js:525
+#: build/blocks/bento-faq/view.js:5
 msgid "Large"
 msgstr ""
 
-#: build/blocks/bento-faq/index.js:1
-#: build/blocks/bento-faq/view.js:1
+#: build/blocks/bento-faq/index.js:525
+#: build/blocks/bento-faq/view.js:5
 msgid "Modal"
 msgstr ""
 
-#: build/blocks/bento-faq/index.js:1
-#: build/blocks/bento-faq/view.js:1
+#: build/blocks/bento-faq/index.js:525
+#: build/blocks/bento-faq/view.js:5
 msgid "Expand"
 msgstr ""
 
-#: build/blocks/bento-faq/index.js:1
-#: build/blocks/bento-faq/view.js:1
+#: build/blocks/bento-faq/index.js:525
+#: build/blocks/bento-faq/view.js:5
 msgid "Auto"
 msgstr ""
 
-#: build/blocks/bento-faq/index.js:1
-#: build/blocks/bento-faq/view.js:1
+#: build/blocks/bento-faq/index.js:525
+#: build/blocks/bento-faq/view.js:6
 msgid "Light"
 msgstr ""
 
-#: build/blocks/bento-faq/index.js:1
-#: build/blocks/bento-faq/view.js:1
+#: build/blocks/bento-faq/index.js:526
+#: build/blocks/bento-faq/view.js:6
 msgid "Dark"
 msgstr ""
 
-#: build/blocks/bento-faq/index.js:1
+#: build/blocks/bento-faq/index.js:526
 msgid "New question"
 msgstr ""
 
-#: build/blocks/bento-faq/index.js:1
+#: build/blocks/bento-faq/index.js:538
 msgid "Card size"
 msgstr ""
 
-#: build/blocks/bento-faq/index.js:1
+#: build/blocks/bento-faq/index.js:538
 msgid "Mix sizes to get the bento look. Everything becomes full width on mobile."
 msgstr ""
 
-#: build/blocks/bento-faq/index.js:1
-#: build/blocks/image-faq/index.js:1
-#: build/blocks/nested-faq/index.js:1
+#: build/blocks/bento-faq/index.js:539
+#: build/blocks/bento-faq/index.js:640
+#: build/blocks/image-faq/index.js:416
+#: build/blocks/nested-faq/index.js:396
 msgid "Icon"
 msgstr ""
 
-#: build/blocks/bento-faq/index.js:1
+#: build/blocks/bento-faq/index.js:539
 msgid "Emoji"
 msgstr ""
 
-#: build/blocks/bento-faq/index.js:1
+#: build/blocks/bento-faq/index.js:539
 msgid "Used when no icon is picked above — 💡 ⚡ 🔒 💳"
 msgstr ""
 
-#: build/blocks/bento-faq/index.js:1
+#: build/blocks/bento-faq/index.js:539
 msgid "Badge"
 msgstr ""
 
-#: build/blocks/bento-faq/index.js:1
+#: build/blocks/bento-faq/index.js:539
 msgid "Optional pill in the corner, e.g. \"Popular\"."
 msgstr ""
 
-#: build/blocks/bento-faq/index.js:1
-#: build/blocks/nested-faq/index.js:1
+#: build/blocks/bento-faq/index.js:628
+#: build/blocks/bento-faq/index.js:629
+#: build/blocks/nested-faq/index.js:389
+#: build/blocks/nested-faq/index.js:390
+#: build/index.js:462
+#: build/index.js:724
 msgid "Generate FAQs with AI"
 msgstr ""
 
-#: build/blocks/bento-faq/index.js:1
-#: build/blocks/nested-faq/index.js:1
+#: build/blocks/bento-faq/index.js:629
+#: build/blocks/nested-faq/index.js:390
 msgid "AI Generator"
 msgstr ""
 
-#: build/blocks/bento-faq/index.js:1
+#: build/blocks/bento-faq/index.js:630
 msgid "Cards"
 msgstr ""
 
-#: build/blocks/bento-faq/index.js:1
-#: build/blocks/faq-form/index.js:1
-#: build/blocks/faq-item/index.js:1
-#: build/blocks/nested-faq/index.js:1
-#: build/blocks/post-faq/index.js:1
+#: build/blocks/bento-faq/index.js:630
+#: build/blocks/bento-faq/index.js:641
+#: build/blocks/faq-form/index.js:269
+#: build/blocks/faq-item/index.js:7
+#: build/blocks/nested-faq/index.js:279
+#: build/blocks/post-faq/index.js:285
 msgid "Card"
 msgstr ""
 
-#: build/blocks/bento-faq/index.js:1
-#: build/blocks/post-faq/index.js:1
-#: build/blocks/sidebar-tab-faq/index.js:1
+#: build/blocks/bento-faq/index.js:630
+#: build/blocks/post-faq/index.js:274
+#: build/blocks/sidebar-tab-faq/index.js:272
 msgid "Layout"
 msgstr ""
 
-#: build/blocks/bento-faq/index.js:1
-#: build/blocks/post-faq/index.js:1
+#: build/blocks/bento-faq/index.js:630
+#: build/blocks/post-faq/index.js:275
 msgid "Columns"
 msgstr ""
 
-#: build/blocks/bento-faq/index.js:1
+#: build/blocks/bento-faq/index.js:631
 msgid "Switch the device icons above to set columns for tablet and mobile separately."
 msgstr ""
 
-#: build/blocks/bento-faq/index.js:1
+#: build/blocks/bento-faq/index.js:631
 msgid "Row gap"
 msgstr ""
 
-#: build/blocks/bento-faq/index.js:1
+#: build/blocks/bento-faq/index.js:632
 msgid "Column gap"
 msgstr ""
 
-#: build/blocks/bento-faq/index.js:1
+#: build/blocks/bento-faq/index.js:632
 msgid "Vertical and horizontal spacing are set separately, per device."
 msgstr ""
 
-#: build/blocks/bento-faq/index.js:1
-#: build/blocks/image-faq/index.js:1
+#: build/blocks/bento-faq/index.js:632
+#: build/blocks/image-faq/index.js:406
 msgid "Row height"
 msgstr ""
 
-#: build/blocks/bento-faq/index.js:1
+#: build/blocks/bento-faq/index.js:633
 msgid "The minimum height of one grid row. Tall and large cards take two."
 msgstr ""
 
-#: build/blocks/bento-faq/index.js:1
+#: build/blocks/bento-faq/index.js:633
 msgid "Open answer in"
 msgstr ""
 
-#: build/blocks/bento-faq/index.js:1
+#: build/blocks/bento-faq/index.js:634
 msgid "Modal opens a focused dialog with previous / next. Expand grows the card in place."
 msgstr ""
 
-#: build/blocks/bento-faq/index.js:1
+#: build/blocks/bento-faq/index.js:634
 msgid "Color scheme"
 msgstr ""
 
-#: build/blocks/bento-faq/index.js:1
+#: build/blocks/bento-faq/index.js:634
 msgid "Auto follows the visitor's system setting."
 msgstr ""
 
-#: build/blocks/bento-faq/index.js:1
+#: build/blocks/bento-faq/index.js:635
 msgid "Show icons"
 msgstr ""
 
-#: build/blocks/bento-faq/index.js:1
+#: build/blocks/bento-faq/index.js:635
 msgid "Show \"Read answer\" link"
 msgstr ""
 
-#: build/blocks/bento-faq/index.js:1
+#: build/blocks/bento-faq/index.js:635
 msgid "Reveal cards on scroll"
 msgstr ""
 
-#: build/blocks/bento-faq/index.js:1
+#: build/blocks/bento-faq/index.js:635
 msgid "Staggered fade in. Skipped for visitors who prefer reduced motion."
 msgstr ""
 
-#: build/blocks/bento-faq/index.js:1
-#: build/blocks/nested-faq/index.js:1
+#: build/blocks/bento-faq/index.js:636
+#: build/blocks/nested-faq/index.js:393
 msgid "Output FAQPage schema"
 msgstr ""
 
-#: build/blocks/bento-faq/index.js:1
+#: build/blocks/bento-faq/index.js:636
 msgid "Prints JSON-LD so search and AI answer engines can read the Q&A."
 msgstr ""
 
-#: build/blocks/bento-faq/index.js:1
+#: build/blocks/bento-faq/index.js:637
 msgid "Drives the badge, the hover border, the glow and the link colour at once."
 msgstr ""
 
-#: build/blocks/bento-faq/index.js:1
-#: build/blocks/faq-form/index.js:1
-#: build/blocks/image-faq/index.js:1
+#: build/blocks/bento-faq/index.js:637
+#: build/blocks/faq-form/index.js:270
+#: build/blocks/image-faq/index.js:412
 msgid "Card background"
 msgstr ""
 
-#: build/blocks/bento-faq/index.js:1
-#: build/blocks/faq-form/index.js:1
+#: build/blocks/bento-faq/index.js:638
+#: build/blocks/faq-form/index.js:271
 msgid "Card border"
 msgstr ""
 
-#: build/blocks/bento-faq/index.js:1
+#: build/blocks/bento-faq/index.js:638
 msgid "Question text"
 msgstr ""
 
-#: build/blocks/bento-faq/index.js:1
+#: build/blocks/bento-faq/index.js:638
 msgid "Answer text"
 msgstr ""
 
-#: build/blocks/bento-faq/index.js:1
+#: build/blocks/bento-faq/index.js:638
 msgid "Leave the colours empty to let the block follow light and dark mode on its own."
 msgstr ""
 
-#: build/blocks/bento-faq/index.js:1
-#: build/blocks/image-faq/index.js:1
+#: build/blocks/bento-faq/index.js:640
+#: build/blocks/image-faq/index.js:405
+#: build/blocks/image-faq/index.js:417
 msgid "Size"
 msgstr ""
 
-#: build/blocks/bento-faq/index.js:1
-#: build/blocks/nested-faq/index.js:1
-#: build/blocks/post-faq/index.js:1
+#: build/blocks/bento-faq/index.js:640
+#: build/blocks/nested-faq/index.js:398
+#: build/blocks/nested-faq/index.js:399
+#: build/blocks/nested-faq/index.js:400
+#: build/blocks/post-faq/index.js:287
+#: build/blocks/post-faq/index.js:288
 msgid "Color"
 msgstr ""
 
-#: build/blocks/bento-faq/index.js:1
+#: build/blocks/bento-faq/index.js:640
 msgid "Leave empty and picked icons take the accent colour."
 msgstr ""
 
-#: build/blocks/bento-faq/index.js:1
-#: build/blocks/faq-form/index.js:1
-#: build/blocks/sidebar-tab-faq/index.js:1
+#: build/blocks/bento-faq/index.js:641
+#: build/blocks/faq-form/index.js:269
+#: build/blocks/sidebar-tab-faq/index.js:287
 msgid "Corner radius"
 msgstr ""
 
-#: build/blocks/bento-faq/index.js:1
+#: build/blocks/bento-faq/index.js:658
 msgid "Remove card"
 msgstr ""
 
-#: build/blocks/bento-faq/index.js:1
+#: build/blocks/bento-faq/index.js:660
 msgid "Question…"
 msgstr ""
 
-#: build/blocks/bento-faq/index.js:1
+#: build/blocks/bento-faq/index.js:660
 msgid "Write the answer…"
 msgstr ""
 
-#: build/blocks/bento-faq/index.js:1
+#: build/blocks/bento-faq/index.js:661
 msgid "Add card"
 msgstr ""
 
-#: build/blocks/bento-faq/index.js:1
+#: build/blocks/bento-faq/index.js:661
 msgid "FAQPage schema is turned off for this block."
 msgstr ""
 
-#: build/blocks/faq-form/index.js:1
-#: build/blocks/image-faq/index.js:1
+#: build/blocks/faq-form/index.js:255
+#: build/blocks/image-faq/index.js:375
 msgid "Centre"
 msgstr ""
 
-#: build/blocks/faq-form/index.js:1
+#: build/blocks/faq-form/index.js:258
 msgid "Show heading"
 msgstr ""
 
-#: build/blocks/faq-form/index.js:1
+#: build/blocks/faq-form/index.js:258
 msgid "Heading level"
 msgstr ""
 
-#: build/blocks/faq-form/index.js:1
+#: build/blocks/faq-form/index.js:258
 msgid "Pick the level that fits the page around it. A page should only carry one H1."
 msgstr ""
 
-#: build/blocks/faq-form/index.js:1
+#: build/blocks/faq-form/index.js:259
 msgid "Show subheading"
 msgstr ""
 
-#: build/blocks/faq-form/index.js:1
+#: build/blocks/faq-form/index.js:259
 msgid "Alignment"
 msgstr ""
 
-#: build/blocks/faq-form/index.js:1
+#: build/blocks/faq-form/index.js:260
 msgid "Name field"
 msgstr ""
 
-#: build/blocks/faq-form/index.js:1
+#: build/blocks/faq-form/index.js:260
+#: build/blocks/faq-form/index.js:261
+#: build/blocks/faq-form/index.js:264
 msgid "Show this field"
 msgstr ""
 
-#: build/blocks/faq-form/index.js:1
+#: build/blocks/faq-form/index.js:261
+#: build/blocks/faq-form/index.js:262
+#: build/blocks/faq-form/index.js:265
 msgid "Required"
 msgstr ""
 
-#: build/blocks/faq-form/index.js:1
+#: build/blocks/faq-form/index.js:261
 msgid "Email field"
 msgstr ""
 
-#: build/blocks/faq-form/index.js:1
+#: build/blocks/faq-form/index.js:262
 msgid "Without an email you cannot reply to the person who asked."
 msgstr ""
 
-#: build/blocks/faq-form/index.js:1
+#: build/blocks/faq-form/index.js:262
 msgid "Question field"
 msgstr ""
 
-#: build/blocks/faq-form/index.js:1
+#: build/blocks/faq-form/index.js:263
 msgid "The question is what the form is for, so it is always shown and always required."
 msgstr ""
 
-#: build/blocks/faq-form/index.js:1
+#: build/blocks/faq-form/index.js:264
+#: build/blocks/faq-form/index.js:265
+#: build/blocks/faq-form/index.js:267
 msgid "Word limit"
 msgstr ""
 
-#: build/blocks/faq-form/index.js:1
+#: build/blocks/faq-form/index.js:264
 msgid "Set to 0 to hide the counter and drop the limit."
 msgstr ""
 
-#: build/blocks/faq-form/index.js:1
+#: build/blocks/faq-form/index.js:264
 msgid "Detail field"
 msgstr ""
 
-#: build/blocks/faq-form/index.js:1
+#: build/blocks/faq-form/index.js:266
 msgid "Suggested answer"
 msgstr ""
 
-#: build/blocks/faq-form/index.js:1
+#: build/blocks/faq-form/index.js:266
 msgid "Let visitors answer too"
 msgstr ""
 
-#: build/blocks/faq-form/index.js:1
+#: build/blocks/faq-form/index.js:266
 msgid "Adds an optional field so somebody who already knows the answer can send it with the question. It arrives as a draft for you to check."
 msgstr ""
 
-#: build/blocks/faq-form/index.js:1
+#: build/blocks/faq-form/index.js:268
 msgid "Button & confirmation"
 msgstr ""
 
-#: build/blocks/faq-form/index.js:1
+#: build/blocks/faq-form/index.js:268
 msgid "Thank you message"
 msgstr ""
 
-#: build/blocks/faq-form/index.js:1
+#: build/blocks/faq-form/index.js:268
 msgid "Shown in place of the form once the question has been sent."
 msgstr ""
 
-#: build/blocks/faq-form/index.js:1
+#: build/blocks/faq-form/index.js:269
 msgid "Maximum width"
 msgstr ""
 
-#: build/blocks/faq-form/index.js:1
+#: build/blocks/faq-form/index.js:270
 msgid "Shared by the card and the button. The fields have their own, under Fields."
 msgstr ""
 
-#: build/blocks/faq-form/index.js:1
+#: build/blocks/faq-form/index.js:271
 msgid "Behind the card"
 msgstr ""
 
-#: build/blocks/faq-form/index.js:1
+#: build/blocks/faq-form/index.js:272
 msgid "Subheading"
 msgstr ""
 
-#: build/blocks/faq-form/index.js:1
+#: build/blocks/faq-form/index.js:273
 msgid "Field labels"
 msgstr ""
 
-#: build/blocks/faq-form/index.js:1
+#: build/blocks/faq-form/index.js:273
 msgid "Fields"
 msgstr ""
 
-#: build/blocks/faq-form/index.js:1
+#: build/blocks/faq-form/index.js:274
 msgid "The preview fields are empty, so this one shows itself on the published page once somebody types."
 msgstr ""
 
-#: build/blocks/faq-form/index.js:1
+#: build/blocks/faq-form/index.js:275
 msgid "Border on hover"
 msgstr ""
 
-#: build/blocks/faq-form/index.js:1
+#: build/blocks/faq-form/index.js:276
 msgid "Border when active"
 msgstr ""
 
-#: build/blocks/faq-form/index.js:1
+#: build/blocks/faq-form/index.js:276
 msgid "Leave the active colour empty and a focused field keeps using the button colour. A field that fails a check turns red either way."
 msgstr ""
 
-#: build/blocks/faq-form/index.js:1
+#: build/blocks/faq-form/index.js:276
 msgid "Space between fields"
 msgstr ""
 
-#: build/blocks/faq-form/index.js:1
-#: build/blocks/image-faq/index.js:1
+#: build/blocks/faq-form/index.js:277
+#: build/blocks/image-faq/index.js:409
+#: build/blocks/image-faq/index.js:414
 msgid "Button"
 msgstr ""
 
-#: build/blocks/faq-form/index.js:1
+#: build/blocks/faq-form/index.js:277
 msgid "Also what a focused field is outlined in, unless Fields sets its own active colour."
 msgstr ""
 
-#: build/blocks/faq-form/index.js:1
-#: build/blocks/image-faq/index.js:1
-#: build/blocks/sidebar-tab-faq/index.js:1
+#: build/blocks/faq-form/index.js:278
+#: build/blocks/image-faq/index.js:415
+#: build/blocks/sidebar-tab-faq/index.js:285
 msgid "Background on hover"
 msgstr ""
 
-#: build/blocks/faq-form/index.js:1
+#: build/blocks/faq-form/index.js:279
 msgid "Full width"
 msgstr ""
 
-#: build/blocks/faq-form/index.js:1
+#: build/blocks/faq-form/index.js:279
 msgid "Text alignment"
 msgstr ""
 
-#: build/blocks/faq-form/index.js:1
+#: build/blocks/faq-form/index.js:280
 msgid "With full width off this moves the button itself, since there is no spare room inside it."
 msgstr ""
 
-#: build/blocks/faq-form/index.js:1
+#: build/blocks/faq-form/index.js:298
 msgid "Submissions arrive under Awesome FAQ → Form Submissions, where you can read, mark and reply to them."
 msgstr ""
 
-#: build/blocks/faq-form/index.js:1
+#: build/blocks/faq-form/index.js:299
 msgid "Tell people what happens after they send it."
 msgstr ""
 
-#: build/blocks/faq-item/index.js:1
-#: build/blocks/nested-faq/index.js:1
+#: build/blocks/faq-item/index.js:7
+#: build/blocks/nested-faq/index.js:278
 msgid "Filled"
 msgstr ""
 
-#: build/blocks/faq-item/index.js:1
-#: build/blocks/nested-faq/index.js:1
+#: build/blocks/faq-item/index.js:7
+#: build/blocks/nested-faq/index.js:280
 msgid "Minimal"
 msgstr ""
 
-#: build/blocks/faq-item/index.js:1
-#: build/blocks/nested-faq/index.js:1
+#: build/blocks/faq-item/index.js:7
+#: build/blocks/nested-faq/index.js:281
 msgid "Outline"
 msgstr ""
 
-#: build/blocks/faq-item/index.js:1
-#: build/blocks/nested-faq/index.js:1
+#: build/blocks/faq-item/index.js:7
+#: build/blocks/nested-faq/index.js:282
 msgid "Gradient"
 msgstr ""
 
-#: build/blocks/faq-item/index.js:1
-#: build/blocks/nested-faq/index.js:1
-#: build/blocks/sidebar-tab-faq/index.js:1
+#: build/blocks/faq-item/index.js:7
+#: build/blocks/nested-faq/index.js:283
+#: build/blocks/sidebar-tab-faq/index.js:280
+#: build/blocks/sidebar-tab-faq/index.js:287
 msgid "Chevron"
 msgstr ""
 
-#: build/blocks/faq-item/index.js:1
-#: build/blocks/nested-faq/index.js:1
+#: build/blocks/faq-item/index.js:7
+#: build/blocks/nested-faq/index.js:284
 msgid "Plus / Minus"
 msgstr ""
 
-#: build/blocks/faq-item/index.js:1
-#: build/blocks/nested-faq/index.js:1
+#: build/blocks/faq-item/index.js:8
+#: build/blocks/nested-faq/index.js:284
 msgid "Arrow"
 msgstr ""
 
-#: build/blocks/faq-item/index.js:1
-#: build/blocks/nested-faq/index.js:1
+#: build/blocks/faq-item/index.js:8
+#: build/blocks/nested-faq/index.js:284
 msgid "None"
 msgstr ""
 
-#: build/blocks/faq-item/index.js:1
+#: build/blocks/faq-item/index.js:8
 msgid "Write the answer — or add any block…"
 msgstr ""
 
-#: build/blocks/faq-item/index.js:1
+#: build/blocks/faq-item/index.js:12
+#: build/blocks/faq-item/index.js:16
 msgid "Collapse answer"
 msgstr ""
 
-#: build/blocks/faq-item/index.js:1
+#: build/blocks/faq-item/index.js:12
+#: build/blocks/faq-item/index.js:16
 msgid "Expand answer"
 msgstr ""
 
-#: build/blocks/faq-item/index.js:1
+#: build/blocks/faq-item/index.js:12
+#: build/blocks/faq-item/index.js:16
 msgid "Add sub question"
 msgstr ""
 
-#: build/blocks/faq-item/index.js:1
+#: build/blocks/faq-item/index.js:13
 msgid "Open by default"
 msgstr ""
 
-#: build/blocks/faq-item/index.js:1
+#: build/blocks/faq-item/index.js:13
 msgid "This question starts expanded on the frontend."
 msgstr ""
 
-#: build/blocks/faq-item/index.js:1
+#: build/blocks/faq-item/index.js:13
 msgid "The answer accepts any block — headings, images, video, columns, groups and more FAQ items."
 msgstr ""
 
-#: build/blocks/faq-item/index.js:1
+#. translators: %d: nesting level limit.
+#: build/blocks/faq-item/index.js:15
 #, js-format
 msgid "Nesting limit reached (%d level). Upgrade to Pro for deeper nesting."
 msgstr ""
 
-#: build/blocks/faq-item/index.js:1
+#: build/blocks/faq-item/index.js:15
 msgid "Write a question…"
 msgstr ""
 
-#: build/blocks/faq-parent/index.js:1
+#: build/blocks/faq-parent/index.js:6
 msgid "Classic accordion with themes, search and categories."
 msgstr ""
 
-#: build/blocks/faq-parent/index.js:1
+#: build/blocks/faq-parent/index.js:7
 msgid "Your posts as an FAQ — three card layouts with Load More."
 msgstr ""
 
-#: build/blocks/faq-parent/index.js:1
+#: build/blocks/faq-parent/index.js:7
 msgid "Tabs down one side, each opening a post beside them."
 msgstr ""
 
-#: build/blocks/faq-parent/index.js:1
+#: build/blocks/faq-parent/index.js:7
 msgid "FAQ Form"
 msgstr ""
 
-#: build/blocks/faq-parent/index.js:1
+#: build/blocks/faq-parent/index.js:7
 msgid "Let visitors send questions — read them under Form Submissions."
 msgstr ""
 
-#: build/blocks/faq-parent/index.js:1
+#: build/blocks/faq-parent/index.js:8
 msgid "Multi level accordion — sub questions inside a question."
 msgstr ""
 
-#: build/blocks/faq-parent/index.js:1
+#: build/blocks/faq-parent/index.js:8
 msgid "Bento grid of cards — each answer opens in a focused dialog."
 msgstr ""
 
-#: build/blocks/faq-parent/index.js:1
+#: build/blocks/faq-parent/index.js:9
 msgid "A row of pictures — each one opens its own question."
 msgstr ""
 
-#: build/blocks/faq-parent/index.js:1
+#: build/blocks/faq-parent/index.js:9
 msgid "Answer assistant — visitors ask, it replies from your FAQs."
 msgstr ""
 
-#: build/blocks/faq-parent/index.js:1
+#: build/blocks/faq-parent/index.js:10
 msgid "Choose FAQ Template"
 msgstr ""
 
-#: build/blocks/faq-parent/index.js:1
+#: build/blocks/faq-parent/index.js:10
 msgid "Pick a block to build — the shortcode is generated once you save."
 msgstr ""
 
-#: build/blocks/image-faq/index.js:1
+#: build/blocks/image-faq/index.js:373
 msgid "Spotlight Card"
 msgstr ""
 
-#: build/blocks/image-faq/index.js:1
+#: build/blocks/image-faq/index.js:373
 msgid "The open image carries a tinted card in the middle, holding the heading, the text and a button."
 msgstr ""
 
-#: build/blocks/image-faq/index.js:1
+#: build/blocks/image-faq/index.js:374
 msgid "Caption Overlay"
 msgstr ""
 
-#: build/blocks/image-faq/index.js:1
+#: build/blocks/image-faq/index.js:374
 msgid "The heading and text sit straight on the open image, over a soft gradient."
 msgstr ""
 
-#: build/blocks/image-faq/index.js:1
-#: build/blocks/post-faq/index.js:1
-#: build/blocks/sidebar-tab-faq/index.js:1
+#: build/blocks/image-faq/index.js:374
+#: build/blocks/post-faq/index.js:4
+#: build/blocks/sidebar-tab-faq/index.js:4
 msgid "Click"
 msgstr ""
 
-#: build/blocks/image-faq/index.js:1
-#: build/blocks/post-faq/index.js:1
-#: build/blocks/sidebar-tab-faq/index.js:1
+#: build/blocks/image-faq/index.js:374
+#: build/blocks/post-faq/index.js:4
+#: build/blocks/sidebar-tab-faq/index.js:4
 msgid "Hover"
 msgstr ""
 
-#: build/blocks/image-faq/index.js:1
+#: build/blocks/image-faq/index.js:374
 msgid "Bottom left"
 msgstr ""
 
-#: build/blocks/image-faq/index.js:1
+#: build/blocks/image-faq/index.js:375
 msgid "Bottom centre"
 msgstr ""
 
-#: build/blocks/image-faq/index.js:1
+#: build/blocks/image-faq/index.js:375
 msgid "The Himalayan Giants"
 msgstr ""
 
-#: build/blocks/image-faq/index.js:1
+#: build/blocks/image-faq/index.js:375
 msgid "The Annapurna mountains stand tall with snow-capped peaks glowing under the warm sunrise."
 msgstr ""
 
-#: build/blocks/image-faq/index.js:1
+#: build/blocks/image-faq/index.js:376
 msgid "A lone tree mirrored in still water"
 msgstr ""
 
-#: build/blocks/image-faq/index.js:1
+#: build/blocks/image-faq/index.js:376
 msgid "Reflections at Dusk"
 msgstr ""
 
-#: build/blocks/image-faq/index.js:1
+#: build/blocks/image-faq/index.js:376
 msgid "A single tree mirrored in still water, held between the last light and the first stars."
 msgstr ""
 
-#: build/blocks/image-faq/index.js:1
+#: build/blocks/image-faq/index.js:376
 msgid "A full moon over a frozen shore"
 msgstr ""
 
-#: build/blocks/image-faq/index.js:1
+#: build/blocks/image-faq/index.js:376
 msgid "Moonrise Over Ice"
 msgstr ""
 
-#: build/blocks/image-faq/index.js:1
+#: build/blocks/image-faq/index.js:376
 msgid "The moon climbs above a frozen shore while the sky keeps the colour of the sun that has just gone."
 msgstr ""
 
-#: build/blocks/image-faq/index.js:1
+#: build/blocks/image-faq/index.js:377
 msgid "A five-tiered pagoda at first light"
 msgstr ""
 
-#: build/blocks/image-faq/index.js:1
+#: build/blocks/image-faq/index.js:377
 msgid "The Pagoda at First Light"
 msgstr ""
 
-#: build/blocks/image-faq/index.js:1
+#: build/blocks/image-faq/index.js:377
 msgid "Five tiers of timber catching the sun as it breaks the horizon behind them."
 msgstr ""
 
-#: build/blocks/image-faq/index.js:1
+#: build/blocks/image-faq/index.js:377
 msgid "Red rock peaks in the morning light"
 msgstr ""
 
-#: build/blocks/image-faq/index.js:1
+#: build/blocks/image-faq/index.js:377
 msgid "Red Rock Morning"
 msgstr ""
 
-#: build/blocks/image-faq/index.js:1
+#: build/blocks/image-faq/index.js:378
 msgid "Bare peaks turning copper in the first minutes of the day, with the valley still in shadow."
 msgstr ""
 
-#: build/blocks/image-faq/index.js:1
+#: build/blocks/image-faq/index.js:395
 msgid "Picture"
 msgstr ""
 
-#: build/blocks/image-faq/index.js:1
+#: build/blocks/image-faq/index.js:395
 msgid "Alt text"
 msgstr ""
 
-#: build/blocks/image-faq/index.js:1
+#: build/blocks/image-faq/index.js:395
 msgid "What the picture shows, for anyone who cannot see it. Leave empty if it is purely decorative."
 msgstr ""
 
-#: build/blocks/image-faq/index.js:1
+#: build/blocks/image-faq/index.js:397
 msgid "Button link"
 msgstr ""
 
-#: build/blocks/image-faq/index.js:1
+#: build/blocks/image-faq/index.js:397
 msgid "Leave empty and the button is left off this panel."
 msgstr ""
 
-#: build/blocks/image-faq/index.js:1
+#: build/blocks/image-faq/index.js:397
 msgid "Open in a new tab"
 msgstr ""
 
-#: build/blocks/image-faq/index.js:1
-#: build/blocks/nested-faq/index.js:1
+#: build/blocks/image-faq/index.js:401
+#: build/blocks/nested-faq/index.js:391
 msgid "Template"
 msgstr ""
 
-#: build/blocks/image-faq/index.js:1
+#: build/blocks/image-faq/index.js:401
 msgid "Template style"
 msgstr ""
 
-#: build/blocks/image-faq/index.js:1
+#: build/blocks/image-faq/index.js:402
 msgid "Caption position"
 msgstr ""
 
-#: build/blocks/image-faq/index.js:1
+#: build/blocks/image-faq/index.js:402
 msgid "Card width"
 msgstr ""
 
-#: build/blocks/image-faq/index.js:1
+#: build/blocks/image-faq/index.js:403
 msgid "How much of the open picture the tinted card covers."
 msgstr ""
 
-#: build/blocks/image-faq/index.js:1
+#: build/blocks/image-faq/index.js:403
 msgid "Darken the picture behind the words"
 msgstr ""
 
-#: build/blocks/image-faq/index.js:1
+#: build/blocks/image-faq/index.js:403
 msgid "Keeps the heading readable whatever the photograph is doing underneath it."
 msgstr ""
 
-#: build/blocks/image-faq/index.js:1
+#: build/blocks/image-faq/index.js:404
 msgid "Images"
 msgstr ""
 
-#: build/blocks/image-faq/index.js:1
+#: build/blocks/image-faq/index.js:404
 msgid "New image"
 msgstr ""
 
-#: build/blocks/image-faq/index.js:1
+#: build/blocks/image-faq/index.js:404
 msgid "A line or two about what this picture shows."
 msgstr ""
 
-#: build/blocks/image-faq/index.js:1
+#: build/blocks/image-faq/index.js:405
+#: build/blocks/image-faq/index.js:412
 msgid "Panel"
 msgstr ""
 
-#: build/blocks/image-faq/index.js:1
+#: build/blocks/image-faq/index.js:405
 msgid "Closed panel height"
 msgstr ""
 
-#: build/blocks/image-faq/index.js:1
+#: build/blocks/image-faq/index.js:406
 msgid "Open panel height"
 msgstr ""
 
-#: build/blocks/image-faq/index.js:1
+#: build/blocks/image-faq/index.js:406
 msgid "On a phone the row turns on its side: the panels stack full width and open downwards."
 msgstr ""
 
-#: build/blocks/image-faq/index.js:1
+#: build/blocks/image-faq/index.js:407
 msgid "Closed panel width"
 msgstr ""
 
-#: build/blocks/image-faq/index.js:1
+#: build/blocks/image-faq/index.js:407
 msgid "How much wider the open panel gets"
 msgstr ""
 
-#: build/blocks/image-faq/index.js:1
+#: build/blocks/image-faq/index.js:407
 msgid "The open panel takes this many times the room of a closed one."
 msgstr ""
 
-#: build/blocks/image-faq/index.js:1
+#: build/blocks/image-faq/index.js:408
 msgid "Switch to the phone icon above to set what the stacked panels do."
 msgstr ""
 
-#: build/blocks/image-faq/index.js:1
+#: build/blocks/image-faq/index.js:408
 msgid "Gap between panels"
 msgstr ""
 
-#: build/blocks/image-faq/index.js:1
-#: build/blocks/post-faq/index.js:1
+#: build/blocks/image-faq/index.js:408
+#: build/blocks/post-faq/index.js:279
 msgid "What to show"
 msgstr ""
 
-#: build/blocks/image-faq/index.js:1
+#: build/blocks/image-faq/index.js:409
+#: build/blocks/image-faq/index.js:416
 msgid "Enlarge button"
 msgstr ""
 
-#: build/blocks/image-faq/index.js:1
+#: build/blocks/image-faq/index.js:409
 msgid "The round magnifier. Opens the full size picture over the page."
 msgstr ""
 
-#: build/blocks/image-faq/index.js:1
-#: build/blocks/post-faq/index.js:1
+#: build/blocks/image-faq/index.js:410
+#: build/blocks/post-faq/index.js:282
 msgid "Open a panel on"
 msgstr ""
 
-#: build/blocks/image-faq/index.js:1
+#: build/blocks/image-faq/index.js:410
 msgid "Open at the start"
 msgstr ""
 
-#: build/blocks/image-faq/index.js:1
+#: build/blocks/image-faq/index.js:411
 msgid "Which panel is already open when the page loads."
 msgstr ""
 
-#: build/blocks/image-faq/index.js:1
+#: build/blocks/image-faq/index.js:411
 msgid "Sliding speed"
 msgstr ""
 
-#: build/blocks/image-faq/index.js:1
+#: build/blocks/image-faq/index.js:411
 msgid "Milliseconds. Zero opens instantly."
 msgstr ""
 
-#: build/blocks/image-faq/index.js:1
+#: build/blocks/image-faq/index.js:412
 msgid "Words on the picture"
 msgstr ""
 
-#: build/blocks/image-faq/index.js:1
+#: build/blocks/image-faq/index.js:412
 msgid "Overlay background"
 msgstr ""
 
-#: build/blocks/image-faq/index.js:1
+#: build/blocks/image-faq/index.js:419
 msgid "Choose a template"
 msgstr ""
 
-#: build/blocks/image-faq/index.js:1
+#: build/blocks/image-faq/index.js:419
 msgid "You can change this later, and every colour, size and space stays adjustable."
 msgstr ""
 
-#: build/blocks/image-faq/index.js:1
+#: build/blocks/image-faq/index.js:435
 msgid "Some panels have no picture yet. Open Images in the sidebar and choose one for each."
 msgstr ""
 
-#: build/blocks/nested-faq/index.js:1
+#: build/blocks/nested-faq/index.js:393
 msgid "Allow multiple open at once"
 msgstr ""
 
-#: build/blocks/nested-faq/index.js:1
+#: build/blocks/nested-faq/index.js:393
 msgid "Off keeps it as a classic accordion — opening one closes its siblings."
 msgstr ""
 
-#: build/blocks/nested-faq/index.js:1
+#: build/blocks/nested-faq/index.js:393
 msgid "Prints JSON-LD in the page source so search engines and AI answer engines can read the Q&A."
 msgstr ""
 
-#: build/blocks/nested-faq/index.js:1
+#: build/blocks/nested-faq/index.js:394
 msgid "Nesting depth"
 msgstr ""
 
-#: build/blocks/nested-faq/index.js:1
+#. translators: %d: nesting level limit.
+#: build/blocks/nested-faq/index.js:395
 #, js-format
 msgid "Pro: up to %d nested levels. Each answer accepts any block."
 msgstr ""
 
-#: build/blocks/nested-faq/index.js:1
+#. translators: %d: nesting level limit.
+#: build/blocks/nested-faq/index.js:396
 #, js-format
 msgid "Free: %d nested level. Upgrade for 3 levels."
 msgstr ""
 
-#: build/blocks/nested-faq/index.js:1
+#: build/blocks/nested-faq/index.js:396
 msgid "Position"
 msgstr ""
 
-#: build/blocks/nested-faq/index.js:1
+#: build/blocks/nested-faq/index.js:396
 msgid "Icon Color"
 msgstr ""
 
-#: build/blocks/nested-faq/index.js:1
+#: build/blocks/nested-faq/index.js:397
 msgid "Icon Size"
 msgstr ""
 
-#: build/blocks/nested-faq/index.js:1
+#: build/blocks/nested-faq/index.js:398
 msgid "Open Color"
 msgstr ""
 
-#: build/blocks/nested-faq/index.js:1
+#: build/blocks/nested-faq/index.js:398
 msgid "Open Background"
 msgstr ""
 
-#: build/blocks/nested-faq/index.js:1
+#: build/blocks/nested-faq/index.js:400
 msgid "Nested Questions"
 msgstr ""
 
-#: build/blocks/nested-faq/index.js:1
+#: build/blocks/nested-faq/index.js:401
 msgid "Indent"
 msgstr ""
 
-#: build/blocks/nested-faq/index.js:1
+#: build/blocks/nested-faq/index.js:401
+#: build/blocks/nested-faq/index.js:402
 msgid "Gap"
 msgstr ""
 
-#: build/blocks/nested-faq/index.js:1
+#: build/blocks/nested-faq/index.js:402
 msgid "Item"
 msgstr ""
 
-#: build/blocks/nested-faq/index.js:1
+#: build/blocks/nested-faq/index.js:403
 msgid "Unlock all Nested FAQ templates"
 msgstr ""
 
-#: build/blocks/nested-faq/index.js:1
+#: build/blocks/nested-faq/index.js:403
 msgid "The Default template is free. Pro adds five ready-made looks and deeper nesting."
 msgstr ""
 
-#: build/blocks/nested-faq/index.js:1
+#: build/blocks/nested-faq/index.js:403
 msgid "Filled, Card, Minimal, Outline and Gradient templates"
 msgstr ""
 
-#: build/blocks/nested-faq/index.js:1
+#: build/blocks/nested-faq/index.js:403
 msgid "Up to 3 levels of nested questions"
 msgstr ""
 
-#: build/blocks/nested-faq/index.js:1
+#: build/blocks/nested-faq/index.js:404
 msgid "All premium FAQ themes and layouts"
 msgstr ""
 
-#: build/blocks/nested-faq/index.js:1
+#: build/blocks/nested-faq/index.js:404
 msgid "AI powered FAQ generation"
 msgstr ""
 
-#: build/blocks/nested-faq/index.js:1
+#: build/blocks/nested-faq/index.js:404
 msgid "Analytics dashboard and WooCommerce product FAQs"
 msgstr ""
 
-#: build/blocks/nested-faq/index.js:1
+#: build/blocks/nested-faq/index.js:418
 msgid "What is included in the plan?"
 msgstr ""
 
-#: build/blocks/nested-faq/index.js:1
+#: build/blocks/nested-faq/index.js:418
 msgid "Every plan ships with the full block library, unlimited FAQ items and free updates."
 msgstr ""
 
-#: build/blocks/nested-faq/index.js:1
+#: build/blocks/nested-faq/index.js:419
 msgid "Included features"
 msgstr ""
 
-#: build/blocks/nested-faq/index.js:1
+#: build/blocks/nested-faq/index.js:419
 msgid "Usage limits"
 msgstr ""
 
-#: build/blocks/nested-faq/index.js:1
+#: build/blocks/nested-faq/index.js:419
 msgid "How does billing work?"
 msgstr ""
 
-#: build/blocks/nested-faq/index.js:1
+#: build/blocks/nested-faq/index.js:419
 msgid "Do you offer support?"
 msgstr ""
 
-#: build/blocks/nested-faq/index.js:1
+#. translators: %d: number of nesting levels available on the free plan.
+#: build/blocks/nested-faq/index.js:428
 #, js-format
 msgid "Free plan: %d nested level and the Default template. Upgrade for deeper nesting and all templates."
 msgstr ""
 
-#: build/blocks/post-faq/index.js:1
+#: build/blocks/post-faq/index.js:3
 msgid "Classic Accordion"
 msgstr ""
 
-#: build/blocks/post-faq/index.js:1
+#: build/blocks/post-faq/index.js:3
 msgid "Classic"
 msgstr ""
 
-#: build/blocks/post-faq/index.js:1
+#: build/blocks/post-faq/index.js:3
 msgid "A plain title bar. Opens to show the featured image beside the excerpt."
 msgstr ""
 
-#: build/blocks/post-faq/index.js:1
+#: build/blocks/post-faq/index.js:3
 msgid "Compact List"
 msgstr ""
 
-#: build/blocks/post-faq/index.js:1
+#: build/blocks/post-faq/index.js:3
 msgid "Compact"
 msgstr ""
 
-#: build/blocks/post-faq/index.js:1
+#: build/blocks/post-faq/index.js:3
 msgid "Thumbnail, title and meta all in the bar. Opens to the excerpt underneath."
 msgstr ""
 
-#: build/blocks/post-faq/index.js:1
+#: build/blocks/post-faq/index.js:4
 msgid "Cover Cards"
 msgstr ""
 
-#: build/blocks/post-faq/index.js:1
+#: build/blocks/post-faq/index.js:4
 msgid "Cover"
 msgstr ""
 
-#: build/blocks/post-faq/index.js:1
+#: build/blocks/post-faq/index.js:4
 msgid "The featured image is the card, with the title and meta over it."
 msgstr ""
 
-#: build/blocks/post-faq/index.js:1
-#: build/blocks/sidebar-tab-faq/index.js:1
+#: build/blocks/post-faq/index.js:4
+#: build/blocks/sidebar-tab-faq/index.js:5
 msgid "Newest first"
 msgstr ""
 
-#: build/blocks/post-faq/index.js:1
-#: build/blocks/sidebar-tab-faq/index.js:1
+#: build/blocks/post-faq/index.js:4
+#: build/blocks/sidebar-tab-faq/index.js:5
 msgid "Recently updated"
 msgstr ""
 
-#: build/blocks/post-faq/index.js:1
-#: build/blocks/sidebar-tab-faq/index.js:1
+#: build/blocks/post-faq/index.js:4
+#: build/blocks/sidebar-tab-faq/index.js:5
 msgid "Title A–Z"
 msgstr ""
 
-#: build/blocks/post-faq/index.js:1
-#: build/blocks/sidebar-tab-faq/index.js:1
+#: build/blocks/post-faq/index.js:5
+#: build/blocks/sidebar-tab-faq/index.js:5
 msgid "Menu order"
 msgstr ""
 
-#: build/blocks/post-faq/index.js:1
-#: build/blocks/sidebar-tab-faq/index.js:1
+#: build/blocks/post-faq/index.js:5
+#: build/blocks/sidebar-tab-faq/index.js:5
 msgid "Most commented"
 msgstr ""
 
-#: build/blocks/post-faq/index.js:1
-#: build/blocks/sidebar-tab-faq/index.js:1
+#: build/blocks/post-faq/index.js:5
+#: build/blocks/sidebar-tab-faq/index.js:6
 msgid "Random"
 msgstr ""
 
-#: build/blocks/post-faq/index.js:1
-#: build/blocks/sidebar-tab-faq/index.js:1
+#: build/blocks/post-faq/index.js:5
+#: build/blocks/sidebar-tab-faq/index.js:6
 msgid "Descending"
 msgstr ""
 
-#: build/blocks/post-faq/index.js:1
-#: build/blocks/sidebar-tab-faq/index.js:1
+#: build/blocks/post-faq/index.js:5
+#: build/blocks/sidebar-tab-faq/index.js:6
 msgid "Ascending"
 msgstr ""
 
-#: build/blocks/post-faq/index.js:1
+#: build/blocks/post-faq/index.js:8
 msgid "Choose a layout"
 msgstr ""
 
-#: build/blocks/post-faq/index.js:1
-#: build/blocks/sidebar-tab-faq/index.js:1
+#: build/blocks/post-faq/index.js:8
+#: build/blocks/sidebar-tab-faq/index.js:7
 msgid "You can change this later, and every colour and size stays adjustable."
 msgstr ""
 
-#: build/blocks/post-faq/index.js:1
-#: build/blocks/sidebar-tab-faq/index.js:1
+#: build/blocks/post-faq/index.js:275
+#: build/blocks/sidebar-tab-faq/index.js:277
 msgid "Which posts"
 msgstr ""
 
-#: build/blocks/post-faq/index.js:1
-#: build/blocks/sidebar-tab-faq/index.js:1
+#: build/blocks/post-faq/index.js:276
+#: build/blocks/sidebar-tab-faq/index.js:277
 msgid "Post type"
 msgstr ""
 
-#: build/blocks/post-faq/index.js:1
-#: build/blocks/sidebar-tab-faq/index.js:1
+#: build/blocks/post-faq/index.js:276
+#: build/blocks/sidebar-tab-faq/index.js:277
 msgid "Posts"
 msgstr ""
 
-#: build/blocks/post-faq/index.js:1
-#: build/blocks/sidebar-tab-faq/index.js:1
+#: build/blocks/post-faq/index.js:276
+#: build/blocks/sidebar-tab-faq/index.js:277
 msgid "Order by"
 msgstr ""
 
-#: build/blocks/post-faq/index.js:1
-#: build/blocks/sidebar-tab-faq/index.js:1
+#: build/blocks/post-faq/index.js:276
+#: build/blocks/sidebar-tab-faq/index.js:277
 msgid "Direction"
 msgstr ""
 
-#: build/blocks/post-faq/index.js:1
-#: build/blocks/sidebar-tab-faq/index.js:1
+#: build/blocks/post-faq/index.js:277
+#: build/blocks/sidebar-tab-faq/index.js:278
 msgid "Limit to categories"
 msgstr ""
 
-#: build/blocks/post-faq/index.js:1
+#: build/blocks/post-faq/index.js:277
 msgid "Show at first"
 msgstr ""
 
-#: build/blocks/post-faq/index.js:1
+#: build/blocks/post-faq/index.js:278
 msgid "How many cards appear before Load More is pressed."
 msgstr ""
 
-#: build/blocks/post-faq/index.js:1
+#: build/blocks/post-faq/index.js:278
 msgid "Fetch at most"
 msgstr ""
 
-#: build/blocks/post-faq/index.js:1
+#: build/blocks/post-faq/index.js:278
 msgid "Every post is printed into the page, so keep this to what the page really needs."
 msgstr ""
 
-#: build/blocks/post-faq/index.js:1
-#: build/blocks/sidebar-tab-faq/index.js:1
+#: build/blocks/post-faq/index.js:279
+#: build/blocks/sidebar-tab-faq/index.js:279
+#: build/blocks/sidebar-tab-faq/index.js:281
 msgid "Featured image"
 msgstr ""
 
-#: build/blocks/post-faq/index.js:1
-#: build/blocks/sidebar-tab-faq/index.js:1
+#: build/blocks/post-faq/index.js:279
+#: build/blocks/sidebar-tab-faq/index.js:282
 msgid "Author"
 msgstr ""
 
-#: build/blocks/post-faq/index.js:1
-#: build/blocks/sidebar-tab-faq/index.js:1
+#: build/blocks/post-faq/index.js:279
+#: build/blocks/sidebar-tab-faq/index.js:282
 msgid "Category"
 msgstr ""
 
-#: build/blocks/post-faq/index.js:1
-#: build/blocks/sidebar-tab-faq/index.js:1
+#: build/blocks/post-faq/index.js:279
+#: build/blocks/sidebar-tab-faq/index.js:282
 msgid "Date"
 msgstr ""
 
-#: build/blocks/post-faq/index.js:1
-#: build/blocks/sidebar-tab-faq/index.js:1
+#: build/blocks/post-faq/index.js:280
+#: build/blocks/sidebar-tab-faq/index.js:282
 msgid "Reading time"
 msgstr ""
 
-#: build/blocks/post-faq/index.js:1
-#: build/blocks/sidebar-tab-faq/index.js:1
+#: build/blocks/post-faq/index.js:280
+#: build/blocks/sidebar-tab-faq/index.js:5
 msgid "Excerpt"
 msgstr ""
 
-#: build/blocks/post-faq/index.js:1
-#: build/blocks/sidebar-tab-faq/index.js:1
+#: build/blocks/post-faq/index.js:280
+#: build/blocks/sidebar-tab-faq/index.js:281
 msgid "Excerpt length (words)"
 msgstr ""
 
-#: build/blocks/post-faq/index.js:1
-#: build/blocks/sidebar-tab-faq/index.js:1
+#: build/blocks/post-faq/index.js:281
+#: build/blocks/sidebar-tab-faq/index.js:283
 msgid "Read More link"
 msgstr ""
 
-#: build/blocks/post-faq/index.js:1
-#: build/blocks/sidebar-tab-faq/index.js:1
+#: build/blocks/post-faq/index.js:281
+#: build/blocks/sidebar-tab-faq/index.js:283
 msgid "Read More text"
 msgstr ""
 
-#: build/blocks/post-faq/index.js:1
+#: build/blocks/post-faq/index.js:281
 msgid "Close button"
 msgstr ""
 
-#: build/blocks/post-faq/index.js:1
+#: build/blocks/post-faq/index.js:281
 msgid "Close button text"
 msgstr ""
 
-#: build/blocks/post-faq/index.js:1
+#: build/blocks/post-faq/index.js:282
 msgid "Hovering a card opens it, and it stays open when the pointer moves on. Clicking and the keyboard still work, which is what keeps the cards reachable on a phone."
 msgstr ""
 
-#: build/blocks/post-faq/index.js:1
+#: build/blocks/post-faq/index.js:283
 msgid "A card opens when its title is clicked, or with Enter when it is focused."
 msgstr ""
 
-#: build/blocks/post-faq/index.js:1
+#: build/blocks/post-faq/index.js:283
 msgid "Open the first card on load"
 msgstr ""
 
-#: build/blocks/post-faq/index.js:1
+#: build/blocks/post-faq/index.js:283
 msgid "Close the others when one opens"
 msgstr ""
 
-#: build/blocks/post-faq/index.js:1
+#: build/blocks/post-faq/index.js:284
 msgid "Load More button"
 msgstr ""
 
-#: build/blocks/post-faq/index.js:1
+#: build/blocks/post-faq/index.js:284
 msgid "Reveals the next batch. The posts are already on the page, so nothing is fetched."
 msgstr ""
 
-#: build/blocks/post-faq/index.js:1
+#: build/blocks/post-faq/index.js:284
 msgid "Load More text"
 msgstr ""
 
-#: build/blocks/post-faq/index.js:1
+#: build/blocks/post-faq/index.js:285
 msgid "Gap between cards"
 msgstr ""
 
-#: build/blocks/post-faq/index.js:1
-#: build/blocks/sidebar-tab-faq/index.js:1
+#: build/blocks/post-faq/index.js:286
+#: build/blocks/sidebar-tab-faq/index.js:285
 msgid "Background when open"
 msgstr ""
 
-#: build/blocks/post-faq/index.js:1
+#: build/blocks/post-faq/index.js:286
 msgid "Toggle icon"
 msgstr ""
 
-#: build/blocks/post-faq/index.js:1
+#: build/blocks/post-faq/index.js:287
 msgid "Title"
 msgstr ""
 
-#: build/blocks/post-faq/index.js:1
+#: build/blocks/post-faq/index.js:287
 msgid "Color when open"
 msgstr ""
 
-#: build/blocks/post-faq/index.js:1
+#: build/blocks/post-faq/index.js:288
 msgid "Meta"
 msgstr ""
 
-#: build/blocks/post-faq/index.js:1
+#: build/blocks/post-faq/index.js:289
 msgid "Excerpt color"
 msgstr ""
 
-#: build/blocks/post-faq/index.js:1
+#: build/blocks/post-faq/index.js:289
 msgid "Excerpt typography"
 msgstr ""
 
-#: build/blocks/post-faq/index.js:1
+#: build/blocks/post-faq/index.js:290
 msgid "Cover photo"
 msgstr ""
 
-#: build/blocks/post-faq/index.js:1
-#: build/blocks/sidebar-tab-faq/index.js:1
+#: build/blocks/post-faq/index.js:290
+#: build/blocks/sidebar-tab-faq/index.js:290
 msgid "Image"
 msgstr ""
 
-#: build/blocks/post-faq/index.js:1
+#: build/blocks/post-faq/index.js:290
 msgid "Image width"
 msgstr ""
 
-#: build/blocks/post-faq/index.js:1
+#: build/blocks/post-faq/index.js:290
 msgid "Card height"
 msgstr ""
 
-#: build/blocks/post-faq/index.js:1
+#: build/blocks/post-faq/index.js:291
 msgid "Photo tint"
 msgstr ""
 
-#: build/blocks/post-faq/index.js:1
+#: build/blocks/post-faq/index.js:291
 msgid "Washes the photograph in a colour so the words on top of it read as one design rather than three different pictures. A part-transparent colour works best — the card already darkens towards the bottom on its own."
 msgstr ""
 
-#: build/blocks/post-faq/index.js:1
-#: build/blocks/sidebar-tab-faq/index.js:1
+#: build/blocks/post-faq/index.js:292
+#: build/blocks/sidebar-tab-faq/index.js:292
 msgid "Category pill"
 msgstr ""
 
-#: build/blocks/post-faq/index.js:1
-#: build/blocks/sidebar-tab-faq/index.js:1
+#: build/blocks/post-faq/index.js:292
+#: build/blocks/sidebar-tab-faq/index.js:291
 msgid "Image radius"
 msgstr ""
 
-#: build/blocks/post-faq/index.js:1
+#: build/blocks/post-faq/index.js:293
 msgid "Load More & Close buttons"
 msgstr ""
 
-#: build/blocks/post-faq/index.js:1
+#: build/blocks/post-faq/index.js:294
 msgid "The Read More link follows the excerpt colour instead, so it always sits with the text it belongs to."
 msgstr ""
 
-#: build/blocks/post-faq/index.js:1
+#: build/blocks/post-faq/index.js:308
 msgid "Cards open here just as they will on the page. Use the sidebar to change the layout, the posts and the styling."
 msgstr ""
 
-#: build/blocks/sidebar-tab-faq/index.js:1
+#: build/blocks/sidebar-tab-faq/index.js:3
 msgid "Bordered Panel"
 msgstr ""
 
-#: build/blocks/sidebar-tab-faq/index.js:1
+#: build/blocks/sidebar-tab-faq/index.js:3
 msgid "Bordered"
 msgstr ""
 
-#: build/blocks/sidebar-tab-faq/index.js:1
+#: build/blocks/sidebar-tab-faq/index.js:3
 msgid "One outlined box. A divided list down the side, the answer beside it."
 msgstr ""
 
-#: build/blocks/sidebar-tab-faq/index.js:1
+#: build/blocks/sidebar-tab-faq/index.js:3
 msgid "Plain Lines"
 msgstr ""
 
-#: build/blocks/sidebar-tab-faq/index.js:1
+#: build/blocks/sidebar-tab-faq/index.js:3
 msgid "Lines"
 msgstr ""
 
-#: build/blocks/sidebar-tab-faq/index.js:1
+#: build/blocks/sidebar-tab-faq/index.js:3
 msgid "No outer box. Ruled tabs with a single divider between them and the answer."
 msgstr ""
 
-#: build/blocks/sidebar-tab-faq/index.js:1
+#: build/blocks/sidebar-tab-faq/index.js:3
 msgid "Pill Tabs"
 msgstr ""
 
-#: build/blocks/sidebar-tab-faq/index.js:1
+#: build/blocks/sidebar-tab-faq/index.js:4
 msgid "Pills"
 msgstr ""
 
-#: build/blocks/sidebar-tab-faq/index.js:1
+#: build/blocks/sidebar-tab-faq/index.js:4
 msgid "Each tab is its own rounded button, and the answer sits on a card."
 msgstr ""
 
-#: build/blocks/sidebar-tab-faq/index.js:1
+#: build/blocks/sidebar-tab-faq/index.js:4
 msgid "Accordion"
 msgstr ""
 
-#: build/blocks/sidebar-tab-faq/index.js:1
+#: build/blocks/sidebar-tab-faq/index.js:5
 msgid "Stacked"
 msgstr ""
 
-#: build/blocks/sidebar-tab-faq/index.js:1
+#: build/blocks/sidebar-tab-faq/index.js:5
 msgid "Full content"
 msgstr ""
 
-#: build/blocks/sidebar-tab-faq/index.js:1
+#: build/blocks/sidebar-tab-faq/index.js:7
 msgid "Choose a look"
 msgstr ""
 
-#: build/blocks/sidebar-tab-faq/index.js:1
+#: build/blocks/sidebar-tab-faq/index.js:272
 msgid "Look"
 msgstr ""
 
-#: build/blocks/sidebar-tab-faq/index.js:1
+#: build/blocks/sidebar-tab-faq/index.js:273
 msgid "Tabs on the"
 msgstr ""
 
-#: build/blocks/sidebar-tab-faq/index.js:1
+#: build/blocks/sidebar-tab-faq/index.js:273
 msgid "Sidebar width — desktop"
 msgstr ""
 
-#: build/blocks/sidebar-tab-faq/index.js:1
+#: build/blocks/sidebar-tab-faq/index.js:273
 msgid "Sidebar width — tablet"
 msgstr ""
 
-#: build/blocks/sidebar-tab-faq/index.js:1
+#: build/blocks/sidebar-tab-faq/index.js:274
 msgid "Gap between the columns"
 msgstr ""
 
-#: build/blocks/sidebar-tab-faq/index.js:1
+#: build/blocks/sidebar-tab-faq/index.js:274
 msgid "Scroll the tab list after"
 msgstr ""
 
-#: build/blocks/sidebar-tab-faq/index.js:1
+#: build/blocks/sidebar-tab-faq/index.js:275
 msgid "Least answer height"
 msgstr ""
 
-#: build/blocks/sidebar-tab-faq/index.js:1
+#: build/blocks/sidebar-tab-faq/index.js:275
 msgid "Switch tabs on"
 msgstr ""
 
-#: build/blocks/sidebar-tab-faq/index.js:1
+#: build/blocks/sidebar-tab-faq/index.js:276
 msgid "On a phone"
 msgstr ""
 
-#: build/blocks/sidebar-tab-faq/index.js:1
+#: build/blocks/sidebar-tab-faq/index.js:276
 msgid "Each answer drops in under the tab it belongs to."
 msgstr ""
 
-#: build/blocks/sidebar-tab-faq/index.js:1
+#: build/blocks/sidebar-tab-faq/index.js:276
 msgid "The whole tab list stays together, with one answer panel under it."
 msgstr ""
 
-#: build/blocks/sidebar-tab-faq/index.js:1
+#: build/blocks/sidebar-tab-faq/index.js:279
 msgid "How many tabs"
 msgstr ""
 
-#: build/blocks/sidebar-tab-faq/index.js:1
+#: build/blocks/sidebar-tab-faq/index.js:279
 msgid "Every answer is printed into the page, so keep this to what the page really needs."
 msgstr ""
 
-#: build/blocks/sidebar-tab-faq/index.js:1
+#: build/blocks/sidebar-tab-faq/index.js:279
 msgid "The tab"
 msgstr ""
 
-#: build/blocks/sidebar-tab-faq/index.js:1
+#: build/blocks/sidebar-tab-faq/index.js:280
 msgid "Number"
 msgstr ""
 
-#: build/blocks/sidebar-tab-faq/index.js:1
+#: build/blocks/sidebar-tab-faq/index.js:280
 msgid "The answer"
 msgstr ""
 
-#: build/blocks/sidebar-tab-faq/index.js:1
+#: build/blocks/sidebar-tab-faq/index.js:280
 msgid "Show"
 msgstr ""
 
-#: build/blocks/sidebar-tab-faq/index.js:1
+#: build/blocks/sidebar-tab-faq/index.js:281
 msgid "Repeat the title above the answer"
 msgstr ""
 
-#: build/blocks/sidebar-tab-faq/index.js:1
+#: build/blocks/sidebar-tab-faq/index.js:283
 msgid "Frame"
 msgstr ""
 
-#: build/blocks/sidebar-tab-faq/index.js:1
+#: build/blocks/sidebar-tab-faq/index.js:284
 msgid "Answer card border"
 msgstr ""
 
-#: build/blocks/sidebar-tab-faq/index.js:1
+#: build/blocks/sidebar-tab-faq/index.js:284
 msgid "Tab list background"
 msgstr ""
 
-#: build/blocks/sidebar-tab-faq/index.js:1
+#: build/blocks/sidebar-tab-faq/index.js:284
 msgid "Tabs"
 msgstr ""
 
-#: build/blocks/sidebar-tab-faq/index.js:1
+#: build/blocks/sidebar-tab-faq/index.js:286
 msgid "Text when open"
 msgstr ""
 
-#: build/blocks/sidebar-tab-faq/index.js:1
+#: build/blocks/sidebar-tab-faq/index.js:286
 msgid "Divider"
 msgstr ""
 
-#: build/blocks/sidebar-tab-faq/index.js:1
+#: build/blocks/sidebar-tab-faq/index.js:287
 msgid "Chevron when open"
 msgstr ""
 
-#: build/blocks/sidebar-tab-faq/index.js:1
+#: build/blocks/sidebar-tab-faq/index.js:289
 msgid "Answer title & meta"
 msgstr ""
 
-#: build/blocks/sidebar-tab-faq/index.js:1
+#: build/blocks/sidebar-tab-faq/index.js:289
 msgid "Title color"
 msgstr ""
 
-#: build/blocks/sidebar-tab-faq/index.js:1
+#: build/blocks/sidebar-tab-faq/index.js:289
 msgid "Title typography"
 msgstr ""
 
-#: build/blocks/sidebar-tab-faq/index.js:1
+#: build/blocks/sidebar-tab-faq/index.js:289
 msgid "Meta color"
 msgstr ""
 
-#: build/blocks/sidebar-tab-faq/index.js:1
+#: build/blocks/sidebar-tab-faq/index.js:290
 msgid "Meta typography"
 msgstr ""
 
-#: build/blocks/sidebar-tab-faq/index.js:1
+#: build/blocks/sidebar-tab-faq/index.js:290
 msgid "Tab image size"
 msgstr ""
 
-#: build/blocks/sidebar-tab-faq/index.js:1
+#: build/blocks/sidebar-tab-faq/index.js:290
 msgid "Answer image height"
 msgstr ""
 
-#: build/blocks/sidebar-tab-faq/index.js:1
+#: build/blocks/sidebar-tab-faq/index.js:291
 msgid "Buttons"
 msgstr ""
 
-#: build/blocks/sidebar-tab-faq/index.js:1
+#: build/blocks/sidebar-tab-faq/index.js:307
 msgid "Tabs switch here just as they will on the page, and fold into an accordion on a phone. Use the sidebar to change the look, the posts and the styling."
 msgstr ""
 
-#: build/template-library.js:1
+#: build/index.js:462
+msgid "Theme Switch"
+msgstr ""
+
+#: build/index.js:462
+msgid "Theme"
+msgstr ""
+
+#: build/index.js:464
+msgid "Header Content"
+msgstr ""
+
+#: build/index.js:465
+msgid "FAQ Item"
+msgstr ""
+
+#: build/index.js:467
+msgid "FAQ Icon"
+msgstr ""
+
+#: build/index.js:468
+msgid "Options"
+msgstr ""
+
+#: build/index.js:673
+msgid "Title  Align"
+msgstr ""
+
+#: build/index.js:675
+msgid "subTitle  Align"
+msgstr ""
+
+#: build/index.js:678
+msgid "button Background"
+msgstr ""
+
+#: build/index.js:680
+msgid "Question Style"
+msgstr ""
+
+#: build/index.js:681
+msgid "Answer Style"
+msgstr ""
+
+#: build/index.js:683
+msgid "Icon Style"
+msgstr ""
+
+#: build/index.js:685
+msgid "Section Title Style"
+msgstr ""
+
+#: build/index.js:686
+msgid "Progress Bar Style"
+msgstr ""
+
+#: build/index.js:687
+msgid "Question Container Style"
+msgstr ""
+
+#: build/index.js:724
+msgid "Unlock More with Awesome FAQ Pro"
+msgstr ""
+
+#: build/index.js:724
+msgid "The free features of Plugin do a lot-still, without PRO, you're holding yourself back from getting more."
+msgstr ""
+
+#: build/template-library.js:86
 msgid "Template Library"
 msgstr ""
 
-#: build/template-library.js:1
+#: build/template-library.js:86
 msgid "Awesome FAQ Templates"
 msgstr ""
 

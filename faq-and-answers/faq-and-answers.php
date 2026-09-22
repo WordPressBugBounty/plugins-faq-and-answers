@@ -1,9 +1,9 @@
 <?php
 
 /**
- * Plugin Name: Awesome FAQ – Modern Accordion, Tabs, Responsive & Super Fast FAQ Builder
+ * Plugin Name: Awesome FAQ
  * Description: Create responsive, customizable FAQ sections with ready-made templates.Perfect for boosting clarity, trust, and user experience on any page. 
- * Version: 2.5.0
+ * Version: 2.5.1
  * Author: bPlugins
  * Author URI: https://bplugins.com 
  * License: GPLv3 or later
@@ -30,7 +30,7 @@ if ( function_exists( 'faa_fs' ) ) {
     ], 'plugin' );
     // On a local install the timestamp busts the cache on every reload, which
     // is what makes editing a stylesheet bearable.
-    define( 'AFAQ_VERSION', ( isset( $_SERVER['HTTP_HOST'] ) && 'localhost' === $_SERVER['HTTP_HOST'] ? time() : (( !empty( $afaq_header['Version'] ) ? $afaq_header['Version'] : '2.5.0' )) ) );
+    define( 'AFAQ_VERSION', ( isset( $_SERVER['HTTP_HOST'] ) && 'localhost' === $_SERVER['HTTP_HOST'] ? time() : (( !empty( $afaq_header['Version'] ) ? $afaq_header['Version'] : '2.5.1' )) ) );
     unset($afaq_header);
     define( 'AFAQ_DIR_URL', plugin_dir_url( __FILE__ ) );
     define( 'AFAQ_DIR_PATH', plugin_dir_path( __FILE__ ) );

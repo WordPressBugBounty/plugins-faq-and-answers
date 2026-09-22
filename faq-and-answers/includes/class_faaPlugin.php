@@ -133,6 +133,36 @@ if (!class_exists('FaaPlugin')) {
                     $post = null;
                 }
 
+                /*
+                 * Published FAQs only.
+                 *
+                 * The type check above answers "is this the right kind of thing",
+                 * which is not the same question as "may this viewer see it".
+                 * get_post() is a plain lookup by id — it applies no status filter
+                 * and no capability check, so it hands back drafts, pending,
+                 * private, scheduled and trashed rows just as readily as published
+                 * ones, and the content went straight into parse_blocks() below.
+                 *
+                 * Ids are sequential integers, so the hole needed no guesswork: a
+                 * Contributor could put [faq id=47] in their own draft and read an
+                 * unpublished FAQ off the preview, and an Author could publish that
+                 * same post and put its contents in front of the whole internet.
+                 * Draft FAQs are where unannounced pricing and unapproved wording
+                 * live, which is exactly what should not leak.
+                 *
+                 * Status alone decides it, with no capability check to soften it:
+                 * that also means an author cannot preview a draft FAQ through the
+                 * shortcode — it has to be published first.
+                 *
+                 * Left as $post = null rather than its own error, so the branch at
+                 * the bottom handles it and an unauthorised id reads exactly like a
+                 * typo. Same message either way, shown only to someone who can edit
+                 * posts, so it cannot be used to count which ids hold an FAQ.
+                 */
+                if ($post && 'publish' !== $post->post_status) {
+                    $post = null;
+                }
+
                 if ($post) {
                     $post_meta = get_post_meta($faq_id, "ba_re_", true);
                     $font_color = get_post_meta($faq_id, 'ba_quest_font_color', true);
