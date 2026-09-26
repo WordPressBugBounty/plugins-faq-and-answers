@@ -120,8 +120,7 @@ if (!class_exists('FAQBlock')) {
             }
 
             try {
-                $ai_client_prompt = 'wp_ai_client_prompt';
-                $builder = $ai_client_prompt($prompt);
+                $builder = wp_ai_client_prompt($prompt);
                 $builder->using_model_preference('claude-sonnet-4-6', 'gpt-4o', 'gemini-pro');
                 $response = $builder->generate_text();
 

@@ -31,6 +31,14 @@ class Templates {
 	/** Nonce action shared by every endpoint here. */
 	const NONCE = 'afaq_template';
 
+	/**
+	 * The only prefix the favourites option may be saved under.
+	 *
+	 * It names an option, so it cannot be whatever the request says it is —
+	 * see template_favorites().
+	 */
+	const FAVORITES_PREFIX = 'afaq';
+
 	/** How long a remote answer is reused before it is asked for again. */
 	const CACHE_TTL = 6 * HOUR_IN_SECONDS;
 
@@ -266,10 +274,10 @@ class Templates {
 		$this->guard();
 
 		$type     = $this->requested_type();
-		$category = sanitize_text_field(wp_unslash($_POST['category'] ?? 'all'));
-		$page     = max(1, absint(wp_unslash($_POST['pageNumber'] ?? 1)));
-		$per_page = max(1, absint(wp_unslash($_POST['perPage'] ?? 12)));
-		$search   = sanitize_text_field(wp_unslash($_POST['search'] ?? ''));
+		$category = sanitize_text_field(wp_unslash($_POST['category'] ?? 'all')); // phpcs:ignore WordPress.Security.NonceVerification.Missing -- guard() runs first.
+		$page     = max(1, absint(wp_unslash($_POST['pageNumber'] ?? 1))); // phpcs:ignore WordPress.Security.NonceVerification.Missing -- guard() runs first.
+		$per_page = max(1, absint(wp_unslash($_POST['perPage'] ?? 12))); // phpcs:ignore WordPress.Security.NonceVerification.Missing -- guard() runs first.
+		$search   = sanitize_text_field(wp_unslash($_POST['search'] ?? '')); // phpcs:ignore WordPress.Security.NonceVerification.Missing -- guard() runs first.
 
 		$all_builtin = BuiltIn::query($type, $category, $search);
 		$offset      = ($page - 1) * $per_page;
@@ -397,7 +405,7 @@ class Templates {
 		$this->guard();
 
 		try {
-			// phpcs:ignore WordPress.Security.ValidatedSanitizedInput.InputNotSanitized -- serialized block markup: kses strips HTML comments, which are the block delimiters, so sanitizing here would break every template. Gated by the nonce and capability checks in guard().
+			// phpcs:ignore WordPress.Security.ValidatedSanitizedInput.InputNotSanitized, WordPress.Security.NonceVerification.Missing -- serialized block markup: kses strips HTML comments, which are the block delimiters, so sanitizing here would break every template. Gated by the nonce and capability checks in guard().
 			$content = wp_unslash($_POST['original_content'] ?? '');
 
 			// Sideloading copies the template's images into the media library, so
@@ -419,11 +427,26 @@ class Templates {
 	public function template_favorites() {
 		$this->guard();
 
-		$prefix     = sanitize_key(wp_unslash($_POST['prefix'] ?? 'afaq'));
+		/*
+		 * The prefix names an option, so it is checked rather than trusted.
+		 *
+		 * It arrives from the shared library component and is always "afaq" —
+		 * the same value builds the `afaq_template_favorites` action that
+		 * reaches this method, so nothing else can legitimately get here. Taken
+		 * from the request as it stood, anybody who can edit a post could name
+		 * the option instead, and write a row into wp_options for every request
+		 * they cared to send.
+		 */
+		$prefix = sanitize_key(wp_unslash($_POST['prefix'] ?? self::FAVORITES_PREFIX)); // phpcs:ignore WordPress.Security.NonceVerification.Missing -- guard() runs first.
+
+		if (self::FAVORITES_PREFIX !== $prefix) {
+			$prefix = self::FAVORITES_PREFIX;
+		}
+
 		$option_key = $prefix . 'FavoritesTemplates';
 
-		if (isset($_POST['favorites'])) {
-			// phpcs:ignore WordPress.Security.ValidatedSanitizedInput.InputNotSanitized -- a JSON string, and every decoded value is hard-cast through absint() below.
+		if (isset($_POST['favorites'])) { // phpcs:ignore WordPress.Security.NonceVerification.Missing -- guard() runs first.
+			// phpcs:ignore WordPress.Security.ValidatedSanitizedInput.InputNotSanitized, WordPress.Security.NonceVerification.Missing -- a JSON string, and every decoded value is hard-cast through absint() below.
 			$raw = json_decode(wp_unslash($_POST['favorites']), true);
 
 			update_option(

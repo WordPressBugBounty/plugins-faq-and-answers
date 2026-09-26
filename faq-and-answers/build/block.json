@@ -2,7 +2,7 @@
   "$schema": "https://schemas.wp.org/trunk/block.json",
   "apiVersion": 3,
   "name": "faa/faq-and-answers",
-  "version": "2.5.1",
+  "version": "2.5.2",
   "title": "Awesome FAQ",
   "icon": "feedback",
   "category": "awesome-faq",

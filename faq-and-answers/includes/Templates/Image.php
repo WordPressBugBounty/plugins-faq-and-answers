@@ -72,11 +72,13 @@ class Image
 
 		global $wpdb;
 
+		// phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery, WordPress.DB.DirectDatabaseQuery.NoCaching -- Custom image hash metadata lookup.
 		$post_id = $wpdb->get_var($wpdb->prepare('SELECT `post_id` FROM `' . $wpdb->postmeta . '` WHERE `meta_key` = \'_afaq_templates_image_hash\' AND `meta_value` = %s;', $this->get_hash_image($attachment['url'])));
 
 		if (empty($post_id)) {
 			$filename = basename($attachment['url']);
-			$post_id = $wpdb->get_var($wpdb->prepare("SELECT post_id FROM {$wpdb->postmeta} WHERE meta_key = '_wp_attached_file' AND meta_value LIKE %s", '%/' . $filename . '%'));
+			// phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery, WordPress.DB.DirectDatabaseQuery.NoCaching -- Media library attachment file path lookup.
+			$post_id = $wpdb->get_var($wpdb->prepare("SELECT post_id FROM {$wpdb->postmeta} WHERE meta_key = '_wp_attached_file' AND meta_value LIKE %s", '%/' . $wpdb->esc_like($filename) . '%'));
 		}
 
 		if ($post_id) {
@@ -128,17 +130,37 @@ class Image
 
 		$upload = wp_upload_bits($filename, null, $file_content);
 
+		// wp_upload_bits() answers with ['error' => …] and no 'file' key when
+		// it refuses the write — a full disk, an unwritable uploads folder, or
+		// a name whose extension the site does not allow. Reading $upload['file']
+		// straight afterwards turned that into a notice and an attachment row
+		// pointing at nothing.
+		if (!empty($upload['error']) || empty($upload['file'])) {
+			return $attachment;
+		}
+
+		// What was downloaded has to be an image, not merely named like one.
+		// The URL came out of template markup, so its extension is the sender's
+		// claim about the file; wp_getimagesize() reads the bytes instead.
+		if (false === wp_getimagesize($upload['file'])) {
+			wp_delete_file($upload['file']);
+
+			return $attachment;
+		}
+
+		$info = wp_check_filetype($upload['file']);
+
+		if (empty($info['type']) || 0 !== strpos($info['type'], 'image/')) {
+			wp_delete_file($upload['file']);
+
+			return $attachment;
+		}
+
 		$post = array(
 			'post_title' => $filename,
 			'guid' => $upload['url'],
+			'post_mime_type' => $info['type'],
 		);
-
-		$info = wp_check_filetype($upload['file']);
-		if ($info) {
-			$post['post_mime_type'] = $info['type'];
-		} else {
-			return $attachment;
-		}
 
 		if (!function_exists('wp_generate_attachment_metadata')) {
 			include ABSPATH . 'wp-admin/includes/image.php';

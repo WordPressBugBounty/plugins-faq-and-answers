@@ -2,14 +2,14 @@
 # This file is distributed under the GPLv3 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Awesome FAQ 2.5.1\n"
+"Project-Id-Version: Awesome FAQ 2.5.2\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/faq-and-answers\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-09-21T11:06:39+00:00\n"
+"POT-Creation-Date: 2026-09-26T05:31:31+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: faq-and-answers\n"
@@ -89,7 +89,7 @@ msgid "Thanks for the feedback!"
 msgstr ""
 
 #: build/blocks/ask-ai/render.php:156
-#: faq-and-answers-block.php:239
+#: faq-and-answers-block.php:238
 msgid "Something went wrong. Please try again."
 msgstr ""
 
@@ -112,7 +112,7 @@ msgid "Ask a question"
 msgstr ""
 
 #: build/blocks/bento-faq/render.php:189
-#: build/blocks/bento-faq/index.js:660
+#: build/blocks/bento-faq/index.js:497
 msgid "Read answer"
 msgstr ""
 
@@ -152,7 +152,7 @@ msgstr ""
 #: includes/class_faaAnalysis.php:2128
 #: includes/submissions/class-afaq-submissions-list-table.php:52
 #: build/ask-ai-promo/index.js:80
-#: build/blocks/bento-faq/index.js:639
+#: build/blocks/bento-faq/index.js:476
 #: build/blocks/faq-item/index.js:13
 #: build/blocks/nested-faq/index.js:397
 msgid "Question"
@@ -246,16 +246,16 @@ msgstr ""
 msgid "WordPress AI Client is not available."
 msgstr ""
 
-#: faq-and-answers-block.php:235
+#: faq-and-answers-block.php:234
 msgid "This field is required."
 msgstr ""
 
-#: faq-and-answers-block.php:236
+#: faq-and-answers-block.php:235
 msgid "Please enter a valid email address."
 msgstr ""
 
 #. translators: %d: maximum number of words allowed.
-#: faq-and-answers-block.php:238
+#: faq-and-answers-block.php:237
 #, php-format
 msgid "Please keep this under %d words."
 msgstr ""
@@ -1073,7 +1073,7 @@ msgstr ""
 
 #: includes/ai/class-afaq-ask-ai-admin.php:2533
 #: build/blocks/ask-ai/index.js:272
-#: build/blocks/bento-faq/index.js:639
+#: build/blocks/bento-faq/index.js:476
 #: build/blocks/nested-faq/index.js:399
 #: build/blocks/sidebar-tab-faq/index.js:287
 msgid "Answer"
@@ -1664,11 +1664,11 @@ msgstr ""
 msgid "I could not find an answer to that in our FAQs — here is what I do know about:"
 msgstr ""
 
-#: includes/ai/class-afaq-ask-ai.php:2207
+#: includes/ai/class-afaq-ask-ai.php:2206
 msgid "The AI reply could not be read."
 msgstr ""
 
-#: includes/ai/class-afaq-ask-ai.php:2212
+#: includes/ai/class-afaq-ask-ai.php:2211
 msgid "No AI provider is configured. Add an API key in Settings › Connectors."
 msgstr ""
 
@@ -1686,8 +1686,8 @@ msgstr ""
 msgid "WordPress AI Client is not available in this version of WordPress."
 msgstr ""
 
-#: includes/ai/class-afaq-block-ai.php:350
-#: woocommerce/class-afaq-wc-ai-connector.php:187
+#: includes/ai/class-afaq-block-ai.php:349
+#: woocommerce/class-afaq-wc-ai-connector.php:186
 msgid "Could not parse AI response. Please try again."
 msgstr ""
 
@@ -2713,7 +2713,7 @@ msgstr ""
 
 #: includes/Templates/CoreSet.php:173
 #: includes/Templates/CoreSet.php:178
-#: build/blocks/bento-faq/index.js:633
+#: build/blocks/bento-faq/index.js:470
 #: build/blocks/image-faq/index.js:410
 #: build/blocks/nested-faq/index.js:392
 #: build/blocks/post-faq/index.js:282
@@ -6354,11 +6354,11 @@ msgstr ""
 msgid "Submissions land on the Form Submissions screen, where you can read every question visitors sent and mark what you have handled."
 msgstr ""
 
-#: woocommerce/class-afaq-wc-ai-connector.php:71
+#: woocommerce/class-afaq-wc-ai-connector.php:70
 msgid "Please set an AI API Key in WooCommerce › Settings › FAQ AI Settings."
 msgstr ""
 
-#: woocommerce/class-afaq-wc-ai-connector.php:204
+#: woocommerce/class-afaq-wc-ai-connector.php:203
 msgid "AI could not generate any FAQs. Try changing your prompt and try again."
 msgstr ""
 
@@ -6530,87 +6530,87 @@ msgstr ""
 msgid "Theme Three"
 msgstr ""
 
-#: build/admin-dashboard.js:363
+#: build/admin-dashboard.js:364
 msgid "Advanced FAQ Categories & Filtering."
 msgstr ""
 
-#: build/admin-dashboard.js:363
+#: build/admin-dashboard.js:364
 msgid "50+ Ready Pages Template library"
 msgstr ""
 
-#: build/admin-dashboard.js:363
+#: build/admin-dashboard.js:364
 msgid "More premium FAQ templates."
 msgstr ""
 
-#: build/admin-dashboard.js:364
+#: build/admin-dashboard.js:365
 msgid "Advanced FAQ Search Options."
 msgstr ""
 
-#: build/admin-dashboard.js:364
+#: build/admin-dashboard.js:365
 msgid "FAQ Schema Rich Results – Improve SEO & Search Visibility."
 msgstr ""
 
-#: build/admin-dashboard.js:364
+#: build/admin-dashboard.js:365
 msgid "Shortcode Support – Display FAQs Anywhere."
 msgstr ""
 
-#: build/admin-dashboard.js:364
+#: build/admin-dashboard.js:365
 msgid "Multi-Column FAQ Layout Support."
 msgstr ""
 
-#: build/admin-dashboard.js:364
+#: build/admin-dashboard.js:365
 msgid "Advanced Design Controls – Colors, Icons, Spacing & Typography."
 msgstr ""
 
-#: build/admin-dashboard.js:364
+#: build/admin-dashboard.js:365
 msgid "Additional layouts & animation effects."
 msgstr ""
 
-#: build/admin-dashboard.js:365
+#: build/admin-dashboard.js:366
 msgid "Analytics dashboard to track user interactions and popular questions."
 msgstr ""
 
-#: build/admin-dashboard.js:365
+#: build/admin-dashboard.js:366
 msgid "Advanced Classic Editor Support for Answers."
 msgstr ""
 
-#: build/admin-dashboard.js:365
+#: build/admin-dashboard.js:366
 msgid "WooCommerce Product FAQ Integration."
 msgstr ""
 
-#: build/admin-dashboard.js:365
+#: build/admin-dashboard.js:366
 msgid "AI-Powered WooCommerce Product FAQ Builder."
 msgstr ""
 
-#: build/admin-dashboard.js:365
+#: build/admin-dashboard.js:366
 msgid "WooCommerce Settings Panel."
 msgstr ""
 
-#: build/admin-dashboard.js:365
+#: build/admin-dashboard.js:366
 msgid "Ask AI Block & Ask AI Dashboard."
 msgstr ""
 
-#: build/admin-dashboard.js:366
+#: build/admin-dashboard.js:367
 msgid "FAQ Form Block - Allow visitors to submit questions directly from the front end with custom form fields and submission management."
 msgstr ""
 
-#: build/admin-dashboard.js:366
+#: build/admin-dashboard.js:367
 msgid "FAQ Image Block - Display FAQs with images and media."
 msgstr ""
 
-#: build/admin-dashboard.js:366
+#: build/admin-dashboard.js:367
 msgid "FAQ Sidebar Tab Block - Vertical sidebar navigation with tabbed FAQ categories and smooth seamless switching."
 msgstr ""
 
-#: build/admin-dashboard.js:366
+#: build/admin-dashboard.js:367
 msgid "FAQ Post - Display FAQs from WordPress posts or custom post types."
 msgstr ""
 
-#: build/admin-dashboard.js:367
+#: build/admin-dashboard.js:368
 msgid "Nested FAQ Block & Advanced Settings Panel."
 msgstr ""
 
-#: build/admin-dashboard.js:367
+#: build/admin-dashboard.js:368
 msgid "AI-Powered Gutenberg FAQ Builder (generate Q&A content and dynamically customize layout designs, colors, and backgrounds using custom prompts)."
 msgstr ""
 
@@ -7214,14 +7214,14 @@ msgstr ""
 #: build/blocks/faq-item/index.js:8
 #: build/blocks/nested-faq/index.js:284
 #: build/blocks/sidebar-tab-faq/index.js:4
-#: build/index.js:674
-#: build/index.js:675
+#: build/index.js:510
+#: build/index.js:512
 msgid "Left"
 msgstr ""
 
 #: build/blocks/ask-ai/index.js:264
-#: build/index.js:674
-#: build/index.js:676
+#: build/index.js:510
+#: build/index.js:512
 msgid "Center"
 msgstr ""
 
@@ -7230,8 +7230,8 @@ msgstr ""
 #: build/blocks/faq-item/index.js:8
 #: build/blocks/nested-faq/index.js:284
 #: build/blocks/sidebar-tab-faq/index.js:4
-#: build/index.js:674
-#: build/index.js:676
+#: build/index.js:510
+#: build/index.js:512
 msgid "Right"
 msgstr ""
 
@@ -7352,12 +7352,12 @@ msgid "Disclaimer"
 msgstr ""
 
 #: build/blocks/ask-ai/index.js:276
-#: build/blocks/bento-faq/index.js:637
+#: build/blocks/bento-faq/index.js:474
 msgid "Colors"
 msgstr ""
 
 #: build/blocks/ask-ai/index.js:276
-#: build/blocks/bento-faq/index.js:637
+#: build/blocks/bento-faq/index.js:474
 msgid "Accent"
 msgstr ""
 
@@ -7388,7 +7388,7 @@ msgstr ""
 
 #: build/blocks/ask-ai/index.js:277
 #: build/blocks/ask-ai/index.js:282
-#: build/blocks/bento-faq/index.js:639
+#: build/blocks/bento-faq/index.js:476
 #: build/blocks/faq-form/index.js:272
 #: build/blocks/faq-form/index.js:273
 #: build/blocks/faq-form/index.js:275
@@ -7448,13 +7448,12 @@ msgstr ""
 #: build/blocks/sidebar-tab-faq/index.js:284
 #: build/blocks/sidebar-tab-faq/index.js:288
 #: build/blocks/sidebar-tab-faq/index.js:291
-#: build/index.js:671
-#: build/index.js:672
-#: build/index.js:680
-#: build/index.js:682
-#: build/index.js:684
-#: build/index.js:686
-#: build/index.js:687
+#: build/index.js:507
+#: build/index.js:508
+#: build/index.js:517
+#: build/index.js:518
+#: build/index.js:520
+#: build/index.js:523
 msgid "Background"
 msgstr ""
 
@@ -7542,7 +7541,7 @@ msgid "Box"
 msgstr ""
 
 #: build/blocks/ask-ai/index.js:285
-#: build/blocks/bento-faq/index.js:641
+#: build/blocks/bento-faq/index.js:478
 #: build/blocks/faq-form/index.js:270
 #: build/blocks/faq-form/index.js:275
 #: build/blocks/faq-form/index.js:279
@@ -7562,21 +7561,21 @@ msgid "Radius"
 msgstr ""
 
 #: build/blocks/ask-ai/index.js:296
-#: build/blocks/bento-faq/index.js:651
+#: build/blocks/bento-faq/index.js:488
 #: build/blocks/faq-form/index.js:289
 #: build/blocks/faq-parent/index.js:3
 #: build/blocks/image-faq/index.js:420
 #: build/blocks/nested-faq/index.js:415
 #: build/blocks/post-faq/index.js:294
 #: build/blocks/sidebar-tab-faq/index.js:293
-#: build/index.js:779
+#: build/index.js:615
 msgid "Copied Successfully!"
 msgstr ""
 
 #: build/blocks/ask-ai/index.js:296
 #: build/blocks/ask-ai/index.js:298
-#: build/blocks/bento-faq/index.js:651
-#: build/blocks/bento-faq/index.js:653
+#: build/blocks/bento-faq/index.js:488
+#: build/blocks/bento-faq/index.js:490
 #: build/blocks/faq-form/index.js:289
 #: build/blocks/faq-form/index.js:291
 #: build/blocks/faq-parent/index.js:3
@@ -7589,20 +7588,20 @@ msgstr ""
 #: build/blocks/post-faq/index.js:296
 #: build/blocks/sidebar-tab-faq/index.js:293
 #: build/blocks/sidebar-tab-faq/index.js:294
-#: build/index.js:779
-#: build/index.js:780
+#: build/index.js:615
+#: build/index.js:616
 msgid "Copy To Clipboard"
 msgstr ""
 
 #: build/blocks/ask-ai/index.js:299
-#: build/blocks/bento-faq/index.js:654
+#: build/blocks/bento-faq/index.js:491
 #: build/blocks/faq-form/index.js:292
 #: build/blocks/faq-parent/index.js:6
 #: build/blocks/image-faq/index.js:424
 #: build/blocks/nested-faq/index.js:418
 #: build/blocks/post-faq/index.js:298
 #: build/blocks/sidebar-tab-faq/index.js:296
-#: build/index.js:782
+#: build/index.js:618
 msgid "Copy the shortcode and use it anywhere."
 msgstr ""
 
@@ -7630,106 +7629,106 @@ msgstr ""
 msgid "Matching FAQ entries"
 msgstr ""
 
-#: build/blocks/bento-faq/index.js:525
+#: build/blocks/bento-faq/index.js:373
 #: build/blocks/bento-faq/view.js:5
 msgid "Small"
 msgstr ""
 
-#: build/blocks/bento-faq/index.js:525
+#: build/blocks/bento-faq/index.js:373
 #: build/blocks/bento-faq/view.js:5
 msgid "Wide"
 msgstr ""
 
-#: build/blocks/bento-faq/index.js:525
+#: build/blocks/bento-faq/index.js:373
 #: build/blocks/bento-faq/view.js:5
 msgid "Tall"
 msgstr ""
 
-#: build/blocks/bento-faq/index.js:525
+#: build/blocks/bento-faq/index.js:373
 #: build/blocks/bento-faq/view.js:5
 msgid "Large"
 msgstr ""
 
-#: build/blocks/bento-faq/index.js:525
+#: build/blocks/bento-faq/index.js:373
 #: build/blocks/bento-faq/view.js:5
 msgid "Modal"
 msgstr ""
 
-#: build/blocks/bento-faq/index.js:525
+#: build/blocks/bento-faq/index.js:374
 #: build/blocks/bento-faq/view.js:5
 msgid "Expand"
 msgstr ""
 
-#: build/blocks/bento-faq/index.js:525
+#: build/blocks/bento-faq/index.js:374
 #: build/blocks/bento-faq/view.js:5
 msgid "Auto"
 msgstr ""
 
-#: build/blocks/bento-faq/index.js:525
+#: build/blocks/bento-faq/index.js:374
 #: build/blocks/bento-faq/view.js:6
 msgid "Light"
 msgstr ""
 
-#: build/blocks/bento-faq/index.js:526
+#: build/blocks/bento-faq/index.js:374
 #: build/blocks/bento-faq/view.js:6
 msgid "Dark"
 msgstr ""
 
-#: build/blocks/bento-faq/index.js:526
+#: build/blocks/bento-faq/index.js:374
 msgid "New question"
 msgstr ""
 
-#: build/blocks/bento-faq/index.js:538
+#: build/blocks/bento-faq/index.js:375
 msgid "Card size"
 msgstr ""
 
-#: build/blocks/bento-faq/index.js:538
+#: build/blocks/bento-faq/index.js:375
 msgid "Mix sizes to get the bento look. Everything becomes full width on mobile."
 msgstr ""
 
-#: build/blocks/bento-faq/index.js:539
-#: build/blocks/bento-faq/index.js:640
+#: build/blocks/bento-faq/index.js:376
+#: build/blocks/bento-faq/index.js:477
 #: build/blocks/image-faq/index.js:416
 #: build/blocks/nested-faq/index.js:396
 msgid "Icon"
 msgstr ""
 
-#: build/blocks/bento-faq/index.js:539
+#: build/blocks/bento-faq/index.js:376
 msgid "Emoji"
 msgstr ""
 
-#: build/blocks/bento-faq/index.js:539
+#: build/blocks/bento-faq/index.js:376
 msgid "Used when no icon is picked above — 💡 ⚡ 🔒 💳"
 msgstr ""
 
-#: build/blocks/bento-faq/index.js:539
+#: build/blocks/bento-faq/index.js:376
 msgid "Badge"
 msgstr ""
 
-#: build/blocks/bento-faq/index.js:539
+#: build/blocks/bento-faq/index.js:377
 msgid "Optional pill in the corner, e.g. \"Popular\"."
 msgstr ""
 
-#: build/blocks/bento-faq/index.js:628
-#: build/blocks/bento-faq/index.js:629
+#: build/blocks/bento-faq/index.js:465
+#: build/blocks/bento-faq/index.js:466
 #: build/blocks/nested-faq/index.js:389
 #: build/blocks/nested-faq/index.js:390
-#: build/index.js:462
-#: build/index.js:724
+#: build/index.js:298
+#: build/index.js:560
 msgid "Generate FAQs with AI"
 msgstr ""
 
-#: build/blocks/bento-faq/index.js:629
+#: build/blocks/bento-faq/index.js:466
 #: build/blocks/nested-faq/index.js:390
 msgid "AI Generator"
 msgstr ""
 
-#: build/blocks/bento-faq/index.js:630
+#: build/blocks/bento-faq/index.js:467
 msgid "Cards"
 msgstr ""
 
-#: build/blocks/bento-faq/index.js:630
-#: build/blocks/bento-faq/index.js:641
+#: build/blocks/bento-faq/index.js:467
+#: build/blocks/bento-faq/index.js:478
 #: build/blocks/faq-form/index.js:269
 #: build/blocks/faq-item/index.js:7
 #: build/blocks/nested-faq/index.js:279
@@ -7737,117 +7736,117 @@ msgstr ""
 msgid "Card"
 msgstr ""
 
-#: build/blocks/bento-faq/index.js:630
+#: build/blocks/bento-faq/index.js:467
 #: build/blocks/post-faq/index.js:274
 #: build/blocks/sidebar-tab-faq/index.js:272
 msgid "Layout"
 msgstr ""
 
-#: build/blocks/bento-faq/index.js:630
+#: build/blocks/bento-faq/index.js:467
 #: build/blocks/post-faq/index.js:275
 msgid "Columns"
 msgstr ""
 
-#: build/blocks/bento-faq/index.js:631
+#: build/blocks/bento-faq/index.js:468
 msgid "Switch the device icons above to set columns for tablet and mobile separately."
 msgstr ""
 
-#: build/blocks/bento-faq/index.js:631
+#: build/blocks/bento-faq/index.js:468
 msgid "Row gap"
 msgstr ""
 
-#: build/blocks/bento-faq/index.js:632
+#: build/blocks/bento-faq/index.js:469
 msgid "Column gap"
 msgstr ""
 
-#: build/blocks/bento-faq/index.js:632
+#: build/blocks/bento-faq/index.js:469
 msgid "Vertical and horizontal spacing are set separately, per device."
 msgstr ""
 
-#: build/blocks/bento-faq/index.js:632
+#: build/blocks/bento-faq/index.js:469
 #: build/blocks/image-faq/index.js:406
 msgid "Row height"
 msgstr ""
 
-#: build/blocks/bento-faq/index.js:633
+#: build/blocks/bento-faq/index.js:470
 msgid "The minimum height of one grid row. Tall and large cards take two."
 msgstr ""
 
-#: build/blocks/bento-faq/index.js:633
+#: build/blocks/bento-faq/index.js:470
 msgid "Open answer in"
 msgstr ""
 
-#: build/blocks/bento-faq/index.js:634
+#: build/blocks/bento-faq/index.js:471
 msgid "Modal opens a focused dialog with previous / next. Expand grows the card in place."
 msgstr ""
 
-#: build/blocks/bento-faq/index.js:634
+#: build/blocks/bento-faq/index.js:471
 msgid "Color scheme"
 msgstr ""
 
-#: build/blocks/bento-faq/index.js:634
+#: build/blocks/bento-faq/index.js:471
 msgid "Auto follows the visitor's system setting."
 msgstr ""
 
-#: build/blocks/bento-faq/index.js:635
+#: build/blocks/bento-faq/index.js:472
 msgid "Show icons"
 msgstr ""
 
-#: build/blocks/bento-faq/index.js:635
+#: build/blocks/bento-faq/index.js:472
 msgid "Show \"Read answer\" link"
 msgstr ""
 
-#: build/blocks/bento-faq/index.js:635
+#: build/blocks/bento-faq/index.js:472
 msgid "Reveal cards on scroll"
 msgstr ""
 
-#: build/blocks/bento-faq/index.js:635
+#: build/blocks/bento-faq/index.js:472
 msgid "Staggered fade in. Skipped for visitors who prefer reduced motion."
 msgstr ""
 
-#: build/blocks/bento-faq/index.js:636
+#: build/blocks/bento-faq/index.js:473
 #: build/blocks/nested-faq/index.js:393
 msgid "Output FAQPage schema"
 msgstr ""
 
-#: build/blocks/bento-faq/index.js:636
+#: build/blocks/bento-faq/index.js:473
 msgid "Prints JSON-LD so search and AI answer engines can read the Q&A."
 msgstr ""
 
-#: build/blocks/bento-faq/index.js:637
+#: build/blocks/bento-faq/index.js:474
 msgid "Drives the badge, the hover border, the glow and the link colour at once."
 msgstr ""
 
-#: build/blocks/bento-faq/index.js:637
+#: build/blocks/bento-faq/index.js:474
 #: build/blocks/faq-form/index.js:270
 #: build/blocks/image-faq/index.js:412
 msgid "Card background"
 msgstr ""
 
-#: build/blocks/bento-faq/index.js:638
+#: build/blocks/bento-faq/index.js:475
 #: build/blocks/faq-form/index.js:271
 msgid "Card border"
 msgstr ""
 
-#: build/blocks/bento-faq/index.js:638
+#: build/blocks/bento-faq/index.js:475
 msgid "Question text"
 msgstr ""
 
-#: build/blocks/bento-faq/index.js:638
+#: build/blocks/bento-faq/index.js:475
 msgid "Answer text"
 msgstr ""
 
-#: build/blocks/bento-faq/index.js:638
+#: build/blocks/bento-faq/index.js:475
 msgid "Leave the colours empty to let the block follow light and dark mode on its own."
 msgstr ""
 
-#: build/blocks/bento-faq/index.js:640
+#: build/blocks/bento-faq/index.js:477
 #: build/blocks/image-faq/index.js:405
 #: build/blocks/image-faq/index.js:417
 msgid "Size"
 msgstr ""
 
-#: build/blocks/bento-faq/index.js:640
+#: build/blocks/bento-faq/index.js:477
 #: build/blocks/nested-faq/index.js:398
 #: build/blocks/nested-faq/index.js:399
 #: build/blocks/nested-faq/index.js:400
@@ -7856,33 +7855,33 @@ msgstr ""
 msgid "Color"
 msgstr ""
 
-#: build/blocks/bento-faq/index.js:640
+#: build/blocks/bento-faq/index.js:477
 msgid "Leave empty and picked icons take the accent colour."
 msgstr ""
 
-#: build/blocks/bento-faq/index.js:641
+#: build/blocks/bento-faq/index.js:478
 #: build/blocks/faq-form/index.js:269
 #: build/blocks/sidebar-tab-faq/index.js:287
 msgid "Corner radius"
 msgstr ""
 
-#: build/blocks/bento-faq/index.js:658
+#: build/blocks/bento-faq/index.js:495
 msgid "Remove card"
 msgstr ""
 
-#: build/blocks/bento-faq/index.js:660
+#: build/blocks/bento-faq/index.js:497
 msgid "Question…"
 msgstr ""
 
-#: build/blocks/bento-faq/index.js:660
+#: build/blocks/bento-faq/index.js:497
 msgid "Write the answer…"
 msgstr ""
 
-#: build/blocks/bento-faq/index.js:661
+#: build/blocks/bento-faq/index.js:498
 msgid "Add card"
 msgstr ""
 
-#: build/blocks/bento-faq/index.js:661
+#: build/blocks/bento-faq/index.js:498
 msgid "FAQPage schema is turned off for this block."
 msgstr ""
 
@@ -9041,71 +9040,71 @@ msgstr ""
 msgid "Tabs switch here just as they will on the page, and fold into an accordion on a phone. Use the sidebar to change the look, the posts and the styling."
 msgstr ""
 
-#: build/index.js:462
+#: build/index.js:299
 msgid "Theme Switch"
 msgstr ""
 
-#: build/index.js:462
+#: build/index.js:299
 msgid "Theme"
 msgstr ""
 
-#: build/index.js:464
+#: build/index.js:300
 msgid "Header Content"
 msgstr ""
 
-#: build/index.js:465
+#: build/index.js:301
 msgid "FAQ Item"
 msgstr ""
 
-#: build/index.js:467
+#: build/index.js:303
 msgid "FAQ Icon"
 msgstr ""
 
-#: build/index.js:468
+#: build/index.js:304
 msgid "Options"
 msgstr ""
 
-#: build/index.js:673
+#: build/index.js:510
 msgid "Title  Align"
 msgstr ""
 
-#: build/index.js:675
+#: build/index.js:512
 msgid "subTitle  Align"
 msgstr ""
 
-#: build/index.js:678
+#: build/index.js:514
 msgid "button Background"
 msgstr ""
 
-#: build/index.js:680
+#: build/index.js:516
 msgid "Question Style"
 msgstr ""
 
-#: build/index.js:681
+#: build/index.js:518
 msgid "Answer Style"
 msgstr ""
 
-#: build/index.js:683
+#: build/index.js:519
 msgid "Icon Style"
 msgstr ""
 
-#: build/index.js:685
+#: build/index.js:522
 msgid "Section Title Style"
 msgstr ""
 
-#: build/index.js:686
+#: build/index.js:522
 msgid "Progress Bar Style"
 msgstr ""
 
-#: build/index.js:687
+#: build/index.js:523
 msgid "Question Container Style"
 msgstr ""
 
-#: build/index.js:724
+#: build/index.js:560
 msgid "Unlock More with Awesome FAQ Pro"
 msgstr ""
 
-#: build/index.js:724
+#: build/index.js:560
 msgid "The free features of Plugin do a lot-still, without PRO, you're holding yourself back from getting more."
 msgstr ""
 
