@@ -27,6 +27,10 @@ if (!class_exists('FaaPlugin')) {
             if (is_admin()) {
                 require_once AFAQ_DIR_PATH . 'includes/Templates/Templates.php';
                 new \AFAQ\Templates\Templates();
+
+                // "Duplicate" on the Awesome FAQ list. Free and pro alike.
+                require_once AFAQ_DIR_PATH . 'includes/class-afaq-duplicate.php';
+                new AFAQ_Duplicate();
             }
             if (faa_is_premium() && AFAQ_HAS_PRO) {
                 // Questions visitors send in through the FAQ Form block, and

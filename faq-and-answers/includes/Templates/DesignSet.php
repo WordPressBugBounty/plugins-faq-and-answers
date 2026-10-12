@@ -140,7 +140,7 @@ class DesignSet {
 			'title'     => __('Event Ticket Booking', 'faq-and-answers'),
 			'groups'    => ['speakers'],
 			'keywords'  => ['event', 'tickets', 'booking', 'vertical tabs', 'horizontal', 'green'],
-			'thumbnail' => 'event-tickets.svg',
+			'thumbnail' => 'event-tickets.webp',
 			'content'   => Parts::section(
 				Parts::heading(__('Event Ticket Booking FAQ', 'faq-and-answers'), 2, '#24303c', 'x-large')
 					. Parts::block(
@@ -269,7 +269,7 @@ class DesignSet {
 			'title'     => __('Home Service Booking', 'faq-and-answers'),
 			'groups'    => ['services'],
 			'keywords'  => ['services', 'booking', 'blue', 'gradient', 'accordion', 'home service'],
-			'thumbnail' => 'home-service-booking.svg',
+			'thumbnail' => 'home-service-booking.webp',
 			'content'   => Parts::section(
 				Parts::heading(__('Easy Home Service Booking Guide', 'faq-and-answers'), 2, '#2b3440', 'xx-large')
 					. $panel,
@@ -387,7 +387,7 @@ class DesignSet {
 			'title'     => __('Business Services', 'faq-and-answers'),
 			'groups'    => ['services'],
 			'keywords'  => ['business', 'services', 'minimal', 'editorial', 'two column', 'consulting'],
-			'thumbnail' => 'business-services.svg',
+			'thumbnail' => 'business-services.webp',
 			'content'   => Parts::section(
 				Parts::columns(
 					[
@@ -504,7 +504,7 @@ class DesignSet {
 			'title'     => __('Gallery Questions', 'faq-and-answers'),
 			'groups'    => ['story'],
 			'keywords'  => ['gallery', 'art', 'image', 'picture', 'accordion', 'portfolio'],
-			'thumbnail' => 'gallery-questions.svg',
+			'thumbnail' => 'gallery-questions.webp',
 			'content'   => Parts::section(
 				Parts::heading(__('About the Work', 'faq-and-answers'), 2, '#111827', 'x-large')
 					. Parts::paragraph(__('What people ask most often about the pieces on show.', 'faq-and-answers'), 'center', '#6b7280')
@@ -614,7 +614,7 @@ class DesignSet {
 			'title'     => __('Materials & Care', 'faq-and-answers'),
 			'groups'    => ['sales'],
 			'keywords'  => ['product', 'gradient', 'bold', 'shop', 'furniture', 'materials'],
-			'thumbnail' => 'materials-and-care.svg',
+			'thumbnail' => 'materials-and-care.webp',
 			'content'   => Parts::section(
 				Parts::heading(__('Before You Order', 'faq-and-answers'), 2, '#111827', 'x-large')
 					. Parts::block(
@@ -743,7 +743,7 @@ class DesignSet {
 			'title'     => __('Questions Answered', 'faq-and-answers'),
 			'groups'    => ['support'],
 			'keywords'  => ['dark', 'black', 'two column', 'contact', 'cards', 'support'],
-			'thumbnail' => 'questions-answered.svg',
+			'thumbnail' => 'questions-answered.webp',
 			'content'   => Parts::section(
 				Parts::columns(
 					[

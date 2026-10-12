@@ -98,7 +98,7 @@ class ShowcaseSet {
 				'title'      => __('Fashion Lookbook', 'faq-and-answers'),
 				'groups'     => ['fashion'],
 				'keywords'   => ['fashion', 'lookbook', 'clothing', 'collection', 'style', 'boutique'],
-				'thumbnail'  => 'fashion-lookbook.svg',
+				'thumbnail'  => 'fashion-lookbook.webp',
 				'heading'      => __('The new collection', 'faq-and-answers'),
 				'intro'        => __('Four looks, and what each one is made of. Tap a panel to read it.', 'faq-and-answers'),
 				'headingColor' => '#000000',
@@ -148,7 +148,7 @@ class ShowcaseSet {
 				'title'      => __('Food Menu', 'faq-and-answers'),
 				'groups'     => ['food'],
 				'keywords'   => ['food', 'menu', 'restaurant', 'cafe', 'dishes', 'kitchen'],
-				'thumbnail'  => 'food-menu.svg',
+				'thumbnail'  => 'food-menu.webp',
 				'heading'    => __('On the menu', 'faq-and-answers'),
 				'intro'      => '',
 				'background' => '#1d1208',
@@ -243,7 +243,7 @@ class ShowcaseSet {
 			'title'     => __('Hotel Suites', 'faq-and-answers'),
 			'groups'    => ['hotel'],
 			'keywords'  => ['hotel', 'suites', 'rooms', 'booking', 'hospitality', 'stay'],
-			'thumbnail' => 'hotel-suites.svg',
+			'thumbnail' => 'hotel-suites.webp',
 			'content'   => Parts::section(
 				$headerColumns
 					. Parts::block(
@@ -306,7 +306,7 @@ class ShowcaseSet {
 			'title'     => __('Projects & Portfolio', 'faq-and-answers'),
 			'groups'    => ['portfolio'],
 			'keywords'  => ['portfolio', 'projects', 'case studies', 'work', 'agency', 'gallery'],
-			'thumbnail' => 'projects-portfolio.svg',
+			'thumbnail' => 'projects-portfolio.webp',
 			'content'   => Parts::section(
 				Parts::heading(__('Selected work', 'faq-and-answers'), 2, '#0f172a', 'XL', 'left')
 					. Parts::paragraph(__('Four projects, with what the problem actually was and what changed.', 'faq-and-answers'), 'left', '#64748b')
@@ -400,7 +400,7 @@ class ShowcaseSet {
 			'title'     => __('Real Estate Zones', 'faq-and-answers'),
 			'groups'    => ['estate'],
 			'keywords'  => ['real estate', 'property', 'zones', 'wall art', 'decoration', 'interior', 'two column', 'home'],
-			'thumbnail' => 'real-estate-zones.svg',
+			'thumbnail' => 'real-estate-zones.webp',
 			'content'   => Parts::section(
 				Parts::columns(
 					[
@@ -423,7 +423,7 @@ class ShowcaseSet {
 				'title'      => __('Speakers & Performers', 'faq-and-answers'),
 				'groups'     => ['speakers'],
 				'keywords'   => ['speakers', 'performers', 'lineup', 'conference', 'event', 'festival'],
-				'thumbnail'  => 'speakers-performers.svg',
+				'thumbnail'  => 'speakers-performers.webp',
 				'heading'      => __('This year\'s line-up', 'faq-and-answers'),
 				'headingAlign' => 'left',
 				'intro'        => '',
@@ -524,7 +524,7 @@ class ShowcaseSet {
 			'title'     => __('Travel Destinations', 'faq-and-answers'),
 			'groups'    => ['travel'],
 			'keywords'  => ['travel', 'destinations', 'tours', 'trips', 'holiday', 'itinerary', 'two column', 'image faq'],
-			'thumbnail' => 'travel-destinations.svg',
+			'thumbnail' => 'travel-destinations.webp',
 			'content'   => Parts::section(
 				Parts::columns(
 					[
@@ -547,7 +547,7 @@ class ShowcaseSet {
 				'title'           => __('Visual Storytelling', 'faq-and-answers'),
 				'groups'          => ['story'],
 				'keywords'        => ['storytelling', 'visual', 'chapters', 'narrative', 'editorial', 'scroll'],
-				'thumbnail'       => 'visual-storytelling.svg',
+				'thumbnail'       => 'visual-storytelling.webp',
 				'heading'         => __('The story so far', 'faq-and-answers'),
 				'headingFontSize' => 'XL',
 				'headingAlign'    => 'right',
@@ -652,7 +652,7 @@ class ShowcaseSet {
 			'title'     => __('Fitness & Diet', 'faq-and-answers'),
 			'groups'    => ['fitness'],
 			'keywords'  => ['fitness', 'diet', 'training', 'nutrition', 'gym', 'coaching', 'badge'],
-			'thumbnail' => 'fitness-diet.svg',
+			'thumbnail' => 'fitness-diet.webp',
 			'content'   => Parts::section(
 				Parts::columns([
 					['width' => '42%', 'vertical' => 'center', 'inner' => $leftContent],
@@ -704,7 +704,7 @@ class ShowcaseSet {
 			'title'     => __('Health & Clinic', 'faq-and-answers'),
 			'groups'    => ['health'],
 			'keywords'  => ['health', 'clinic', 'patients', 'medical', 'appointments', 'care'],
-			'thumbnail' => 'health-clinic.svg',
+			'thumbnail' => 'health-clinic.webp',
 			'content'   => Parts::section(
 				Parts::heading(__('Patient questions', 'faq-and-answers'), 2, '#000000', 'XL')
 					. Parts::paragraph(__('Appointments, cost and cover, and what happens to your records.', 'faq-and-answers'), 'center', '#000000', 'M')
@@ -755,7 +755,7 @@ class ShowcaseSet {
 			'title'     => __('Services & Engagement', 'faq-and-answers'),
 			'groups'    => ['services'],
 			'keywords'  => ['services', 'agency', 'consulting', 'engagement', 'scope', 'process'],
-			'thumbnail' => 'services-engagement.svg',
+			'thumbnail' => 'services-engagement.webp',
 			'content'   => Parts::section(
 				Parts::heading(__('How we work', 'faq-and-answers'))
 					. Parts::paragraph(__('What a project looks like from your side of it.', 'faq-and-answers'))
@@ -838,7 +838,7 @@ class ShowcaseSet {
 			'title'     => __('Product Features', 'faq-and-answers'),
 			'groups'    => ['features'],
 			'keywords'  => ['product', 'features', 'grid', 'bento', 'landing page', 'saas', 'banner'],
-			'thumbnail' => 'product-features.svg',
+			'thumbnail' => 'product-features.webp',
 			'content'   => Parts::section(
 				$banner
 					. '<!-- wp:spacer {"height":"36px"} --><div style="height:36px" aria-hidden="true" class="wp-block-spacer"></div><!-- /wp:spacer -->'

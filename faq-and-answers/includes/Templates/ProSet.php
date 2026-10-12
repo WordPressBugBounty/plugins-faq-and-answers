@@ -139,7 +139,7 @@ class ProSet {
 			'title'     => __('Pitch Beside Answers', 'faq-and-answers'),
 			'groups'    => ['sales'],
 			'keywords'  => ['two column', 'left content right faq', 'landing page', 'objections', 'columns', 'banner'],
-			'thumbnail' => 'pitch-beside-answers.svg',
+			'thumbnail' => 'pitch-beside-answers.webp',
 			'content'   => Parts::section(
 				$banner
 					. '<!-- wp:spacer {"height":"36px"} --><div style="height:36px" aria-hidden="true" class="wp-block-spacer"></div><!-- /wp:spacer -->'
@@ -223,7 +223,7 @@ class ProSet {
 			'title'     => __('Plan Details', 'faq-and-answers'),
 			'groups'    => ['sales'],
 			'keywords'  => ['pricing', 'licensing', 'nested', 'two column', 'small print', 'plans'],
-			'thumbnail' => 'plan-details.svg',
+			'thumbnail' => 'plan-details.webp',
 			'content'   => Parts::section(
 				Parts::heading(__('The details, before you ask', 'faq-and-answers'))
 					. Parts::columns(
@@ -338,7 +338,7 @@ class ProSet {
 			'title'     => __('Ask While You Read', 'faq-and-answers'),
 			'groups'    => ['support'],
 			'keywords'  => ['form', 'two column', 'left form right faq', 'contact', 'columns'],
-			'thumbnail' => 'ask-while-you-read.svg',
+			'thumbnail' => 'ask-while-you-read.webp',
 			'content'   => Parts::section(
 				Parts::heading(__('Cannot find it? Ask.', 'faq-and-answers'))
 					. Parts::paragraph(__('The form is on the left. The answers most people were looking for are on the right.', 'faq-and-answers'))
@@ -411,7 +411,7 @@ class ProSet {
 			'title'     => __('Search Then Ask', 'faq-and-answers'),
 			'groups'    => ['support'],
 			'keywords'  => ['search', 'two column', 'left faq right content', 'help centre', 'columns'],
-			'thumbnail' => 'search-then-ask.svg',
+			'thumbnail' => 'search-then-ask.webp',
 			'content'   => Parts::section(
 				Parts::columns(
 					[
@@ -502,7 +502,7 @@ class ProSet {
 			'title'     => __('Documentation Tree', 'faq-and-answers'),
 			'groups'    => ['support'],
 			'keywords'  => ['docs', 'nested', 'documentation', 'two column', 'tree', 'columns'],
-			'thumbnail' => 'documentation-tree.svg',
+			'thumbnail' => 'documentation-tree.webp',
 			'content'   => Parts::section(
 				Parts::heading(__('Documentation', 'faq-and-answers'))
 					. Parts::columns(
@@ -605,7 +605,7 @@ class ProSet {
 			'title'     => __('Feature Tour', 'faq-and-answers'),
 			'groups'    => ['features'],
 			'keywords'  => ['features', 'category', 'two column', 'left faq right content', 'product'],
-			'thumbnail' => 'feature-tour.svg',
+			'thumbnail' => 'feature-tour.webp',
 			'content'   => Parts::section(
 				Parts::heading(__('What it does, in detail', 'faq-and-answers'))
 					. Parts::columns(
@@ -633,7 +633,7 @@ class ProSet {
 			'title'     => __('Knowledge Hub', 'faq-and-answers'),
 			'groups'    => ['support'],
 			'keywords'  => ['post faq', 'ask ai', 'articles', 'two column', 'knowledge base', 'search'],
-			'thumbnail' => 'knowledge-hub.svg',
+			'thumbnail' => 'knowledge-hub.webp',
 			'content'   => Parts::section(
 				Parts::heading(__('Find it, or just ask', 'faq-and-answers'))
 					. Parts::paragraph(__('Browse what we have written, or type the question and let it find the answer for you.', 'faq-and-answers'))
@@ -749,7 +749,7 @@ class ProSet {
 			'title'     => __('AI Answer Desk', 'faq-and-answers'),
 			'groups'    => ['support'],
 			'keywords'  => ['ask ai', 'ai', 'search', 'help desk', 'instant answer', 'support'],
-			'thumbnail' => 'ai-answer-desk.svg',
+			'thumbnail' => 'ai-answer-desk.webp',
 			'content'   => Parts::section(
 				Parts::heading(__('Ask, and read on', 'faq-and-answers'))
 					. Parts::paragraph(__('Type the question. If the answer is already written, this finds it and says where it came from.', 'faq-and-answers'))

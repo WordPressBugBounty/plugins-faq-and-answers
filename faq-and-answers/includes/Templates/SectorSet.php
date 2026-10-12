@@ -94,7 +94,7 @@ class SectorSet {
 			'title'     => __('Size & Fit Guide', 'faq-and-answers'),
 			'groups'    => ['fashion'],
 			'keywords'  => ['size', 'fit', 'sizing', 'measurements', 'fashion', 'returns', 'grid'],
-			'thumbnail' => 'size-and-fit.svg',
+			'thumbnail' => 'size-and-fit.webp',
 			'content'   => Parts::section(
 				Parts::heading(__('Size and fit', 'faq-and-answers'))
 					. Parts::paragraph(__('The six things people ask before ordering. All of it on the page — no clicking.', 'faq-and-answers'))
@@ -168,7 +168,7 @@ class SectorSet {
 			'title'     => __('Before You Travel', 'faq-and-answers'),
 			'groups'    => ['travel'],
 			'keywords'  => ['travel', 'visa', 'insurance', 'packing', 'preparation', 'grid'],
-			'thumbnail' => 'before-you-travel.svg',
+			'thumbnail' => 'before-you-travel.webp',
 			'content'   => Parts::section(
 				Parts::heading(__('Before you travel', 'faq-and-answers'))
 					. Parts::paragraph(__('The paperwork and the packing, in the order people worry about them.', 'faq-and-answers'))
@@ -288,7 +288,7 @@ class SectorSet {
 			'title'     => __('Allergens & Dietary', 'faq-and-answers'),
 			'groups'    => ['food'],
 			'keywords'  => ['allergens', 'dietary', 'vegan', 'gluten', 'nuts', 'restaurant', 'nested', 'banner'],
-			'thumbnail' => 'allergens-dietary.svg',
+			'thumbnail' => 'allergens-dietary.webp',
 			'content'   => Parts::section(
 				$banner
 					. '<!-- wp:spacer {"height":"36px"} --><div style="height:36px" aria-hidden="true" class="wp-block-spacer"></div><!-- /wp:spacer -->'
@@ -415,7 +415,7 @@ class SectorSet {
 			'title'     => __('Treatment Explorer', 'faq-and-answers'),
 			'groups'    => ['health'],
 			'keywords'  => ['health', 'treatment', 'clinic', 'conditions', 'nested', 'patients', 'banner'],
-			'thumbnail' => 'treatment-explorer.svg',
+			'thumbnail' => 'treatment-explorer.webp',
 			'content'   => Parts::section(
 				$banner
 					. '<!-- wp:spacer {"height":"36px"} --><div style="height:36px" aria-hidden="true" class="wp-block-spacer"></div><!-- /wp:spacer -->'
@@ -519,7 +519,7 @@ class SectorSet {
 			'title'     => __('Programme Explorer', 'faq-and-answers'),
 			'groups'    => ['fitness'],
 			'keywords'  => ['fitness', 'programme', 'training', 'goals', 'nested', 'coaching'],
-			'thumbnail' => 'programme-explorer.svg',
+			'thumbnail' => 'programme-explorer.webp',
 			'content'   => Parts::section(
 				Parts::heading(__('What are you training for?', 'faq-and-answers'))
 					. Parts::paragraph(__('Pick the goal and the programme underneath it explains itself.', 'faq-and-answers'))
@@ -615,7 +615,7 @@ class SectorSet {
 			'title'     => __('Scope & Pricing', 'faq-and-answers'),
 			'groups'    => ['services'],
 			'keywords'  => ['scope', 'pricing', 'agency', 'contract', 'change', 'nested'],
-			'thumbnail' => 'scope-and-pricing.svg',
+			'thumbnail' => 'scope-and-pricing.webp',
 			'content'   => Parts::section(
 				Parts::heading(__('Scope, change and cost', 'faq-and-answers'))
 					. Parts::paragraph(__('The commercial questions, answered before you have to ask them twice.', 'faq-and-answers'))
@@ -698,7 +698,7 @@ class SectorSet {
 			'title'     => __('Booking & Stay', 'faq-and-answers'),
 			'groups'    => ['hotel'],
 			'keywords'  => ['hotel', 'booking', 'check-in', 'cancellation', 'two column', 'stay'],
-			'thumbnail' => 'booking-and-stay.svg',
+			'thumbnail' => 'booking-and-stay.webp',
 			'content'   => Parts::section(
 				Parts::heading(__('Booking and your stay', 'faq-and-answers'))
 					. Parts::columns(
@@ -769,7 +769,7 @@ class SectorSet {
 			'title'     => __('Buying Process', 'faq-and-answers'),
 			'groups'    => ['estate'],
 			'keywords'  => ['property', 'buying', 'offers', 'survey', 'conveyancing', 'search'],
-			'thumbnail' => 'buying-process.svg',
+			'thumbnail' => 'buying-process.webp',
 			'content'   => Parts::section(
 				Parts::heading(__('Buying a home', 'faq-and-answers'))
 					. Parts::columns(
@@ -901,7 +901,7 @@ class SectorSet {
 			'title'     => __('Working With Us', 'faq-and-answers'),
 			'groups'    => ['portfolio'],
 			'keywords'  => ['studio', 'process', 'engagement', 'ask ai', 'agency', 'portfolio'],
-			'thumbnail' => 'working-with-us.svg',
+			'thumbnail' => 'working-with-us.webp',
 			'content'   => Parts::section(
 				Parts::heading(__('Ask something else', 'faq-and-answers'), 3, '', '', 'center')
 					. $askAiBlock

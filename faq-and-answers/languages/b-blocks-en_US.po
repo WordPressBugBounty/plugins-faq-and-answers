@@ -2,14 +2,14 @@
 # This file is distributed under the GPLv3 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Awesome FAQ 2.5.2\n"
+"Project-Id-Version: Awesome FAQ 2.5.3\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/faq-and-answers\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-09-26T05:31:31+00:00\n"
+"POT-Creation-Date: 2026-10-11T09:51:58+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: faq-and-answers\n"
@@ -1691,6 +1691,38 @@ msgstr ""
 msgid "Could not parse AI response. Please try again."
 msgstr ""
 
+#. translators: %s: FAQ title
+#: includes/class-afaq-duplicate.php:40
+#, php-format
+msgid "Duplicate “%s”"
+msgstr ""
+
+#: includes/class-afaq-duplicate.php:41
+msgid "Duplicate"
+msgstr ""
+
+#: includes/class-afaq-duplicate.php:71
+msgid "This FAQ could not be found."
+msgstr ""
+
+#: includes/class-afaq-duplicate.php:76
+msgid "You are not allowed to duplicate this FAQ."
+msgstr ""
+
+#. translators: %s: original FAQ title
+#: includes/class-afaq-duplicate.php:86
+#, php-format
+msgid "%s (Copy)"
+msgstr ""
+
+#: includes/class-afaq-duplicate.php:137
+msgid "FAQ duplicated as a draft."
+msgstr ""
+
+#: includes/class-afaq-duplicate.php:139
+msgid "Edit the copy"
+msgstr ""
+
 #: includes/class-faa-freeAnalytics.php:28
 #: includes/class-faa-freeAnalytics.php:29
 #: includes/class-faa-freeAnalytics.php:43
@@ -2341,7 +2373,7 @@ msgid "You do not have permission to change this setting."
 msgstr ""
 
 #. translators: %s: FAQ post ID used in the shortcode.
-#: includes/class_faaPlugin.php:266
+#: includes/class_faaPlugin.php:270
 #, php-format
 msgid "Error: Awesome FAQ with ID %s not found."
 msgstr ""
@@ -6530,87 +6562,87 @@ msgstr ""
 msgid "Theme Three"
 msgstr ""
 
-#: build/admin-dashboard.js:364
+#: build/admin-dashboard.js:365
 msgid "Advanced FAQ Categories & Filtering."
 msgstr ""
 
-#: build/admin-dashboard.js:364
+#: build/admin-dashboard.js:365
 msgid "50+ Ready Pages Template library"
 msgstr ""
 
-#: build/admin-dashboard.js:364
+#: build/admin-dashboard.js:365
 msgid "More premium FAQ templates."
 msgstr ""
 
-#: build/admin-dashboard.js:365
+#: build/admin-dashboard.js:366
 msgid "Advanced FAQ Search Options."
 msgstr ""
 
-#: build/admin-dashboard.js:365
+#: build/admin-dashboard.js:366
 msgid "FAQ Schema Rich Results – Improve SEO & Search Visibility."
 msgstr ""
 
-#: build/admin-dashboard.js:365
+#: build/admin-dashboard.js:366
 msgid "Shortcode Support – Display FAQs Anywhere."
 msgstr ""
 
-#: build/admin-dashboard.js:365
+#: build/admin-dashboard.js:366
 msgid "Multi-Column FAQ Layout Support."
 msgstr ""
 
-#: build/admin-dashboard.js:365
+#: build/admin-dashboard.js:366
 msgid "Advanced Design Controls – Colors, Icons, Spacing & Typography."
 msgstr ""
 
-#: build/admin-dashboard.js:365
+#: build/admin-dashboard.js:366
 msgid "Additional layouts & animation effects."
 msgstr ""
 
-#: build/admin-dashboard.js:366
+#: build/admin-dashboard.js:367
 msgid "Analytics dashboard to track user interactions and popular questions."
 msgstr ""
 
-#: build/admin-dashboard.js:366
+#: build/admin-dashboard.js:367
 msgid "Advanced Classic Editor Support for Answers."
 msgstr ""
 
-#: build/admin-dashboard.js:366
+#: build/admin-dashboard.js:367
 msgid "WooCommerce Product FAQ Integration."
 msgstr ""
 
-#: build/admin-dashboard.js:366
+#: build/admin-dashboard.js:367
 msgid "AI-Powered WooCommerce Product FAQ Builder."
 msgstr ""
 
-#: build/admin-dashboard.js:366
+#: build/admin-dashboard.js:367
 msgid "WooCommerce Settings Panel."
 msgstr ""
 
-#: build/admin-dashboard.js:366
+#: build/admin-dashboard.js:367
 msgid "Ask AI Block & Ask AI Dashboard."
 msgstr ""
 
-#: build/admin-dashboard.js:367
+#: build/admin-dashboard.js:368
 msgid "FAQ Form Block - Allow visitors to submit questions directly from the front end with custom form fields and submission management."
 msgstr ""
 
-#: build/admin-dashboard.js:367
+#: build/admin-dashboard.js:368
 msgid "FAQ Image Block - Display FAQs with images and media."
 msgstr ""
 
-#: build/admin-dashboard.js:367
+#: build/admin-dashboard.js:368
 msgid "FAQ Sidebar Tab Block - Vertical sidebar navigation with tabbed FAQ categories and smooth seamless switching."
 msgstr ""
 
-#: build/admin-dashboard.js:367
+#: build/admin-dashboard.js:368
 msgid "FAQ Post - Display FAQs from WordPress posts or custom post types."
 msgstr ""
 
-#: build/admin-dashboard.js:368
+#: build/admin-dashboard.js:369
 msgid "Nested FAQ Block & Advanced Settings Panel."
 msgstr ""
 
-#: build/admin-dashboard.js:368
+#: build/admin-dashboard.js:369
 msgid "AI-Powered Gutenberg FAQ Builder (generate Q&A content and dynamically customize layout designs, colors, and backgrounds using custom prompts)."
 msgstr ""
 

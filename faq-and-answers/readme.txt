@@ -2,7 +2,7 @@
 Contributors: bplugins, abuhayat, prosanta10, freemius
 Tags: faq block, accordion, faq schema, responsive faq, block
 Tested up to: 7.1
-Stable tag: 2.5.2
+Stable tag: 2.5.3
 Requires PHP: 7.4
 Requires at least: 6.5
 Donate link: https://www.buymeacoffee.com/abuhayat
@@ -10,8 +10,8 @@ License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
 Build responsive FAQ sections with accordion themes, FAQ schema for SEO rich results, Gutenberg block and shortcode support – no coding needed.
-   
-== Description ==  
+
+== Description ==
 
 **Answer your visitors' questions before they hit the contact form – beautiful, SEO-ready FAQ sections in minutes, no code required.**
 
@@ -248,6 +248,11 @@ Please report security bugs found in the source code of the Awesome FAQ plugin t
 11. Gutenberg Block Settings
 
 == Changelog ==
+
+= 2.5.3 - 2026-10-12 =
+* New: Duplicate action on the Awesome FAQ list - copy any FAQ, with its design, settings and terms, into a new draft in one click.
+* Improve: Template Library cards now show a real preview of each template's design instead of a generic wireframe.
+* Improve: Template Library thumbnails converted to WebP for faster loading.
 
 = 2.5.2 - 2026-09-26  =
 * Fix: javascript line length and improve plugin performance.
