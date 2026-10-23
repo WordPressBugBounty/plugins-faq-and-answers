@@ -17,6 +17,10 @@ Build responsive FAQ sections with accordion themes, FAQ schema for SEO rich res
 
 [**Awesome FAQ**](https://bplugins.com/products/faq-and-answers/) | [**Pricing**](https://bplugins.com/products/faq-and-answers/pricing/) | [**Support**](https://bplugins.com/support/) | [**Live Demos**](https://demo.bplugins.com/demo/all-demos-in-one-place/)
 
+Build frequently asked questions with Gutenberg, choose a ready-made design, and display your FAQs using a block or shortcode. Use FAQ Schema (JSON-LD) to describe supported FAQ content to search engines, and use the available analytics to understand which questions visitors engage with.
+
+With Awesome FAQ Pro, you can go beyond traditional FAQ accordions with AI-assisted FAQ creation, WooCommerce product FAQs, an interactive Ask AI assistant, and additional FAQ layouts.
+
 ### Why Awesome FAQ?
 
 **Awesome FAQ** is a lightweight, user-friendly WordPress plugin that lets you create beautiful and responsive FAQ sections using **Gutenberg Blocks** or **shortcodes**. It's perfect for bloggers, business owners, online shops, portfolios, and anyone who needs a simple and elegant way to display frequently asked questions.
