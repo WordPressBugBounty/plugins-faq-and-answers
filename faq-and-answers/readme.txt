@@ -17,9 +17,9 @@ Build responsive FAQ sections with accordion themes, FAQ schema for SEO rich res
 
 [**Awesome FAQ**](https://bplugins.com/products/faq-and-answers/) | [**Pricing**](https://bplugins.com/products/faq-and-answers/pricing/) | [**Support**](https://bplugins.com/support/) | [**Live Demos**](https://demo.bplugins.com/demo/all-demos-in-one-place/)
 
-Build frequently asked questions with Gutenberg, choose a ready-made design, and display your FAQs using a block or shortcode. Use FAQ Schema (JSON-LD) to describe supported FAQ content to search engines, and use the available analytics to understand which questions visitors engage with.
+**Awesome FAQ** makes it easy to create responsive FAQ sections using Gutenberg blocks and shortcodes. Choose from ready-made themes, organize questions and answers, and display helpful information across your website without writing code.
 
-With Awesome FAQ Pro, you can go beyond traditional FAQ accordions with AI-assisted FAQ creation, WooCommerce product FAQs, an interactive Ask AI assistant, and additional FAQ layouts.
+Whether you run a business website, blog, WooCommerce store, SaaS product, agency, or documentation site, Awesome FAQ helps you build organized FAQ sections that make information easier to find.
 
 ### Why Awesome FAQ?
 
@@ -30,6 +30,7 @@ FAQ Schema (JSON-LD) is built right in. With one click, your FAQs are marked up 
 The Pro version goes further with an AI-powered FAQ generator: draft product FAQs for WooCommerce using OpenAI (GPT-4o), Anthropic (Claude Sonnet), or the native WordPress 7.0 Connectors API, and generate Q&A content with custom layout prompts right inside the Block Editor.
 
 ### Free Features
+Get started with the essential tools for creating WordPress FAQ sections.
 
 - **7 Modern FAQ Themes:** Clean, professional accordion designs, free forever.
 - **Fully Responsive:** Looks great on all devices out of the box.
@@ -42,7 +43,7 @@ The Pro version goes further with an AI-powered FAQ generator: draft product FAQ
 - **Fast and Lightweight:** Optimized code with minimal footprint.
 - **Easy to Use:** No coding needed, and 100% ad-free.
 
-### Pro Version – AI Power & Advanced Layouts
+### Awesome FAQ Pro – Advanced FAQ Builder
 
 Upgrade to [**Awesome FAQ Pro**](https://bplugins.com/products/faq-and-answers/pricing/) for advanced customization, automated layout generation, and AI power.
 
@@ -146,6 +147,34 @@ Everything the assistant does is reported under **Awesome FAQ → Ask AI**, buil
 - A daily bar chart splitting every answer into cached, from a FAQ, and answered by AI, so you can see whether questions are growing and how much of the load stays free.
 
 
+### Nested FAQ Block
+
+Organize related questions into parent and child levels using a multi-level accordion structure.
+
+### FAQ Form Block
+
+Allow visitors to submit questions through a front-end form with supported custom fields and submission management.
+
+### Image FAQ Block
+
+Combine questions and answers with images in supported side-by-side or stacked layouts.
+
+### Post FAQ Block
+
+Query and display FAQ content from supported WordPress posts or custom post types.
+
+### Sidebar Tab FAQ Block
+
+Organize FAQ categories in vertical sidebar navigation with tab-based content switching.
+
+
+## Happy User of Awesome FAQ? ## 
+
+- Join our [Facebook Community Group](https://www.facebook.com/share/g/18kgVFabgK/)
+- Learn from our tutorials on [YouTube Channel](https://www.youtube.com/@bplugins)
+- Or rate [Awesome FAQ](https://wordpress.org/support/plugin/faq-and-answers/reviews/#new-post) on WordPress
+
+
 ### How to Use Awesome FAQ – Quick Start
 
 **Using the Gutenberg Block:**
@@ -228,6 +257,12 @@ Yes, with the Pro version you can show FAQ sections on product pages, either in 
 
 = Can I track how visitors use my FAQs? =
 Yes. The analytics dashboard shows which questions get the most views, clicks, and engagement so you can improve your content.
+
+= Does Awesome FAQ support AI-generated questions and answers? =
+The Pro version includes AI-assisted FAQ generation using supported integrations. Available providers and setup requirements depend on the selected feature.
+
+= Can visitors submit their own questions? =
+The Pro FAQ Form Block supports front-end question submissions with configurable fields and submission management.
 
 = Which AI providers does the FAQ generator support? =
 The Pro AI builder supports OpenAI (GPT-4o), Anthropic (Claude Sonnet), and the native WordPress 7.0 Connectors API, which runs a core-registered AI client with zero key setup.
