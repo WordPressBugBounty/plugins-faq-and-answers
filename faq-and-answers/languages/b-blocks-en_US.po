@@ -2,14 +2,14 @@
 # This file is distributed under the GPLv3 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Awesome FAQ 2.5.3\n"
+"Project-Id-Version: Awesome FAQ 2.5.4\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/faq-and-answers\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-10-11T09:51:58+00:00\n"
+"POT-Creation-Date: 2026-11-17T07:59:16+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: faq-and-answers\n"
@@ -17,6 +17,7 @@ msgstr ""
 #. Plugin Name of the plugin
 #: faq-and-answers.php
 #: faq-and-answers-block.php:49
+#: includes/class-faa-promo-banner.php:394
 #: includes/class_faaAdmin.php:105
 #: includes/class_faaAnalysis.php:116
 #: build/blocks/faq-parent/index.js:6
@@ -815,6 +816,7 @@ msgid "Answer it"
 msgstr ""
 
 #: includes/ai/class-afaq-ask-ai-admin.php:1862
+#: includes/class-faa-promo-banner.php:424
 #: build/ask-ai-promo/index.js:82
 msgid "Dismiss"
 msgstr ""
@@ -1889,6 +1891,42 @@ msgstr ""
 msgid "Let visitors send in the question they could not find an answer to. Every one arrives here with their name and email, ready to read, mark answered and reply to."
 msgstr ""
 
+#: includes/class-faa-promo-banner.php:402
+msgid "Awesome FAQ Biggest Black Friday Sale is Live – Up to 45% OFF!"
+msgstr ""
+
+#: includes/class-faa-promo-banner.php:405
+msgid "Upgrade to Awesome FAQ Pro at an exclusive Black Friday price! Unlock AI-powered FAQ generation, WooCommerce product FAQs and advanced analytics!"
+msgstr ""
+
+#: includes/class-faa-promo-banner.php:408
+msgid "AI-Powered FAQ Generation"
+msgstr ""
+
+#: includes/class-faa-promo-banner.php:409
+msgid "WooCommerce Product FAQs"
+msgstr ""
+
+#: includes/class-faa-promo-banner.php:410
+msgid "Nested & Bento FAQ Layouts"
+msgstr ""
+
+#: includes/class-faa-promo-banner.php:411
+msgid "Analytics & Form Submissions"
+msgstr ""
+
+#: includes/class-faa-promo-banner.php:417
+msgid "Unlock PRO Features →"
+msgstr ""
+
+#: includes/class-faa-promo-banner.php:425
+msgid "Dismiss banner"
+msgstr ""
+
+#: includes/class-faa-promo-link.php:119
+msgid "Black Friday Sale – Up to 45% OFF!"
+msgstr ""
+
 #: includes/class_faaAdmin.php:106
 #: includes/class_faaAnalysis.php:2129
 #: includes/Templates/ProSet.php:109
@@ -2373,7 +2411,7 @@ msgid "You do not have permission to change this setting."
 msgstr ""
 
 #. translators: %s: FAQ post ID used in the shortcode.
-#: includes/class_faaPlugin.php:270
+#: includes/class_faaPlugin.php:278
 #, php-format
 msgid "Error: Awesome FAQ with ID %s not found."
 msgstr ""
@@ -9140,11 +9178,11 @@ msgstr ""
 msgid "The free features of Plugin do a lot-still, without PRO, you're holding yourself back from getting more."
 msgstr ""
 
-#: build/template-library.js:86
+#: build/template-library.js:87
 msgid "Template Library"
 msgstr ""
 
-#: build/template-library.js:86
+#: build/template-library.js:87
 msgid "Awesome FAQ Templates"
 msgstr ""
 

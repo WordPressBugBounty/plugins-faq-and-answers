@@ -31,6 +31,14 @@ if (!class_exists('FaaPlugin')) {
                 // "Duplicate" on the Awesome FAQ list. Free and pro alike.
                 require_once AFAQ_DIR_PATH . 'includes/class-afaq-duplicate.php';
                 new AFAQ_Duplicate();
+
+                // Promotional Banner & Plugins Page Action Link (Free Version Only)
+                if (file_exists(AFAQ_DIR_PATH . 'includes/class-faa-promo-banner.php')) {
+                    require_once AFAQ_DIR_PATH . 'includes/class-faa-promo-banner.php';
+                }
+                if (file_exists(AFAQ_DIR_PATH . 'includes/class-faa-promo-link.php')) {
+                    require_once AFAQ_DIR_PATH . 'includes/class-faa-promo-link.php';
+                }
             }
             if (faa_is_premium() && AFAQ_HAS_PRO) {
                 // Questions visitors send in through the FAQ Form block, and

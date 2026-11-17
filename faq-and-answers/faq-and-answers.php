@@ -3,7 +3,7 @@
 /**
  * Plugin Name: Awesome FAQ
  * Description: Create responsive, customizable FAQ sections with ready-made templates.Perfect for boosting clarity, trust, and user experience on any page. 
- * Version: 2.5.3
+ * Version: 2.5.4
  * Author: bPlugins
  * Author URI: https://bplugins.com 
  * License: GPLv3 or later
@@ -30,13 +30,14 @@ if ( function_exists( 'faa_fs' ) ) {
     ], 'plugin' );
     // On a local install the timestamp busts the cache on every reload, which
     // is what makes editing a stylesheet bearable.
-    define( 'AFAQ_VERSION', ( isset( $_SERVER['HTTP_HOST'] ) && 'localhost' === $_SERVER['HTTP_HOST'] ? time() : (( !empty( $afaq_header['Version'] ) ? $afaq_header['Version'] : '2.5.3' )) ) );
+    define( 'AFAQ_VERSION', ( isset( $_SERVER['HTTP_HOST'] ) && 'localhost' === $_SERVER['HTTP_HOST'] ? time() : (( !empty( $afaq_header['Version'] ) ? $afaq_header['Version'] : '2.5.4' )) ) );
     unset($afaq_header);
     define( 'AFAQ_DIR_URL', plugin_dir_url( __FILE__ ) );
     define( 'AFAQ_DIR_PATH', plugin_dir_path( __FILE__ ) );
     // The entry file itself, for plugin_basename() — the folder is named
     // differently on the premium build, so the basename cannot be a literal.
     define( 'AFAQ_FILE', __FILE__ );
+    define( 'AFAQ_PLUGIN_BASENAME', plugin_basename( __FILE__ ) );
     define( 'AFAQ_HAS_PRO', file_exists( AFAQ_DIR_PATH . 'vendor/freemius/start.php' ) );
     if ( !function_exists( 'faa_fs' ) ) {
         function faa_fs() {
@@ -76,6 +77,14 @@ if ( function_exists( 'faa_fs' ) ) {
     }
     require_once AFAQ_DIR_PATH . 'includes/class_faaPlugin.php';
     new FaaPlugin();
+    if ( is_admin() ) {
+        if ( file_exists( AFAQ_DIR_PATH . 'includes/class-faa-promo-link.php' ) ) {
+            require_once AFAQ_DIR_PATH . 'includes/class-faa-promo-link.php';
+        }
+        if ( file_exists( AFAQ_DIR_PATH . 'includes/class-faa-promo-banner.php' ) ) {
+            require_once AFAQ_DIR_PATH . 'includes/class-faa-promo-banner.php';
+        }
+    }
     if ( AFAQ_HAS_PRO ) {
         require_once AFAQ_DIR_PATH . 'includes/LicenseActivation.php';
     }

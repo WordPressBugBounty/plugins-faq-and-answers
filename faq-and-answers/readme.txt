@@ -2,7 +2,7 @@
 Contributors: bplugins, abuhayat, prosanta10, freemius
 Tags: faq block, accordion, faq schema, responsive faq, block
 Tested up to: 7.1
-Stable tag: 2.5.3
+Stable tag: 2.5.4
 Requires PHP: 7.4
 Requires at least: 6.5
 Donate link: https://www.buymeacoffee.com/abuhayat
@@ -287,6 +287,10 @@ Please report security bugs found in the source code of the Awesome FAQ plugin t
 11. Gutenberg Block Settings
 
 == Changelog ==
+
+= 2.5.4 - 2026-11-17  =
+* Added: Discount Promo Banner in Dashboard.
+* Update SDK
 
 = 2.5.3 - 2026-10-12 =
 * New: Duplicate action on the Awesome FAQ list - copy any FAQ, with its design, settings and terms, into a new draft in one click.
