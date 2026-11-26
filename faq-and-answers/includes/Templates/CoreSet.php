@@ -89,7 +89,7 @@ class CoreSet
 			'groups' => ['support'],
 			'keywords' => ['faq', 'help', 'support', 'accordion'],
 			'thumbnail' => 'help-centre.webp',
-			'content' => Parts::section(
+			'content' => Parts::section_wide(
 				Parts::heading(__('How can we help?', 'faq-and-answers'))
 				. Parts::paragraph(__('The questions we are asked most often, answered.', 'faq-and-answers'))
 				. Parts::block('faa/faq-and-answers', ['faqData' => $faqs, 'theme' => 'default']),
@@ -114,7 +114,7 @@ class CoreSet
 			'groups' => ['support'],
 			'keywords' => ['tabs', 'vertical tabs', 'topics', 'sidebar', 'knowledge base'],
 			'thumbnail' => 'browse-by-topic.webp',
-			'content' => Parts::section(
+			'content' => Parts::section_wide(
 				Parts::heading(__('Browse by topic', 'faq-and-answers'))
 				. Parts::paragraph(__('Pick a subject on the left and the answer opens beside it.', 'faq-and-answers'))
 				. Parts::block(
@@ -235,7 +235,7 @@ class CoreSet
 			'groups' => ['support'],
 			'keywords' => ['troubleshooting', 'fix', 'problem', 'errors', 'support', 'diagnose'],
 			'thumbnail' => 'troubleshooting.webp',
-			'content' => Parts::section(
+			'content' => Parts::section_wide(
 				Parts::heading(__('Something not working?', 'faq-and-answers'), 2, '#ffffff')
 				. $subtitle
 				. Parts::block('faa/faq-and-answers', ['faqData' => $faqs, 'theme' => 'themeNine', 'Styles' => $styles]),
@@ -262,7 +262,7 @@ class CoreSet
 			'groups' => ['support'],
 			'keywords' => ['articles', 'docs', 'documentation', 'knowledge base', 'compact'],
 			'thumbnail' => 'support-articles.webp',
-			'content' => Parts::section(
+			'content' => Parts::section_wide(
 				Parts::heading(__('Support articles', 'faq-and-answers'))
 				. Parts::paragraph(__('Everything we have written down, newest first. Open one to read the summary.', 'faq-and-answers'))
 				. Parts::block(
@@ -310,7 +310,7 @@ class CoreSet
 			'groups' => ['support'],
 			'keywords' => ['posts', 'blog', 'articles', 'knowledge base'],
 			'thumbnail' => 'from-the-blog.webp',
-			'content' => Parts::section(
+			'content' => Parts::section_wide(
 				Parts::heading(__('Read up on it', 'faq-and-answers'))
 				. Parts::paragraph(__('Longer answers, pulled straight from what we have already written.', 'faq-and-answers'))
 				. Parts::block(
@@ -359,7 +359,7 @@ class CoreSet
 			'groups' => ['support'],
 			'keywords' => ['form', 'contact', 'submit', 'question'],
 			'thumbnail' => 'ask-a-question.webp',
-			'content' => Parts::section(
+			'content' => Parts::section_wide(
 				Parts::block(
 					'faa/faq-form',
 					[
@@ -468,7 +468,7 @@ class CoreSet
 			'groups' => ['onboarding'],
 			'keywords' => ['step by step', 'steps', 'onboarding', 'setup', 'guide', 'how to', 'projects', 'case studies'],
 			'thumbnail' => 'step-by-step.webp',
-			'content' => Parts::section(
+			'content' => Parts::section_wide(
 				Parts::columns([
 					['width' => '44%', 'vertical' => 'center', 'inner' => $left],
 					['width' => '56%', 'vertical' => 'center', 'inner' => $right],
@@ -551,7 +551,7 @@ class CoreSet
 			'groups' => ['onboarding'],
 			'keywords' => ['checklist', 'launch', 'pre-launch', 'audit', 'go live'],
 			'thumbnail' => 'launch-checklist.webp',
-			'content' => Parts::section(
+			'content' => Parts::section_wide(
 				Parts::columns([
 					['width' => '56%', 'vertical' => 'center', 'inner' => $left],
 					['width' => '44%', 'vertical' => 'center', 'inner' => $right],
@@ -602,7 +602,7 @@ class CoreSet
 			'groups' => ['onboarding'],
 			'keywords' => ['timeline', 'process', 'what happens next', 'onboarding', 'stages'],
 			'thumbnail' => 'what-happens-next.webp',
-			'content' => Parts::section(
+			'content' => Parts::section_wide(
 				Parts::heading(__('What happens next', 'faq-and-answers'), 2, '#ffffff')
 				. Parts::paragraph(__('From the moment you order to the day it is yours.', 'faq-and-answers'), 'center', '#cbd5e1')
 				. Parts::block('faa/faq-and-answers', ['faqData' => $faqs, 'theme' => 'themeThree']),
@@ -708,7 +708,7 @@ class CoreSet
 			'groups' => ['sales'],
 			'keywords' => ['pricing', 'sales', 'objections', 'buy', 'checkout', 'conversion'],
 			'thumbnail' => 'pricing-objections.webp',
-			'content' => Parts::section(
+			'content' => Parts::section_wide(
 				Parts::heading(__('Questions before you buy', 'faq-and-answers'))
 				. Parts::paragraph(__('The things people ask us most in the last minute before they decide.', 'faq-and-answers'))
 				. Parts::columns([
@@ -775,7 +775,7 @@ class CoreSet
 			'groups' => ['sales'],
 			'keywords' => ['grid', 'bento', 'cards', 'landing page', 'table'],
 			'thumbnail' => 'faq-grid.webp',
-			'content' => Parts::section(
+			'content' => Parts::section_wide(
 				Parts::heading(__('Everything you might be wondering', 'faq-and-answers'), 2, '#ffffff')
 				. Parts::paragraph(__('No clicking required — it is all on the page.', 'faq-and-answers'), 'center', '#ffffff')
 				. Parts::block(
@@ -807,32 +807,32 @@ class CoreSet
 		// something identical to what the block already showed.
 		$panels = [
 			Parts::panel(
-				'city.svg',
-				__('A city skyline at blue hour', 'faq-and-answers'),
+				'city.webp',
+				__('A laptop with code on a developer desk', 'faq-and-answers'),
 				__('Web Development', 'faq-and-answers'),
 				__('Sites built to load fast and stay easy to change, with no framework you will have to pay someone to understand later.', 'faq-and-answers')
 			),
 			Parts::panel(
-				'coast.svg',
-				__('A lighthouse above a turquoise coast', 'faq-and-answers'),
+				'coast.webp',
+				__('A designer sketching an interface on a tablet', 'faq-and-answers'),
 				__('UI & UX Design', 'faq-and-answers'),
 				__('Interfaces designed around what people are actually trying to do, then tested with them before a line is written.', 'faq-and-answers')
 			),
 			Parts::panel(
-				'forest.svg',
-				__('Pines in morning mist', 'faq-and-answers'),
+				'forest.webp',
+				__('An analytics dashboard on a laptop', 'faq-and-answers'),
 				__('SEO Optimisation', 'faq-and-answers'),
 				__('Technical fixes and content work that compound, measured against traffic you can trace to a page.', 'faq-and-answers')
 			),
 			Parts::panel(
-				'desert.svg',
-				__('Rolling dunes under a low sun', 'faq-and-answers'),
+				'desert.webp',
+				__('A card payment at an online checkout', 'faq-and-answers'),
 				__('E-commerce Solutions', 'faq-and-answers'),
 				__('Product management, secure payments and a checkout short enough that people finish it.', 'faq-and-answers')
 			),
 			Parts::panel(
-				'peaks.svg',
-				__('Snow-capped peaks at sunrise', 'faq-and-answers'),
+				'peaks.webp',
+				__('A support team working together', 'faq-and-answers'),
 				__('Support & Maintenance', 'faq-and-answers'),
 				__('Updates, backups and someone who answers when something breaks at an inconvenient hour.', 'faq-and-answers')
 			),
@@ -843,7 +843,7 @@ class CoreSet
 			'groups' => ['sales'],
 			'keywords' => ['image', 'accordion', 'services', 'showcase'],
 			'thumbnail' => 'service-spotlight.webp',
-			'content' => Parts::section(
+			'content' => Parts::section_wide(
 				Parts::heading(__('What we do', 'faq-and-answers'), 2, '#111827', 'x-large')
 				. Parts::block(
 					'faa/image-faq',

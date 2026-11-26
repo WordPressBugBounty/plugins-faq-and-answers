@@ -63,7 +63,7 @@ class ShowcaseSet {
 			'groups'    => $args['groups'],
 			'keywords'  => $args['keywords'],
 			'thumbnail' => $args['thumbnail'],
-			'content'   => Parts::section(
+			'content'   => Parts::section_wide(
 				Parts::heading($args['heading'], 2, $headingColor, $fontSize, $headingAlign)
 					. $intro
 					. Parts::block(
@@ -107,29 +107,29 @@ class ShowcaseSet {
 				'position'   => 'bottomLeft',
 				'panels'     => [
 					Parts::panel(
-						'fashion-1.svg',
-						__('Abstract artwork for a tailoring look', 'faq-and-answers'),
+						'fashion-1.webp',
+						__('Photo of a tailoring look', 'faq-and-answers'),
 						__('Tailoring', 'faq-and-answers'),
 						__('Wool-blend suiting cut for movement, half-lined so it wears through a warm afternoon. Sizes 6 to 22, with alterations included in store.', 'faq-and-answers'),
 						__('See the look', 'faq-and-answers')
 					),
 					Parts::panel(
-						'fashion-2.svg',
-						__('Abstract artwork for a knitwear look', 'faq-and-answers'),
+						'fashion-2.webp',
+						__('Photo of a knitwear look', 'faq-and-answers'),
 						__('Knitwear', 'faq-and-answers'),
 						__('Merino from a mill we have used for nine years. It softens rather than pills, and every piece is machine washable on cool.', 'faq-and-answers'),
 						__('See the look', 'faq-and-answers')
 					),
 					Parts::panel(
-						'fashion-3.svg',
-						__('Abstract artwork for an outerwear look', 'faq-and-answers'),
+						'fashion-3.webp',
+						__('Photo of an outerwear look', 'faq-and-answers'),
 						__('Outerwear', 'faq-and-answers'),
 						__('Recycled shell, taped seams, and pockets deep enough for a phone that will not fall out on a bus. Weatherproof to a proper downpour.', 'faq-and-answers'),
 						__('See the look', 'faq-and-answers')
 					),
 					Parts::panel(
-						'fashion-4.svg',
-						__('Abstract artwork for an accessories look', 'faq-and-answers'),
+						'fashion-4.webp',
+						__('Photo of an accessories look', 'faq-and-answers'),
 						__('Accessories', 'faq-and-answers'),
 						__('Vegetable-tanned leather and solid brass, made to be repaired rather than replaced. Belts and bags carry a ten-year guarantee.', 'faq-and-answers'),
 						__('See the look', 'faq-and-answers')
@@ -156,29 +156,29 @@ class ShowcaseSet {
 				'position'   => 'bottomLeft',
 				'panels'     => [
 					Parts::panel(
-						'food-1.svg',
-						__('Abstract artwork for the small plates course', 'faq-and-answers'),
+						'food-1.webp',
+						__('Photo of the small plates course', 'faq-and-answers'),
 						__('Small plates', 'faq-and-answers'),
 						__('Six to share between two, or four if you are hungry. Everything here is vegetarian and three of the six are vegan without changing anything.', 'faq-and-answers'),
 						__('See the dishes', 'faq-and-answers')
 					),
 					Parts::panel(
-						'food-2.svg',
-						__('Abstract artwork for the main courses', 'faq-and-answers'),
+						'food-2.webp',
+						__('Photo of the main courses', 'faq-and-answers'),
 						__('From the grill', 'faq-and-answers'),
 						__('Cooked over charcoal, so nothing comes out well done — tell us if that matters and we will steer you elsewhere on the menu.', 'faq-and-answers'),
 						__('See the dishes', 'faq-and-answers')
 					),
 					Parts::panel(
-						'food-3.svg',
-						__('Abstract artwork for the sides', 'faq-and-answers'),
+						'food-3.webp',
+						__('Photo of the sides', 'faq-and-answers'),
 						__('Sides', 'faq-and-answers'),
 						__('Grown within forty miles for most of the year. The menu changes on Tuesdays when the delivery arrives, so this is where it moves most.', 'faq-and-answers'),
 						__('See the dishes', 'faq-and-answers')
 					),
 					Parts::panel(
-						'food-4.svg',
-						__('Abstract artwork for the desserts', 'faq-and-answers'),
+						'food-4.webp',
+						__('Photo of the desserts', 'faq-and-answers'),
 						__('Puddings', 'faq-and-answers'),
 						__('Made here each morning, which is why they run out. Ask what is left before you plan around one.', 'faq-and-answers'),
 						__('See the dishes', 'faq-and-answers')
@@ -194,29 +194,29 @@ class ShowcaseSet {
 	private static function hotel_suites() {
 		$panels = [
 			Parts::panel(
-				'hotel-1.svg',
-				__('Abstract artwork for the garden room', 'faq-and-answers'),
+				'hotel-1.webp',
+				__('Photo of the garden room', 'faq-and-answers'),
 				__('Garden Room', 'faq-and-answers'),
 				__('Twenty-six square metres on the ground floor, doors onto the walled garden. Quietest rooms we have, and the only ones a dog can stay in.', 'faq-and-answers'),
 				__('Check dates', 'faq-and-answers')
 			),
 			Parts::panel(
-				'hotel-2.svg',
-				__('Abstract artwork for the harbour suite', 'faq-and-answers'),
+				'hotel-2.webp',
+				__('Photo of the harbour suite', 'faq-and-answers'),
 				__('Harbour Suite', 'faq-and-answers'),
 				__('Corner room on the second floor with windows on two sides. Breakfast is included and served until eleven, later at weekends.', 'faq-and-answers'),
 				__('Check dates', 'faq-and-answers')
 			),
 			Parts::panel(
-				'hotel-3.svg',
-				__('Abstract artwork for the loft suite', 'faq-and-answers'),
+				'hotel-3.webp',
+				__('Photo of the loft suite', 'faq-and-answers'),
 				__('The Loft', 'faq-and-answers'),
 				__('The whole top floor, with a separate sitting room and a bath under the skylight. Sleeps four; the second bedroom has no window, so we say so plainly.', 'faq-and-answers'),
 				__('Check dates', 'faq-and-answers')
 			),
 			Parts::panel(
-				'hotel-4.svg',
-				__('Abstract artwork for the courtyard double', 'faq-and-answers'),
+				'hotel-4.webp',
+				__('Photo of the courtyard double', 'faq-and-answers'),
 				__('Courtyard Double', 'faq-and-answers'),
 				__('Our smallest and least expensive, eighteen square metres, shower rather than a bath. Everything else is exactly the same as the rest.', 'faq-and-answers'),
 				__('Check dates', 'faq-and-answers')
@@ -244,7 +244,7 @@ class ShowcaseSet {
 			'groups'    => ['hotel'],
 			'keywords'  => ['hotel', 'suites', 'rooms', 'booking', 'hospitality', 'stay'],
 			'thumbnail' => 'hotel-suites.webp',
-			'content'   => Parts::section(
+			'content'   => Parts::section_wide(
 				$headerColumns
 					. Parts::block(
 						'faa/image-faq',
@@ -273,29 +273,29 @@ class ShowcaseSet {
 	private static function projects() {
 		$panels = [
 			Parts::panel(
-				'portfolio-1.svg',
-				__('Abstract artwork for a rebuild project', 'faq-and-answers'),
+				'portfolio-1.webp',
+				__('Photo of a rebuild project', 'faq-and-answers'),
 				__('Checkout rebuild', 'faq-and-answers'),
 				__('A five-step checkout became two. Abandonment fell by a third over the following quarter, and support stopped fielding “where is my order” entirely.', 'faq-and-answers'),
 				__('Read the case study', 'faq-and-answers')
 			),
 			Parts::panel(
-				'portfolio-2.svg',
-				__('Abstract artwork for a migration project', 'faq-and-answers'),
+				'portfolio-2.webp',
+				__('Photo of a migration project', 'faq-and-answers'),
 				__('Platform migration', 'faq-and-answers'),
 				__('Eleven years of content moved with every URL intact. Traffic dipped for nine days and then came back above where it started.', 'faq-and-answers'),
 				__('Read the case study', 'faq-and-answers')
 			),
 			Parts::panel(
-				'portfolio-3.svg',
-				__('Abstract artwork for a design system project', 'faq-and-answers'),
+				'portfolio-3.webp',
+				__('Photo of a design system project', 'faq-and-answers'),
 				__('Design system', 'faq-and-answers'),
 				__('One set of components replacing four. New pages that took a fortnight now take an afternoon, and they look like each other.', 'faq-and-answers'),
 				__('Read the case study', 'faq-and-answers')
 			),
 			Parts::panel(
-				'portfolio-4.svg',
-				__('Abstract artwork for a performance project', 'faq-and-answers'),
+				'portfolio-4.webp',
+				__('Photo of a performance project', 'faq-and-answers'),
 				__('Performance work', 'faq-and-answers'),
 				__('Largest Contentful Paint from 4.1s to 1.3s on a mid-range phone, without dropping a single feature from the page.', 'faq-and-answers'),
 				__('Read the case study', 'faq-and-answers')
@@ -307,7 +307,7 @@ class ShowcaseSet {
 			'groups'    => ['portfolio'],
 			'keywords'  => ['portfolio', 'projects', 'case studies', 'work', 'agency', 'gallery'],
 			'thumbnail' => 'projects-portfolio.webp',
-			'content'   => Parts::section(
+			'content'   => Parts::section_wide(
 				Parts::heading(__('Selected work', 'faq-and-answers'), 2, '#0f172a', 'XL', 'left')
 					. Parts::paragraph(__('Four projects, with what the problem actually was and what changed.', 'faq-and-answers'), 'left', '#64748b')
 					. Parts::block(
@@ -401,7 +401,7 @@ class ShowcaseSet {
 			'groups'    => ['estate'],
 			'keywords'  => ['real estate', 'property', 'zones', 'wall art', 'decoration', 'interior', 'two column', 'home'],
 			'thumbnail' => 'real-estate-zones.webp',
-			'content'   => Parts::section(
+			'content'   => Parts::section_wide(
 				Parts::columns(
 					[
 						['width' => '58%', 'vertical' => 'center', 'inner' => $leftContent],
@@ -432,29 +432,29 @@ class ShowcaseSet {
 				'position'   => 'bottomCenter',
 				'panels'     => [
 					Parts::panel(
-						'speakers-1.svg',
-						__('Abstract artwork for the opening keynote', 'faq-and-answers'),
+						'speakers-1.webp',
+						__('Photo of the opening keynote', 'faq-and-answers'),
 						__('Opening keynote', 'faq-and-answers'),
 						__('Thursday, 09:30, Main Hall. Forty minutes on what a decade of shipping accessible interfaces actually taught them, with the failures left in.', 'faq-and-answers'),
 						__('See the session', 'faq-and-answers')
 					),
 					Parts::panel(
-						'speakers-2.svg',
-						__('Abstract artwork for the workshop track', 'faq-and-answers'),
+						'speakers-2.webp',
+						__('Photo of the workshop track', 'faq-and-answers'),
 						__('Workshop track', 'faq-and-answers'),
 						__('Thursday afternoon, Studio 2. Bring a laptop. Capped at thirty people and it does fill up, so sign up when you collect your badge.', 'faq-and-answers'),
 						__('See the session', 'faq-and-answers')
 					),
 					Parts::panel(
-						'speakers-3.svg',
-						__('Abstract artwork for the panel discussion', 'faq-and-answers'),
+						'speakers-3.webp',
+						__('Photo of the panel discussion', 'faq-and-answers'),
 						__('Panel discussion', 'faq-and-answers'),
 						__('Friday, 14:00, Main Hall. Four people who disagree, and half the hour kept for questions from the floor rather than from us.', 'faq-and-answers'),
 						__('See the session', 'faq-and-answers')
 					),
 					Parts::panel(
-						'speakers-4.svg',
-						__('Abstract artwork for the closing performance', 'faq-and-answers'),
+						'speakers-4.webp',
+						__('Photo of the closing performance', 'faq-and-answers'),
 						__('Closing performance', 'faq-and-answers'),
 						__('Friday, 19:00, Courtyard Stage. Outdoors, so dress for it. Included with any ticket and open to guests as well.', 'faq-and-answers'),
 						__('See the session', 'faq-and-answers')
@@ -470,29 +470,29 @@ class ShowcaseSet {
 	private static function travel() {
 		$panels = [
 			Parts::panel(
-				'travel-1.svg',
-				__('Abstract artwork for a coastal trip', 'faq-and-answers'),
+				'travel-1.webp',
+				__('Photo of a coastal trip', 'faq-and-answers'),
 				__('The coast road', 'faq-and-answers'),
 				__('Nine days, April to June, easy pace. Small hotels and a driver, so nobody has to take the wheel on the switchbacks.', 'faq-and-answers'),
 				__('See the itinerary', 'faq-and-answers')
 			),
 			Parts::panel(
-				'travel-2.svg',
-				__('Abstract artwork for a mountain trip', 'faq-and-answers'),
+				'travel-2.webp',
+				__('Photo of a mountain trip', 'faq-and-answers'),
 				__('High passes', 'faq-and-answers'),
 				__('Twelve days, July to September, demanding. Five hours of walking most days at altitude — we will be honest with you about fitness.', 'faq-and-answers'),
 				__('See the itinerary', 'faq-and-answers')
 			),
 			Parts::panel(
-				'travel-3.svg',
-				__('Abstract artwork for a desert trip', 'faq-and-answers'),
+				'travel-3.webp',
+				__('Photo of a desert trip', 'faq-and-answers'),
 				__('Desert nights', 'faq-and-answers'),
 				__('Seven days, October to March only. Two nights under canvas with no signal, which is the point rather than the compromise.', 'faq-and-answers'),
 				__('See the itinerary', 'faq-and-answers')
 			),
 			Parts::panel(
-				'travel-4.svg',
-				__('Abstract artwork for a city trip', 'faq-and-answers'),
+				'travel-4.webp',
+				__('Photo of a city trip', 'faq-and-answers'),
 				__('Three cities', 'faq-and-answers'),
 				__('Ten days by rail, any month. The most walking of the four and the best food; the least rest, if that matters to you.', 'faq-and-answers'),
 				__('See the itinerary', 'faq-and-answers')
@@ -525,7 +525,7 @@ class ShowcaseSet {
 			'groups'    => ['travel'],
 			'keywords'  => ['travel', 'destinations', 'tours', 'trips', 'holiday', 'itinerary', 'two column', 'image faq'],
 			'thumbnail' => 'travel-destinations.webp',
-			'content'   => Parts::section(
+			'content'   => Parts::section_wide(
 				Parts::columns(
 					[
 						['width' => '42%', 'vertical' => 'center', 'inner' => $leftContent],
@@ -557,29 +557,29 @@ class ShowcaseSet {
 				'position'        => 'bottomCenter',
 				'panels'          => [
 					Parts::panel(
-						'story-1.svg',
-						__('Abstract artwork for chapter one', 'faq-and-answers'),
+						'story-1.webp',
+						__('Photo of chapter one', 'faq-and-answers'),
 						__('One — where it started', 'faq-and-answers'),
 						__('A workshop, two people and a problem nobody else seemed to think was a problem. It took four years to find out they were right.', 'faq-and-answers'),
 						__('Read the chapter', 'faq-and-answers')
 					),
 					Parts::panel(
-						'story-2.svg',
-						__('Abstract artwork for chapter two', 'faq-and-answers'),
+						'story-2.webp',
+						__('Photo of chapter two', 'faq-and-answers'),
 						__('Two — the wrong turn', 'faq-and-answers'),
 						__('Eighteen months building the thing customers asked for instead of the thing they needed. Worth telling, because it is the part everyone skips.', 'faq-and-answers'),
 						__('Read the chapter', 'faq-and-answers')
 					),
 					Parts::panel(
-						'story-3.svg',
-						__('Abstract artwork for chapter three', 'faq-and-answers'),
+						'story-3.webp',
+						__('Photo of chapter three', 'faq-and-answers'),
 						__('Three — what changed', 'faq-and-answers'),
 						__('One decision, taken over a weekend, that meant throwing away most of the code. It is the only reason any of the rest exists.', 'faq-and-answers'),
 						__('Read the chapter', 'faq-and-answers')
 					),
 					Parts::panel(
-						'story-4.svg',
-						__('Abstract artwork for chapter four', 'faq-and-answers'),
+						'story-4.webp',
+						__('Photo of chapter four', 'faq-and-answers'),
 						__('Four — now', 'faq-and-answers'),
 						__('Where things stand, what we are still getting wrong, and what the next year looks like from here.', 'faq-and-answers'),
 						__('Read the chapter', 'faq-and-answers')
@@ -653,7 +653,7 @@ class ShowcaseSet {
 			'groups'    => ['fitness'],
 			'keywords'  => ['fitness', 'diet', 'training', 'nutrition', 'gym', 'coaching', 'badge'],
 			'thumbnail' => 'fitness-diet.webp',
-			'content'   => Parts::section(
+			'content'   => Parts::section_wide(
 				Parts::columns([
 					['width' => '42%', 'vertical' => 'center', 'inner' => $leftContent],
 					['width' => '58%', 'vertical' => 'center', 'inner' => $rightContent],
@@ -705,7 +705,7 @@ class ShowcaseSet {
 			'groups'    => ['health'],
 			'keywords'  => ['health', 'clinic', 'patients', 'medical', 'appointments', 'care'],
 			'thumbnail' => 'health-clinic.webp',
-			'content'   => Parts::section(
+			'content'   => Parts::section_wide(
 				Parts::heading(__('Patient questions', 'faq-and-answers'), 2, '#000000', 'XL')
 					. Parts::paragraph(__('Appointments, cost and cover, and what happens to your records.', 'faq-and-answers'), 'center', '#000000', 'M')
 					. Parts::block('faa/faq-and-answers', ['faqData' => $faqs, 'theme' => 'themeTwelve']),
@@ -756,7 +756,7 @@ class ShowcaseSet {
 			'groups'    => ['services'],
 			'keywords'  => ['services', 'agency', 'consulting', 'engagement', 'scope', 'process'],
 			'thumbnail' => 'services-engagement.webp',
-			'content'   => Parts::section(
+			'content'   => Parts::section_wide(
 				Parts::heading(__('How we work', 'faq-and-answers'))
 					. Parts::paragraph(__('What a project looks like from your side of it.', 'faq-and-answers'))
 					. Parts::block('faa/faq-and-answers', ['faqData' => $faqs, 'theme' => 'themeThree']),
@@ -779,11 +779,7 @@ class ShowcaseSet {
 			. Parts::heading(__('Answers to Frequently Asked Questions.', 'faq-and-answers'), 2, '#ffffff', 'XL', 'left')
 			. Parts::paragraph(__('In our FAQ, you\'ll find concise answers to common questions about our service, Booking Steps. If you still have questions, feel free to reach out to us.', 'faq-and-answers'), 'left', '#e0e7ff', 'M');
 
-		$rightImage = '<!-- wp:group {"style":{"border":{"radius":"18px"},"color":{"background":"#ffffff"}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->'
-			. '<div class="wp-block-group has-background" style="border-radius:18px;background-color:#ffffff;padding:24px;text-align:center;">'
-			. '<img src="' . esc_url(Parts::thumb('product-features.svg')) . '" alt="' . esc_attr__('FAQ Illustration', 'faq-and-answers') . '" style="max-width:100%;height:auto;border-radius:10px;" />'
-			. '</div>'
-			. '<!-- /wp:group -->';
+		$rightImage = Parts::image_card('product-features.webp', __('An analytics dashboard on a laptop', 'faq-and-answers'));
 
 		$banner = Parts::section(
 			Parts::columns([
@@ -839,7 +835,7 @@ class ShowcaseSet {
 			'groups'    => ['features'],
 			'keywords'  => ['product', 'features', 'grid', 'bento', 'landing page', 'saas', 'banner'],
 			'thumbnail' => 'product-features.webp',
-			'content'   => Parts::section(
+			'content'   => Parts::section_wide(
 				$banner
 					. '<!-- wp:spacer {"height":"36px"} --><div style="height:36px" aria-hidden="true" class="wp-block-spacer"></div><!-- /wp:spacer -->'
 					. Parts::block(

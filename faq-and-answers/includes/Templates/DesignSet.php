@@ -141,7 +141,7 @@ class DesignSet {
 			'groups'    => ['speakers'],
 			'keywords'  => ['event', 'tickets', 'booking', 'vertical tabs', 'horizontal', 'green'],
 			'thumbnail' => 'event-tickets.webp',
-			'content'   => Parts::section(
+			'content'   => Parts::section_wide(
 				Parts::heading(__('Event Ticket Booking FAQ', 'faq-and-answers'), 2, '#24303c', 'x-large')
 					. Parts::block(
 						'faa/faq-and-answers',
@@ -270,7 +270,7 @@ class DesignSet {
 			'groups'    => ['services'],
 			'keywords'  => ['services', 'booking', 'blue', 'gradient', 'accordion', 'home service'],
 			'thumbnail' => 'home-service-booking.webp',
-			'content'   => Parts::section(
+			'content'   => Parts::section_wide(
 				Parts::heading(__('Easy Home Service Booking Guide', 'faq-and-answers'), 2, '#2b3440', 'xx-large')
 					. $panel,
 				'#ffffff'
@@ -388,7 +388,7 @@ class DesignSet {
 			'groups'    => ['services'],
 			'keywords'  => ['business', 'services', 'minimal', 'editorial', 'two column', 'consulting'],
 			'thumbnail' => 'business-services.webp',
-			'content'   => Parts::section(
+			'content'   => Parts::section_wide(
 				Parts::columns(
 					[
 						['width' => '18%', 'inner' => $label, 'vertical' => 'top'],
@@ -427,25 +427,25 @@ class DesignSet {
 				__('Styles', 'faq-and-answers'),
 				__('What makes bold abstract art so visually powerful?', 'faq-and-answers'),
 				__('Abstract work gives up the job of depicting something, and gets colour, form and texture back in exchange. Nothing in the frame tells you what to think about it, so the reading is yours — which is why two people can stand in front of the same canvas and describe two different paintings.', 'faq-and-answers'),
-				Parts::asset('story-1.svg')
+				Parts::asset('story-1.webp')
 			),
 			Parts::faq(
 				__('Styles', 'faq-and-answers'),
 				__('How does minimalist line art say so much with so little?', 'faq-and-answers'),
 				__('By trusting the eye to finish the sentence. A single continuous line describing a shoulder reads as a whole figure because we supply the rest without noticing, and the restraint is what makes the gesture land.', 'faq-and-answers'),
-				Parts::asset('story-2.svg')
+				Parts::asset('story-2.webp')
 			),
 			Parts::faq(
 				__('Medium', 'faq-and-answers'),
 				__('Can digital tools replace canvas and paintbrush?', 'faq-and-answers'),
 				__('They replace some of the constraints, not the practice. Undo, layers and infinite colour change what is easy, but they do not change what is worth making — and plenty of painters work in both without feeling they have swapped one for the other.', 'faq-and-answers'),
-				Parts::asset('story-3.svg')
+				Parts::asset('story-3.webp')
 			),
 			Parts::faq(
 				__('Medium', 'faq-and-answers'),
 				__('Why is mixed media considered the most expressive form?', 'faq-and-answers'),
 				__('Because the materials argue with each other. Paper against paint against thread gives a surface with real depth and real accident in it, and the places where two materials refuse to sit together are usually the places the eye goes first.', 'faq-and-answers'),
-				Parts::asset('story-4.svg')
+				Parts::asset('story-4.webp')
 			),
 		];
 
@@ -505,7 +505,7 @@ class DesignSet {
 			'groups'    => ['story'],
 			'keywords'  => ['gallery', 'art', 'image', 'picture', 'accordion', 'portfolio'],
 			'thumbnail' => 'gallery-questions.webp',
-			'content'   => Parts::section(
+			'content'   => Parts::section_wide(
 				Parts::heading(__('About the Work', 'faq-and-answers'), 2, '#111827', 'x-large')
 					. Parts::paragraph(__('What people ask most often about the pieces on show.', 'faq-and-answers'), 'center', '#6b7280')
 					. Parts::block(
@@ -615,7 +615,7 @@ class DesignSet {
 			'groups'    => ['sales'],
 			'keywords'  => ['product', 'gradient', 'bold', 'shop', 'furniture', 'materials'],
 			'thumbnail' => 'materials-and-care.webp',
-			'content'   => Parts::section(
+			'content'   => Parts::section_wide(
 				Parts::heading(__('Before You Order', 'faq-and-answers'), 2, '#111827', 'x-large')
 					. Parts::block(
 						'faa/faq-and-answers',
@@ -744,7 +744,7 @@ class DesignSet {
 			'groups'    => ['support'],
 			'keywords'  => ['dark', 'black', 'two column', 'contact', 'cards', 'support'],
 			'thumbnail' => 'questions-answered.webp',
-			'content'   => Parts::section(
+			'content'   => Parts::section_wide(
 				Parts::columns(
 					[
 						['width' => '38%', 'inner' => $left, 'vertical' => 'top'],

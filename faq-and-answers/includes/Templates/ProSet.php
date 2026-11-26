@@ -112,11 +112,7 @@ class ProSet {
 			. Parts::heading(__('Answers to Frequently Asked Questions.', 'faq-and-answers'), 2, '#ffffff', 'XL', 'left')
 			. Parts::paragraph(__('In our FAQ, you\'ll find concise answers to common questions about our service, Booking Steps. If you still have questions, feel free to reach out to us.', 'faq-and-answers'), 'left', '#e0e7ff', 'M');
 
-		$rightBannerImage = '<!-- wp:group {"style":{"border":{"radius":"18px"},"color":{"background":"#ffffff"}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->'
-			. '<div class="wp-block-group has-background" style="border-radius:18px;background-color:#ffffff;padding:24px;text-align:center;">'
-			. '<img src="' . esc_url(Parts::thumb('pitch-beside-answers.svg')) . '" alt="' . esc_attr__('FAQ Illustration', 'faq-and-answers') . '" style="max-width:100%;height:auto;border-radius:10px;" />'
-			. '</div>'
-			. '<!-- /wp:group -->';
+		$rightBannerImage = Parts::image_card('pitch-beside-answers.webp', __('A team planning a project around a laptop', 'faq-and-answers'));
 
 		$banner = Parts::section(
 			Parts::columns([
@@ -140,7 +136,7 @@ class ProSet {
 			'groups'    => ['sales'],
 			'keywords'  => ['two column', 'left content right faq', 'landing page', 'objections', 'columns', 'banner'],
 			'thumbnail' => 'pitch-beside-answers.webp',
-			'content'   => Parts::section(
+			'content'   => Parts::section_wide(
 				$banner
 					. '<!-- wp:spacer {"height":"36px"} --><div style="height:36px" aria-hidden="true" class="wp-block-spacer"></div><!-- /wp:spacer -->'
 					. $currentSection,
@@ -224,7 +220,7 @@ class ProSet {
 			'groups'    => ['sales'],
 			'keywords'  => ['pricing', 'licensing', 'nested', 'two column', 'small print', 'plans'],
 			'thumbnail' => 'plan-details.webp',
-			'content'   => Parts::section(
+			'content'   => Parts::section_wide(
 				Parts::heading(__('The details, before you ask', 'faq-and-answers'))
 					. Parts::columns(
 						[
@@ -339,7 +335,7 @@ class ProSet {
 			'groups'    => ['support'],
 			'keywords'  => ['form', 'two column', 'left form right faq', 'contact', 'columns'],
 			'thumbnail' => 'ask-while-you-read.webp',
-			'content'   => Parts::section(
+			'content'   => Parts::section_wide(
 				Parts::heading(__('Cannot find it? Ask.', 'faq-and-answers'))
 					. Parts::paragraph(__('The form is on the left. The answers most people were looking for are on the right.', 'faq-and-answers'))
 					. Parts::columns(
@@ -412,7 +408,7 @@ class ProSet {
 			'groups'    => ['support'],
 			'keywords'  => ['search', 'two column', 'left faq right content', 'help centre', 'columns'],
 			'thumbnail' => 'search-then-ask.webp',
-			'content'   => Parts::section(
+			'content'   => Parts::section_wide(
 				Parts::columns(
 					[
 						['width' => '62%', 'inner' => Parts::block('faa/faq-and-answers', ['faqData' => $faqs, 'theme' => 'themeSeven'])],
@@ -503,7 +499,7 @@ class ProSet {
 			'groups'    => ['support'],
 			'keywords'  => ['docs', 'nested', 'documentation', 'two column', 'tree', 'columns'],
 			'thumbnail' => 'documentation-tree.webp',
-			'content'   => Parts::section(
+			'content'   => Parts::section_wide(
 				Parts::heading(__('Documentation', 'faq-and-answers'))
 					. Parts::columns(
 						[
@@ -606,7 +602,7 @@ class ProSet {
 			'groups'    => ['features'],
 			'keywords'  => ['features', 'category', 'two column', 'left faq right content', 'product'],
 			'thumbnail' => 'feature-tour.webp',
-			'content'   => Parts::section(
+			'content'   => Parts::section_wide(
 				Parts::heading(__('What it does, in detail', 'faq-and-answers'))
 					. Parts::columns(
 						[
@@ -634,7 +630,7 @@ class ProSet {
 			'groups'    => ['support'],
 			'keywords'  => ['post faq', 'ask ai', 'articles', 'two column', 'knowledge base', 'search'],
 			'thumbnail' => 'knowledge-hub.webp',
-			'content'   => Parts::section(
+			'content'   => Parts::section_wide(
 				Parts::heading(__('Find it, or just ask', 'faq-and-answers'))
 					. Parts::paragraph(__('Browse what we have written, or type the question and let it find the answer for you.', 'faq-and-answers'))
 					. Parts::columns(
@@ -750,7 +746,7 @@ class ProSet {
 			'groups'    => ['support'],
 			'keywords'  => ['ask ai', 'ai', 'search', 'help desk', 'instant answer', 'support'],
 			'thumbnail' => 'ai-answer-desk.webp',
-			'content'   => Parts::section(
+			'content'   => Parts::section_wide(
 				Parts::heading(__('Ask, and read on', 'faq-and-answers'))
 					. Parts::paragraph(__('Type the question. If the answer is already written, this finds it and says where it came from.', 'faq-and-answers'))
 					. Parts::block(

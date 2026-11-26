@@ -44,6 +44,10 @@ require_once AFAQ_DIR_PATH . 'includes/Templates/ProSet.php';
 require_once AFAQ_DIR_PATH . 'includes/Templates/SectorSet.php';
 require_once AFAQ_DIR_PATH . 'includes/Templates/DetailSet.php';
 require_once AFAQ_DIR_PATH . 'includes/Templates/DesignSet.php';
+require_once AFAQ_DIR_PATH . 'includes/Templates/PatternSet.php';
+require_once AFAQ_DIR_PATH . 'includes/Templates/TabbedSet.php';
+require_once AFAQ_DIR_PATH . 'includes/Templates/LayoutSet.php';
+require_once AFAQ_DIR_PATH . 'includes/Templates/AskAiSet.php';
 
 class BuiltIn {
 
@@ -80,6 +84,8 @@ class BuiltIn {
 		'faa/post-faq',
 		'faa/sidebar-tab-faq',
 		'faa/faq-form',
+		'faa/interactive-faq',
+		'faa/tabbed-faq',
 	];
 
 	/**
@@ -140,15 +146,19 @@ class BuiltIn {
 	 */
 	private static function category_labels() {
 		return [
-			'support'    => __('Support pages', 'faq-and-answers'),
 			'onboarding' => __('Getting started', 'faq-and-answers'),
 			'sales'      => __('Sales pages', 'faq-and-answers'),
+			'support'    => __('Support pages', 'faq-and-answers'),
 
+			'automotive' => __('Automotive', 'faq-and-answers'),
+			'education'  => __('Education / Courses', 'faq-and-answers'),
 			'fashion'    => __('Fashion Lookbook', 'faq-and-answers'),
+			'finance'    => __('Finance & Legal', 'faq-and-answers'),
 			'fitness'    => __('Fitness / Diet', 'faq-and-answers'),
 			'food'       => __('Food Menu', 'faq-and-answers'),
 			'health'     => __('Health', 'faq-and-answers'),
 			'hotel'      => __('Hotel Suites', 'faq-and-answers'),
+			'nonprofit'  => __('Nonprofit / Charity', 'faq-and-answers'),
 			'features'   => __('Product Features', 'faq-and-answers'),
 			'portfolio'  => __('Projects / Portfolios', 'faq-and-answers'),
 			'estate'     => __('Real Estate Zones', 'faq-and-answers'),
@@ -221,7 +231,13 @@ class BuiltIn {
 			ProSet::all(),
 			SectorSet::all(),
 			DetailSet::all(),
-			DesignSet::all()
+			DesignSet::all(),
+			PatternSet::all(),
+			TabbedSet::all(),
+			// Appended last: IDs follow list position and favourites store IDs.
+			LayoutSet::all(),
+			// Ask AI design themes — after LayoutSet so earlier IDs stay put.
+			AskAiSet::all()
 		);
 		$out     = [];
 		$index   = 0;

@@ -95,7 +95,7 @@ class SectorSet {
 			'groups'    => ['fashion'],
 			'keywords'  => ['size', 'fit', 'sizing', 'measurements', 'fashion', 'returns', 'grid'],
 			'thumbnail' => 'size-and-fit.webp',
-			'content'   => Parts::section(
+			'content'   => Parts::section_wide(
 				Parts::heading(__('Size and fit', 'faq-and-answers'))
 					. Parts::paragraph(__('The six things people ask before ordering. All of it on the page — no clicking.', 'faq-and-answers'))
 					. Parts::block(
@@ -169,7 +169,7 @@ class SectorSet {
 			'groups'    => ['travel'],
 			'keywords'  => ['travel', 'visa', 'insurance', 'packing', 'preparation', 'grid'],
 			'thumbnail' => 'before-you-travel.webp',
-			'content'   => Parts::section(
+			'content'   => Parts::section_wide(
 				Parts::heading(__('Before you travel', 'faq-and-answers'))
 					. Parts::paragraph(__('The paperwork and the packing, in the order people worry about them.', 'faq-and-answers'))
 					. Parts::block(
@@ -269,11 +269,7 @@ class SectorSet {
 		$leftBannerContent = Parts::heading(__('Answers to Frequently Asked Questions.', 'faq-and-answers'), 2, '#111827', 'XL', 'left')
 			. Parts::paragraph(__('In our FAQ, you\'ll find concise answers to common questions about our service, Booking Steps. If you still have questions, feel free to reach out to us.', 'faq-and-answers'), 'left', '#6b7280', 'M');
 
-		$rightBannerImage = '<!-- wp:group {"style":{"border":{"radius":"18px"},"color":{"background":"#ffffff"}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->'
-			. '<div class="wp-block-group has-background" style="border-radius:18px;background-color:#ffffff;padding:24px;text-align:center;">'
-			. '<img src="' . esc_url(Parts::thumb('allergens-dietary.svg')) . '" alt="' . esc_attr__('FAQ Illustration', 'faq-and-answers') . '" style="max-width:100%;height:auto;border-radius:10px;" />'
-			. '</div>'
-			. '<!-- /wp:group -->';
+		$rightBannerImage = Parts::image_card('allergens-dietary.webp', __('A colourful vegetable and chickpea bowl', 'faq-and-answers'));
 
 		$banner = Parts::section(
 			Parts::columns([
@@ -289,7 +285,7 @@ class SectorSet {
 			'groups'    => ['food'],
 			'keywords'  => ['allergens', 'dietary', 'vegan', 'gluten', 'nuts', 'restaurant', 'nested', 'banner'],
 			'thumbnail' => 'allergens-dietary.webp',
-			'content'   => Parts::section(
+			'content'   => Parts::section_wide(
 				$banner
 					. '<!-- wp:spacer {"height":"36px"} --><div style="height:36px" aria-hidden="true" class="wp-block-spacer"></div><!-- /wp:spacer -->'
 					. Parts::wrap(
@@ -396,11 +392,7 @@ class SectorSet {
 			. Parts::heading(__('Answers to Frequently Asked Questions.', 'faq-and-answers'), 2, '#ffffff', 'XL', 'left')
 			. Parts::paragraph(__('In our FAQ, you\'ll find concise answers to common questions about our service, Booking Steps. If you still have questions, feel free to reach out to us.', 'faq-and-answers'), 'left', '#e0e7ff', 'M');
 
-		$rightBannerImage = '<!-- wp:group {"style":{"border":{"radius":"18px"},"color":{"background":"#ffffff"}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->'
-			. '<div class="wp-block-group has-background" style="border-radius:18px;background-color:#ffffff;padding:24px;text-align:center;">'
-			. '<img src="' . esc_url(Parts::thumb('treatment-explorer.svg')) . '" alt="' . esc_attr__('FAQ Illustration', 'faq-and-answers') . '" style="max-width:100%;height:auto;border-radius:10px;" />'
-			. '</div>'
-			. '<!-- /wp:group -->';
+		$rightBannerImage = Parts::image_card('treatment-explorer.webp', __('A stethoscope beside a laptop at a clinic desk', 'faq-and-answers'));
 
 		$banner = Parts::section(
 			Parts::columns([
@@ -416,7 +408,7 @@ class SectorSet {
 			'groups'    => ['health'],
 			'keywords'  => ['health', 'treatment', 'clinic', 'conditions', 'nested', 'patients', 'banner'],
 			'thumbnail' => 'treatment-explorer.webp',
-			'content'   => Parts::section(
+			'content'   => Parts::section_wide(
 				$banner
 					. '<!-- wp:spacer {"height":"36px"} --><div style="height:36px" aria-hidden="true" class="wp-block-spacer"></div><!-- /wp:spacer -->'
 					. Parts::wrap(
@@ -520,7 +512,7 @@ class SectorSet {
 			'groups'    => ['fitness'],
 			'keywords'  => ['fitness', 'programme', 'training', 'goals', 'nested', 'coaching'],
 			'thumbnail' => 'programme-explorer.webp',
-			'content'   => Parts::section(
+			'content'   => Parts::section_wide(
 				Parts::heading(__('What are you training for?', 'faq-and-answers'))
 					. Parts::paragraph(__('Pick the goal and the programme underneath it explains itself.', 'faq-and-answers'))
 					. Parts::wrap(
@@ -616,7 +608,7 @@ class SectorSet {
 			'groups'    => ['services'],
 			'keywords'  => ['scope', 'pricing', 'agency', 'contract', 'change', 'nested'],
 			'thumbnail' => 'scope-and-pricing.webp',
-			'content'   => Parts::section(
+			'content'   => Parts::section_wide(
 				Parts::heading(__('Scope, change and cost', 'faq-and-answers'))
 					. Parts::paragraph(__('The commercial questions, answered before you have to ask them twice.', 'faq-and-answers'))
 					. Parts::wrap(
@@ -699,7 +691,7 @@ class SectorSet {
 			'groups'    => ['hotel'],
 			'keywords'  => ['hotel', 'booking', 'check-in', 'cancellation', 'two column', 'stay'],
 			'thumbnail' => 'booking-and-stay.webp',
-			'content'   => Parts::section(
+			'content'   => Parts::section_wide(
 				Parts::heading(__('Booking and your stay', 'faq-and-answers'))
 					. Parts::columns(
 						[
@@ -770,7 +762,7 @@ class SectorSet {
 			'groups'    => ['estate'],
 			'keywords'  => ['property', 'buying', 'offers', 'survey', 'conveyancing', 'search'],
 			'thumbnail' => 'buying-process.webp',
-			'content'   => Parts::section(
+			'content'   => Parts::section_wide(
 				Parts::heading(__('Buying a home', 'faq-and-answers'))
 					. Parts::columns(
 						[
@@ -902,7 +894,7 @@ class SectorSet {
 			'groups'    => ['portfolio'],
 			'keywords'  => ['studio', 'process', 'engagement', 'ask ai', 'agency', 'portfolio'],
 			'thumbnail' => 'working-with-us.webp',
-			'content'   => Parts::section(
+			'content'   => Parts::section_wide(
 				Parts::heading(__('Ask something else', 'faq-and-answers'), 3, '', '', 'center')
 					. $askAiBlock
 					. '<!-- wp:spacer {"height":"36px"} --><div style="height:36px" aria-hidden="true" class="wp-block-spacer"></div><!-- /wp:spacer -->'

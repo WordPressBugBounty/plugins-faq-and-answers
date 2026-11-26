@@ -11,7 +11,7 @@ if (!class_exists('FAQBlock')) {
          * Blocks that live in build/blocks/*. The folder name is also the key
          * used in the afaq_disabled_blocks option and on the dashboard.
          */
-        private $child_blocks = ['nested-faq', 'faq-item', 'faq-parent', 'ask-ai', 'bento-faq', 'faq-form', 'post-faq', 'sidebar-tab-faq', 'image-faq'];
+        private $child_blocks = ['nested-faq', 'faq-item', 'faq-parent', 'ask-ai', 'bento-faq', 'faq-form', 'post-faq', 'sidebar-tab-faq', 'image-faq', 'interactive-faq', 'tabbed-faq'];
 
         /**
          * Blocks in build/blocks/* that only register for premium users.
@@ -22,7 +22,7 @@ if (!class_exists('FAQBlock')) {
          * the glob below never sees them. The check stays for the pro build
          * running without an active license.
          */
-        private $premium_blocks = ['ask-ai', 'bento-faq', 'nested-faq', 'faq-parent', 'faq-item', 'image-faq', 'post-faq', 'sidebar-tab-faq', 'faq-form'];
+        private $premium_blocks = ['ask-ai', 'bento-faq', 'nested-faq', 'faq-parent', 'faq-item', 'image-faq', 'post-faq', 'sidebar-tab-faq', 'faq-form', 'interactive-faq', 'tabbed-faq'];
 
         public function __construct()
         {

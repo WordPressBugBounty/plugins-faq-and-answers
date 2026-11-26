@@ -3,7 +3,7 @@
 /**
  * Plugin Name: Awesome FAQ
  * Description: Create responsive, customizable FAQ sections with ready-made templates.Perfect for boosting clarity, trust, and user experience on any page. 
- * Version: 2.5.4
+ * Version: 2.5.5
  * Author: bPlugins
  * Author URI: https://bplugins.com 
  * License: GPLv3 or later
@@ -18,19 +18,13 @@ if ( function_exists( 'faa_fs' ) ) {
 } else {
     /*
      * Read from the plugin header rather than repeated as a literal here.
-     *
-     * The literal said 2.4.0 while the header above said 2.5.0, so every asset
-     * versioned with this constant — the analytics stylesheet, the admin
-     * dashboard, the shortcode assets — kept its old cache-busting string
-     * across the upgrade, and browsers and CDNs went on serving the previous
-     * file. Derived, it cannot drift from the header again.
      */
     $afaq_header = get_file_data( __FILE__, [
         'Version' => 'Version',
     ], 'plugin' );
     // On a local install the timestamp busts the cache on every reload, which
     // is what makes editing a stylesheet bearable.
-    define( 'AFAQ_VERSION', ( isset( $_SERVER['HTTP_HOST'] ) && 'localhost' === $_SERVER['HTTP_HOST'] ? time() : (( !empty( $afaq_header['Version'] ) ? $afaq_header['Version'] : '2.5.4' )) ) );
+    define( 'AFAQ_VERSION', ( isset( $_SERVER['HTTP_HOST'] ) && 'localhost' === $_SERVER['HTTP_HOST'] ? time() : (( !empty( $afaq_header['Version'] ) ? $afaq_header['Version'] : '2.5.5' )) ) );
     unset($afaq_header);
     define( 'AFAQ_DIR_URL', plugin_dir_url( __FILE__ ) );
     define( 'AFAQ_DIR_PATH', plugin_dir_path( __FILE__ ) );

@@ -75,6 +75,10 @@ if (!class_exists('FaaPlugin')) {
                 if (file_exists(AFAQ_DIR_PATH . 'includes/class-faa-freeAnalytics.php')) {
                     require_once AFAQ_DIR_PATH . 'includes/class-faa-freeAnalytics.php';
                 }
+                // "All Product FAQs" locked preview, right after Analytics.
+                if (is_admin() && file_exists(AFAQ_DIR_PATH . 'includes/class-faa-freeProductFaq.php')) {
+                    require_once AFAQ_DIR_PATH . 'includes/class-faa-freeProductFaq.php';
+                }
                 // Keeps the Ask AI menu item present on the free build, at the
                 // slug the premium screen uses, so the feature can be looked at
                 // before it is bought.

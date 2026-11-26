@@ -108,7 +108,7 @@ class DetailSet
 			'groups' => ['support'],
 			'keywords' => ['status', 'uptime', 'incidents', 'downtime', 'maintenance', 'sla', 'nested'],
 			'thumbnail' => 'status-incidents.webp',
-			'content' => Parts::section(
+			'content' => Parts::section_wide(
 				Parts::heading(__('Status and incidents', 'faq-and-answers'))
 				. Parts::paragraph(__('What we post, when we post it, and how to be told without checking.', 'faq-and-answers'))
 				. Parts::wrap(
@@ -150,7 +150,7 @@ class DetailSet
 			'groups' => ['support'],
 			'keywords' => ['contact', 'support', 'ask ai', 'ai assistant', 'routes'],
 			'thumbnail' => 'contact-routes.webp',
-			'content' => Parts::section(
+			'content' => Parts::section_wide(
 				Parts::heading(__('Get in touch', 'faq-and-answers'))
 				. Parts::paragraph(__('Try the quick way first. Most questions are already answered somewhere on this site.', 'faq-and-answers'))
 				. Parts::block(
@@ -227,7 +227,7 @@ class DetailSet
 			'groups' => ['support'],
 			'keywords' => ['accessibility', 'a11y', 'keyboard', 'screen reader', 'wcag', 'contrast'],
 			'thumbnail' => 'accessibility.webp',
-			'content' => Parts::section(
+			'content' => Parts::section_wide(
 				Parts::heading(__('Accessibility', 'faq-and-answers'))
 				. Parts::paragraph(__('What works, what we test, and where to tell us it does not.', 'faq-and-answers'))
 				. Parts::block('faa/faq-and-answers', ['faqData' => $faqs, 'theme' => 'themeSeven']),
@@ -321,7 +321,7 @@ class DetailSet
 			'groups' => ['onboarding'],
 			'keywords' => ['migration', 'import', 'switching', 'nested', 'move', 'seo'],
 			'thumbnail' => 'migration-guide.webp',
-			'content' => Parts::section(
+			'content' => Parts::section_wide(
 				Parts::heading(__('Moving from another plugin', 'faq-and-answers'))
 				. Parts::paragraph(__('Three stages, and the honest answer on what does not come across.', 'faq-and-answers'))
 				. Parts::wrap(
@@ -406,7 +406,7 @@ class DetailSet
 			'groups' => ['sales'],
 			'keywords' => ['enterprise', 'procurement', 'legal', 'dpa', 'invoice', 'purchase order'],
 			'thumbnail' => 'enterprise-procurement.webp',
-			'content' => Parts::section(
+			'content' => Parts::section_wide(
 				Parts::heading(__('For procurement', 'faq-and-answers'))
 				. Parts::columns(
 					[
@@ -470,7 +470,7 @@ class DetailSet
 			'groups' => ['features'],
 			'keywords' => ['integrations', 'compatibility', 'page builder', 'seo', 'woocommerce', 'grid'],
 			'thumbnail' => 'integrations.webp',
-			'content' => Parts::section(
+			'content' => Parts::section_wide(
 				Parts::heading(__('What it works with', 'faq-and-answers'))
 				. Parts::paragraph(__('The compatibility questions, answered without a matrix nobody reads.', 'faq-and-answers'))
 				. Parts::block(
@@ -575,7 +575,7 @@ class DetailSet
 			'groups' => ['features'],
 			'keywords' => ['security', 'privacy', 'gdpr', 'data', 'nested', 'compliance'],
 			'thumbnail' => 'security-privacy.webp',
-			'content' => Parts::section(
+			'content' => Parts::section_wide(
 				Parts::heading(__('Security and privacy', 'faq-and-answers'))
 				. Parts::paragraph(__('Where things are kept, who can reach them, and what happens when somebody finds a hole.', 'faq-and-answers'))
 				. Parts::wrap(

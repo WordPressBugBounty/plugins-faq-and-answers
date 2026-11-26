@@ -2,7 +2,7 @@
 Contributors: bplugins, abuhayat, prosanta10, freemius
 Tags: faq block, accordion, faq schema, responsive faq, block
 Tested up to: 7.1
-Stable tag: 2.5.4
+Stable tag: 2.5.5
 Requires PHP: 7.4
 Requires at least: 6.5
 Donate link: https://www.buymeacoffee.com/abuhayat
@@ -10,7 +10,7 @@ License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
 Build responsive FAQ sections with accordion themes, FAQ schema for SEO rich results, Gutenberg block and shortcode support – no coding needed.
-
+ 
 == Description ==
 
 **Answer your visitors' questions before they hit the contact form – beautiful, SEO-ready FAQ sections in minutes, no code required.**
@@ -20,6 +20,8 @@ Build responsive FAQ sections with accordion themes, FAQ schema for SEO rich res
 **Awesome FAQ** makes it easy to create responsive FAQ sections using Gutenberg blocks and shortcodes. Choose from ready-made themes, organize questions and answers, and display helpful information across your website without writing code.
 
 Whether you run a business website, blog, WooCommerce store, SaaS product, agency, or documentation site, Awesome FAQ helps you build organized FAQ sections that make information easier to find.
+
+https://www.youtube.com/watch?v=d7ZqxArtfGg
 
 ### Why Awesome FAQ?
 
@@ -49,7 +51,7 @@ Upgrade to [**Awesome FAQ Pro**](https://bplugins.com/products/faq-and-answers/p
 
 **Pro features include:**
 
-- **50+ Ready-Made FAQ Templates:** Exclusive interactive, pre-designed accordion & grid layouts.
+- **100+ Ready-Made FAQ Templates:** Exclusive interactive, pre-designed accordion & grid layouts.
 - **Category & Filter FAQ:** Organize your FAQs with filterable tabs for a cleaner presentation.
 - **FAQ Search System:** Real-time live search bar so users find answers instantly.
 - **Multi-Column FAQ Grid:** Multi-column and grid layouts to present FAQs beautifully.
@@ -66,7 +68,11 @@ Upgrade to [**Awesome FAQ Pro**](https://bplugins.com/products/faq-and-answers/p
 - **New: Image FAQ Block** - Present FAQs alongside images and media with side-by-side or stacked custom layouts.
 - **New: Post FAQ Block** - Dynamically query and display FAQs from WordPress posts or custom post types.
 - **New: Sidebar Tab FAQ Block** - Vertical sidebar navigation with tabbed FAQ categories and smooth seamless switching.
+- **New: Interactive FAQ block (Pro)** - Fourteen interactive FAQ section patterns: Expanding Cards (team), Feature Showcase with image, Numbered Services (dark), Case Study Rows, Dark FAQ with Side Image, Gradient Hero FAQ, Property Gallery, Playful Colour, Minimal Dark List, Colour Panels, Synced Accordion (autoplay), Searchable FAQ with categories, Chat Conversation FAQ (typing animation) and FAQ with Image & Video answers (MP4, YouTube, Vimeo). Each has its own content and style settings, is fully responsive, and is available from the block toolbar, the Pattern switch and the Template Library.
 - **New: Ask AI Dashboard** - Centralized admin dashboard for managing AI provider settings, custom system prompts, real-time query logs, token usage, and visitor feedback analytics.
+- **New: Global Product FAQs** - Write a product FAQ once under **Awesome FAQ › All Product FAQs** and show it automatically on all WooCommerce products, a category, a tag or only the products you pick.
+- **New: Tabbed FAQ Block** - FAQs grouped under tabs, one panel per topic, with a heading and questions in one to five columns. Three designs, fully responsive, with FAQPage schema.
+- **New: Ask AI Themes** - Classic, Spotlight and Nebula designs for the Ask AI block, with matching ready-made templates.
 
 
 ### AI-Powered FAQ Builder
@@ -136,6 +142,8 @@ Use these insights to identify the questions visitors care about most and improv
 ### Ask AI Dashboard (Pro)
 
 Everything the assistant does is reported under **Awesome FAQ → Ask AI**, built around the two questions a site owner actually has: what is this costing me, and what are people asking that I have not answered yet.
+
+https://www.youtube.com/watch?v=sretKkGvDd4
 
 **Dashboard Features:**
 
@@ -287,6 +295,15 @@ Please report security bugs found in the source code of the Awesome FAQ plugin t
 11. Gutenberg Block Settings
 
 == Changelog ==
+
+= 2.5.5 - 2026-11-26 =
+* New: Global Product FAQs (Pro) - write a product FAQ once under Awesome FAQ › All Product FAQs and show it on all WooCommerce products, a category, a tag or selected products.
+* New: Tabbed FAQ block (Pro) - FAQs grouped under tabs, one panel per topic, with one to five columns, three designs and FAQPage schema.
+* New: Interactive FAQ block (Pro) - fourteen interactive FAQ section patterns, available from the block toolbar, the Pattern switch and the Template Library.
+* New: Ask AI block themes (Pro) - Classic, Spotlight and Nebula designs, plus new Ask AI templates in the Template Library.
+* New: Video Tutorial link in the Ask AI dashboard sidebar.
+* New: All Product FAQs menu item on the free version, with a preview of the Pro feature.
+* Improve: More ready-made templates and patterns in the Template Library.
 
 = 2.5.4 - 2026-11-17  =
 * Added: Discount Promo Banner in Dashboard.

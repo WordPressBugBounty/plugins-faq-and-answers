@@ -87,6 +87,8 @@ if (!class_exists('FaaAdmin')) {
                     'faa/faq-item',
                     'faa/bento-faq',
                     'faa/image-faq',
+                    'faa/interactive-faq',
+                    'faa/tabbed-faq',
                     'faa/ask-ai',
                     'faa/faq-parent',
                 ]);

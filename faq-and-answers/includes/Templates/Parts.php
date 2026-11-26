@@ -81,7 +81,51 @@ class Parts {
 	 * @param string $radius     Corner radius, e.g. '18px'.
 	 * @return string
 	 */
-	public static function section($inner, $background = '', $radius = '18px') {
+	/**
+	 * The outermost section of a template, inserted at Wide width.
+	 *
+	 * A core group with no alignment is held to the theme's content width
+	 * (645px in Twenty Twenty-Five), and everything inside it — however wide
+	 * the FAQ block itself could go — is held there with it. That is why a
+	 * template used to arrive at None width. Nested groups (cards, banners,
+	 * side boxes) keep using section() so they stay inside their parent.
+	 */
+	/**
+	 * A white rounded card holding one picture, as real blocks.
+	 *
+	 * The banners used to put a raw <img> straight inside a core/group with
+	 * inline padding the group never saves, so the editor could not rebuild the
+	 * markup and flagged the group as invalid. Here the padding is a block
+	 * attribute and the picture is a core/image block, so it validates.
+	 *
+	 * @param string $file Picture in assets/images/image-faq/.
+	 * @param string $alt  Alt text.
+	 * @return string
+	 */
+	public static function image_card($file, $alt) {
+		$attrs = [
+			'style'  => [
+				'border'  => ['radius' => '18px'],
+				'color'   => ['background' => '#ffffff'],
+				'spacing' => ['padding' => ['top' => '20px', 'right' => '20px', 'bottom' => '20px', 'left' => '20px']],
+			],
+			'layout' => ['type' => 'constrained'],
+		];
+
+		return '<!-- wp:group ' . wp_json_encode($attrs) . ' -->'
+			. '<div class="wp-block-group has-background" style="border-radius:18px;background-color:#ffffff;padding-top:20px;padding-right:20px;padding-bottom:20px;padding-left:20px">'
+			. '<!-- wp:image {"sizeSlug":"large","style":{"border":{"radius":"10px"}}} -->'
+			. '<figure class="wp-block-image size-large has-custom-border"><img src="' . esc_url(self::asset($file)) . '" alt="' . esc_attr($alt) . '" style="border-radius:10px"/></figure>'
+			. '<!-- /wp:image -->'
+			. '</div>'
+			. '<!-- /wp:group -->';
+	}
+
+	public static function section_wide($inner, $background = '', $radius = '18px', $align = 'wide') {
+		return self::section($inner, $background, $radius, $align);
+	}
+
+	public static function section($inner, $background = '', $radius = '18px', $align = '') {
 		/*
 		 * Fluid rather than fixed. 56px above and below is right on a desktop
 		 * and a third of the screen on a phone — and block spacing has no
@@ -119,6 +163,14 @@ class Parts {
 
 		$attrs = ['style' => $style, 'layout' => ['type' => 'constrained']];
 		$class = 'wp-block-group' . ('' !== $background ? ' has-background' : '');
+
+		// Wide sections (two-column layouts) also widen the constrained content
+		// area, or the children would stay at the theme's narrow content width.
+		if ('wide' === $align || 'full' === $align) {
+			$attrs  = ['align' => $align] + $attrs;
+			$attrs['layout']['contentSize'] = '1180px';
+			$class .= ' align' . $align;
+		}
 
 		return '<!-- wp:group ' . wp_json_encode($attrs) . ' -->'
 			. '<div class="' . esc_attr($class) . '" style="' . esc_attr(rtrim($css, ';')) . '">'
@@ -614,6 +666,11 @@ class Parts {
 	 * @return string
 	 */
 	public static function thumb($file) {
-		return AFAQ_DIR_URL . 'assets/images/templates/' . $file;
+		// Versioned by the file's modified time: a re-shot thumbnail keeps its
+		// name, so without this the browser keeps showing the old picture.
+		$path = AFAQ_DIR_PATH . 'assets/images/templates/' . $file;
+		$ver  = is_file($path) ? '?ver=' . filemtime($path) : '';
+
+		return AFAQ_DIR_URL . 'assets/images/templates/' . $file . $ver;
 	}
 }
